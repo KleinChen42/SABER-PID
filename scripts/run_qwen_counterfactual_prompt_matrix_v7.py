@@ -75,6 +75,8 @@ def main() -> int:
     parser.add_argument("--run-id", required=True)
     parser.add_argument("--prompts", default="p0,p1")
     parser.add_argument("--conditions", default=",".join(CONDITIONS))
+    parser.add_argument("--datasets", default="")
+    parser.add_argument("--record-limit", type=int, default=0)
     parser.add_argument("--max-image-side", type=int, default=3072)
     parser.add_argument("--max-new-tokens", type=int, default=512)
     parser.add_argument("--skip-existing", action="store_true")
@@ -86,15 +88,20 @@ def main() -> int:
         raise ValueError("Plan is not frozen_before_inference")
     prompts = parse_csv(args.prompts)
     conditions = parse_csv(args.conditions)
+    requested_datasets = set(parse_csv(args.datasets))
     if not prompts or any(prompt not in PROMPTS for prompt in prompts):
         raise ValueError("Unknown prompt requested")
     if not conditions or any(condition not in CONDITIONS for condition in conditions):
         raise ValueError("Unknown condition requested")
     if args.max_image_side <= 0 or args.max_new_tokens <= 0:
         raise ValueError("Image side and output cap must be positive")
+    if args.record_limit < 0:
+        raise ValueError("record-limit cannot be negative")
 
     datasets: list[tuple[dict[str, Any], list[dict[str, Any]], list[dict[str, Any]]]] = []
     for spec in plan["datasets"]:
+        if requested_datasets and str(spec["dataset_id"]) not in requested_datasets:
+            continue
         correct_path = resolve_path(root, str(spec["correct_input"]))
         shuffled_path = resolve_path(root, str(spec["shuffled_input"]))
         if sha256(correct_path) != spec["correct_sha256"]:
@@ -104,6 +111,9 @@ def main() -> int:
         correct = read_jsonl(correct_path)
         shuffled = read_jsonl(shuffled_path)
         validate_pair(correct, shuffled, str(spec["dataset_id"]))
+        if args.record_limit:
+            correct = correct[: args.record_limit]
+            shuffled = shuffled[: args.record_limit]
         datasets.append((spec, correct, shuffled))
 
     model_path = resolve_path(root, args.model)
@@ -124,7 +134,8 @@ def main() -> int:
                 records = shuffled if condition == "shuffled" else correct
                 output_path = output_dir / (
                     f"{args.model_label}_{dataset_id}_{prompt_id}_{condition}_"
-                    f"{args.max_image_side}.jsonl"
+                    f"{args.max_image_side}"
+                    f"{'_smoke' + str(args.record_limit) if args.record_limit else ''}.jsonl"
                 )
                 prior = read_jsonl(output_path) if output_path.is_file() else []
                 rows_by_id = {
@@ -253,6 +264,8 @@ def main() -> int:
         "run_id": args.run_id,
         "plan": str(plan_path.relative_to(root).as_posix()),
         "plan_sha256": plan_hash,
+        "requested_datasets": sorted(requested_datasets),
+        "record_limit": args.record_limit,
         "cells": cell_summaries,
         "failure_count": len(failures),
         "failures": failures[:50],

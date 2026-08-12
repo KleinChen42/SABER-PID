@@ -1,0 +1,233 @@
+{
+  "analysis_hierarchy": {
+    "interpretation": "Image quality is paired with a shuffled control so gains cannot be attributed to prompt or answer priors alone.",
+    "primary": "Within model/dataset/condition, correct-minus-shuffled strict value-tag F1 at the qualified 3072-side and 512-token configuration",
+    "secondary": [
+      "quality-minus-clean paired source differences",
+      "all-task strict accuracy boundary",
+      "source-macro strict accuracy"
+    ]
+  },
+  "answer_isolation": {
+    "forbidden_prediction_input_field_fragments": [
+      "answer",
+      "cypher"
+    ],
+    "scorer_reference_read_by_inference": false,
+    "status": "pass"
+  },
+  "conditions": [
+    "correct",
+    "shuffled"
+  ],
+  "datasets": [
+    {
+      "base_dataset_id": "set_b100",
+      "correct_input": "data/processed/rineng_overnight_v7/set_b100_correct_public.jsonl",
+      "correct_sha256": "c3cf9fc24c3a19b6ae8800960ac8baebfdee101679de856d2c7ed00b469bdf8e",
+      "dataset_id": "set_b100__clean",
+      "quality_condition": "clean",
+      "quality_family": "identity",
+      "quality_severity": null,
+      "record_count": 400,
+      "shuffled_input": "data/processed/rineng_overnight_v7/set_b100_shuffled_public.jsonl",
+      "shuffled_sha256": "0b780fc867970e611839fb70771d28fc0927a2324a440f4a3bc0eae3e7069836",
+      "source_count": 100
+    },
+    {
+      "base_dataset_id": "set_b100",
+      "correct_input": "data/processed/rineng_v8_quality/set_b100_jpeg_q70_correct_public.jsonl",
+      "correct_sha256": "2b1d2dd66a0ef39c36bc961f76b0fff08a6f4024e4da3440cb26e04c3b2b78c0",
+      "dataset_id": "set_b100__jpeg_q70",
+      "quality_condition": "jpeg_q70",
+      "quality_family": "jpeg",
+      "quality_severity": 70,
+      "record_count": 400,
+      "shuffled_input": "data/processed/rineng_v8_quality/set_b100_jpeg_q70_shuffled_public.jsonl",
+      "shuffled_sha256": "eed611eae2c6c62702a837c2056653573d0a675ad41d865342995016a9004f80",
+      "source_count": 100
+    },
+    {
+      "base_dataset_id": "set_b100",
+      "correct_input": "data/processed/rineng_v8_quality/set_b100_blur_r1_correct_public.jsonl",
+      "correct_sha256": "0d501e87672bd99cd0b6d50341e5161cafd6c676c2a89d09afd36425aa2587f0",
+      "dataset_id": "set_b100__blur_r1",
+      "quality_condition": "blur_r1",
+      "quality_family": "gaussian_blur",
+      "quality_severity": 1.0,
+      "record_count": 400,
+      "shuffled_input": "data/processed/rineng_v8_quality/set_b100_blur_r1_shuffled_public.jsonl",
+      "shuffled_sha256": "0d91daac9ef3512f7d114e8d42027925a0c9a82b9d5f6b64312faafc62b53528",
+      "source_count": 100
+    },
+    {
+      "base_dataset_id": "set_b100",
+      "correct_input": "data/processed/rineng_v8_quality/set_b100_downsample_s075_correct_public.jsonl",
+      "correct_sha256": "646ce3561a9ba7ecd5d7bf668e51160c5734021a78b56e2809a3be7259b454d7",
+      "dataset_id": "set_b100__downsample_s075",
+      "quality_condition": "downsample_s075",
+      "quality_family": "downsample_restore",
+      "quality_severity": 0.75,
+      "record_count": 400,
+      "shuffled_input": "data/processed/rineng_v8_quality/set_b100_downsample_s075_shuffled_public.jsonl",
+      "shuffled_sha256": "b54be55d74ce687bf9d8dd96a711f7c5ad64243e54a7d4c2a250994ca1de69f4",
+      "source_count": 100
+    },
+    {
+      "base_dataset_id": "seed29_strict65",
+      "correct_input": "data/processed/rineng_overnight_v7/seed29_strict65_correct_public.jsonl",
+      "correct_sha256": "a3455746ededbb302288a38607a7902f205225ff51e09ac1225a2f3807502a1c",
+      "dataset_id": "seed29_strict65__clean",
+      "quality_condition": "clean",
+      "quality_family": "identity",
+      "quality_severity": null,
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_overnight_v7/seed29_strict65_shuffled_public.jsonl",
+      "shuffled_sha256": "2f5c780e41ec89881bcc954f0bd1344722724c3f4c1324a66dae4f0779e22fe7",
+      "source_count": 65
+    },
+    {
+      "base_dataset_id": "seed29_strict65",
+      "correct_input": "data/processed/rineng_v8_quality/seed29_strict65_jpeg_q70_correct_public.jsonl",
+      "correct_sha256": "9f2379d41300a2d664b036c4c4d29a9f3c186b96b9a3723e00675c0b3bd64e07",
+      "dataset_id": "seed29_strict65__jpeg_q70",
+      "quality_condition": "jpeg_q70",
+      "quality_family": "jpeg",
+      "quality_severity": 70,
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_v8_quality/seed29_strict65_jpeg_q70_shuffled_public.jsonl",
+      "shuffled_sha256": "cffa1b478fc5581599ba0e27e58501ff451fa27e51bcdf17bf962dbe3607de23",
+      "source_count": 65
+    },
+    {
+      "base_dataset_id": "seed29_strict65",
+      "correct_input": "data/processed/rineng_v8_quality/seed29_strict65_blur_r1_correct_public.jsonl",
+      "correct_sha256": "d8d8c773f6b9263fab1bc20acf5993f9a8da0fe65bae47d2e9f6a7fca3863408",
+      "dataset_id": "seed29_strict65__blur_r1",
+      "quality_condition": "blur_r1",
+      "quality_family": "gaussian_blur",
+      "quality_severity": 1.0,
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_v8_quality/seed29_strict65_blur_r1_shuffled_public.jsonl",
+      "shuffled_sha256": "4e6e4384f91bf32e0a144fff60c9fbd5db3fb0570f652e9cc9e6ffbe464fc01d",
+      "source_count": 65
+    },
+    {
+      "base_dataset_id": "seed29_strict65",
+      "correct_input": "data/processed/rineng_v8_quality/seed29_strict65_downsample_s075_correct_public.jsonl",
+      "correct_sha256": "ea68b8d79a7c540b102bbae9f095812deb1db855738126f849d7d7477b0e4712",
+      "dataset_id": "seed29_strict65__downsample_s075",
+      "quality_condition": "downsample_s075",
+      "quality_family": "downsample_restore",
+      "quality_severity": 0.75,
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_v8_quality/seed29_strict65_downsample_s075_shuffled_public.jsonl",
+      "shuffled_sha256": "86775d4ccbba3dbd36abe2124033e942c6c6e27bea6e3a83c3397a6dd7c2816f",
+      "source_count": 65
+    },
+    {
+      "base_dataset_id": "seed31_strict65",
+      "correct_input": "data/processed/rineng_overnight_v7/seed31_strict65_correct_public.jsonl",
+      "correct_sha256": "baef788d107053b6f86da23ba62210fc8548a7d958e7a523424e16eb9f9d63ac",
+      "dataset_id": "seed31_strict65__clean",
+      "quality_condition": "clean",
+      "quality_family": "identity",
+      "quality_severity": null,
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_overnight_v7/seed31_strict65_shuffled_public.jsonl",
+      "shuffled_sha256": "fb6b4d3f86f3ba7879724b36ea7389a043adeb0373ae08f88f036b8287ae07f9",
+      "source_count": 65
+    },
+    {
+      "base_dataset_id": "seed31_strict65",
+      "correct_input": "data/processed/rineng_v8_quality/seed31_strict65_jpeg_q70_correct_public.jsonl",
+      "correct_sha256": "a17dddf992e7d2b7f0e92a7af40cf6b998716dd0fa354c58ff57401eef8d9398",
+      "dataset_id": "seed31_strict65__jpeg_q70",
+      "quality_condition": "jpeg_q70",
+      "quality_family": "jpeg",
+      "quality_severity": 70,
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_v8_quality/seed31_strict65_jpeg_q70_shuffled_public.jsonl",
+      "shuffled_sha256": "a687f1bb8ecc376397a2b97009ec32a2eec0beb72b5b04c8da745437c9127f94",
+      "source_count": 65
+    },
+    {
+      "base_dataset_id": "seed31_strict65",
+      "correct_input": "data/processed/rineng_v8_quality/seed31_strict65_blur_r1_correct_public.jsonl",
+      "correct_sha256": "aa3619c25c3fab479f08415f2936cdfa372272103e5a027f43d6453f98f424ed",
+      "dataset_id": "seed31_strict65__blur_r1",
+      "quality_condition": "blur_r1",
+      "quality_family": "gaussian_blur",
+      "quality_severity": 1.0,
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_v8_quality/seed31_strict65_blur_r1_shuffled_public.jsonl",
+      "shuffled_sha256": "8a7e1c20d712016161229eabb060cd4133c10fb63899a416c15c25a65710a107",
+      "source_count": 65
+    },
+    {
+      "base_dataset_id": "seed31_strict65",
+      "correct_input": "data/processed/rineng_v8_quality/seed31_strict65_downsample_s075_correct_public.jsonl",
+      "correct_sha256": "3ac6c6d231f426b4ad6cf27c897853df8a855a853e3b1ecdb8beb3988e34e792",
+      "dataset_id": "seed31_strict65__downsample_s075",
+      "quality_condition": "downsample_s075",
+      "quality_family": "downsample_restore",
+      "quality_severity": 0.75,
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_v8_quality/seed31_strict65_downsample_s075_shuffled_public.jsonl",
+      "shuffled_sha256": "137b90fa5475bd2c0806ed633541353e0ef8bb6cd94b9822f90d07168afe1f01",
+      "source_count": 65
+    }
+  ],
+  "date": "2026-08-12",
+  "frozen_inference": {
+    "do_sample": false,
+    "max_image_side": 3072,
+    "max_new_tokens": 512,
+    "model_label": "qwen3vl8b",
+    "model_path": "models/Qwen3-VL-8B-Instruct-modelscope",
+    "prompt_id": "p0",
+    "prompt_sha256": "184085c056465088fdadaa882c6591ec175ec0fc2e100113365c2b2f20780223",
+    "task_filter": "all four PIDQA tasks"
+  },
+  "image_manifest": {
+    "path": "data/manifests/rineng_v8_quality_images.json",
+    "record_count": 920,
+    "sha256": "1d8e6005aad979faf44f89b0f1f0978dafda23688671b5aae2d4550b5e8ec4ae"
+  },
+  "membership": {
+    "all_pairwise_source_disjoint": true,
+    "datasets": {
+      "seed29_strict65": 65,
+      "seed31_strict65": 65,
+      "set_b100": 100
+    }
+  },
+  "parent_plan": {
+    "path": "data/manifests/rineng_overnight_v7_public_plan.json",
+    "sha256": "2042505735da31f51d98a12fe8edebc01858e525f9f5059282dd01fd1b13b799"
+  },
+  "quality_conditions": {
+    "blur_r1": {
+      "extension": ".png",
+      "family": "gaussian_blur",
+      "severity": 1.0
+    },
+    "clean": {
+      "extension": null,
+      "family": "identity",
+      "severity": null
+    },
+    "downsample_s075": {
+      "extension": ".png",
+      "family": "downsample_restore",
+      "severity": 0.75
+    },
+    "jpeg_q70": {
+      "extension": ".jpg",
+      "family": "jpeg",
+      "severity": 70
+    }
+  },
+  "status": "frozen_before_inference",
+  "version": "rineng-v8-quality-robustness"
+}

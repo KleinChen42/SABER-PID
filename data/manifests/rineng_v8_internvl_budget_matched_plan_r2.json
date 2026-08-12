@@ -1,0 +1,99 @@
+{
+  "analysis_hierarchy": {
+    "primary": "Within each source-disjoint PIDQA subset, InternVL correct-minus-shuffled and correct-minus-text-only strict value-tag F1 under the closest context-safe visual tensor-element budget to the qualified Qwen 3072-side operating point",
+    "secondary": [
+      "all-task strict accuracy",
+      "source-macro strict accuracy",
+      "latency and peak allocated memory",
+      "comparison with the prior native InternVL max_num=12 boundary run"
+    ],
+    "scope": "Cross-family directional replication inside PIDQA only; not a claim of architecture-level equivalence"
+  },
+  "answer_isolation": {
+    "forbidden_prediction_input_field_fragments": ["answer", "cypher"],
+    "scorer_reference_read_by_inference": false,
+    "status": "pass"
+  },
+  "conditions": ["correct", "shuffled", "text_only"],
+  "datasets": [
+    {
+      "correct_input": "data/processed/rineng_overnight_v7/set_b100_correct_public.jsonl",
+      "correct_sha256": "c3cf9fc24c3a19b6ae8800960ac8baebfdee101679de856d2c7ed00b469bdf8e",
+      "dataset_id": "set_b100",
+      "record_count": 400,
+      "shuffled_input": "data/processed/rineng_overnight_v7/set_b100_shuffled_public.jsonl",
+      "shuffled_sha256": "0b780fc867970e611839fb70771d28fc0927a2324a440f4a3bc0eae3e7069836",
+      "source_count": 100
+    },
+    {
+      "correct_input": "data/processed/rineng_overnight_v7/seed29_strict65_correct_public.jsonl",
+      "correct_sha256": "a3455746ededbb302288a38607a7902f205225ff51e09ac1225a2f3807502a1c",
+      "dataset_id": "seed29_strict65",
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_overnight_v7/seed29_strict65_shuffled_public.jsonl",
+      "shuffled_sha256": "2f5c780e41ec89881bcc954f0bd1344722724c3f4c1324a66dae4f0779e22fe7",
+      "source_count": 65
+    },
+    {
+      "correct_input": "data/processed/rineng_overnight_v7/seed31_strict65_correct_public.jsonl",
+      "correct_sha256": "baef788d107053b6f86da23ba62210fc8548a7d958e7a523424e16eb9f9d63ac",
+      "dataset_id": "seed31_strict65",
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_overnight_v7/seed31_strict65_shuffled_public.jsonl",
+      "shuffled_sha256": "fb6b4d3f86f3ba7879724b36ea7389a043adeb0373ae08f88f036b8287ae07f9",
+      "source_count": 65
+    }
+  ],
+  "date": "2026-08-12",
+  "frozen_inference": {
+    "do_sample": false,
+    "grid_columns": 9,
+    "grid_rows": 6,
+    "letterbox_color_rgb": [255, 255, 255],
+    "max_new_tokens": 512,
+    "thumbnail_added": true,
+    "tile_count": 55,
+    "tile_side": 448,
+    "tiling_strategy": "aspect-preserving white-letterbox into a 9x6 canvas, 54 non-overlapping 448x448 tiles, plus one global 448x448 thumbnail",
+    "total_input_tensor_elements": 33116160
+  },
+  "models": [
+    {
+      "family": "InternVL",
+      "model_label": "internvl35_8b_budget55",
+      "model_path": "models/InternVL3_5-8B-modelscope",
+      "recommended_gpu": 1
+    }
+  ],
+  "parent_plan": {
+    "path": "data/manifests/rineng_overnight_v7_public_plan.json",
+    "sha256": "2042505735da31f51d98a12fe8edebc01858e525f9f5059282dd01fd1b13b799"
+  },
+  "preflight_revision": {
+    "failed_plan": "data/manifests/rineng_v8_internvl_budget_matched_plan.json",
+    "reason": "The 60-tile smoke input required 15,464 tokens, above the model-declared 14,588-token maximum.",
+    "change": "Reduce the high-resolution grid from 60 tiles to 54 and add one global thumbnail; formal inference remains unstarted.",
+    "estimated_image_tokens": 14080,
+    "status": "context_safe_by_predeclared_token_budget"
+  },
+  "prompt": {
+    "prompt_id": "p0",
+    "sha256": "184085c056465088fdadaa882c6591ec175ec0fc2e100113365c2b2f20780223",
+    "template": "You analyze a piping and instrumentation diagram (P&ID). Answer only from the visible diagram. Return only the final answer, without explanation or Markdown.\n\nQuestion: {question}"
+  },
+  "post_smoke_status": {
+    "passed_cells": 3,
+    "failed_cells_after_context_exhaustion": 6,
+    "formal_predictions_started": false,
+    "resolution": "Superseded by rineng_v8_internvl_budget_matched_plan_r3.json; remove the thumbnail to leave enough context for the frozen 512-token cap."
+  },
+  "status": "failed_preflight",
+  "visual_budget_match": {
+    "internvl_tensor_elements": 33116160,
+    "qwen_observed_processor_tensor_elements": 35979264,
+    "relative_difference": -0.07957650273224044,
+    "status": "closest_context_safe_budget_within_8_percent",
+    "warning": "Tensor-element matching does not equalize vision encoders, tokenization, architecture, or effective information throughput."
+  },
+  "version": "rineng-v8-internvl-budget-matched-r2"
+}

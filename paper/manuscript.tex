@@ -47,6 +47,11 @@ reached pooled F1 0.5933. Prediction-only operating modes exposed
 complementary errors: union increased
 recall to 0.7040 and pooled/source-macro F1 to 0.6339/0.6602, whereas
 intersection yielded precision 0.9907 with interval [0.9681, 1.0000].
+For normalized loss $L=rFN+FP$, where $r=C_{FN}/C_{FP}$, the exact Set B
+lower envelope selects intersection below $r=0.528$, joined OCR from
+0.528--0.625, OCR-first from 0.625--2.014, and union above 2.014; source
+bootstrapping quantifies decision stability around these sample-specific
+switches.
 Set-B-excluded checks retained positive pooled union-minus-Qwen effects on two
 83-source subsets (+0.0366 and +0.0440); stricter mutually disjoint 65-source
 checks showed +0.0325 and +0.0509, with one interval crossing zero.
@@ -112,9 +117,9 @@ diagnostics from the candidate-tag retrieval claim;
 contrasts on answer-hidden manifests;
 \item pooled and source-macro estimators, source-cluster uncertainty,
 TP/FP/FN accounting, and per-drawing candidate workload;
-\item a complete family of reference-free OCR--VLM operating modes plus
-overlap-audited frozen-rule checks that distinguish initial description from
-later stability evidence.
+\item a complete family of reference-free OCR--VLM operating modes, a
+cost-sensitive deployment rule, and overlap-audited frozen-rule checks that
+distinguish initial description from later stability evidence.
 \end{enumerate}
 
 \section{Related work and evaluation objective}
@@ -174,6 +179,18 @@ manifests and 13 raw output files from the primary controls and finds no
 \texttt{answer} or \texttt{cypher} field in model inputs. Immutable inputs
 and outputs are identified by SHA-256 in the release manifest.
 
+External-family evaluation uses the CC BY 4.0 DEXPI Public Example PIDs
+repository at frozen commit
+\texttt{a23d61e2e089eb2ca464cd552f9ae580a2785963} \cite{dexpi2024}.
+An automated pre-inference audit accepts only same-directory image/XML pairs
+with identical stems, derives tag candidates from structured XML fields, and
+retains a candidate only when the XML graphics also declare it as visible
+text. Duplicate image hashes are removed. Logical-test-case coverage is
+maximized before SHA-ranked vendor variants are added. This yields 35 images
+from 26 logical DEXPI test cases and 65 prefix-conditioned tag questions. The
+public manifests contain no answer-bearing field; XML-derived references are
+stored separately for scoring.
+
 \subsection{Source-split diagnostic}
 
 For split seeds 3, 17, 29, 43, and 71, question-random and source-isolated
@@ -214,6 +231,31 @@ detector maximum side 3072. A deterministic vertical prefix--suffix geometry
 join reconstructs split identifiers. The join uses coordinates and a legal
 tag grammar only; it does not consult any reference.
 
+Two further matrices retain the qualified Qwen 3072-side/512-token setting.
+The quality matrix crosses the three pairwise source-disjoint subsets (230
+drawings in total) with clean images, JPEG quality 70, Gaussian blur radius
+1, and 0.75$\times$ downsample-and-restore. Every quality condition is paired
+with a source-shuffled control; blur and resizing are saved losslessly so
+that only the declared intervention is introduced. This produces 24 cells
+and 7,360 predictions. The closest context-safe InternVL comparison uses 54
+non-overlapping 448-pixel tiles in a 9$\times$6 white-letterbox canvas, no
+thumbnail, and the same 512-token output cap. Its observed input tensor has
+32,514,048 elements versus 35,979,264 for the Qwen processor (9.63\% lower).
+Because tensor-element matching does not equalize encoders or information
+throughput, this is labelled a closest-safe budget comparison rather than an
+architecture-equivalent test. Correct, shuffled, and no-image cells are run
+in fresh model processes for each subset.
+
+The external DEXPI matrix uses Qwen at 3072-side/512 tokens under correct,
+source-shuffled, and no-image conditions, plus the same frozen full-image
+PaddleOCR family. The shuffled manifest is a one-to-one derangement with no
+fixed point and no mapping within the same logical DEXPI test case; among
+valid derangements, a fixed-seed search minimizes tag-set overlap. Neither
+image selection nor derangement uses a model output. DEXPI examples are
+engineering exchange test cases rather than an independent real-plant
+sample, so the experiment tests transfer to a second public drawing family
+without supporting a field-deployment claim.
+
 \subsection{Reference-free OCR--VLM operating modes}
 
 Let $Q_i$ and $O_i$ denote Qwen and geometry-joined OCR candidate sets for
@@ -242,6 +284,9 @@ Phase & Data role & Frozen before scoring & Allowed interpretation \\
 Pilot/configuration & Earlier development records & Prompt, parser, legal tag grammar, visual-input conditions & Select a measurement configuration; no confirmatory claim \\
 Primary qualification & Set B, 100 unseen sources & Source selection, Qwen condition, controls, estimators & Qualify or reject the bounded Qwen tag-retrieval claim \\
 Cross-scale replication & Three pairwise source-disjoint subsets & Three models, two prompts, three evidence conditions, estimators & Test requested-drawing direction and magnitude stability within PIDQA \\
+Paired quality robustness & Same three source-disjoint subsets & Qualified Qwen budget; four mild image conditions; correct/shuffled pairing & Test whether requested-drawing dependence changes under declared quality shifts \\
+Closest-safe cross-family budget & Same three source-disjoint subsets & InternVL 54-tile input; 512-token cap; three evidence conditions & Reduce visual-budget mismatch while retaining an architecture boundary \\
+External-family transfer & DEXPI, 35 images in 26 logical cases & Exact image/XML pairing; tag visibility rule; Qwen/OCR contracts; cross-case derangement & Test tag retrieval on a second public P\&ID family, not real-plant deployment \\
 Descriptive fusion & Set B predictions & Component outputs; rule family defined after component inspection & Describe operating modes and complementarity \\
 Frozen-rule transfer & Seed-29/31 predictions, with audited exclusions & All four set/fallback rules; no re-selection & Assess within-family direction and sensitivity, not external replication \\
 \bottomrule
@@ -279,6 +324,28 @@ Per-drawing workload is $|P_i|$, reported as median and interquartile range
 (IQR), together with false-candidate count $|P_i\setminus T_i|$. These values
 operationalize the number of candidates a deterministic downstream rule or
 engineering review stage would need to process.
+
+For an explicit deployment choice, false-positive cost is normalized to one
+and $r=C_{\mathrm{FN}}/C_{\mathrm{FP}}$. Each operating mode $m$ is assigned
+\[
+L_m(r)=r\,FN_m+FP_m.
+\]
+We compute the exact lower envelope of these four linear loss functions; no
+prediction is changed and no reference enters prediction construction. At
+each point on a predeclared log-spaced ratio grid, 10,000 source-cluster
+resamples recompute all four losses and split tie mass equally. These
+probabilities describe stability of the sample-derived engineering rule;
+they do not estimate universal miss or review costs.
+
+For each degraded condition, a paired difference-in-differences subtracts the
+clean correct-minus-shuffled F1 contrast from the corresponding degraded
+contrast. The same source indices are resampled, so the estimand is a change
+in requested-drawing dependence rather than a raw performance change. The
+three PIDQA subsets are pairwise source-disjoint and are reported both
+separately and pooled over 230 sources. DEXPI uncertainty instead resamples
+its 26 logical test cases; all vendor variants and questions belonging to a
+sampled logical case move together. This prevents vendor renderings of one
+test case from being treated as independent drawings.
 
 \section{Results}
 
@@ -421,6 +488,36 @@ disjoint 65-source subsets. The footer reports per-drawing candidate workload.}
 \label{fig:modes}
 \end{figure}
 
+\subsection{Cost-sensitive loss yields an explicit operating-mode rule}
+
+The observed count vectors turn the coverage--precision choices into four
+loss lines: intersection $242r+1$, joined OCR $189r+29$, OCR-first
+$173r+39$, and union $103r+180$. Their exact lower envelope selects
+intersection for $r<0.5283$, joined OCR for $0.5283<r<0.6250$, OCR-first for
+$0.6250<r<2.0143$, and union for $r>2.0143$; adjacent modes tie at each
+boundary. Thus a workflow in which a missed tag costs roughly the same as a
+false candidate selects OCR-first, while sufficiently miss-sensitive use
+selects union and sufficiently review-sensitive use selects intersection.
+
+Source resampling shows that uncertainty is concentrated near the switches,
+not at the low- and high-cost extremes. The descriptive pairwise switch-ratio
+medians [95\% intervals] are 0.532 [0.293, 0.958], 0.611 [0.176, 1.750], and
+2.000 [1.200, 3.323]. Joined OCR occupies a narrow point-estimate interval and
+has a maximum minimum-loss bootstrap probability of 0.347, whereas OCR-first
+reaches 0.889 near $r=1.25$. Figure~\ref{fig:costdecision} therefore reports
+both the exact count-based rule and its source-bootstrap decision stability.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figure_4_cost_sensitive_operating_modes_v8.pdf}
+\caption{Cost-sensitive operating-mode decision. Panel A plots normalized
+Set B loss $L=rFN+FP$ per drawing and highlights the exact lower envelope.
+Panel B shows each mode's probability of minimum loss over 10,000
+source-cluster resamples. Dashed lines mark the three point-estimate switches;
+predictions are unchanged by this scorer-only analysis.}
+\label{fig:costdecision}
+\end{figure}
+
 \subsection{Geometry joining and error complementarity explain the operating envelope}
 
 The reference-free OCR geometry rule performs 45 prefix--suffix joins. Relative
@@ -512,8 +609,11 @@ candidates and one false candidate per drawing. Intersection yields an
 approximately one-candidate conservative shortlist with precision 0.9907 but
 is empty on 41\% of drawings. OCR-first fallback provides a middle operating
 point with pooled F1 0.6228, a median of two candidates, and median zero false
-candidates. These counts allow a deployment owner to choose an operating mode
-according to missed-tag cost and downstream verification capacity.
+candidates. The cost rule makes that choice executable: use intersection when
+$C_{FN}/C_{FP}<0.528$, joined OCR in the narrow 0.528--0.625 interval,
+OCR-first from 0.625--2.014, and union above 2.014, while treating the
+bootstrap panel as uncertainty around a Set-B-derived rule rather than a
+universal tariff.
 
 \subsection{Why the evaluation contract matters}
 
@@ -564,11 +664,16 @@ Latency co-varies with generated output length and is not interpreted as pure
 image-encoding cost. Candidate workload is computed against benchmark
 references; field verification effort may differ.
 
-An external PID2Graph/OPEN100 branch could not be evaluated because the
-obtained archive failed official size, MD5, and ZIP-central-directory checks.
-No member was extracted and no external score is reported. Cross-family
-validation therefore remains an external-validity need, not a condition
-silently treated as completed.
+PID2Graph/OPEN100 was also screened as a possible second tag-retrieval family
+\cite{stuermer2025}.
+An HTTP byte-range audit read the official ZIP catalogue and materialized all
+24 image/GraphML members for 12 complete plans without downloading the full
+9.3-GB archive. The GraphML supplies structural node classes, edge classes,
+and bounding boxes, but no explicitly named text, tag, or identifier field;
+internal node IDs were not treated as visible drawing strings. PID2Graph is
+therefore retained as a structural-data resource and not assigned a tag-
+retrieval score. The external tag experiment instead uses the visibility-
+qualified DEXPI pairs described above.
 
 \section{Conclusion}
 
@@ -636,6 +741,8 @@ submitted text.
 \bibitem{du2020} Y. Du et al., \emph{PP-OCR: A practical ultra lightweight OCR system}, arXiv:2009.09941, 2020.
 \bibitem{bai2025} S. Bai et al., \emph{Qwen3-VL technical report}, arXiv:2511.21631, 2025.
 \bibitem{wang2025} W. Wang et al., \emph{InternVL3.5: Advancing open-source multimodal models in versatility, reasoning, and efficiency}, arXiv:2508.18265, 2025.
+\bibitem{dexpi2024} DEXPI e.V., \emph{Public Example PIDs}, GitLab repository, commit a23d61e2e089eb2ca464cd552f9ae580a2785963, CC BY 4.0, 2024. \url{https://gitlab.com/dexpi/TrainingTestCases}.
+\bibitem{stuermer2025} J. M. St\"urmer, M. Graumann, and T. Koch, \emph{PID2Graph}, dataset version v1, Zenodo, 2025. doi:10.5281/zenodo.14803338.
 \end{thebibliography}
 
 \end{document}

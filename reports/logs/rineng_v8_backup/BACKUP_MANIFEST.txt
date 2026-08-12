@@ -1,0 +1,17 @@
+backup_version=1
+created_utc=2026-08-12T06:43:29+00:00
+hostname=hd03-gpu2-0002
+source=/home/hera/pid_reliability_benchmark
+destination=/kwkj-k8s/hera_pid_reliability_backups/pid_reliability_benchmark_20260812T064200Z
+compression=zstd
+included=code,.git,data,outputs,reports,scoring_artifacts,paper_artifacts,manifests
+excluded=models,download_caches,python_caches,test_temp,partial_files,remote_sparse_zip_cache
+model_recovery_note=Model weights are excluded because they are reproducibly downloadable and occupy about 95 GB.
+archive=pid_reliability_benchmark_20260812T064200Z.tar.zst
+archive_bytes=1781606107
+archive_member_count=19088
+archive_sha256=c7217352208621b13b4c3db6dc9afebd36f19d586d21258cf03d2ebc7b3bfe59
+zstd_integrity=pass
+tar_catalog_integrity=pass
+completed_utc=2026-08-12T06:44:03+00:00
+status=pass

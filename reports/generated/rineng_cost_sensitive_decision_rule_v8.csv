@@ -1,0 +1,5 @@
+lower_ratio_inclusive,upper_ratio_exclusive,recommended_mode,method_id,engineering_role,loss_expression,tp,fp,fn,precision,recall
+0.0,0.5283018867924528,Intersection,set_intersection,precision-first,242*r+1,106,1,242,0.9906542056074766,0.3045977011494253
+0.5283018867924528,0.625,OCR joined,paddleocr_geometry,low-false-positive,189*r+29,159,29,189,0.8457446808510638,0.45689655172413796
+0.625,2.0142857142857142,OCR-first,ocr_if_nonempty_else_qwen,balanced fallback,173*r+39,175,39,173,0.8177570093457944,0.5028735632183908
+2.0142857142857142,infinity,Union,set_union,recall-first,103*r+180,245,180,103,0.5764705882352941,0.7040229885057471

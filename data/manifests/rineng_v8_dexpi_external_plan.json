@@ -1,0 +1,102 @@
+{
+  "analysis_boundary": "DEXPI examples are public engineering exchange test cases, not an independent real-plant population. Vendor variants share logical test cases and must be grouped by source_sheet for uncertainty estimates.",
+  "answer_isolation": {
+    "hidden_reference": "data/answer_store/rineng_v8_dexpi_external_hidden.jsonl",
+    "hidden_reference_sha256": "167d68a8e5370750eed28c66fd44b71354d92dbfd86bce5d668272b2aa85ef8a",
+    "public_manifests_answer_bearing_field_count": 0,
+    "scorer_reference_read_by_inference": false,
+    "status": "pass"
+  },
+  "conditions": [
+    "correct",
+    "shuffled",
+    "text_only",
+    "paddleocr_full_image"
+  ],
+  "datasets": [
+    {
+      "correct_input": "data/processed/rineng_v8_dexpi_external/dexpi_external_v8_correct_public.jsonl",
+      "correct_sha256": "7fa372fde7d8c55d1cb92e2ad166155dab965a8cceb9b355616e3467991fca9e",
+      "dataset_id": "dexpi_external_v8",
+      "logical_group_count": 26,
+      "record_count": 65,
+      "shuffled_input": "data/processed/rineng_v8_dexpi_external/dexpi_external_v8_shuffled_public.jsonl",
+      "shuffled_sha256": "06d1f0842f407011967f5dab116cb1717137fc3d9657d256aec899eba1c34dc6",
+      "source_count": 35
+    }
+  ],
+  "date": "2026-08-12",
+  "external_source": {
+    "commit": "a23d61e2e089eb2ca464cd552f9ae580a2785963",
+    "license": "CC BY 4.0",
+    "license_path": "LICENSE",
+    "license_sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+    "name": "DEXPI Public Example PIDs",
+    "url": "https://gitlab.com/dexpi/TrainingTestCases"
+  },
+  "frozen_inference": {
+    "do_sample": false,
+    "max_image_side": 3072,
+    "max_new_tokens": 512,
+    "ocr": "PaddleOCR 2.8.1 / PaddlePaddle 2.6.2 English full-image, no crop",
+    "prompt_id": "p0",
+    "qwen_model_label": "qwen3vl8b",
+    "qwen_model_path": "models/Qwen3-VL-8B-Instruct-modelscope"
+  },
+  "selection": {
+    "candidate_exact_pair_count": 86,
+    "logical_test_case_count": 26,
+    "maximum_requested_images": 64,
+    "minimum_requested_images": 30,
+    "model_output_used_for_selection": false,
+    "question_count": 65,
+    "rule": "exact same-directory image/XML stem; structured-tag/graphic-text intersection; unique image SHA-256; one per logical test case first, then SHA-ranked vendor variants",
+    "selected_image_count": 35,
+    "visibility_qualified_unique_pair_count": 35
+  },
+  "shuffled_control": {
+    "fixed_point_count": 0,
+    "mapping": {
+      "dexpi-v8-001-31ed1ba35a": "dexpi-v8-002-b2d125a626",
+      "dexpi-v8-002-b2d125a626": "dexpi-v8-006-436c8ecfef",
+      "dexpi-v8-003-9acb74f6f5": "dexpi-v8-012-542664570e",
+      "dexpi-v8-004-c08648fe42": "dexpi-v8-030-c11bfa8794",
+      "dexpi-v8-005-16b8d9c0f9": "dexpi-v8-004-c08648fe42",
+      "dexpi-v8-006-436c8ecfef": "dexpi-v8-007-c5d2eda06a",
+      "dexpi-v8-007-c5d2eda06a": "dexpi-v8-023-bc44d21482",
+      "dexpi-v8-008-b7e1cd71d9": "dexpi-v8-014-6da2895601",
+      "dexpi-v8-009-7b104d42a1": "dexpi-v8-018-b105fb7fa9",
+      "dexpi-v8-010-65bbee7981": "dexpi-v8-028-4e81818fc4",
+      "dexpi-v8-011-d216e2ece4": "dexpi-v8-008-b7e1cd71d9",
+      "dexpi-v8-012-542664570e": "dexpi-v8-032-805f7a6d35",
+      "dexpi-v8-013-eb01d830d5": "dexpi-v8-033-6f8995e091",
+      "dexpi-v8-014-6da2895601": "dexpi-v8-011-d216e2ece4",
+      "dexpi-v8-015-b39902ba6d": "dexpi-v8-031-202a510ab9",
+      "dexpi-v8-016-1e39ff3e77": "dexpi-v8-020-46539c8fa4",
+      "dexpi-v8-017-73ec3ee7cc": "dexpi-v8-009-7b104d42a1",
+      "dexpi-v8-018-b105fb7fa9": "dexpi-v8-024-93e12592d5",
+      "dexpi-v8-019-7332b52a8e": "dexpi-v8-001-31ed1ba35a",
+      "dexpi-v8-020-46539c8fa4": "dexpi-v8-021-49329d21d3",
+      "dexpi-v8-021-49329d21d3": "dexpi-v8-034-ecad13a079",
+      "dexpi-v8-022-59390eca59": "dexpi-v8-010-65bbee7981",
+      "dexpi-v8-023-bc44d21482": "dexpi-v8-025-202a14aee1",
+      "dexpi-v8-024-93e12592d5": "dexpi-v8-022-59390eca59",
+      "dexpi-v8-025-202a14aee1": "dexpi-v8-005-16b8d9c0f9",
+      "dexpi-v8-026-0803dfaf31": "dexpi-v8-017-73ec3ee7cc",
+      "dexpi-v8-027-25817690d3": "dexpi-v8-019-7332b52a8e",
+      "dexpi-v8-028-4e81818fc4": "dexpi-v8-035-5be3cfccaa",
+      "dexpi-v8-029-ca31cfac53": "dexpi-v8-027-25817690d3",
+      "dexpi-v8-030-c11bfa8794": "dexpi-v8-016-1e39ff3e77",
+      "dexpi-v8-031-202a510ab9": "dexpi-v8-026-0803dfaf31",
+      "dexpi-v8-032-805f7a6d35": "dexpi-v8-003-9acb74f6f5",
+      "dexpi-v8-033-6f8995e091": "dexpi-v8-013-eb01d830d5",
+      "dexpi-v8-034-ecad13a079": "dexpi-v8-029-ca31cfac53",
+      "dexpi-v8-035-5be3cfccaa": "dexpi-v8-015-b39902ba6d"
+    },
+    "one_to_one": true,
+    "rule": "50,000-seed-search one-to-one cross-test-case minimum tag-Jaccard derangement",
+    "same_logical_test_case_count": 0
+  },
+  "status": "frozen_before_inference",
+  "version": "rineng-v8-dexpi-external"
+}

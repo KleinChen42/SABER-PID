@@ -1,0 +1,9 @@
+status=pass
+created_utc=2026-08-12T07:47:22+00:00
+source=/home/hera/pid_reliability_benchmark
+archive=/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/snapshots/rineng_v8_post_dexpi_freeze.tar.zst
+archive_bytes=1938251798
+archive_member_count=758
+archive_sha256=ff1fdc899b6e8ad1e74ace8975b260d30fbb007b9f2b2e29a9a21ad7bccf152a
+zstd_integrity=pass
+tar_catalog_integrity=pass

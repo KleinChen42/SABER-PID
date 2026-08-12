@@ -1,0 +1,9 @@
+status=pass
+created_utc=2026-08-12T07:22:17+00:00
+source=/home/hera/pid_reliability_benchmark
+archive=/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/snapshots/rineng_v8_preparation.tar.zst
+archive_bytes=1938262815
+archive_member_count=746
+archive_sha256=006f833adc9b5a178f79e445ab81b086c02e4cf17639f6b06e7e331cfb8438cb
+zstd_integrity=pass
+tar_catalog_integrity=pass

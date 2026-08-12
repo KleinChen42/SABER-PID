@@ -1,0 +1,7 @@
+Backup started: 2026-08-12T06:43:29+00:00
+Source: /home/hera/pid_reliability_benchmark
+Destination: /kwkj-k8s/hera_pid_reliability_backups/pid_reliability_benchmark_20260812T064200Z
+Backup complete: /kwkj-k8s/hera_pid_reliability_backups/pid_reliability_benchmark_20260812T064200Z/pid_reliability_benchmark_20260812T064200Z.tar.zst
+c7217352208621b13b4c3db6dc9afebd36f19d586d21258cf03d2ebc7b3bfe59  /kwkj-k8s/hera_pid_reliability_backups/pid_reliability_benchmark_20260812T064200Z/pid_reliability_benchmark_20260812T064200Z.tar.zst
+Archive bytes: 1781606107
+Archive members: 19088

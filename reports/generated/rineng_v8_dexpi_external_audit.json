@@ -1,0 +1,1288 @@
+{
+  "asset_root": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images",
+  "failed_pair_count": 0,
+  "failed_pairs": [],
+  "plan": "data/manifests/rineng_v8_dexpi_external_plan.json",
+  "plan_sha256": "bd1a6d3b5b445931313e6e4c9cd3a6bffc5baa8f73bbe0d5569fdd164501bd78",
+  "selected_sources": [
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-001-31ed1ba35a.png",
+      "asset_sha256": "c366be31e96ab37492e109dfa8bc2d92c96f0dbbf297d90071ddee7355ce2733",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 6,
+      "image_suffix": ".png",
+      "logical_group": "E02",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "t": [
+          "t4750"
+        ]
+      },
+      "selection_hash": "066d0cfa4b63437cc496905f28572c2634ef034932133a834aefd6575cacba92",
+      "source_id": "dexpi-v8-001-31ed1ba35a",
+      "source_image": "dexpi 1.2/example pids/E02 Tank with Nozzles/E02V01-HEX.EX02.png",
+      "source_image_sha256": "31ed1ba35ad71f36160aa07a00810ee8622c836f3ffdd22cd3e44ff3c23c38bf",
+      "source_xml": "dexpi 1.2/example pids/E02 Tank with Nozzles/E02V01-HEX.EX02.xml",
+      "source_xml_sha256": "fc461f3d32a47880c63bdc07f3f757a15f04977c39b6fd57fa4953003ef4369c",
+      "structured_candidate_count": 1,
+      "tags": [
+        "t4750"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 11
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-002-b2d125a626.png",
+      "asset_sha256": "486130ad5e03d038f93c198c4a8ba67b01deb6cdb8cdfd430aa98527209249eb",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 1,
+      "image_suffix": ".png",
+      "logical_group": "E01",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "t": [
+          "t100"
+        ]
+      },
+      "selection_hash": "0bfac29f1cbf0a086b10ef50e17640e8465b468a46550e39d5a683bed05c79e1",
+      "source_id": "dexpi-v8-002-b2d125a626",
+      "source_image": "dexpi 1.2/example pids/E01 Tank/E01V01-HEX.EX02.png",
+      "source_image_sha256": "b2d125a6261f5f660a4c679dd62e44f0e81f13965b8f07390f5c990013816fc0",
+      "source_xml": "dexpi 1.2/example pids/E01 Tank/E01V01-HEX.EX02.xml",
+      "source_xml_sha256": "9e355733bf89769a33602143c48e2ad3d28a465ce4ecb04454521e32c09c91eb",
+      "structured_candidate_count": 1,
+      "tags": [
+        "t100"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 1
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-003-9acb74f6f5.png",
+      "asset_sha256": "594cafa96000e17ab944859c559033c831ae88a42e51a4c8bcc14abb3cfcdf2b",
+      "asset_size": [
+        4096,
+        2896
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 0,
+      "image_suffix": ".pdf",
+      "logical_group": "I08",
+      "pdf_embedded_text_confirmed_tag_count": 2,
+      "prefixes": {
+        "p": [
+          "p001",
+          "p002"
+        ],
+        "u": [
+          "u003",
+          "u005"
+        ]
+      },
+      "selection_hash": "1428ae9540bf2a7dd126eb04db41cc3edc17a4be6d39f220115847e6e7115520",
+      "source_id": "dexpi-v8-003-9acb74f6f5",
+      "source_image": "dexpi 1.2/example pids/I08 Local pressure indication, CCR pressure indication, alarms and switches/I08V01-SAG.EX01.pdf",
+      "source_image_sha256": "9acb74f6f5e38bd92f471fec8d8c52c8fc9bc16b0671131201966b3354cf2b9d",
+      "source_xml": "dexpi 1.2/example pids/I08 Local pressure indication, CCR pressure indication, alarms and switches/I08V01-SAG.EX01.xml",
+      "source_xml_sha256": "3fa238d1d4c43454d3e52625ac2bccf49b85b918076e22384410a929f2a3eff8",
+      "structured_candidate_count": 6,
+      "tags": [
+        "p001",
+        "p002",
+        "u003",
+        "u005"
+      ],
+      "visible_structured_tag_count": 4,
+      "xml_graphic_text_count": 12
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-004-c08648fe42.png",
+      "asset_sha256": "1ff32fa3446cee473d08de5971b234fc3f6b630976e6aaf1842cc487fa1115aa",
+      "asset_size": [
+        1097,
+        605
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 4,
+      "image_suffix": ".png",
+      "logical_group": "P01",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h1009"
+        ],
+        "p": [
+          "p4712"
+        ]
+      },
+      "selection_hash": "230829828d21cd37d6ba5b0daef1fec4c00f831122ae6be85f5043b95d5abbbe",
+      "source_id": "dexpi-v8-004-c08648fe42",
+      "source_image": "dexpi 1.2/example pids/P01 Pipe FromTo Nozzles/P01V01-AUD.EX01.png",
+      "source_image_sha256": "c08648fe42dc801a8c32921fdf2c5f067f08d7679430b67d2f4cc9e72aa4eeba",
+      "source_xml": "dexpi 1.2/example pids/P01 Pipe FromTo Nozzles/P01V01-AUD.EX01.xml",
+      "source_xml_sha256": "f173ab8acb12c92d101fd6880be23370bacfff67318f437ce5f49bd735d63899",
+      "structured_candidate_count": 2,
+      "tags": [
+        "h1009",
+        "p4712"
+      ],
+      "visible_structured_tag_count": 2,
+      "xml_graphic_text_count": 5
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-005-16b8d9c0f9.png",
+      "asset_sha256": "903aeec88242a81e0ed4d2953829cde4aa8be2fcf53d2ec69e235b59bf865ee3",
+      "asset_size": [
+        4096,
+        2896
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 0,
+      "image_suffix": ".pdf",
+      "logical_group": "I10",
+      "pdf_embedded_text_confirmed_tag_count": 1,
+      "prefixes": {
+        "l": [
+          "l001"
+        ]
+      },
+      "selection_hash": "23f30eaf594c0dafe68d3d6d8ee61e7888ebcb5b78f4948d6c06ec1e258eb78a",
+      "source_id": "dexpi-v8-005-16b8d9c0f9",
+      "source_image": "dexpi 1.2/example pids/I10 Measurement/I10V01-SAG.EX01.pdf",
+      "source_image_sha256": "16b8d9c0f9dd94347c6f66e74aaeac906b8195b92df6e8db300cbf07187814b0",
+      "source_xml": "dexpi 1.2/example pids/I10 Measurement/I10V01-SAG.EX01.xml",
+      "source_xml_sha256": "9056157097e87dc232e094562c4f0ff3e02a6b4af87db27962593785e9a30cf1",
+      "structured_candidate_count": 3,
+      "tags": [
+        "l001"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 2
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-006-436c8ecfef.png",
+      "asset_sha256": "e80c0f20e32736e82e5a17bef9d616b352734cd6aa5da4935ff85758b2d49d7e",
+      "asset_size": [
+        4096,
+        2896
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 1,
+      "image_suffix": ".pdf",
+      "logical_group": "I09",
+      "pdf_embedded_text_confirmed_tag_count": 2,
+      "prefixes": {
+        "b": [
+          "b001"
+        ],
+        "l": [
+          "l001"
+        ]
+      },
+      "selection_hash": "2bc771b7b24763d329854e648e6ef59792dccbbc1eb3e469d5f0cc44cacca558",
+      "source_id": "dexpi-v8-006-436c8ecfef",
+      "source_image": "dexpi 1.2/example pids/I09 Measurement/I09V01-SAG.EX01.pdf",
+      "source_image_sha256": "436c8ecfef0cb0217dc917b00785d01f6184363bfde342d0ae0c2a0a34b4c11b",
+      "source_xml": "dexpi 1.2/example pids/I09 Measurement/I09V01-SAG.EX01.xml",
+      "source_xml_sha256": "c1060702c2fcfebfb443356885850ff76fd001486dea59f7d238a9b57ee0b8ce",
+      "structured_candidate_count": 3,
+      "tags": [
+        "b001",
+        "l001"
+      ],
+      "visible_structured_tag_count": 2,
+      "xml_graphic_text_count": 3
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-007-c5d2eda06a.png",
+      "asset_sha256": "8ef8fd799110ced03f77c58f6fae790e3bca8ab4afa9010114f53bdeff6f05ad",
+      "asset_size": [
+        4096,
+        2897
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 33,
+      "image_suffix": ".pdf",
+      "logical_group": "C01",
+      "pdf_embedded_text_confirmed_tag_count": 27,
+      "prefixes": {
+        "c": [
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ],
+        "h": [
+          "h1007",
+          "h1008"
+        ],
+        "hs": [
+          "hs001"
+        ],
+        "hv": [
+          "hv4750-03"
+        ],
+        "n": [
+          "n1",
+          "n2",
+          "n3",
+          "n4",
+          "n5",
+          "n6",
+          "n7",
+          "n8"
+        ],
+        "p": [
+          "p4711",
+          "p4712"
+        ],
+        "pi": [
+          "pi002"
+        ],
+        "picsa": [
+          "picsa004"
+        ],
+        "pv": [
+          "pv4712-02"
+        ],
+        "r": [
+          "r001",
+          "r002"
+        ],
+        "sv": [
+          "sv104-01"
+        ],
+        "t": [
+          "t4750"
+        ],
+        "ticsa": [
+          "ticsa003"
+        ],
+        "tv": [
+          "tv4750-03"
+        ],
+        "v": [
+          "v001",
+          "v002"
+        ]
+      },
+      "selection_hash": "2e0f8f66d76f48a71f81ddb069818f2434f96d1ce4e8f2baa6ced277f0743008",
+      "source_id": "dexpi-v8-007-c5d2eda06a",
+      "source_image": "dexpi 1.2/example pids/C01 the complete DEXPI PnID/C01V01-SAG.EX02.pdf",
+      "source_image_sha256": "c5d2eda06ad01eb5ba11f5c175bfd5717c1d50a3a7014fcc226cfbc088d45816",
+      "source_xml": "dexpi 1.2/example pids/C01 the complete DEXPI PnID/C01V01-SAG.EX02.XML",
+      "source_xml_sha256": "036511d902eea8ece08f12821fea50c1532c199dd5846d93dc78e318e78b8dd0",
+      "structured_candidate_count": 36,
+      "tags": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "h1007",
+        "h1008",
+        "hs001",
+        "hv4750-03",
+        "n1",
+        "n2",
+        "n3",
+        "n4",
+        "n5",
+        "n6",
+        "n7",
+        "n8",
+        "p4711",
+        "p4712",
+        "pi002",
+        "picsa004",
+        "pv4712-02",
+        "r001",
+        "r002",
+        "sv104-01",
+        "t4750",
+        "ticsa003",
+        "tv4750-03",
+        "v001",
+        "v002"
+      ],
+      "visible_structured_tag_count": 29,
+      "xml_graphic_text_count": 271
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-008-b7e1cd71d9.png",
+      "asset_sha256": "f04b7e2eb42f3ccfcd2ed6cc3accc1b5ab18326e9260eb5f375bbb68f4001d46",
+      "asset_size": [
+        462,
+        585
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 5,
+      "image_suffix": ".png",
+      "logical_group": "E02",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "t": [
+          "t1001"
+        ]
+      },
+      "selection_hash": "3f860bcb3067a6821d94d6beddb84e8af23b537b1f0e7d3bde13ff1469faf71e",
+      "source_id": "dexpi-v8-008-b7e1cd71d9",
+      "source_image": "dexpi 1.2/example pids/E02 Tank with Nozzles/E02V01-AUD.EX01.png",
+      "source_image_sha256": "b7e1cd71d98adfb01737a6b3fe90e7ef57c204fc1a6bd3429bd6fb7d9019424f",
+      "source_xml": "dexpi 1.2/example pids/E02 Tank with Nozzles/E02V01-AUD.EX01.xml",
+      "source_xml_sha256": "c0632082db2e4a1168966c729d59ebfcb037e8e4935eb62b327e18696817fa4b",
+      "structured_candidate_count": 1,
+      "tags": [
+        "t1001"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 5
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-009-7b104d42a1.png",
+      "asset_sha256": "9c605e614e2a3e2193f410d662a4614fe1543c40c83c3da3125d23a4562eff95",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 3,
+      "image_suffix": ".png",
+      "logical_group": "P01",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h1008"
+        ],
+        "p": [
+          "p4712"
+        ]
+      },
+      "selection_hash": "40e4c2ef8646f1bf06c242be4501ba27724d99fac445db2ed6c45153753a759a",
+      "source_id": "dexpi-v8-009-7b104d42a1",
+      "source_image": "dexpi 1.2/example pids/P01 Pipe FromTo Nozzles/P01V01-HEX.EX03.png",
+      "source_image_sha256": "7b104d42a155e1de022ca49d473ff42deb7c5cbf1b30e1db2be91a16f9a6e289",
+      "source_xml": "dexpi 1.2/example pids/P01 Pipe FromTo Nozzles/P01V01-HEX.EX03.xml",
+      "source_xml_sha256": "34b734a4b09714d0e2658fe089b5e253c34b9601510f06a00afa43d8e7bab04b",
+      "structured_candidate_count": 2,
+      "tags": [
+        "h1008",
+        "p4712"
+      ],
+      "visible_structured_tag_count": 2,
+      "xml_graphic_text_count": 5
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-010-65bbee7981.png",
+      "asset_sha256": "32325e0c3d08f1a6355d98e295158a8651230785af2f3d6a8853f23790e11eb4",
+      "asset_size": [
+        861,
+        439
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 7,
+      "image_suffix": ".png",
+      "logical_group": "E06",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h1009"
+        ],
+        "p": [
+          "p4713"
+        ]
+      },
+      "selection_hash": "44496d7c1d08ad8aec27a967b37178e346a2f929ca7f04813374c94e6b9b00ef",
+      "source_id": "dexpi-v8-010-65bbee7981",
+      "source_image": "dexpi 1.2/example pids/E06 Pump, HeatExchanger, Nozzles Connected With PNS/E06V01-AUD.EX01.png",
+      "source_image_sha256": "65bbee79811514eb3e225e4c9a7d6a4cb0af0153dd27245dc66d186f01b69ed9",
+      "source_xml": "dexpi 1.2/example pids/E06 Pump, HeatExchanger, Nozzles Connected With PNS/E06V01-AUD.EX01.xml",
+      "source_xml_sha256": "5899e2ca1c0a11bb09f11bdb6d2bd169953b38e1a791e1ba847f068dfe529036",
+      "structured_candidate_count": 2,
+      "tags": [
+        "h1009",
+        "p4713"
+      ],
+      "visible_structured_tag_count": 2,
+      "xml_graphic_text_count": 9
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-011-d216e2ece4.png",
+      "asset_sha256": "6035bb8ec4536e241b5ea813b7c3dec5d0162e2ab75f61c54454fb70f5e3d067",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 4,
+      "image_suffix": ".png",
+      "logical_group": "I09",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "t": [
+          "t09"
+        ]
+      },
+      "selection_hash": "45ddedc50cd2d387616a032d846efaa552ee6981ce0c261439c8b03a293a21ae",
+      "source_id": "dexpi-v8-011-d216e2ece4",
+      "source_image": "dexpi 1.2/example pids/I09 Measurement/I09V02-HEX.EX03.png",
+      "source_image_sha256": "d216e2ece4c32aee27ddd6210ddb7df1598dc27d606c5a7310bd5c50cf2ed5b5",
+      "source_xml": "dexpi 1.2/example pids/I09 Measurement/I09V02-HEX.EX03.xml",
+      "source_xml_sha256": "0e0d94ec020b4084751472f0fe1d71c58c860fe19ff33a09844355f24db37c51",
+      "structured_candidate_count": 1,
+      "tags": [
+        "t09"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 45
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-012-542664570e.png",
+      "asset_sha256": "88a3617625e049d29985a08f13c66ed19f88891136de04fed821f4f8d4d78253",
+      "asset_size": [
+        735,
+        813
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 3,
+      "image_suffix": ".png",
+      "logical_group": "P03",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h1008"
+        ]
+      },
+      "selection_hash": "49b38eab90fdb6cf7864aa616736e18058218bcee87e4af31a8e19129b6c4d36",
+      "source_id": "dexpi-v8-012-542664570e",
+      "source_image": "dexpi 1.2/example pids/P03 Pipe With Edge/P03V01-AUD.EX01.png",
+      "source_image_sha256": "542664570e35ad1e8e564d87ff6a7af92f4dad1d2218a7fc4a883490060e35f3",
+      "source_xml": "dexpi 1.2/example pids/P03 Pipe With Edge/P03V01-AUD.EX01.xml",
+      "source_xml_sha256": "599146df68e1ac86b41b2d0903536d0ab6dd1ac12a62302647ae9725ed1f44ff",
+      "structured_candidate_count": 1,
+      "tags": [
+        "h1008"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 3
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-013-eb01d830d5.png",
+      "asset_sha256": "44fa39108b532ea7649d275e3c8677cefb57192ef606ce943b62020846191b0b",
+      "asset_size": [
+        315,
+        195
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 2,
+      "image_suffix": ".jpg",
+      "logical_group": "I03",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "b": [
+          "b001"
+        ],
+        "lisca": [
+          "lisca03"
+        ],
+        "lv": [
+          "lv03"
+        ]
+      },
+      "selection_hash": "4d298c8b91b6ba9826432311550797ca84ef218ff8841363ff0b21c4b3fb4d2c",
+      "source_id": "dexpi-v8-013-eb01d830d5",
+      "source_image": "dexpi 1.2/example pids/I03 Measurement and Control/I03V01-SAG.EX01.jpg",
+      "source_image_sha256": "eb01d830d59dc34f24e6de7df9e3c51123b463f3e6a5605ee6cf80cf50641e53",
+      "source_xml": "dexpi 1.2/example pids/I03 Measurement and Control/I03V01-SAG.EX01.xml",
+      "source_xml_sha256": "11d48f506eeea32ed91981c40f9b6e1cb0491b7ca23494a34a321f2ef9ebaf5e",
+      "structured_candidate_count": 6,
+      "tags": [
+        "b001",
+        "lisca03",
+        "lv03"
+      ],
+      "visible_structured_tag_count": 3,
+      "xml_graphic_text_count": 4
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-014-6da2895601.png",
+      "asset_sha256": "49dc3a7866d3c9ef2aae557ed7b80b95de62a23fec4b276840f377f5a8708370",
+      "asset_size": [
+        1303,
+        768
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 2,
+      "image_suffix": ".png",
+      "logical_group": "I01",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "n": [
+          "n01"
+        ],
+        "r": [
+          "r001"
+        ]
+      },
+      "selection_hash": "4d6d0fd3fbe06e11ca93a4f8f63f0a2b5e6c448710c28e4a0b0bca45e2bdcf74",
+      "source_id": "dexpi-v8-014-6da2895601",
+      "source_image": "dexpi 1.2/example pids/I01 Measurement/I01V01-SAG.EX01.png",
+      "source_image_sha256": "6da28956018864806a6a6456ee8bc7f8911bed9873956a749b14bba9e76e432d",
+      "source_xml": "dexpi 1.2/example pids/I01 Measurement/I01V01-SAG.EX01.xml",
+      "source_xml_sha256": "72b6c61c776d9db953a03cd321462390b95617f1decbffeff0d71fcf5618a985",
+      "structured_candidate_count": 6,
+      "tags": [
+        "n01",
+        "r001"
+      ],
+      "visible_structured_tag_count": 2,
+      "xml_graphic_text_count": 2
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-015-b39902ba6d.png",
+      "asset_sha256": "de9432d8fa7567e28ac8c2fcb608b065b7749ea35cdc68b55dc70047bcaa47b5",
+      "asset_size": [
+        4096,
+        2894
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 37,
+      "image_suffix": ".pdf",
+      "logical_group": "C01",
+      "pdf_embedded_text_confirmed_tag_count": 5,
+      "prefixes": {
+        "h": [
+          "h1007",
+          "h1008"
+        ],
+        "p": [
+          "p4711",
+          "p4712"
+        ],
+        "t": [
+          "t4750"
+        ]
+      },
+      "selection_hash": "4ebcf63714d84609ebe15be51622f7061b052742409d90595bec8d5a3aac3ce5",
+      "source_id": "dexpi-v8-015-b39902ba6d",
+      "source_image": "dexpi 1.2/example pids/C01 the complete DEXPI PnID/C01V01-HEX.EX02.pdf",
+      "source_image_sha256": "b39902ba6d7e63b3f3b50652d78bc0bc1e7e1ff04b476588234450f3405cca47",
+      "source_xml": "dexpi 1.2/example pids/C01 the complete DEXPI PnID/C01V01-HEX.EX02.xml",
+      "source_xml_sha256": "b8aa30ffa95bc6db59564df7d616826fc200345e0704c01ff95edc2009e48df7",
+      "structured_candidate_count": 5,
+      "tags": [
+        "h1007",
+        "h1008",
+        "p4711",
+        "p4712",
+        "t4750"
+      ],
+      "visible_structured_tag_count": 5,
+      "xml_graphic_text_count": 249
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-016-1e39ff3e77.png",
+      "asset_sha256": "ffc55c63a07d5a11b6505ca9cd61914558ab8c5733ee7fbd3858d486a9f33f8a",
+      "asset_size": [
+        906,
+        492
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 6,
+      "image_suffix": ".png",
+      "logical_group": "E05",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h1009"
+        ],
+        "p": [
+          "p4713"
+        ]
+      },
+      "selection_hash": "51fe415a6d0f45142d7708a37f35a39849cc88b0edaac781eed37c069da5ae67",
+      "source_id": "dexpi-v8-016-1e39ff3e77",
+      "source_image": "dexpi 1.2/example pids/E05 Pump With Nozzles And HeatExchanger With Nozzles/E05V01-AUD.EX01.png",
+      "source_image_sha256": "1e39ff3e775296b56d9048432cb669eb175229ac51396a13ac5787d657f5d0b6",
+      "source_xml": "dexpi 1.2/example pids/E05 Pump With Nozzles And HeatExchanger With Nozzles/E05V01-AUD.EX01.xml",
+      "source_xml_sha256": "48f112c1df95e01996701aa77e2d4b0e7e42bcfcd7dee585c68c6aa7f2ff548f",
+      "structured_candidate_count": 2,
+      "tags": [
+        "h1009",
+        "p4713"
+      ],
+      "visible_structured_tag_count": 2,
+      "xml_graphic_text_count": 6
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-017-73ec3ee7cc.png",
+      "asset_sha256": "17cc57240c476564c7d67ae329f31075ba4dae8dc38474f19ec347e91d185ff5",
+      "asset_size": [
+        284,
+        154
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 2,
+      "image_suffix": ".jpg",
+      "logical_group": "I04",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "fic": [
+          "fic04"
+        ],
+        "ft": [
+          "ft04"
+        ],
+        "fv": [
+          "fv04"
+        ]
+      },
+      "selection_hash": "6728996b58d27d0702fda78dd45206e57760d8e0b1e3685b9b82c672c9abc1d7",
+      "source_id": "dexpi-v8-017-73ec3ee7cc",
+      "source_image": "dexpi 1.2/example pids/I04 Measurement and Control/I04V01-SAG.EX01.jpg",
+      "source_image_sha256": "73ec3ee7cca86719622fb83cbf55a67cf434b713045570abb75bd896b9ceb18e",
+      "source_xml": "dexpi 1.2/example pids/I04 Measurement and Control/I04V01-SAG.EX01.xml",
+      "source_xml_sha256": "5d5c26eeed2f9a66aebfe9832b479d2becbdc66e35d4b9e2268eabb90e65a8e4",
+      "structured_candidate_count": 4,
+      "tags": [
+        "fic04",
+        "ft04",
+        "fv04"
+      ],
+      "visible_structured_tag_count": 3,
+      "xml_graphic_text_count": 4
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-018-b105fb7fa9.png",
+      "asset_sha256": "d4cd9d168ee91cd8698bebb9af1ae0e926c1310382eaca05a2f197a1315f3c01",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 11,
+      "image_suffix": ".png",
+      "logical_group": "C03",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "p": [
+          "p4704"
+        ],
+        "t": [
+          "t4704"
+        ]
+      },
+      "selection_hash": "69926a0ae8c22ed2095a51f829ad753b6b39ead8f0feaa1295f1a947a8008c29",
+      "source_id": "dexpi-v8-018-b105fb7fa9",
+      "source_image": "dexpi 1.2/example pids/C03 DEXPI Example Tank Displ Pump Pipe with Tee/C03V01-HEX.EX02.png",
+      "source_image_sha256": "b105fb7fa95b45d988b683aa2fef18fd63562fd6fd5a28e63c45659639172794",
+      "source_xml": "dexpi 1.2/example pids/C03 DEXPI Example Tank Displ Pump Pipe with Tee/C03V01-HEX.EX02.xml",
+      "source_xml_sha256": "19b02271052a34cf53484919a844b0d2d2c603bc439dc2486a51025d2702ec43",
+      "structured_candidate_count": 2,
+      "tags": [
+        "p4704",
+        "t4704"
+      ],
+      "visible_structured_tag_count": 2,
+      "xml_graphic_text_count": 35
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-019-7332b52a8e.png",
+      "asset_sha256": "b46b239380bbc72f53eef6a93c2ae4476ab077d1485355f55874d41e0e90b95e",
+      "asset_size": [
+        4096,
+        2896
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 0,
+      "image_suffix": ".pdf",
+      "logical_group": "I11",
+      "pdf_embedded_text_confirmed_tag_count": 1,
+      "prefixes": {
+        "f": [
+          "f001"
+        ]
+      },
+      "selection_hash": "6ddf46ea19668f97835b76853e4439935ce3705c7c68fed2e257fb178e5fceba",
+      "source_id": "dexpi-v8-019-7332b52a8e",
+      "source_image": "dexpi 1.2/example pids/I11 Measurement/I11V01-SAG.EX01.pdf",
+      "source_image_sha256": "7332b52a8e3e528983e02e23caf05d6c0794dcff12692fa7f68319be5230ff98",
+      "source_xml": "dexpi 1.2/example pids/I11 Measurement/I11V01-SAG.EX01.xml",
+      "source_xml_sha256": "fadab5cd577b065d55f05bf045b9598d16c0691e4c3049c07bf71bae65f0d0ef",
+      "structured_candidate_count": 2,
+      "tags": [
+        "f001"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 2
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-020-46539c8fa4.png",
+      "asset_sha256": "366a3c5920f70b825b12ff13b0ccc98f4fc3098c798fa309c4dd7c91e989e012",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 2,
+      "image_suffix": ".png",
+      "logical_group": "I01",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "t": [
+          "t01"
+        ]
+      },
+      "selection_hash": "70ec63fc0fc17e0fdadb4f3d6ff09ae8760422caad8ca7dba22dc84844092496",
+      "source_id": "dexpi-v8-020-46539c8fa4",
+      "source_image": "dexpi 1.2/example pids/I01 Measurement/I01V02-HEX.EX03.png",
+      "source_image_sha256": "46539c8fa49a021105b54c2ed07f58dcd18d8c4fa4cf323f2b77f11c30dd2749",
+      "source_xml": "dexpi 1.2/example pids/I01 Measurement/I01V02-HEX.EX03.xml",
+      "source_xml_sha256": "9e59fde2164445ec116e84b5c298b6b389e4661205f4e7d0b5df2f99faeedeb3",
+      "structured_candidate_count": 1,
+      "tags": [
+        "t01"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 3
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-021-49329d21d3.png",
+      "asset_sha256": "415fc15c363b8c1b03be1a5c9f483650e7aab9c466f0a8a009c63004dada92e6",
+      "asset_size": [
+        4096,
+        2896
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 0,
+      "image_suffix": ".pdf",
+      "logical_group": "I07",
+      "pdf_embedded_text_confirmed_tag_count": 2,
+      "prefixes": {
+        "p": [
+          "p001",
+          "p002"
+        ],
+        "u": [
+          "u003"
+        ]
+      },
+      "selection_hash": "76956ef99b3a072dfc653ec87784db4e515aa1b417828380d240e5f42f87fb5f",
+      "source_id": "dexpi-v8-021-49329d21d3",
+      "source_image": "dexpi 1.2/example pids/I07 Local and CCR pressure indic., alarm and safety switch/I07V01-SAG.EX01.pdf",
+      "source_image_sha256": "49329d21d3cef0ca35e9adf07ad94302623525d9c2836162498bee08bba68550",
+      "source_xml": "dexpi 1.2/example pids/I07 Local and CCR pressure indic., alarm and safety switch/I07V01-SAG.EX01.xml",
+      "source_xml_sha256": "5dd15b98ace9f841963e6914e227bd5a7544e71ae656c206b1db5cc137bef5fa",
+      "structured_candidate_count": 5,
+      "tags": [
+        "p001",
+        "p002",
+        "u003"
+      ],
+      "visible_structured_tag_count": 3,
+      "xml_graphic_text_count": 8
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-022-59390eca59.png",
+      "asset_sha256": "84d01e49779865706c19de9d1ecd56715e29edc45e26a92fe4af26e971cb0b7f",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 10,
+      "image_suffix": ".png",
+      "logical_group": "C04",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h4705"
+        ],
+        "p": [
+          "p4705"
+        ]
+      },
+      "selection_hash": "7b53edcff5a74938f8dcfbee4bd8729da83bdbb5f0997476ae21465092d129a5",
+      "source_id": "dexpi-v8-022-59390eca59",
+      "source_image": "dexpi 1.2/example pids/C04 DEXPI Example Pump Plate Heat Exchanger/C04V01-HEX.EX02.png",
+      "source_image_sha256": "59390eca5937aeb964be1a37386d9b3e71fd4cce4c39bc16f3ee79807ec7e1b1",
+      "source_xml": "dexpi 1.2/example pids/C04 DEXPI Example Pump Plate Heat Exchanger/C04V01-HEX.EX02.xml",
+      "source_xml_sha256": "691aaf62b56ed0bf421e5e52b344fd3c7dd1f7253f87d856f6ee7e9ad8c7bb6c",
+      "structured_candidate_count": 2,
+      "tags": [
+        "h4705",
+        "p4705"
+      ],
+      "visible_structured_tag_count": 2,
+      "xml_graphic_text_count": 18
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-023-bc44d21482.png",
+      "asset_sha256": "04dac4a91210b6deb523929223092919daf30427e995cd5bc8e2f5110c77cf8b",
+      "asset_size": [
+        224,
+        225
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 1,
+      "image_suffix": ".jpg",
+      "logical_group": "I02",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "b": [
+          "b001"
+        ],
+        "hc": [
+          "hc02"
+        ]
+      },
+      "selection_hash": "94de3f0ece3b204fb77f9d7a858ae0787cae26b0422c80841304570d13129c7f",
+      "source_id": "dexpi-v8-023-bc44d21482",
+      "source_image": "dexpi 1.2/example pids/I02 Control/I02V01-SAG.EX01.jpg",
+      "source_image_sha256": "bc44d21482463638c85402f5fe1dad181c25c26668baaf6c865b0fafa713dfeb",
+      "source_xml": "dexpi 1.2/example pids/I02 Control/I02V01-SAG.EX01.xml",
+      "source_xml_sha256": "395597e0afd99799eb971997d72375177df55a195d57770fe2f86db25bb519eb",
+      "structured_candidate_count": 4,
+      "tags": [
+        "b001",
+        "hc02"
+      ],
+      "visible_structured_tag_count": 2,
+      "xml_graphic_text_count": 3
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-024-93e12592d5.png",
+      "asset_sha256": "8c415c760a6d20a5911b9ab9a05ae6b8bd4a141142e4cc440ef96994577c58ce",
+      "asset_size": [
+        478,
+        485
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 1,
+      "image_suffix": ".png",
+      "logical_group": "E01",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "t": [
+          "t100"
+        ]
+      },
+      "selection_hash": "a1ed2d126d6168314cdfb1e5839cdfc41ab74d221ab1953365399b2d171792e2",
+      "source_id": "dexpi-v8-024-93e12592d5",
+      "source_image": "dexpi 1.2/example pids/E01 Tank/E01V01-AUD.EX01.png",
+      "source_image_sha256": "93e12592d5191d47a7529ccb9f976f3279362ae8f1deb95291a2d37a3fb4773d",
+      "source_xml": "dexpi 1.2/example pids/E01 Tank/E01V01-AUD.EX01.xml",
+      "source_xml_sha256": "2d0ffd9aea9173d86ba356756de92ea998ff6659a93846f95ea9b72584a671f3",
+      "structured_candidate_count": 1,
+      "tags": [
+        "t100"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 1
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-025-202a14aee1.png",
+      "asset_sha256": "d4715b4b7682d4715cdfaa5084e6e14cf3694584821b09730e1bed4e49fd30f0",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 31,
+      "image_suffix": ".png",
+      "logical_group": "C02",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h4702",
+          "h4703"
+        ],
+        "p": [
+          "p4702",
+          "p4703"
+        ],
+        "t": [
+          "t4702"
+        ]
+      },
+      "selection_hash": "a3d80607a631595b263f755d31c6b7d9ef9f7f6091c6cba3f0927f5510a10eee",
+      "source_id": "dexpi-v8-025-202a14aee1",
+      "source_image": "dexpi 1.2/example pids/C02 DEXPI Example Complete E+P/C02V01-HEX.EX02.png",
+      "source_image_sha256": "202a14aee155a28f3dc085831dcc9d4d48ef2a76281d8521e5b1ab51f2ed7b58",
+      "source_xml": "dexpi 1.2/example pids/C02 DEXPI Example Complete E+P/C02V01-HEX.EX02.xml",
+      "source_xml_sha256": "a554395e59c0100e23a68e68f9e8bf78b9ec45efb317800b6d4baffeffbee232",
+      "structured_candidate_count": 5,
+      "tags": [
+        "h4702",
+        "h4703",
+        "p4702",
+        "p4703",
+        "t4702"
+      ],
+      "visible_structured_tag_count": 5,
+      "xml_graphic_text_count": 282
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-026-0803dfaf31.png",
+      "asset_sha256": "6c32d32c2f4bb27521757ccf5ca7ea5f2fa9e81e9f4d0677fee318af824e56f7",
+      "asset_size": [
+        873,
+        736
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 5,
+      "image_suffix": ".png",
+      "logical_group": "P04",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h1008"
+        ]
+      },
+      "selection_hash": "a7207fbcb73b5959a9e62950127d6dc044e0c736fefaedc5399050f591d2f03d",
+      "source_id": "dexpi-v8-026-0803dfaf31",
+      "source_image": "dexpi 1.2/example pids/P04 Pipe With Intersection/P04V01-AUD.EX01.png",
+      "source_image_sha256": "0803dfaf311baf9547c001e410cec58126f4149945193a6706c25c017426d75d",
+      "source_xml": "dexpi 1.2/example pids/P04 Pipe With Intersection/P04V01-AUD.EX01.xml",
+      "source_xml_sha256": "79a4ff38c1558d836ce2d1b657854da069f823d7d277c219de30bbd43845f10b",
+      "structured_candidate_count": 1,
+      "tags": [
+        "h1008"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 5
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-027-25817690d3.png",
+      "asset_sha256": "158c318c45865be3e4aa4876fdb7435233488a34fca52a28e13b7cd49c81ccbc",
+      "asset_size": [
+        701,
+        321
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 2,
+      "image_suffix": ".png",
+      "logical_group": "E03",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "p": [
+          "p4713"
+        ]
+      },
+      "selection_hash": "bd747f7e39794564997dcc13d552c7777595c1169e9fadaa96cce49e093db687",
+      "source_id": "dexpi-v8-027-25817690d3",
+      "source_image": "dexpi 1.2/example pids/E03 Pump With Nozzles/E03V01-AUD.EX01.png",
+      "source_image_sha256": "25817690d365350d0b22d5c3061632c4af1023b146884406594889ce5f9309d3",
+      "source_xml": "dexpi 1.2/example pids/E03 Pump With Nozzles/E03V01-AUD.EX01.xml",
+      "source_xml_sha256": "6b0c0b5ee5af89c1ec3bf0ba2b77794a762c9792f451c362ac7af20aec2173ff",
+      "structured_candidate_count": 1,
+      "tags": [
+        "p4713"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 2
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-028-4e81818fc4.png",
+      "asset_sha256": "4b7604820806b41b88f4a634297fc0c7906d58a6cc08242209d47f0f584d1ebd",
+      "asset_size": [
+        4096,
+        2896
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 1,
+      "image_suffix": ".pdf",
+      "logical_group": "I05",
+      "pdf_embedded_text_confirmed_tag_count": 4,
+      "prefixes": {
+        "b": [
+          "b001"
+        ],
+        "f": [
+          "f001",
+          "f002",
+          "f003"
+        ],
+        "y": [
+          "y004"
+        ]
+      },
+      "selection_hash": "be9cfa5fd231795a169615976df48ada939ec4bb2bd4b4170b5459baf1f3c266",
+      "source_id": "dexpi-v8-028-4e81818fc4",
+      "source_image": "dexpi 1.2/example pids/I05 Two flow indications and flow ratio control in CCR/I05V01-SAG.EX01.pdf",
+      "source_image_sha256": "4e81818fc4023bee367d402e538dab6cd156ba2a2ae283da4cab6d1b4412b499",
+      "source_xml": "dexpi 1.2/example pids/I05 Two flow indications and flow ratio control in CCR/I05V01-SAG.EX01.xml",
+      "source_xml_sha256": "771afdcb4c436df50968c6fbb45deb369594956689eb156e5b14e288861b8ab7",
+      "structured_candidate_count": 8,
+      "tags": [
+        "b001",
+        "f001",
+        "f002",
+        "f003",
+        "y004"
+      ],
+      "visible_structured_tag_count": 5,
+      "xml_graphic_text_count": 9
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-029-ca31cfac53.png",
+      "asset_sha256": "591f0f401ee5b26bd9d4283d9cb62efae7df30b326e83b78798479392aa64427",
+      "asset_size": [
+        4096,
+        2896
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 1,
+      "image_suffix": ".pdf",
+      "logical_group": "I06",
+      "pdf_embedded_text_confirmed_tag_count": 1,
+      "prefixes": {
+        "b": [
+          "b001"
+        ],
+        "f": [
+          "f001"
+        ],
+        "u": [
+          "u003"
+        ],
+        "y": [
+          "y002"
+        ]
+      },
+      "selection_hash": "c0a40fbce7353833a8606a4f694dbf125df77e67f559addb9f25eec7c9286690",
+      "source_id": "dexpi-v8-029-ca31cfac53",
+      "source_image": "dexpi 1.2/example pids/I06 CCR flow indication and high alarm, flow control, control valve/I06V01-SAG.EX01.pdf",
+      "source_image_sha256": "ca31cfac53ec8886126cbfdc0595a690b41b55405cd884163ca502706ec07141",
+      "source_xml": "dexpi 1.2/example pids/I06 CCR flow indication and high alarm, flow control, control valve/I06V01-SAG.EX01.xml",
+      "source_xml_sha256": "009d7cdd4f515722f093e07d00f2649df512dec7eb3f206a3a29a6c746cf83b1",
+      "structured_candidate_count": 6,
+      "tags": [
+        "b001",
+        "f001",
+        "u003",
+        "y002"
+      ],
+      "visible_structured_tag_count": 4,
+      "xml_graphic_text_count": 10
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-030-c11bfa8794.png",
+      "asset_sha256": "90a84e64c52aba29bee5b093a060391c4cb226830e9cd82c419ae0a4ad7c9d1f",
+      "asset_size": [
+        864,
+        634
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 1,
+      "image_suffix": ".png",
+      "logical_group": "E01",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "t": [
+          "t100"
+        ]
+      },
+      "selection_hash": "cb4e5628fa69b26f31197d66361a5adcd877be5e75d063d8951d632fbb4951e1",
+      "source_id": "dexpi-v8-030-c11bfa8794",
+      "source_image": "dexpi 1.2/example pids/E01 Tank/E01V01-AUD.EX02.png",
+      "source_image_sha256": "c11bfa87948fedb244075d4155db62e232d068d7e3b85de44baecc48104af813",
+      "source_xml": "dexpi 1.2/example pids/E01 Tank/E01V01-AUD.EX02.xml",
+      "source_xml_sha256": "640459cb6d8bd0106b672267646d11d54ec5a4b8a830bee7422aa11976df2ec6",
+      "structured_candidate_count": 1,
+      "tags": [
+        "t100"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 1
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-031-202a510ab9.png",
+      "asset_sha256": "220c8ae1d651686766e3ae1583632ba0d8f23480ef72382d8ef27e927ef09ada",
+      "asset_size": [
+        4096,
+        2896
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 1,
+      "image_suffix": ".pdf",
+      "logical_group": "I12",
+      "pdf_embedded_text_confirmed_tag_count": 2,
+      "prefixes": {
+        "h": [
+          "h001"
+        ],
+        "v": [
+          "v001"
+        ]
+      },
+      "selection_hash": "dd680d69296972773b3dde0e803fd51ed44e691bbcb59d3581d0c3a74b7f4eb4",
+      "source_id": "dexpi-v8-031-202a510ab9",
+      "source_image": "dexpi 1.2/example pids/I12 Control/I12V01-SAG.EX01.pdf",
+      "source_image_sha256": "202a510ab9fff6a3ceaa110aad1915c45da744104e91b62d091e587f2498b2d4",
+      "source_xml": "dexpi 1.2/example pids/I12 Control/I12V01-SAG.EX01.xml",
+      "source_xml_sha256": "410947946ebe6b29234591d3ea743ae1f04036a79e080bb69a2f0a664dc2e29f",
+      "structured_candidate_count": 4,
+      "tags": [
+        "h001",
+        "v001"
+      ],
+      "visible_structured_tag_count": 2,
+      "xml_graphic_text_count": 3
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-032-805f7a6d35.png",
+      "asset_sha256": "b4d85a8348ccdd1796ce843fe3be84a2f1cf3ac032dbb6487005103b098f40e4",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 2,
+      "image_suffix": ".png",
+      "logical_group": "P02",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "p": [
+          "p4712"
+        ]
+      },
+      "selection_hash": "e98cc90d67300dbc93c05fdbf19a4d6350404d1c7a5151f0fca89f849b0af7d6",
+      "source_id": "dexpi-v8-032-805f7a6d35",
+      "source_image": "dexpi 1.2/example pids/P02 Pipe From OPC to Nozzle/P02V02-HEX.EX02.png",
+      "source_image_sha256": "805f7a6d3585648936ce62700d2be3cc26c0801e7430766017ed75b3d1deb56e",
+      "source_xml": "dexpi 1.2/example pids/P02 Pipe From OPC to Nozzle/P02V02-HEX.EX02.xml",
+      "source_xml_sha256": "9129a3ea3d03e105ba1e28cc975e26b212408f4c081e32ed4728d95d3d901ebc",
+      "structured_candidate_count": 1,
+      "tags": [
+        "p4712"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 5
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-033-6f8995e091.png",
+      "asset_sha256": "26cdb8889d6d84e2d8f96b6bb71140a6b0a244dfb28bb4df44817ee96e86c5d3",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 37,
+      "image_suffix": ".png",
+      "logical_group": "C01",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h1007",
+          "h1008"
+        ],
+        "p": [
+          "p4711",
+          "p4712"
+        ],
+        "t": [
+          "t4750"
+        ]
+      },
+      "selection_hash": "f68a2526667ffaa7f8f5c245198e7e5f45085e951e16690810c3639844f92204",
+      "source_id": "dexpi-v8-033-6f8995e091",
+      "source_image": "dexpi 1.2/example pids/C01 the complete DEXPI PnID/C01V01-HEX.EX02.png",
+      "source_image_sha256": "6f8995e091b4acffd9cafb7e9db5e1bccacd7d311d10fdb8a2b82818ce89591d",
+      "source_xml": "dexpi 1.2/example pids/C01 the complete DEXPI PnID/C01V01-HEX.EX02.xml",
+      "source_xml_sha256": "b8aa30ffa95bc6db59564df7d616826fc200345e0704c01ff95edc2009e48df7",
+      "structured_candidate_count": 5,
+      "tags": [
+        "h1007",
+        "h1008",
+        "p4711",
+        "p4712",
+        "t4750"
+      ],
+      "visible_structured_tag_count": 5,
+      "xml_graphic_text_count": 249
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-034-ecad13a079.png",
+      "asset_sha256": "eccc4c21b164877f19d472de1243a832aebab196d6158d51024f5c42d8447dc3",
+      "asset_size": [
+        6000,
+        4237
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 36,
+      "image_suffix": ".png",
+      "logical_group": "C01",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h1007",
+          "h1008"
+        ],
+        "p": [
+          "p4711",
+          "p4712"
+        ],
+        "t": [
+          "t4750"
+        ]
+      },
+      "selection_hash": "f8e42c6cbf27b68f23318facb965fab310cb97d7dae83500c6bf2afa4b799d72",
+      "source_id": "dexpi-v8-034-ecad13a079",
+      "source_image": "dexpi 1.2/example pids/C01 the complete DEXPI PnID/C01V01-HEX.EX03.png",
+      "source_image_sha256": "ecad13a079c6cbbb6cdc0d03b79c70aa5c422c180fe175b2f1b85b811d2fd06b",
+      "source_xml": "dexpi 1.2/example pids/C01 the complete DEXPI PnID/C01V01-HEX.EX03.xml",
+      "source_xml_sha256": "2595e3a147b8dd2a81fb3dc2119f89fb2c11c8f2096749bdc5c307ce01f5017a",
+      "structured_candidate_count": 5,
+      "tags": [
+        "h1007",
+        "h1008",
+        "p4711",
+        "p4712",
+        "t4750"
+      ],
+      "visible_structured_tag_count": 5,
+      "xml_graphic_text_count": 295
+    },
+    {
+      "asset_path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_v8_images/dexpi-v8-035-5be3cfccaa.png",
+      "asset_sha256": "c5a3a5e0866886e00a7e1069019acd0d32bf0a7218082dd054b60940e4f845f1",
+      "asset_size": [
+        809,
+        389
+      ],
+      "confirmation": "structured XML tag field intersected with XML graphic Text declarations",
+      "direct_graphic_tag_count": 4,
+      "image_suffix": ".png",
+      "logical_group": "E04",
+      "pdf_embedded_text_confirmed_tag_count": 0,
+      "prefixes": {
+        "h": [
+          "h1009"
+        ]
+      },
+      "selection_hash": "fe1224ef77a7cc3b155a651cca5ba0e0d2ed4cd13d17ac967f4fe329bfce83df",
+      "source_id": "dexpi-v8-035-5be3cfccaa",
+      "source_image": "dexpi 1.2/example pids/E04 HeatExchanger With Nozzles/E04V01-AUD.EX01.png",
+      "source_image_sha256": "5be3cfccaae1e683abadc41a2db6595f6661a013c1818d7b675e42ef6e3458b5",
+      "source_xml": "dexpi 1.2/example pids/E04 HeatExchanger With Nozzles/E04V01-AUD.EX01.xml",
+      "source_xml_sha256": "874ecd87fbbcbc825c977a7efc27835f70a8a8be33586016e4a97bc0b73a3321",
+      "structured_candidate_count": 1,
+      "tags": [
+        "h1009"
+      ],
+      "visible_structured_tag_count": 1,
+      "xml_graphic_text_count": 4
+    }
+  ],
+  "source_root": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/dexpi_training_test_cases",
+  "status": "pass",
+  "version": "rineng-v8-dexpi-external-audit"
+}

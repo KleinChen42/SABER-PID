@@ -1,6 +1,6 @@
 # START Package 01 — Source-Isolated, Graph-Grounded Reliability Evaluation for P&IDs
 
-> **Active submission route (2026-08-12):** the RINENG V7 replication layer is complete and integrated into the manuscript. See `reports/RINENG_OVERNIGHT_V7_CLOSEOUT.md` and the 118-artifact SHA-256 inventory. Earlier planning files remain historical inputs rather than outstanding gates.
+> **Active submission route (2026-08-12):** the validated V7 replication layer remains the baseline, and the V8 high-value evidence closeout is executing under `22_RINENG_V8_HIGH_VALUE_EVIDENCE_AND_SUBMISSION_CLOSEOUT.md`. V8 adds a cost-sensitive operating rule, paired 3072/512 quality robustness, a closest-safe 54-tile InternVL boundary, and a second public DEXPI family. Maintenance-safe archives and resume instructions are recorded in `reports/RINENG_V8_PUBLIC_BACKUP_STATUS.md` and `reports/RINENG_V8_H200_MAINTENANCE_RESUME.md`.
 
 **Frozen planning date:** 2026-08-04  
 **Target journal:** *Results in Engineering*  

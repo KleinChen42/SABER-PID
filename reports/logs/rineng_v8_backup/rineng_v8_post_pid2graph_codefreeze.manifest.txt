@@ -1,0 +1,9 @@
+status=pass
+created_utc=2026-08-12T08:21:17+00:00
+source=/home/hera/pid_reliability_benchmark
+archive=/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/snapshots/rineng_v8_post_pid2graph_codefreeze.tar.zst
+archive_bytes=1938984958
+archive_member_count=784
+archive_sha256=bb0600d80f879e7a0102bd7d726f53cfefe8cb496e0a3e0dc93213a7cdcac779
+zstd_integrity=pass
+tar_catalog_integrity=pass

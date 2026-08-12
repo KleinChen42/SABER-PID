@@ -1,0 +1,477 @@
+{
+  "archive_member_count": 74655,
+  "complete_archive_downloaded": false,
+  "layout": {
+    "logical_size": 9303633645,
+    "reused_sparse_catalog": true
+  },
+  "matched_member_count": 24,
+  "matched_members": [
+    {
+      "compress_size": 10308,
+      "compress_type": 8,
+      "crc32": "737b6096",
+      "file_size": 136165,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/0.graphml",
+      "header_offset": 2553196307,
+      "is_dir": false
+    },
+    {
+      "compress_size": 619316,
+      "compress_type": 8,
+      "crc32": "77f4d9cb",
+      "file_size": 841636,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/0.png",
+      "header_offset": 2553206739,
+      "is_dir": false
+    },
+    {
+      "compress_size": 7694,
+      "compress_type": 8,
+      "crc32": "cbbd2ea0",
+      "file_size": 98380,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/1.graphml",
+      "header_offset": 2553826175,
+      "is_dir": false
+    },
+    {
+      "compress_size": 602441,
+      "compress_type": 8,
+      "crc32": "7e8c5a9c",
+      "file_size": 795154,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/1.png",
+      "header_offset": 2553833993,
+      "is_dir": false
+    },
+    {
+      "compress_size": 16020,
+      "compress_type": 8,
+      "crc32": "63932c29",
+      "file_size": 209061,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/10.graphml",
+      "header_offset": 2554436554,
+      "is_dir": false
+    },
+    {
+      "compress_size": 1049283,
+      "compress_type": 8,
+      "crc32": "71cad22f",
+      "file_size": 1392951,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/10.png",
+      "header_offset": 2554452699,
+      "is_dir": false
+    },
+    {
+      "compress_size": 9820,
+      "compress_type": 8,
+      "crc32": "ea74cdbe",
+      "file_size": 128999,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/11.graphml",
+      "header_offset": 2555502103,
+      "is_dir": false
+    },
+    {
+      "compress_size": 682776,
+      "compress_type": 8,
+      "crc32": "4684d090",
+      "file_size": 927797,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/11.png",
+      "header_offset": 2555512048,
+      "is_dir": false
+    },
+    {
+      "compress_size": 11328,
+      "compress_type": 8,
+      "crc32": "17148df7",
+      "file_size": 151302,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/2.graphml",
+      "header_offset": 2556194945,
+      "is_dir": false
+    },
+    {
+      "compress_size": 577372,
+      "compress_type": 8,
+      "crc32": "6e831fe5",
+      "file_size": 780260,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/2.png",
+      "header_offset": 2556206397,
+      "is_dir": false
+    },
+    {
+      "compress_size": 6963,
+      "compress_type": 8,
+      "crc32": "e511da9e",
+      "file_size": 87662,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/3.graphml",
+      "header_offset": 2556783889,
+      "is_dir": false
+    },
+    {
+      "compress_size": 436717,
+      "compress_type": 8,
+      "crc32": "9e5c8a80",
+      "file_size": 608668,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/3.png",
+      "header_offset": 2556790976,
+      "is_dir": false
+    },
+    {
+      "compress_size": 9279,
+      "compress_type": 8,
+      "crc32": "d9f72c32",
+      "file_size": 119716,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/4.graphml",
+      "header_offset": 2557227813,
+      "is_dir": false
+    },
+    {
+      "compress_size": 383295,
+      "compress_type": 8,
+      "crc32": "be77f51c",
+      "file_size": 522734,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/4.png",
+      "header_offset": 2557237216,
+      "is_dir": false
+    },
+    {
+      "compress_size": 9855,
+      "compress_type": 8,
+      "crc32": "1b1f4d74",
+      "file_size": 126596,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/5.graphml",
+      "header_offset": 2557620631,
+      "is_dir": false
+    },
+    {
+      "compress_size": 680294,
+      "compress_type": 8,
+      "crc32": "9dc2dbef",
+      "file_size": 918203,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/5.png",
+      "header_offset": 2557630610,
+      "is_dir": false
+    },
+    {
+      "compress_size": 11363,
+      "compress_type": 8,
+      "crc32": "f4e3f95a",
+      "file_size": 147012,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/6.graphml",
+      "header_offset": 2558311024,
+      "is_dir": false
+    },
+    {
+      "compress_size": 660368,
+      "compress_type": 8,
+      "crc32": "be6dcd44",
+      "file_size": 918035,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/6.png",
+      "header_offset": 2558322511,
+      "is_dir": false
+    },
+    {
+      "compress_size": 8546,
+      "compress_type": 8,
+      "crc32": "5fb48e8c",
+      "file_size": 108841,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/7.graphml",
+      "header_offset": 2558982999,
+      "is_dir": false
+    },
+    {
+      "compress_size": 623655,
+      "compress_type": 8,
+      "crc32": "239ba974",
+      "file_size": 867203,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/7.png",
+      "header_offset": 2558991669,
+      "is_dir": false
+    },
+    {
+      "compress_size": 4657,
+      "compress_type": 8,
+      "crc32": "33c8975b",
+      "file_size": 57040,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/8.graphml",
+      "header_offset": 2559615444,
+      "is_dir": false
+    },
+    {
+      "compress_size": 526362,
+      "compress_type": 8,
+      "crc32": "f43d11ba",
+      "file_size": 777486,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/8.png",
+      "header_offset": 2559620225,
+      "is_dir": false
+    },
+    {
+      "compress_size": 5680,
+      "compress_type": 8,
+      "crc32": "f0c19372",
+      "file_size": 70034,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/9.graphml",
+      "header_offset": 2560146707,
+      "is_dir": false
+    },
+    {
+      "compress_size": 421780,
+      "compress_type": 8,
+      "crc32": "c6048f46",
+      "file_size": 624115,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/9.png",
+      "header_offset": 2560152511,
+      "is_dir": false
+    }
+  ],
+  "materialized_member_count": 24,
+  "materialized_members": [
+    {
+      "compress_size": 10308,
+      "compress_type": 8,
+      "crc32": "737b6096",
+      "fetched_bytes": 10416,
+      "file_size": 136165,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/0.graphml",
+      "header_offset": 2553196307,
+      "is_dir": false
+    },
+    {
+      "compress_size": 619316,
+      "compress_type": 8,
+      "crc32": "77f4d9cb",
+      "fetched_bytes": 619420,
+      "file_size": 841636,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/0.png",
+      "header_offset": 2553206739,
+      "is_dir": false
+    },
+    {
+      "compress_size": 7694,
+      "compress_type": 8,
+      "crc32": "cbbd2ea0",
+      "fetched_bytes": 7802,
+      "file_size": 98380,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/1.graphml",
+      "header_offset": 2553826175,
+      "is_dir": false
+    },
+    {
+      "compress_size": 602441,
+      "compress_type": 8,
+      "crc32": "7e8c5a9c",
+      "fetched_bytes": 602545,
+      "file_size": 795154,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/1.png",
+      "header_offset": 2553833993,
+      "is_dir": false
+    },
+    {
+      "compress_size": 16020,
+      "compress_type": 8,
+      "crc32": "63932c29",
+      "fetched_bytes": 16129,
+      "file_size": 209061,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/10.graphml",
+      "header_offset": 2554436554,
+      "is_dir": false
+    },
+    {
+      "compress_size": 1049283,
+      "compress_type": 8,
+      "crc32": "71cad22f",
+      "fetched_bytes": 1049388,
+      "file_size": 1392951,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/10.png",
+      "header_offset": 2554452699,
+      "is_dir": false
+    },
+    {
+      "compress_size": 9820,
+      "compress_type": 8,
+      "crc32": "ea74cdbe",
+      "fetched_bytes": 9929,
+      "file_size": 128999,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/11.graphml",
+      "header_offset": 2555502103,
+      "is_dir": false
+    },
+    {
+      "compress_size": 682776,
+      "compress_type": 8,
+      "crc32": "4684d090",
+      "fetched_bytes": 682881,
+      "file_size": 927797,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/11.png",
+      "header_offset": 2555512048,
+      "is_dir": false
+    },
+    {
+      "compress_size": 11328,
+      "compress_type": 8,
+      "crc32": "17148df7",
+      "fetched_bytes": 11436,
+      "file_size": 151302,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/2.graphml",
+      "header_offset": 2556194945,
+      "is_dir": false
+    },
+    {
+      "compress_size": 577372,
+      "compress_type": 8,
+      "crc32": "6e831fe5",
+      "fetched_bytes": 577476,
+      "file_size": 780260,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/2.png",
+      "header_offset": 2556206397,
+      "is_dir": false
+    },
+    {
+      "compress_size": 6963,
+      "compress_type": 8,
+      "crc32": "e511da9e",
+      "fetched_bytes": 7071,
+      "file_size": 87662,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/3.graphml",
+      "header_offset": 2556783889,
+      "is_dir": false
+    },
+    {
+      "compress_size": 436717,
+      "compress_type": 8,
+      "crc32": "9e5c8a80",
+      "fetched_bytes": 436821,
+      "file_size": 608668,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/3.png",
+      "header_offset": 2556790976,
+      "is_dir": false
+    },
+    {
+      "compress_size": 9279,
+      "compress_type": 8,
+      "crc32": "d9f72c32",
+      "fetched_bytes": 9387,
+      "file_size": 119716,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/4.graphml",
+      "header_offset": 2557227813,
+      "is_dir": false
+    },
+    {
+      "compress_size": 383295,
+      "compress_type": 8,
+      "crc32": "be77f51c",
+      "fetched_bytes": 383399,
+      "file_size": 522734,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/4.png",
+      "header_offset": 2557237216,
+      "is_dir": false
+    },
+    {
+      "compress_size": 9855,
+      "compress_type": 8,
+      "crc32": "1b1f4d74",
+      "fetched_bytes": 9963,
+      "file_size": 126596,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/5.graphml",
+      "header_offset": 2557620631,
+      "is_dir": false
+    },
+    {
+      "compress_size": 680294,
+      "compress_type": 8,
+      "crc32": "9dc2dbef",
+      "fetched_bytes": 680398,
+      "file_size": 918203,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/5.png",
+      "header_offset": 2557630610,
+      "is_dir": false
+    },
+    {
+      "compress_size": 11363,
+      "compress_type": 8,
+      "crc32": "f4e3f95a",
+      "fetched_bytes": 11471,
+      "file_size": 147012,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/6.graphml",
+      "header_offset": 2558311024,
+      "is_dir": false
+    },
+    {
+      "compress_size": 660368,
+      "compress_type": 8,
+      "crc32": "be6dcd44",
+      "fetched_bytes": 660472,
+      "file_size": 918035,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/6.png",
+      "header_offset": 2558322511,
+      "is_dir": false
+    },
+    {
+      "compress_size": 8546,
+      "compress_type": 8,
+      "crc32": "5fb48e8c",
+      "fetched_bytes": 8654,
+      "file_size": 108841,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/7.graphml",
+      "header_offset": 2558982999,
+      "is_dir": false
+    },
+    {
+      "compress_size": 623655,
+      "compress_type": 8,
+      "crc32": "239ba974",
+      "fetched_bytes": 623759,
+      "file_size": 867203,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/7.png",
+      "header_offset": 2558991669,
+      "is_dir": false
+    },
+    {
+      "compress_size": 4657,
+      "compress_type": 8,
+      "crc32": "33c8975b",
+      "fetched_bytes": 4765,
+      "file_size": 57040,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/8.graphml",
+      "header_offset": 2559615444,
+      "is_dir": false
+    },
+    {
+      "compress_size": 526362,
+      "compress_type": 8,
+      "crc32": "f43d11ba",
+      "fetched_bytes": 526466,
+      "file_size": 777486,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/8.png",
+      "header_offset": 2559620225,
+      "is_dir": false
+    },
+    {
+      "compress_size": 5680,
+      "compress_type": 8,
+      "crc32": "f0c19372",
+      "fetched_bytes": 5788,
+      "file_size": 70034,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/9.graphml",
+      "header_offset": 2560146707,
+      "is_dir": false
+    },
+    {
+      "compress_size": 421780,
+      "compress_type": 8,
+      "crc32": "c6048f46",
+      "fetched_bytes": 421884,
+      "file_size": 624115,
+      "filename": "PID2Graph/Complete/PID2Graph OPEN100/9.png",
+      "header_offset": 2560152511,
+      "is_dir": false
+    }
+  ],
+  "member_regex": "^PID2Graph/Complete/PID2Graph OPEN100/[0-9]+[.](graphml|png)$",
+  "sparse_allocated_bytes_note": "filesystem allocation is intentionally much smaller than logical size",
+  "sparse_path": "/home/hera/pid_reliability_benchmark/data/external/pid2graph_v8/PID2Graph_subset_sparse.zip",
+  "status": "pass",
+  "total_size": 9303633645,
+  "transport": "HTTP byte-range sparse ZIP",
+  "url": "https://zenodo.org/records/14803338/files/PID2Graph.zip?download=1"
+}

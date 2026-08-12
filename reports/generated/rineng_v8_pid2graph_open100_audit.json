@@ -1,0 +1,1535 @@
+{
+  "aggregate_graphml_value_counts": {
+    "edge_label": 4567,
+    "label": 4629,
+    "xmax": 4629,
+    "xmin": 4629,
+    "ymax": 4629,
+    "ymin": 4629
+  },
+  "complete_plan_count": 12,
+  "decision": {
+    "reason": "Only explicitly named text/tag/identifier GraphML data fields may establish a tag reference; internal node IDs are never treated as visible drawing strings.",
+    "structural_node_edge_class_reference": "available",
+    "use_for_tag_retrieval_score": false,
+    "visible_text_tag_reference": "unavailable"
+  },
+  "explicit_tag_reference_candidate_count": 0,
+  "official_source": {
+    "archive": "PID2Graph.zip",
+    "license": "CC BY-SA 4.0",
+    "official_md5": "90f782220de97e7e249d2595c49ddc1c",
+    "official_size_bytes": 9303633645,
+    "record": "https://zenodo.org/records/14803338"
+  },
+  "plans": [
+    {
+      "edge_count": 433,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "0.graphml",
+      "graphml_sha256": "e76bf9c6ddda990f114cf685924ce8482177723585410e8a338052c31373e6ed",
+      "image": "0.png",
+      "image_sha256": "2451fbe9b8d0494a822901493cfbf1d2656f0bd7678f0f25bb2266b5e78a7dc9",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 437,
+      "source_id": "0",
+      "value_counts": {
+        "edge_label": 433,
+        "label": 437,
+        "xmax": 437,
+        "xmin": 437,
+        "ymax": 437,
+        "ymin": 437
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "tank"
+        ],
+        "xmax": [
+          "1004",
+          "1005.2",
+          "1013",
+          "1013.36",
+          "1017",
+          "1029.0",
+          "1056",
+          "1068"
+        ],
+        "xmin": [
+          "0.0",
+          "0.48",
+          "1000.12",
+          "1005",
+          "1009",
+          "1044.56",
+          "1048",
+          "1060"
+        ],
+        "ymax": [
+          "1005.4",
+          "1008",
+          "1009",
+          "1012.14",
+          "1012.44",
+          "1031",
+          "1032.84",
+          "1033"
+        ],
+        "ymin": [
+          "0.0",
+          "1000",
+          "1001",
+          "1003.94",
+          "1004.34",
+          "1008.29",
+          "1023",
+          "1024.55"
+        ]
+      }
+    },
+    {
+      "edge_count": 308,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "1.graphml",
+      "graphml_sha256": "00d8be4b21a1bed6ad2ced86504d945995d942c35dc356986e904d42c535933e",
+      "image": "1.png",
+      "image_sha256": "c8c696042bf7a16eb30e492a312af274c312a2049a7eb765ca82f84d3770eba8",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 320,
+      "source_id": "1",
+      "value_counts": {
+        "edge_label": 308,
+        "label": 320,
+        "xmax": 320,
+        "xmin": 320,
+        "ymax": 320,
+        "ymin": 320
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "pump"
+        ],
+        "xmax": [
+          "1018.86",
+          "1020.19",
+          "1020.86",
+          "1023",
+          "1024",
+          "1025",
+          "1034",
+          "1035"
+        ],
+        "xmin": [
+          "0.0",
+          "1005.15",
+          "1006.49",
+          "1007.15",
+          "1015",
+          "1016",
+          "1017",
+          "1026"
+        ],
+        "ymax": [
+          "1054.9",
+          "1059",
+          "1108",
+          "1109",
+          "1123.94",
+          "1124.93",
+          "1125.07",
+          "1125.44"
+        ],
+        "ymin": [
+          "0.0",
+          "0.63",
+          "1051",
+          "1100",
+          "1101",
+          "1103.97",
+          "1104.96",
+          "1105.1"
+        ]
+      }
+    },
+    {
+      "edge_count": 664,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "10.graphml",
+      "graphml_sha256": "f83740a28588aee9e8dba9b46e076d936b83794b50ee512df93977742c333c0e",
+      "image": "10.png",
+      "image_sha256": "246841b69ea44b8b881429b801ff66ca16637832b95a1ce09632c5538842ee1b",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 675,
+      "source_id": "10",
+      "value_counts": {
+        "edge_label": 664,
+        "label": 675,
+        "xmax": 675,
+        "xmin": 675,
+        "ymax": 675,
+        "ymin": 675
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "tank"
+        ],
+        "xmax": [
+          "1011.4",
+          "1015",
+          "1017",
+          "1024",
+          "1028.05",
+          "1030.95",
+          "1034.94",
+          "1035"
+        ],
+        "xmin": [
+          "0.0",
+          "1003.42",
+          "1007",
+          "1009",
+          "1011.94",
+          "1012.8",
+          "1016",
+          "1020.6"
+        ],
+        "ymax": [
+          "1011",
+          "1012",
+          "1014",
+          "1015.01",
+          "1023.7",
+          "1028",
+          "1034",
+          "1035"
+        ],
+        "ymin": [
+          "0.0",
+          "1000.74",
+          "1003",
+          "1004",
+          "1006",
+          "1010.2",
+          "1020",
+          "1026"
+        ]
+      }
+    },
+    {
+      "edge_count": 409,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "11.graphml",
+      "graphml_sha256": "5c1a77c9a90f2c832929fdfa77f1f0dca55ee03136db73d0377900793a3c951c",
+      "image": "11.png",
+      "image_sha256": "363bf989089abe8e235862729392633a99b4e879b1adbd407fcce7f90eb26d94",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 414,
+      "source_id": "11",
+      "value_counts": {
+        "edge_label": 409,
+        "label": 414,
+        "xmax": 414,
+        "xmin": 414,
+        "ymax": 414,
+        "ymin": 414
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "tank"
+        ],
+        "xmax": [
+          "1007",
+          "1008",
+          "1025.6",
+          "1026.85",
+          "1027.28",
+          "1031",
+          "1036.63",
+          "1055"
+        ],
+        "xmin": [
+          "0.0",
+          "1000",
+          "1003.01",
+          "1003.95",
+          "1023",
+          "1038.2",
+          "1041.55",
+          "1043.0"
+        ],
+        "ymax": [
+          "1000.9",
+          "1001.68",
+          "1002",
+          "1003",
+          "1004",
+          "1020.3",
+          "1020.98",
+          "1021.24"
+        ],
+        "ymin": [
+          "0.0",
+          "1017",
+          "1018",
+          "1023",
+          "1027.0",
+          "1065.8",
+          "1066.19",
+          "1067"
+        ]
+      }
+    },
+    {
+      "edge_count": 490,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "2.graphml",
+      "graphml_sha256": "5bbf6495acabfb8331e95c91a8b1f8b04aa3d7ed8b9b667bda7db32625736cca",
+      "image": "2.png",
+      "image_sha256": "8a36e9ae5064283ced701e17fab3a6ae74caee2ac07b8135cf65a8415077a46e",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 485,
+      "source_id": "2",
+      "value_counts": {
+        "edge_label": 490,
+        "label": 485,
+        "xmax": 485,
+        "xmin": 485,
+        "ymax": 485,
+        "ymin": 485
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "tank"
+        ],
+        "xmax": [
+          "1004",
+          "1004.65",
+          "1009.9",
+          "1013",
+          "1014",
+          "1014.2",
+          "1015.5",
+          "1029"
+        ],
+        "xmin": [
+          "0.0",
+          "1004.12",
+          "1004.66",
+          "1005",
+          "1006",
+          "1021",
+          "1024.7",
+          "1033"
+        ],
+        "ymax": [
+          "1015",
+          "1023.1",
+          "1027",
+          "1028",
+          "1029",
+          "1031.01",
+          "1033",
+          "1034"
+        ],
+        "ymin": [
+          "0.0",
+          "0.01",
+          "1007",
+          "1010.86",
+          "1018.2",
+          "1019",
+          "1020",
+          "1021"
+        ]
+      }
+    },
+    {
+      "edge_count": 279,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "3.graphml",
+      "graphml_sha256": "2da92f64aaf3dbd611e14585ba23c948307ba1770c4ed945be4adb33f11f67ae",
+      "image": "3.png",
+      "image_sha256": "293d416db064be7c78def7f3f9856a6060e65b7d9e7b15d2b42d273a98fc49e1",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 280,
+      "source_id": "3",
+      "value_counts": {
+        "edge_label": 279,
+        "label": 280,
+        "xmax": 280,
+        "xmin": 280,
+        "ymax": 280,
+        "ymin": 280
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "pump"
+        ],
+        "xmax": [
+          "1007",
+          "1007.92",
+          "1009",
+          "1009.12",
+          "1013",
+          "1013.23",
+          "1015",
+          "1039.2"
+        ],
+        "xmin": [
+          "0.0",
+          "1001",
+          "1004.17",
+          "1005",
+          "1007",
+          "1020.83",
+          "1049.6",
+          "1050"
+        ],
+        "ymax": [
+          "1074",
+          "1075",
+          "1087.88",
+          "1088.3",
+          "1115.15",
+          "1116.02",
+          "1119",
+          "1120"
+        ],
+        "ymin": [
+          "0.0",
+          "1052.18",
+          "1052.61",
+          "1066",
+          "1067",
+          "1080.33",
+          "1081.1",
+          "1101.51"
+        ]
+      }
+    },
+    {
+      "edge_count": 381,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "4.graphml",
+      "graphml_sha256": "5ace19699bb731935716643618801bf274fc7999d2629d9455ed4c037af84fb5",
+      "image": "4.png",
+      "image_sha256": "fe9ee70bc1c839b64637fb33c010d4901e500e1a46c7a5fb7a0a661cc5ba0be1",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 385,
+      "source_id": "4",
+      "value_counts": {
+        "edge_label": 381,
+        "label": 385,
+        "xmax": 385,
+        "xmin": 385,
+        "ymax": 385,
+        "ymin": 385
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "tank"
+        ],
+        "xmax": [
+          "1004.85",
+          "1006.4",
+          "1006.6",
+          "1009",
+          "1010",
+          "1011",
+          "1014.76",
+          "1019"
+        ],
+        "xmin": [
+          "0.0",
+          "1001",
+          "1002",
+          "1003",
+          "1004.85",
+          "1011",
+          "1014.78",
+          "1014.9"
+        ],
+        "ymax": [
+          "1001",
+          "101",
+          "1012.2",
+          "1012.5",
+          "1031",
+          "1032.25",
+          "1034",
+          "1036"
+        ],
+        "ymin": [
+          "0.0",
+          "0.72",
+          "100.8",
+          "1002.7",
+          "1016.24",
+          "1023",
+          "1026",
+          "1027.0"
+        ]
+      }
+    },
+    {
+      "edge_count": 401,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "5.graphml",
+      "graphml_sha256": "3d08119b055053eb786eaa6ec911323a06a518a22de2d1545993f7332015c572",
+      "image": "5.png",
+      "image_sha256": "d0d2b3a971b84fc0c36bdef5f29e33f95a2f773f22e2ce4b34dc8c3b4ee24a83",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 405,
+      "source_id": "5",
+      "value_counts": {
+        "edge_label": 401,
+        "label": 405,
+        "xmax": 405,
+        "xmin": 405,
+        "ymax": 405,
+        "ymin": 405
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "pump"
+        ],
+        "xmax": [
+          "1006",
+          "1006.41",
+          "1010.58",
+          "1014",
+          "1015",
+          "1021",
+          "1026.6",
+          "1027.0"
+        ],
+        "xmin": [
+          "0.0",
+          "1006",
+          "1007",
+          "1010.36",
+          "1010.9",
+          "1013",
+          "1023",
+          "1023.8"
+        ],
+        "ymax": [
+          "1004.18",
+          "1008",
+          "1018.16",
+          "102",
+          "1021",
+          "1022",
+          "1025",
+          "1035.04"
+        ],
+        "ymin": [
+          "0.0",
+          "1000",
+          "1013",
+          "1014",
+          "1017",
+          "1025.18",
+          "1025.54",
+          "1028"
+        ]
+      }
+    },
+    {
+      "edge_count": 468,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "6.graphml",
+      "graphml_sha256": "54811b4b1de37764041527e4796e2f4353caf090b2b3e6c40790284e66e3d3e1",
+      "image": "6.png",
+      "image_sha256": "44a67176c8265ca5b7a2ae9833932a1797564bb35ce030d3d29e920ddf1fc9c1",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 470,
+      "source_id": "6",
+      "value_counts": {
+        "edge_label": 468,
+        "label": 470,
+        "xmax": 470,
+        "xmin": 470,
+        "ymax": 470,
+        "ymin": 470
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "tank"
+        ],
+        "xmax": [
+          "1000.13",
+          "1000.55",
+          "1001.06",
+          "1004",
+          "1029",
+          "1038",
+          "1038.24",
+          "1041"
+        ],
+        "xmin": [
+          "0.0",
+          "1017.72",
+          "1021",
+          "1025.4",
+          "1030",
+          "1033",
+          "1034",
+          "1034.1"
+        ],
+        "ymax": [
+          "1000",
+          "1035",
+          "1036",
+          "1037.7",
+          "1044.18",
+          "1045",
+          "1048",
+          "1067"
+        ],
+        "ymin": [
+          "0.0",
+          "1025.9",
+          "1027",
+          "1028",
+          "1037",
+          "1040",
+          "1040.3",
+          "1040.74"
+        ]
+      }
+    },
+    {
+      "edge_count": 340,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "7.graphml",
+      "graphml_sha256": "6d4fd53dc56ea0180b8ad268e4889e1e6b85cee316e68496e80e78836eda92e3",
+      "image": "7.png",
+      "image_sha256": "071e7dc66c07b7b9fb752de7c91ed2fb7c65cce1135bac43291723980e32fdd0",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 351,
+      "source_id": "7",
+      "value_counts": {
+        "edge_label": 340,
+        "label": 351,
+        "xmax": 351,
+        "xmin": 351,
+        "ymax": 351,
+        "ymin": 351
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "pump"
+        ],
+        "xmax": [
+          "1009.11",
+          "1013",
+          "1020.36",
+          "1020.47",
+          "1024",
+          "1064",
+          "1065",
+          "1086.37"
+        ],
+        "xmin": [
+          "0.0",
+          "1005",
+          "1016",
+          "1056",
+          "1057",
+          "1060.03",
+          "1060.62",
+          "1060.68"
+        ],
+        "ymax": [
+          "1002",
+          "1006",
+          "1007",
+          "1016.16",
+          "1019.0",
+          "1019.1",
+          "1020",
+          "1023"
+        ],
+        "ymin": [
+          "0.0",
+          "1002.21",
+          "1002.91",
+          "1012",
+          "1015",
+          "1015.3",
+          "1017",
+          "1018"
+        ]
+      }
+    },
+    {
+      "edge_count": 179,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "8.graphml",
+      "graphml_sha256": "491274bfebe16e38ea8e6ba83ae57f2246e7bf6cc6d2e0ac23df4dfcde841c99",
+      "image": "8.png",
+      "image_sha256": "d0e38b31ec1d30189bb9ee32cbf07387a3e033439ec69d62b7cd8578975e729e",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 181,
+      "source_id": "8",
+      "value_counts": {
+        "edge_label": 179,
+        "label": 181,
+        "xmax": 181,
+        "xmin": 181,
+        "ymax": 181,
+        "ymin": 181
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "valve"
+        ],
+        "xmax": [
+          "1001",
+          "1051",
+          "1071.9",
+          "1076",
+          "1083",
+          "1117.87",
+          "1130.3",
+          "1144"
+        ],
+        "xmin": [
+          "0.0",
+          "1043",
+          "1047.0",
+          "1068",
+          "1069.1",
+          "1075",
+          "1079.39",
+          "1115.59"
+        ],
+        "ymax": [
+          "1046.3",
+          "1047",
+          "1050",
+          "1060.53",
+          "1065",
+          "1068.9",
+          "1073",
+          "1082"
+        ],
+        "ymin": [
+          "0.0",
+          "1011.6",
+          "1039",
+          "1042",
+          "1042.52",
+          "1057",
+          "1065",
+          "1072.41"
+        ]
+      }
+    },
+    {
+      "edge_count": 215,
+      "explicit_tag_reference_candidates": [],
+      "graphml": "9.graphml",
+      "graphml_sha256": "b187afadfa6382cb0c08046c78fbea8a010999ca4c6e02118f275251588dc309",
+      "image": "9.png",
+      "image_sha256": "c620ed2ad097e10c3249050266595d303750453154fc51449c1e1e4196d43321",
+      "keys": [
+        {
+          "for": "edge",
+          "name": "edge_label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "xmin",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymax",
+          "type": "double"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "long"
+        },
+        {
+          "for": "node",
+          "name": "ymin",
+          "type": "double"
+        }
+      ],
+      "node_count": 226,
+      "source_id": "9",
+      "value_counts": {
+        "edge_label": 215,
+        "label": 226,
+        "xmax": 226,
+        "xmin": 226,
+        "ymax": 226,
+        "ymin": 226
+      },
+      "value_examples": {
+        "edge_label": [
+          "solid"
+        ],
+        "label": [
+          "arrow",
+          "background",
+          "connector",
+          "crossing",
+          "general",
+          "inlet/outlet",
+          "instrumentation",
+          "tank"
+        ],
+        "xmax": [
+          "1007",
+          "1050.6",
+          "1057.5",
+          "1095.39",
+          "1133",
+          "1142",
+          "1143",
+          "1144.2"
+        ],
+        "xmin": [
+          "0.0",
+          "1002.74",
+          "1047.53",
+          "1125",
+          "1128.4",
+          "1128.9",
+          "1129.35",
+          "1133.1"
+        ],
+        "ymax": [
+          "1109",
+          "1210.7",
+          "1210.98",
+          "1211.62",
+          "1211.79",
+          "1214.3",
+          "1214.31",
+          "1255"
+        ],
+        "ymin": [
+          "0.0",
+          "1101",
+          "1247",
+          "1446",
+          "1449.42",
+          "1449.6",
+          "1449.88",
+          "1450.17"
+        ]
+      }
+    }
+  ],
+  "status": "pass",
+  "transport": {
+    "catalog": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/external/pid2graph_open100_complete_materialized_v8.json",
+    "catalog_sha256": "78d7f96a4b9114afebaa201b2f61fe1c23e72ff2a98e121cc0a07ceccac8643f",
+    "complete_archive_downloaded": false,
+    "method": "HTTP byte-range sparse ZIP; 24 complete-plan members materialized"
+  },
+  "version": "rineng-v8-pid2graph-open100-audit"
+}
