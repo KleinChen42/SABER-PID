@@ -1,0 +1,28 @@
+{
+  "figures": [
+    {
+      "bytes": 37766,
+      "path": "paper/figures/figure_v7_cross_model_counterfactual_replication.pdf",
+      "sha256": "34a836504699749a77c5bb456980630dec646f80370acee50c67325de16ddb2b"
+    },
+    {
+      "bytes": 397073,
+      "path": "paper/figures/figure_v7_cross_model_counterfactual_replication.png",
+      "sha256": "83d549681c8fbddbd5326e6934d29cc9acd7825c3ca8db39bbb13f5cda960460"
+    },
+    {
+      "bytes": 27471,
+      "path": "paper/figures/figure_s_v7_prompt_sensitivity.pdf",
+      "sha256": "4e0747fddf0553e630630d836a540a44690b6866780704ae7ae0d5cf6c0ed384"
+    },
+    {
+      "bytes": 240105,
+      "path": "paper/figures/figure_s_v7_prompt_sensitivity.png",
+      "sha256": "06bf8bb97bdd2eba5c4e016116d9529a1f4a4ed8ea5173aa7c25774c7e26dc45"
+    }
+  ],
+  "source_score_sha256": "bf2bed708fd0234b041db6aeb609535e7c8c4ab47efbbc72f00cd1f7349ecc02",
+  "source_validation_sha256": "998ae2c68131ab533e798fe5ec121bd1048366bf95532c15a2164156b2d05782",
+  "status": "pass",
+  "version": "rineng-overnight-v7-figure-metadata"
+}

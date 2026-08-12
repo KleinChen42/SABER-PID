@@ -1,0 +1,9 @@
+# Minimal execution contract for the deterministic CPU scorer and artifact audit.
+numpy==2.2.4
+pillow==11.1.0
+pytest==8.3.5
+torch==2.7.0
+transformers==4.52.4
+
+# Remote H200 runs additionally use the pinned vendor/transformers tree and
+# the site-specific CUDA runtime; model weights are never redistributed.

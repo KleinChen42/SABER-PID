@@ -1,0 +1,10 @@
+contrast,dataset,difference,model,selection_note,source_bootstrap_ci95
+p1_minus_p0_correct_value_f1,set_b100,0.06806569643828397,qwen3vl8b,Both pre-existing prompts are reported; no best-prompt selection.,"[-0.0010544025507299715, 0.15702616224355354]"
+p1_minus_p0_correct_value_f1,seed29_strict65,-0.0028398926654740198,qwen3vl8b,Both pre-existing prompts are reported; no best-prompt selection.,"[-0.054419946424891896, 0.05256594306927109]"
+p1_minus_p0_correct_value_f1,seed31_strict65,0.014319809069212375,qwen3vl8b,Both pre-existing prompts are reported; no best-prompt selection.,"[-0.004983257310095746, 0.04196408598214474]"
+p1_minus_p0_correct_value_f1,set_b100,0.04448733384558601,qwen3vl32b,Both pre-existing prompts are reported; no best-prompt selection.,"[-0.028160442525120954, 0.14167679650476545]"
+p1_minus_p0_correct_value_f1,seed29_strict65,-0.048749692042375004,qwen3vl32b,Both pre-existing prompts are reported; no best-prompt selection.,"[-0.1043605222518601, -0.0025250631265781864]"
+p1_minus_p0_correct_value_f1,seed31_strict65,-0.011457533953206145,qwen3vl32b,Both pre-existing prompts are reported; no best-prompt selection.,"[-0.041951696216669054, 0.018508706217682858]"
+p1_minus_p0_correct_value_f1,set_b100,-0.0035470448026501834,internvl35_8b,Both pre-existing prompts are reported; no best-prompt selection.,"[-0.011477980377223243, 0.002109704641350211]"
+p1_minus_p0_correct_value_f1,seed29_strict65,-0.0005913077756972505,internvl35_8b,Both pre-existing prompts are reported; no best-prompt selection.,"[-0.010896673892268605, 0.00709526778401242]"
+p1_minus_p0_correct_value_f1,seed31_strict65,-0.0053569484266686035,internvl35_8b,Both pre-existing prompts are reported; no best-prompt selection.,"[-0.017369834957108483, 0.0024034120980044177]"

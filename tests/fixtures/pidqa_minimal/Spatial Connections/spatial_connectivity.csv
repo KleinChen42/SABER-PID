@@ -1,0 +1,2 @@
+P&ID_number,Type,Symbol_XX,Symbol_YY,Symbol_ZZ,Q_id,Question,GT,Cypher
+7,Spatial-Connection,1,2,3,1,Connected?,True,MATCH (n) RETURN true

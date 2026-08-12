@@ -1,0 +1,105 @@
+{
+  "boundary": "All three subsets are source-disjoint, but all belong to PIDQA; the report cannot establish external-family transport.",
+  "inputs": {
+    "score": {
+      "path": "reports/generated/rineng_overnight_v7_score.json",
+      "sha256": "bf2bed708fd0234b041db6aeb609535e7c8c4ab47efbbc72f00cd1f7349ecc02"
+    },
+    "validation": {
+      "path": "reports/generated/rineng_overnight_v7_validation.json",
+      "sha256": "998ae2c68131ab533e798fe5ec121bd1048366bf95532c15a2164156b2d05782"
+    }
+  },
+  "models": {
+    "internvl35_8b": {
+      "correct_minus_shuffled": {
+        "comparison_count": 6,
+        "maximum_effect": 0.023889246744002057,
+        "median_effect": 0.012444522280958065,
+        "minimum_ci95_lower_bound": 0.0018099547511312218,
+        "minimum_effect": 0.009009009009009009,
+        "positive_interval_count": 6
+      },
+      "correct_minus_text_only": {
+        "comparison_count": 6,
+        "maximum_effect": 0.02569593147751606,
+        "median_effect": 0.012444522280958065,
+        "minimum_ci95_lower_bound": 0.0017301038062283738,
+        "minimum_effect": 0.009009009009009009,
+        "positive_interval_count": 6
+      },
+      "correct_value_f1": {
+        "maximum": 0.02569593147751606,
+        "median": 0.012444522280958065,
+        "minimum": 0.009009009009009009
+      }
+    },
+    "qwen3vl32b": {
+      "correct_minus_shuffled": {
+        "comparison_count": 6,
+        "maximum_effect": 0.7283741672039545,
+        "median_effect": 0.6297123269230567,
+        "minimum_ci95_lower_bound": 0.4383139574945613,
+        "minimum_effect": 0.5639203488844796,
+        "positive_interval_count": 6
+      },
+      "correct_minus_text_only": {
+        "comparison_count": 6,
+        "maximum_effect": 0.7361111111111112,
+        "median_effect": 0.65120553959274,
+        "minimum_ci95_lower_bound": 0.4446412754650133,
+        "minimum_effect": 0.5697258641239571,
+        "positive_interval_count": 6
+      },
+      "correct_value_f1": {
+        "maximum": 0.7361111111111112,
+        "median": 0.65120553959274,
+        "minimum": 0.5697258641239571
+      }
+    },
+    "qwen3vl8b": {
+      "correct_minus_shuffled": {
+        "comparison_count": 6,
+        "maximum_effect": 0.6436538461538461,
+        "median_effect": 0.5979110694951144,
+        "minimum_ci95_lower_bound": 0.41373733544968533,
+        "minimum_effect": 0.5190772679426041,
+        "positive_interval_count": 6
+      },
+      "correct_minus_text_only": {
+        "comparison_count": 6,
+        "maximum_effect": 0.6586538461538461,
+        "median_effect": 0.6229116945107398,
+        "minimum_ci95_lower_bound": 0.42390078917700114,
+        "minimum_effect": 0.5253077975376197,
+        "positive_interval_count": 6
+      },
+      "correct_value_f1": {
+        "maximum": 0.6586538461538461,
+        "median": 0.6229116945107398,
+        "minimum": 0.5253077975376197
+      }
+    }
+  },
+  "primary_result": {
+    "comparison_count": 36,
+    "interpretation": "Requested-drawing dependence is directionally replicated, with useful magnitude concentrated in Qwen3-VL.",
+    "positive_interval_count": 36
+  },
+  "prompt_sensitivity": {
+    "comparison_count": 9,
+    "intervals_including_zero": 8,
+    "selection": "Both frozen prompts reported; no best-prompt selection."
+  },
+  "scope": {
+    "cells": 54,
+    "conditions": 3,
+    "counterfactual_comparisons": 36,
+    "datasets": 3,
+    "models": 3,
+    "prediction_rows": 16560,
+    "prompts": 2
+  },
+  "status": "pass",
+  "version": "rineng-overnight-v7-paper-summary"
+}

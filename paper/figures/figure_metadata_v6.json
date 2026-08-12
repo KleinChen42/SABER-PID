@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "bytes": 35859,
+      "path": "paper/figures/figure_1_qualification_decision_v6.pdf",
+      "sha256": "c6f38905c0eb4569fb74afd0c09557e74c92b1499916cf8b72a476d8d8eaf80c"
+    },
+    {
+      "bytes": 512362,
+      "path": "paper/figures/figure_1_qualification_decision_v6.png",
+      "sha256": "ce17e624df1c45a8e914dcef09789b5acc9a24d57485a4e37575dc7138ba33f3"
+    },
+    {
+      "bytes": 30339,
+      "path": "paper/figures/figure_2_qualification_effects_v6.pdf",
+      "sha256": "7bc8ffa7a19e0064c9a454f26f75f135ce22563737b086c69c39b97eb23fef2d"
+    },
+    {
+      "bytes": 327903,
+      "path": "paper/figures/figure_2_qualification_effects_v6.png",
+      "sha256": "f789cdee4ff744284ad186780dfa5ce35bc8c58ab33218476fa4289a87f51353"
+    },
+    {
+      "bytes": 34444,
+      "path": "paper/figures/figure_3_operating_modes_v6.pdf",
+      "sha256": "6d41eab6312be1f306de3e5f08271e898be5378c4c106992cf269599d33c841a"
+    },
+    {
+      "bytes": 372804,
+      "path": "paper/figures/figure_3_operating_modes_v6.png",
+      "sha256": "32af6d805c45c75cf976d7c62260873308edc1b0f07239cf6b2792bc54497bcf"
+    }
+  ],
+  "generator": "scripts/build_rineng_revision_figures_v6.py",
+  "image_policy": "deterministic Matplotlib composition of frozen machine-readable evidence; no generative image model and no outcome-selected drawing",
+  "source_artifacts": [
+    {
+      "path": "reports/generated/editorial_revision_evidence_v4.json",
+      "sha256": "a99a1abfb54c14a0df85b99922298c268259087f2fc4ace207688cf0159ae58c"
+    },
+    {
+      "path": "reports/generated/qwen8_value_budget_sensitivity_v1.json",
+      "sha256": "69da524c5b236de757b83c0dbad87e69abe85c950a145b3763596863dea06ccb"
+    },
+    {
+      "path": "reports/generated/image_dependence_control_v1.json",
+      "sha256": "a1c2f3414acc5586cee6964e7ad1f4fa7c96eb131876c9c88aed3bef6d0b8f15"
+    },
+    {
+      "path": "reports/generated/source_seed_resolution_sensitivity_v1.json",
+      "sha256": "c9e61e0442ffa43f53d96e6808170e8a690236b9b457a741b32f919655d2913c"
+    },
+    {
+      "path": "reports/generated/text_only_image_grounding_control_v1.json",
+      "sha256": "0b78c6a57c4b8b8b3b234cf0a00c88c25d8f2144c95acd291ef0adbd160a7ed0"
+    },
+    {
+      "path": "reports/generated/rineng_revision_analysis_v6.json",
+      "sha256": "d2850a0eab94b99ff31ece2db828004d59e05bfee64e515f2fee22d4320f6999"
+    }
+  ],
+  "status": "pass",
+  "version": "rineng-revision-figures-v6"
+}

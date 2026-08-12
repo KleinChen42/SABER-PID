@@ -1,0 +1,97 @@
+{
+  "assigned_gpus": [
+    {
+      "index": 0,
+      "memory_total_mib": 143771,
+      "memory_used_mib": 0,
+      "name": "NVIDIA H200",
+      "utilization_percent": 0
+    },
+    {
+      "index": 1,
+      "memory_total_mib": 143771,
+      "memory_used_mib": 0,
+      "name": "NVIDIA H200",
+      "utilization_percent": 0
+    },
+    {
+      "index": 2,
+      "memory_total_mib": 143771,
+      "memory_used_mib": 0,
+      "name": "NVIDIA H200",
+      "utilization_percent": 0
+    }
+  ],
+  "datasets": [
+    {
+      "dataset_id": "set_b100",
+      "failure_reasons": [],
+      "record_count": 400,
+      "source_count": 100,
+      "task_counts": {
+        "connectivity": 100,
+        "count": 100,
+        "spatial_count": 100,
+        "value": 100
+      }
+    },
+    {
+      "dataset_id": "seed29_strict65",
+      "failure_reasons": [],
+      "record_count": 260,
+      "source_count": 65,
+      "task_counts": {
+        "connectivity": 65,
+        "count": 65,
+        "spatial_count": 65,
+        "value": 65
+      }
+    },
+    {
+      "dataset_id": "seed31_strict65",
+      "failure_reasons": [],
+      "record_count": 260,
+      "source_count": 65,
+      "task_counts": {
+        "connectivity": 65,
+        "count": 65,
+        "spatial_count": 65,
+        "value": 65
+      }
+    }
+  ],
+  "disk_free_bytes": 50271793152,
+  "expected_records_per_model": 5520,
+  "expected_total_inference_rows": 16560,
+  "failure_reasons": [],
+  "missing_input_images": [],
+  "models": [
+    {
+      "model_label": "qwen3vl8b",
+      "path": "models/Qwen3-VL-8B-Instruct-modelscope",
+      "present": true
+    },
+    {
+      "model_label": "qwen3vl32b",
+      "path": "models/Qwen3-VL-32B-Instruct-modelscope",
+      "present": true
+    },
+    {
+      "model_label": "internvl35_8b",
+      "path": "models/InternVL3_5-8B-modelscope",
+      "present": true
+    }
+  ],
+  "network_download_required": false,
+  "pairwise_source_overlap": {
+    "seed29_strict65|seed31_strict65": 0,
+    "seed29_strict65|set_b100": 0,
+    "seed31_strict65|set_b100": 0
+  },
+  "plan": "data/manifests/rineng_overnight_v7_public_plan.json",
+  "plan_sha256": "2042505735da31f51d98a12fe8edebc01858e525f9f5059282dd01fd1b13b799",
+  "scorer_reference_read_by_inference": false,
+  "status": "pass",
+  "unique_input_image_count": 230,
+  "version": "rineng-overnight-v7-preflight"
+}

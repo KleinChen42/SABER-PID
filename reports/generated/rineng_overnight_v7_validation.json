@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "answer_isolation": "recomputed",
+    "cell_metrics": "independent aggregation",
+    "counterfactual_effects": "independent aggregation",
+    "flat_csv": "recomputed from raw predictions",
+    "prompt_sensitivity": "independent seeded resampling",
+    "raw_output_hashes": "recomputed",
+    "source_bootstrap_ci95": "independent seeded resampling"
+  },
+  "error_count": 0,
+  "errors": [],
+  "inputs": {
+    "csv": {
+      "path": "reports/generated/rineng_overnight_v7_score.csv",
+      "sha256": "b34d22ff01be5dc3531c11781748abceff9bac0ec67aee138bc6e7e095c48de5"
+    },
+    "plan": {
+      "path": "data/manifests/rineng_overnight_v7_public_plan.json",
+      "sha256": "2042505735da31f51d98a12fe8edebc01858e525f9f5059282dd01fd1b13b799"
+    },
+    "reference": {
+      "path": "data/processed/pidqa_records.jsonl",
+      "sha256": "2f1c2bb38b6ee16268926d96518b58eeb44fd77c43b36df8aa8684f782139ebb"
+    },
+    "score": {
+      "path": "reports/generated/rineng_overnight_v7_score.json",
+      "sha256": "bf2bed708fd0234b041db6aeb609535e7c8c4ab47efbbc72f00cd1f7349ecc02"
+    }
+  },
+  "numeric_agreement": {
+    "max_counterfactual_absolute_error": 0.0,
+    "max_prompt_sensitivity_absolute_error": 0.0,
+    "tolerance": 1e-12
+  },
+  "scope": {
+    "cell_count": 54,
+    "comparison_count": 36,
+    "csv_row_count": 54,
+    "prompt_sensitivity_count": 9,
+    "row_count": 16560
+  },
+  "status": "pass",
+  "version": "rineng-overnight-v7-independent-validation"
+}

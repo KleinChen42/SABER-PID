@@ -1,0 +1,81 @@
+{
+  "files": [
+    {
+      "bytes": 34984,
+      "path": "paper\\figures\\figure_1_saber_pid_overview.pdf",
+      "sha256": "3a57ec0fbe11658d551eb6f8bc79c6a5b4ea0d0de083d040f3da3f0d37aadc24"
+    },
+    {
+      "bytes": 326607,
+      "path": "paper\\figures\\figure_1_saber_pid_overview.png",
+      "sha256": "8f1b7235aeaf592b9876c50c7bfa7ab888078ee5993ea6d9f159a968acb9d5b9"
+    },
+    {
+      "bytes": 31983,
+      "path": "paper\\figures\\figure_2_core_effects.pdf",
+      "sha256": "8256d307f45ff9185321693f803dae5fcd9c236cc2ee15ca7efaeeef77b5dab8"
+    },
+    {
+      "bytes": 374976,
+      "path": "paper\\figures\\figure_2_core_effects.png",
+      "sha256": "3291cb8645ac6cf56180d5d00ccba8b8604222ec58f0dc9c8a4cc69d9a427936"
+    },
+    {
+      "bytes": 25350,
+      "path": "paper\\figures\\figure_3_tag_reading_stability.pdf",
+      "sha256": "c7b1f657d1976d7a95b9326a49bb663258e0f6a42bc66b501b0505901605e4cc"
+    },
+    {
+      "bytes": 181655,
+      "path": "paper\\figures\\figure_3_tag_reading_stability.png",
+      "sha256": "c0f4dbbb49035e3e1833685d68e470f85009ee60beda766a16cde7056921484e"
+    },
+    {
+      "bytes": 28724,
+      "path": "paper\\figures\\figure_s1_task_calibration_and_boundaries.pdf",
+      "sha256": "ad66b56c888c11feda1e36a0c0808788529b419e12f209f3cde97068c62d5f0d"
+    },
+    {
+      "bytes": 245470,
+      "path": "paper\\figures\\figure_s1_task_calibration_and_boundaries.png",
+      "sha256": "96a03e06c4aca6d8d89921315471d14f15b6397e32d9978a104e09d846bd18ac"
+    }
+  ],
+  "generator": "scripts/build_paper_figures_v3.py",
+  "image_generation": "deterministic Matplotlib rendering from frozen numerical artifacts; no generative image model used",
+  "source_artifacts": [
+    {
+      "path": "reports/generated/pidqa_input_retrieval_seed_sweep.json",
+      "sha256": "6417d0a0f229c8e794a20389e507cd2bce33399faa18df91dea8c95a3c031bb7"
+    },
+    {
+      "path": "reports/generated/qwen8_value_budget_sensitivity_v1.json",
+      "sha256": "69da524c5b236de757b83c0dbad87e69abe85c950a145b3763596863dea06ccb"
+    },
+    {
+      "path": "reports/generated/image_dependence_control_v1.json",
+      "sha256": "a1c2f3414acc5586cee6964e7ad1f4fa7c96eb131876c9c88aed3bef6d0b8f15"
+    },
+    {
+      "path": "reports/generated/internvl_tile_budget_v1.json",
+      "sha256": "579fdc0dc758703e026a5bdd3bc51131fb6883e94154537c9aa6327be55a796f"
+    },
+    {
+      "path": "reports/generated/ontology_visibility_effect_v1.json",
+      "sha256": "e9b7d586e522a0349c83905278a963fb633cc5b40d28c554c825880eb36bbaf9"
+    },
+    {
+      "path": "reports/generated/source_seed_resolution_sensitivity_v1.json",
+      "sha256": "c9e61e0442ffa43f53d96e6808170e8a690236b9b457a741b32f919655d2913c"
+    },
+    {
+      "path": "reports/generated/ontology_mapping_control_v1.json",
+      "sha256": "3152b8a4fbb4e1c2c1e06cb2fd8a2b50128b262e866955bdb2467b4a1c8aa565"
+    },
+    {
+      "path": "reports/generated/text_only_image_grounding_control_v1.json",
+      "sha256": "0b78c6a57c4b8b8b3b234cf0a00c88c25d8f2144c95acd291ef0adbd160a7ed0"
+    }
+  ],
+  "status": "pass"
+}

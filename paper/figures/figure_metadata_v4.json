@@ -1,0 +1,99 @@
+{
+  "files": [
+    {
+      "bytes": 69086,
+      "path": "paper/figures/figure_1_counterfactual_evidence_ladder.pdf",
+      "sha256": "f6e51df26eae6fc8275ae299de6c98ed3abc72340181c5b183dc66f698d7e54e"
+    },
+    {
+      "bytes": 1226789,
+      "path": "paper/figures/figure_1_counterfactual_evidence_ladder.png",
+      "sha256": "033ab8378454d0dfbf9357d2e248186bf234ba272704d0161ae368a1cbac35cd"
+    },
+    {
+      "bytes": 34199,
+      "path": "paper/figures/figure_2_core_effects_v4.pdf",
+      "sha256": "bb3ee1b2bdf47aa362b8ad311dd233ad73e3fe121556b3234cc454330f73c72d"
+    },
+    {
+      "bytes": 558183,
+      "path": "paper/figures/figure_2_core_effects_v4.png",
+      "sha256": "2c5a3a5f0f265c3ae157ee2655f6dd92990ea75ec7d5ad2abb570e52763d52d1"
+    },
+    {
+      "bytes": 34732,
+      "path": "paper/figures/figure_3_task_calibration_v4.pdf",
+      "sha256": "e064abaf138950e43e3683e5cc2c6a92ca9ac8ea263188221b68b3a3ccd26486"
+    },
+    {
+      "bytes": 376599,
+      "path": "paper/figures/figure_3_task_calibration_v4.png",
+      "sha256": "1ae3aa0a1f6685f850881d5bcd714ce27f11eb36c3fb08736715c3d4fbd88127"
+    },
+    {
+      "bytes": 38828,
+      "path": "paper/figures/figure_s1_controls_and_operating_quantities_v4.pdf",
+      "sha256": "c607836852cf69425351d77a61c7f10d23f3abf5fe96d6a4309ba2e052ce0412"
+    },
+    {
+      "bytes": 611669,
+      "path": "paper/figures/figure_s1_controls_and_operating_quantities_v4.png",
+      "sha256": "f00cf3a72b24eac2f530ceaf4932e1fa99c6e86fbcabde0c3d7675dfec9df2fe"
+    },
+    {
+      "bytes": 27041,
+      "path": "paper/figures/figure_s2_tag_reading_stability_v4.pdf",
+      "sha256": "ccdefc04649cfd31e49550cac4c7fead230dd3751979a961575190f405720c74"
+    },
+    {
+      "bytes": 274319,
+      "path": "paper/figures/figure_s2_tag_reading_stability_v4.png",
+      "sha256": "16125ada32f4a458c201f4a12011e7b27cae2b422086ed7702c0eb65bbebbe81"
+    }
+  ],
+  "generator": "scripts/build_paper_figures_v4.py",
+  "image_policy": "deterministic composition of frozen numerical artifacts and two SHA-selected CC0 PIDQA drawings; no generative image model, crop, or hand-selected box",
+  "source_artifacts": [
+    {
+      "path": "reports/generated/editorial_revision_evidence_v4.json",
+      "sha256": "a99a1abfb54c14a0df85b99922298c268259087f2fc4ace207688cf0159ae58c"
+    },
+    {
+      "path": "reports/generated/qwen8_value_budget_sensitivity_v1.json",
+      "sha256": "69da524c5b236de757b83c0dbad87e69abe85c950a145b3763596863dea06ccb"
+    },
+    {
+      "path": "reports/generated/image_dependence_control_v1.json",
+      "sha256": "a1c2f3414acc5586cee6964e7ad1f4fa7c96eb131876c9c88aed3bef6d0b8f15"
+    },
+    {
+      "path": "reports/generated/internvl_tile_budget_v1.json",
+      "sha256": "579fdc0dc758703e026a5bdd3bc51131fb6883e94154537c9aa6327be55a796f"
+    },
+    {
+      "path": "reports/generated/ontology_visibility_effect_v1.json",
+      "sha256": "e9b7d586e522a0349c83905278a963fb633cc5b40d28c554c825880eb36bbaf9"
+    },
+    {
+      "path": "reports/generated/source_seed_resolution_sensitivity_v1.json",
+      "sha256": "c9e61e0442ffa43f53d96e6808170e8a690236b9b457a741b32f919655d2913c"
+    },
+    {
+      "path": "reports/generated/ontology_mapping_control_v1.json",
+      "sha256": "3152b8a4fbb4e1c2c1e06cb2fd8a2b50128b262e866955bdb2467b4a1c8aa565"
+    },
+    {
+      "path": "reports/generated/text_only_image_grounding_control_v1.json",
+      "sha256": "0b78c6a57c4b8b8b3b234cf0a00c88c25d8f2144c95acd291ef0adbd160a7ed0"
+    },
+    {
+      "path": "paper/assets/pidqa_sheet_282.jpg",
+      "sha256": "1a3f8c6d66f86cf9ff6c38add510edeb76cf592b3ed620485549640ca7c4f2aa"
+    },
+    {
+      "path": "paper/assets/pidqa_sheet_184.jpg",
+      "sha256": "85cbff085ad8006745188babb9abacb6ff70d8e386c665985aa46bd4f96d794f"
+    }
+  ],
+  "status": "pass"
+}

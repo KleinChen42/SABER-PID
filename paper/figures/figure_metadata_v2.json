@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "bytes": 24899,
+      "path": "paper\\figures\\figure_1_evaluation_protocol.pdf",
+      "sha256": "c1f526717a00413cf32aab245da3796b5db694d070046c17c38da86a48be84c3"
+    },
+    {
+      "bytes": 225892,
+      "path": "paper\\figures\\figure_1_evaluation_protocol.png",
+      "sha256": "6bddeb687bc4f474728c5352ab11802da9abaf09dc8f7b043b34a6060236ce62"
+    },
+    {
+      "bytes": 27164,
+      "path": "paper\\figures\\figure_2_controlled_effects.pdf",
+      "sha256": "b97dea5d314dd593f8aa45932b3b688e9e44e87ce2446cfaddc34b87a859bd8b"
+    },
+    {
+      "bytes": 269903,
+      "path": "paper\\figures\\figure_2_controlled_effects.png",
+      "sha256": "d307b13603f86336c93e46a8ae366900d30c190e29836cef57e2592d6cc16412"
+    },
+    {
+      "bytes": 24832,
+      "path": "paper\\figures\\figure_3_source_split_sensitivity.pdf",
+      "sha256": "2e1683db2724c8c8a96b9f90a644ab95c124665e247d33042de185e7ee2ee25c"
+    },
+    {
+      "bytes": 276478,
+      "path": "paper\\figures\\figure_3_source_split_sensitivity.png",
+      "sha256": "b5d0f7695bf553f86ab16ee2d3a5c890d235e381a3735fa015279a8c53dd0c75"
+    }
+  ],
+  "generator": "scripts/build_paper_figures_v2.py",
+  "image_generation": "deterministic matplotlib rendering from frozen numerical artifacts; no generative image model used",
+  "source_artifacts": [
+    "reports/generated/qwen8_value_budget_sensitivity_v1.json",
+    "reports/generated/image_dependence_control_v1.json",
+    "reports/generated/internvl_tile_budget_v1.json",
+    "reports/generated/ontology_visibility_effect_v1.json",
+    "reports/generated/source_seed_resolution_sensitivity_v1.json"
+  ],
+  "status": "pass"
+}

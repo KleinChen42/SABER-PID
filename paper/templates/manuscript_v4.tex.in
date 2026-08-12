@@ -1,0 +1,465 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.88in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,pdftitle={@@TITLE@@}}
+\graphicspath{{figures/}}
+\setlength{\emergencystretch}{3em}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\title{@@TITLE@@}
+\author{Author names and affiliations to be supplied at submission}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Reliable tag extraction from piping and instrumentation diagrams can support
+document indexing, engineering-data migration, and candidate retrieval, but a
+high vision--language model score does not by itself establish that the model
+read the correct drawing. We present SABER-PID, a source-isolated
+counterfactual evaluation workflow that separates image evidence from
+same-drawing retrieval and language priors while recording actual input and
+output budgets. On 100 source-disjoint PIDQA drawings, frozen Qwen3-VL-8B at a
+3072-side, 192-token operating point achieved tag precision @@QWEN_P@@, recall
+@@QWEN_R@@, F1 @@QWEN_F1@@, and exact-set accuracy @@QWEN_EXACT@@. Correct
+images exceeded source-shuffled and no-image controls by @@E3@@ and @@E8@@ F1,
+respectively. The 3072-minus-768 effect remained @@E2@@ at a 512-token cap and
+@@E6_29@@/@@E6_31@@ across two descriptive source partitions. Frozen
+full-image PaddleOCR reached F1 @@OCR_F1@@. A reference-free descriptive
+fusion analysis exposed complementary operating modes: set union raised
+recall to @@UNION_R@@ and F1 to @@UNION_F1@@, whereas set intersection reached
+precision @@INTERSECTION_P@@. @@FUSION_VALIDATION_ABSTRACT@@ Source isolation reduced an
+input-retrieval-plus-prior diagnostic from @@R1_RANDOM@@ to @@R1_SOURCE@@,
+showing why drawing-level separation matters. These results establish a
+reproducible route to image-grounded candidate-tag retrieval and configurable
+precision--recall trade-offs. They do not establish general topology
+reasoning, and PIDQA remains a single synthetic source family.
+\end{abstract}
+
+\noindent\textbf{Keywords:} piping and instrumentation diagrams; vision--language
+models; engineering document intelligence; tag extraction; source isolation;
+counterfactual evaluation; multimodal information retrieval
+
+\section{Introduction}
+
+Piping and instrumentation diagrams encode equipment, instruments, process
+lines, and control relationships in visually dense engineering documents.
+Their tags connect drawings to equipment lists, maintenance records, and
+engineering databases. Reliable tag retrieval is therefore a practical first
+step toward document indexing and data migration, particularly when legacy
+drawings must be searched before complete graph reconstruction is available.
+
+Modern vision--language models offer a flexible interface for this task, but
+their apparent competence is difficult to interpret. One drawing generates
+many related questions, small tags compete with long-range topology, and a
+model can answer from task regularities without using the requested image. A
+useful engineering result must therefore show not only that a configuration
+scores well, but that its gain follows the correctly paired drawing and
+persists under explicit operating controls.
+
+Most P\&ID research has therefore focused on symbol detection, association,
+graph reconstruction, and end-to-end digitization \cite{rahul2019,paliwal2021,
+stuermer2025,prasad2026}. PIDQA adds 64,000 graph-derived questions over 500
+synthetic source sheets \cite{gupta2025}. This creates a useful stress test for
+multimodal question answering, but it also creates a measurement problem:
+questions from the same drawing are statistically and visually dependent.
+Random question splitting can expose a route unavailable on an unseen
+drawing, a special case of the leakage and grouping failures documented more
+broadly in machine-learning evaluation \cite{kapoor2023,geras2013}.
+
+Document and chart VQA benchmarks demonstrate that text recognition and
+layout reasoning interact \cite{mathew2021,masry2022}. Large VLM evaluation
+also shows that fluent outputs need not be visually supported
+\cite{li2023pope,leng2024}. A P\&ID evaluation should therefore answer a more
+operational question than ``which configuration is larger?'': \emph{which
+document capability is reliably available, and which evidence supports it?}
+
+We address that question with \emph{SABER-PID}: \textbf{S}ource-isolated,
+\textbf{A}nswer-hidden, \textbf{B}udget-recorded,
+\textbf{E}vidence-counterfactual, and \textbf{R}eported-by-task evaluation.
+It is a reproducible engineering measurement workflow rather than a model
+architecture. The contribution is threefold:
+
+\begin{enumerate}[leftmargin=1.5em,itemsep=2pt]
+\item drawing-level source isolation and answer-hidden inference that remove
+an available same-source route from the primary evaluation;
+\item correct-image, source-shuffled, and no-image interventions that localize
+a large high-detail Qwen tag-reading effect across output caps and source
+partitions; and
+\item a truth-free OCR--VLM fusion analysis that converts complementary errors
+into configurable coverage, precision, and balanced tag-retrieval modes.
+\end{enumerate}
+
+\section{Related work and evaluation objective}
+
+Digitize-PID released a synthetic P\&ID resource and an end-to-end
+digitization pipeline \cite{paliwal2021}; PIDQA paired those drawings with
+executable graph-query questions across connectivity, count, spatial-count,
+and value tasks \cite{gupta2025}. Recent P\&ID studies explore graph-oriented
+and multimodal workflows \cite{alimin2025,zhu2026}. Engineering-diagram
+benchmarks such as Enginuity broaden this multimodal setting
+\cite{kumar2026}, while DocVQA and ChartQA show the distinct roles of visual
+text and structure in document question answering \cite{mathew2021,masry2022}.
+
+The present work is complementary. We do not train a new architecture or
+claim leaderboard leadership. We use frozen Qwen3-VL and InternVL checkpoints
+\cite{bai2025,wang2025}, a specialized OCR comparator
+\cite{du2020}, and controlled input interventions to identify what an observed
+score can support. This follows a measurement view of VLM reliability: image
+removal and image corruption expose dependence on visual evidence, while
+source grouping and hidden references protect the evaluation boundary.
+
+\section{Materials and methods}
+
+\subsection{Dataset, source identity, and frozen evaluation set}
+
+PIDQA contains 64,000 questions from 500 Dataset-PID sheets, with 16,000
+questions in each of four task families. We retain the source sheet as the
+clustering and splitting unit. The primary Set B evaluation contains one
+deterministically selected record per source and task for 100 source sheets
+(400 records). Public identifiers are ranked by SHA-256; answers, Cypher
+queries, and model outputs do not enter selection. Every model-facing manifest
+contains the instance ID, source ID, task, question, image path, and public
+template fields only. References remain in a scorer-only store.
+
+The task-prior comparator uses only the seed-17 source-isolated training
+partition. It predicts the most frequent normalized training answer within
+each task and receives no image. The final answer-isolation audit covers
+@@AUDIT_INPUTS@@ public manifests and @@AUDIT_OUTPUTS@@ raw output files from
+the primary E2--E8 controls; no public input contains \texttt{answer} or
+\texttt{cypher}.
+
+\subsection{Input-retrieval-plus-prior split diagnostic}
+
+For seeds 3, 17, 29, 43, and 71, question-random and source-isolated splits use
+60\% training, 20\% calibration, and 20\% test allocations. The reported L5
+diagnostic builds an unambiguous cache over training records keyed by the
+exact source-image SHA-256 and a frozen semantic signature of the released
+question template and public fields. A hit returns the unique cached training
+answer; a miss falls back to the training-only task majority. The diagnostic
+uses neither learned embeddings nor nearest neighbours, and \texttt{source\_id}
+is not a cache key. Each split has 38,400 training and 12,800 test questions.
+Image plus semantic cache coverage is present only when the identical drawing
+appears across the random split. This is an input-recoverable route audit, not
+an observation of VLM behaviour.
+
+\subsection{Frozen models, prompt, and counterfactual controls}
+
+The primary instrument is frozen Qwen3-VL-8B-Instruct with greedy decoding and
+the pre-specified P0 prompt. Qwen receives a maximum image side of 768 or 3072
+and an output cap of 192 or 512, as labelled for each contrast. E2 changes the
+output cap to 512 on the 100 value records. E3 replaces each P\&ID with a
+deterministic Sattolo source derangement (100 sources, no fixed point). E8
+retains model, prompt, decoder, question, and 192-token cap while removing all
+image content. E5 adds a fixed public symbol-prototype legend as a second
+image; E7 preserves its crops, grid, font, dimensions, and image count while
+cyclically shifting numeric labels 1--32. E6 retains two pre-specified source
+partitions as descriptive sensitivity analyses.
+
+The cross-family extension uses frozen InternVL3.5-8B on the same 100 value
+records with correct, source-shuffled, and no-image conditions, seven realised
+448-pixel tiles for image conditions, a 512-token cap, and the tokenizer's
+documented Mistral-regex correction enabled. The OCR comparator
+uses frozen PaddleOCR 2.8.1 / PaddlePaddle 2.6.2 with the English pipeline
+(PP-OCRv3 detector and PP-OCRv4 recognizer) on each complete drawing, no crop,
+no angle classifier, and detector maximum side 3072. Candidate tags are parsed
+by the same legal grammar and filtered only by
+the question's public prefix; no answer or test-set tuning is available.
+
+\subsection{Reference-free OCR--VLM fusion modes}
+
+The frozen Qwen and geometry-joined OCR tag sets are combined without scores,
+references, or learned parameters. Four simple rules are retained: set union,
+set intersection, OCR if non-empty with Qwen fallback, and Qwen if non-empty
+with OCR fallback. Union targets candidate coverage; intersection targets a
+high-precision shortlist; and the fallback rules retain one instrument's
+output when it is available. The complete rule family is reported. Because
+these combinations were analysed after the individual Qwen and OCR results,
+the fusion study is explicitly descriptive and is not presented as an
+independently validated model-selection result.
+
+\subsection{Scoring, operating quantities, and uncertainty}
+
+Strict scoring normalizes Booleans, one integer, or a set of comma-separated
+tags. A separately reported conservative semantic parser accepts a leading
+Boolean, a single integer token, or a frozen tag grammar; it never consults the
+reference. Value questions report tag precision, recall, F1, and exact-set
+accuracy together. Empty truth and prediction sets receive exact agreement;
+duplicates are removed before set scoring. All paired intervals use 10,000
+source-cluster bootstrap replicates with \texttt{source\_id} as the resampling
+unit and comparison-specific fixed seeds. No post-hoc equivalence margin is
+introduced.
+
+Recorded operating quantities include processor tensor elements or realised
+tiles, output cap, mean and 95th-percentile generated tokens, cap rate,
+end-to-end generation latency, and peak allocated GPU memory where available.
+Latency is not interpreted as visual-encoding cost because generation length
+co-varies with the condition.
+
+\begin{table}[H]
+\centering
+\caption{SABER-PID study design and principal tag-reading evidence. Effects
+are paired at source level with 95\% source-cluster bootstrap intervals.}
+\label{tab:contract}
+\scriptsize
+\begin{tabularx}{\linewidth}{P{0.055\linewidth}P{0.18\linewidth}P{0.22\linewidth}P{0.23\linewidth}Y}
+\toprule
+ID & Engineering question & Frozen comparison & Outcome & Interpretation \\
+\midrule
+T1 & Does repeated drawing identity affect evaluation? & Five random/source-isolated split pairs & Random--source diagnostic gap @@R1_GAP@@ points & Split by drawing before model comparison \\
+T2 & Does detail expose small tags? & 3072--768 at a 512-token cap & Tag F1 @@E2@@ @@E2_CI@@ & High-detail tag reading survives the output-cap control \\
+T3 & Is the gain tied to the requested drawing? & Correct--source-shuffled image & Tag F1 @@E3@@ @@E3_CI@@ & Correct drawing identity is necessary \\
+T4 & Is the gain visual? & Correct image--no image & Tag F1 @@E8@@ @@E8_CI@@ & The tag signal is image-grounded \\
+T5 & Does the effect persist? & Two caps and two source partitions & Effects @@E2_192@@ to @@E6_29@@ & Positive direction across all four descriptive contrasts \\
+T6 & Are OCR and VLM errors complementary? & Union, intersection, and fallback rules & Union F1 @@UNION_F1@@; intersection P @@INTERSECTION_P@@ & Select coverage or precision without answer-aware fusion \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figure_1_image_grounded_tag_reading_v5.pdf}
+\caption{Counterfactual validation on an actual CC0 PIDQA drawing. The case is
+the minimum SHA-256 among @@VALUE_ELIGIBLE@@ records satisfying the frozen
+complete-recovery rule. Only the correctly paired 3072 input recovers the
+reference tag set; the full drawing is shown without an answer-guided crop.}
+\label{fig:evidence-ladder}
+\end{figure}
+
+\section{Results}
+
+\subsection{High-detail input enables source-specific tag retrieval}
+
+At a 512-token cap, Qwen strict value-tag F1 is @@E2_LOW@@ at 768 and
+@@E2_HIGH@@ at 3072, a difference of @@E2@@ (@@E2_CI@@). The 768 condition
+reaches the cap on @@E2_LOW_CAP@@ of records, yet raising its cap from 192 to
+512 does not recover exact value answers. The Set B high-minus-low effect is
+@@E2_192@@ (@@E2_192_CI@@) at the original 192-token cap and @@E2@@
+(@@E2_CI@@) at 512. The pre-specified seed-29 and seed-31 source partitions
+retain effects of @@E6_29@@ (@@E6_29_CI@@) and @@E6_31@@ (@@E6_31_CI@@),
+respectively (Figure~\ref{fig:robustness}). All four contrasts are positive;
+the source partitions remain descriptive sensitivity analyses rather than
+independent replications.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figure_2_tag_reading_robustness_v5.pdf}
+\caption{Tag-reading robustness. Panel A shows the high-detail and
+counterfactual-image effects. Panel B retains both output caps and both
+pre-specified source partitions. Intervals use 10,000 source-cluster bootstrap
+replicates.}
+\label{fig:robustness}
+\end{figure}
+
+\subsection{Correct and counterfactual images establish visual grounding}
+
+At the 3072-side, 192-token operating point, correct-image precision, recall,
+F1, and exact-set accuracy are @@QWEN_P@@, @@QWEN_R@@, @@QWEN_F1@@, and
+@@QWEN_EXACT@@. The same questions yield F1 @@SHUFFLED_F1@@ with a
+source-shuffled image and @@TEXT_F1@@ without an image. Correct minus shuffled
+is @@E3@@ (@@E3_CI@@), and correct minus no image is @@E8@@ (@@E8_CI@@).
+Thus, the large tag signal follows the requested drawing rather than merely
+the prompt or the presence of arbitrary P\&ID pixels.
+
+Figure~\ref{fig:evidence-ladder} makes the comparison inspectable. Under the
+frozen minimum-hash rule, only the correctly paired 3072 input returns the
+complete reference set; the lower-detail, source-shuffled, and no-image
+conditions produce zero tag F1. The selection rule is deterministic, and the
+complete drawing is shown because public records provide no tag coordinates.
+
+\subsection{OCR and VLM predictions form a complementary operating envelope}
+
+\begin{table}[H]
+\centering
+\caption{Reference-free tag-retrieval modes on the same 100 sources. Fusion
+uses predicted sets only. All four simple rules are reported in the
+supplement; the table shows the distinct operating points.}
+\label{tab:fusion}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Mode & Precision & Recall & F1 & Exact \\
+\midrule
+Qwen3-VL-8B, correct image, 3072/192 & @@QWEN_P@@ & @@QWEN_R@@ & @@QWEN_F1@@ & @@QWEN_EXACT@@ \\
+PaddleOCR, full image, geometry join v1 & @@OCR_P@@ & @@OCR_R@@ & @@OCR_F1@@ & @@OCR_EXACT@@ \\
+Qwen--OCR set union & @@UNION_P@@ & @@UNION_R@@ & @@UNION_F1@@ & @@UNION_EXACT@@ \\
+Qwen--OCR set intersection & @@INTERSECTION_P@@ & @@INTERSECTION_R@@ & @@INTERSECTION_F1@@ & @@INTERSECTION_EXACT@@ \\
+OCR if non-empty, otherwise Qwen & @@OCR_FALLBACK_P@@ & @@OCR_FALLBACK_R@@ & @@OCR_FALLBACK_F1@@ & @@OCR_FALLBACK_EXACT@@ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+PaddleOCR attains higher precision than Qwen, while Qwen recovers a different
+fraction of the reference tags. Their set union raises recall to @@UNION_R@@
+and F1 to @@UNION_F1@@; its F1 increment over Qwen is @@UNION_QWEN_DIFF@@
+(@@UNION_QWEN_DIFF_CI@@). The union-minus-OCR difference is
+@@UNION_OCR_DIFF@@ (@@UNION_OCR_DIFF_CI@@), whose interval crosses zero. Set
+intersection reaches precision @@INTERSECTION_P@@, providing a high-confidence
+shortlist at lower recall. The OCR-first fallback reaches F1
+@@OCR_FALLBACK_F1@@ and exact-set accuracy @@OCR_FALLBACK_EXACT@@. These
+truth-free rules define useful retrieval modes rather than a learned ensemble.
+Because the rule family was analysed after the component results, the fusion
+comparison remains descriptive.
+
+@@FUSION_VALIDATION_MAIN@@
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figure_3_hybrid_tag_operating_envelope_v5.pdf}
+\caption{Complementary OCR--VLM operating modes. Panel A reports precision,
+recall, and F1 for the frozen components and simple set/fallback rules. Panel B
+shows the initial Set B union effect and frozen union checks on two additional
+within-family source partitions. All rules use predictions only; no reference
+enters fusion.}
+\label{fig:fusion}
+\end{figure}
+
+\subsection{Source isolation improves the validity of the reported gain}
+
+Across five fixed split seeds, the input-retrieval-plus-prior diagnostic
+scores @@R1_RANDOM@@ under question-random splitting and @@R1_SOURCE@@ under
+source isolation, a mean gap of @@R1_GAP@@ percentage points. Individual gaps
+range from @@R1_GAP_MIN@@ to @@R1_GAP_MAX@@ points. The additional route comes
+from exact-image semantic cache hits and is therefore available only when the
+same drawing crosses the split. This diagnostic does not assert that the
+evaluated VLM exploited that route; it establishes why the headline
+tag-reading result is reported on unseen source drawings.
+
+\subsection{Boundary analyses delimit the application claim}
+
+The positive result is specific to tag retrieval. At the same 3072/192 point,
+aggregate strict accuracy is @@CORRECT_ACC@@ with the correct image and
+@@TEXT_ACC@@ without an image because structural tasks retain strong prior
+pathways; the full task matrix is reported in Supplementary Figure S1. A
+visible legend changes spatial-count accuracy, but correct numeric labels show
+no detected advantage over a layout-matched permutation (95\% interval,
+@@E7_SHORT_CI@@). The tokenizer-corrected InternVL3.5-8B extension produces
+correct-image F1 @@IV_CORRECT_F1@@ versus zero with wrong/no image, a small
+detected direction rather than a practical replication. These results remain
+in the supplement and prevent the tag-retrieval result from being generalized
+to topology reasoning, arbitrary model families, or a universal detail law.
+
+\section{Discussion}
+
+The principal engineering result is that high-detail tag retrieval can be
+validated as an image-grounded capability rather than inferred from an
+aggregate benchmark score. The effect remains large under two output caps,
+two source partitions, a source-shuffled drawing, and complete image removal.
+This combination is stronger than a resolution comparison alone: it links the
+gain to the requested source drawing and defines the operating point at which
+the capability is available.
+
+The OCR--VLM analysis turns that evidence into a practical retrieval design.
+For broad candidate generation, set union increases recall to @@UNION_R@@ and
+F1 to @@UNION_F1@@. For a conservative shortlist, set intersection reaches
+precision @@INTERSECTION_P@@. The OCR-first fallback provides a balanced mode
+with F1 @@OCR_FALLBACK_F1@@ and exact-set accuracy @@OCR_FALLBACK_EXACT@@.
+These modes are transparent set operations rather than a new trained model,
+so their outputs can be inspected, indexed, and checked by deterministic
+downstream rules. The initial Set B comparison was post-hoc; the complete rule
+family was subsequently frozen before the seed-29/31 checks. Evaluation on a
+second drawing family remains the next external-validity target.
+
+SABER-PID contributes the evidence discipline needed to interpret these
+capabilities. Drawing-level splits remove an available same-source route;
+answer-hidden manifests separate inference from scoring; actual budgets make
+conditions comparable; and wrong/no-image interventions test source identity
+and visual presence directly. This workflow is applicable to engineering
+document intelligence whenever many queries share one source artifact.
+
+The boundary controls do not overturn the positive application result; they
+locate it. Structural tasks, numeric legend semantics, and the second frozen
+model do not show the same practical magnitude. They are therefore retained
+in the supplement and summarized in the main text, while the paper's central
+claim remains the capability directly supported by convergent controls:
+source-specific candidate-tag retrieval from high-detail drawings.
+
+\section{Limitations}
+
+PIDQA is a single public synthetic 500-sheet source family. Source isolation
+protects unseen-sheet evaluation within that resource but does not establish
+performance on proprietary, scanned, or revision-marked plant drawings. The
+primary positive result concerns one frozen Qwen3-VL-8B prompt and decoding
+configuration; the much smaller InternVL3.5-8B effect shows that magnitude is
+not model-invariant. The OCR comparator is a frozen full-image pipeline rather
+than an optimized industrial recognizer. The initial Set B fusion comparison
+is post-hoc; frozen-rule seed checks remain within the same family and do not
+replace prospective validation on a second source family.
+
+The 100-source controls estimate one benchmark operating point rather than a
+universal detail law. Seed 29 and seed 31 are descriptive partitions, not
+independent datasets, and latency co-varies with generated length. The
+external PID2Graph/OPEN100 branch remains unavailable because the observed
+archive failed official size, MD5, and ZIP-central-directory checks; no member
+was extracted and no external score is reported.
+
+\section{Conclusion}
+
+High-detail vision--language processing provides a substantial,
+source-specific tag-retrieval signal on source-isolated PIDQA drawings.
+Correct/wrong/no-image controls establish that the gain follows the requested
+drawing, while output-cap and source-partition analyses show a stable positive
+direction. OCR and Qwen errors are complementary: reference-free union reaches
+recall @@UNION_R@@ and F1 @@UNION_F1@@, while intersection reaches precision
+@@INTERSECTION_P@@. Frozen-rule source-partition checks quantify the stability
+of the union mode without re-selection. SABER-PID converts these observations into a reproducible
+engineering evaluation workflow with explicit evidence boundaries. The
+supported application is candidate-tag retrieval and document intelligence;
+prospective validation on a second drawing family is the next step toward
+field deployment.
+
+\section*{Data and code availability}
+
+The accompanying reproducibility materials contain answer-isolated public
+manifests, scorer-only references, immutable raw generation JSONL,
+deterministic scorers, source-cluster reports, figure generators, and SHA-256
+release manifests. PIDQA/Dataset-PID source data are CC0 in the vendored
+license record; acquisition-by-reference remains the default for full image
+collections. Model weights are not redistributed. The archival DOI or public
+repository URL is submitter-owned and must be inserted before upload:
+\texttt{[SUBMITTER: ARCHIVE DOI/URL]}.
+
+\section*{Declaration of competing interest}
+The submitting authors must confirm the applicable competing-interest
+declaration before upload; no declaration is fabricated by this package.
+
+\section*{Funding}
+The submitting authors must enter the applicable funding statement before
+upload.
+
+\section*{Use of generative AI and AI-assisted technologies}
+Generative AI-assisted tools were used for code and manuscript drafting. All
+reported values were regenerated from machine-readable artifacts; figures were
+rendered deterministically and were not created or altered by a generative
+image model. The external editorial review motivating this revision was
+model-based, not a real human peer review.
+
+\begin{thebibliography}{99}
+\bibitem{rahul2019} R. Rahul, S. Paliwal, M. Sharma, and L. Vig, \emph{Automatic information extraction from piping and instrumentation diagrams}, arXiv:1901.11383, 2019.
+\bibitem{paliwal2021} S. Paliwal, A. Jain, M. Sharma, and L. Vig, \emph{Digitize-PID: Automatic digitization of piping and instrumentation diagrams}, arXiv:2109.03794, 2021.
+\bibitem{gupta2025} M. Gupta, C. Wei, T. Czerniawski, and R. Eiris, \emph{PIDQA---Question answering on piping and instrumentation diagrams}, \emph{Machine Learning and Knowledge Extraction}, 7(2), 39, 2025.
+\bibitem{alimin2025} A. A. Alimin et al., \emph{Talking like piping and instrumentation diagrams (P\&IDs)}, \emph{Systems and Control Transactions}, 2025.
+\bibitem{stuermer2025} J. M. St\"urmer, M. Graumann, and T. Koch, \emph{From engineering diagrams to graphs: Digitizing P\&IDs with transformers}, DSAA, 2025.
+\bibitem{prasad2026} S. Prasad and P. Mahapatra, \emph{SynthPID: P\&ID digitization from topology-preserving synthetic data}, arXiv:2604.16513, 2026.
+\bibitem{zhu2026} B. Zhu, S. Duong, J. Vyas, and M. Mercang\"oz, \emph{From P\&ID drawings to process graphs: A multimodal language model approach}, arXiv:2607.19568, 2026.
+\bibitem{kumar2026} A. Kumar et al., \emph{Enginuity: A dataset and benchmark for vision-language understanding of engineering diagrams}, arXiv:2606.03410, 2026.
+\bibitem{geras2013} K. Geras and C. Sutton, \emph{Multiple-source cross-validation}, ICML, 2013.
+\bibitem{kapoor2023} S. Kapoor and A. Narayanan, \emph{Leakage and the reproducibility crisis in machine-learning-based science}, \emph{Patterns}, 4, 100804, 2023. doi:10.1016/j.patter.2023.100804.
+\bibitem{mathew2021} M. Mathew, D. Karatzas, and C. V. Jawahar, \emph{DocVQA: A dataset for VQA on document images}, WACV, 2200--2209, 2021.
+\bibitem{masry2022} A. Masry, D. X. Long, J. Q. Tan, S. Joty, and E. Hoque, \emph{ChartQA: A benchmark for question answering about charts with visual and logical reasoning}, Findings of ACL, 2263--2279, 2022. doi:10.18653/v1/2022.findings-acl.177.
+\bibitem{li2023pope} Y. Li, Y. Du, K. Zhou, J. Wang, X. Zhao, and J.-R. Wen, \emph{Evaluating object hallucination in large vision-language models}, EMNLP, 292--305, 2023. doi:10.18653/v1/2023.emnlp-main.20.
+\bibitem{leng2024} S. Leng, H. Zhang, G. Chen, X. Li, S. Lu, C. Miao, and L. Bing, \emph{Mitigating object hallucinations in large vision-language models through visual contrastive decoding}, CVPR, 13872--13882, 2024.
+\bibitem{du2020} Y. Du et al., \emph{PP-OCR: A practical ultra lightweight OCR system}, arXiv:2009.09941, 2020.
+\bibitem{bai2025} S. Bai et al., \emph{Qwen3-VL technical report}, arXiv:2511.21631, 2025.
+\bibitem{wang2025} W. Wang et al., \emph{InternVL3.5: Advancing open-source multimodal models in versatility, reasoning, and efficiency}, arXiv:2508.18265, 2025.
+\end{thebibliography}
+\end{document}

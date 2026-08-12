@@ -1,0 +1,2 @@
+P&ID_number,Type,Symbol_Class,Prefix,Q_id,Question,GT,Cypher
+7,Value-Based,1,A,1,List tags,['A-1'],MATCH (n) RETURN n.tag

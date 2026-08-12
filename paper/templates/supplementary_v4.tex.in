@@ -1,0 +1,257 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{hyperref}
+\graphicspath{{figures/}}
+\hypersetup{pdftitle={Supplementary material: @@TITLE@@}}
+\setlength{\emergencystretch}{3em}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\title{Supplementary material: @@TITLE@@}
+\author{Author names and affiliations to be supplied at submission}
+\date{}
+\begin{document}
+\maketitle
+
+\section*{S1. Frozen prompts, parsing, and answer isolation}
+
+The exact Qwen P0 template is:
+
+\begin{quote}\small\ttfamily\raggedright
+You analyze a piping and instrumentation diagram (P\&ID). Answer only from the
+visible diagram. Return only the final answer, without explanation or
+Markdown.\\[2pt]
+Question: \{question\}
+\end{quote}
+
+The matched InternVL prompt uses the same sentence sequence; image conditions
+prepend the model's \texttt{<image>} placeholder, while the no-image condition
+does not. All generation is greedy. Qwen contrasts label maximum image side and
+output cap separately. InternVL image conditions label realised 448-pixel tile
+count and output cap. The Transformers Mistral-tokenizer warning is resolved by
+setting \texttt{fix\_mistral\_regex=true}; the warned first pass is retained as
+a diagnostic artifact but is not scored or reported as the extension result.
+
+Strict value scoring lowercases, trims, de-duplicates, sorts, and compares tag
+sets. The conservative semantic grammar accepts alphabetic prefixes followed
+by numeric, hyphen-numeric, or space-numeric suffixes (for example
+\texttt{KL-58999}, \texttt{UV-00-001}, \texttt{SDL 299}, and \texttt{CV1});
+bare uppercase tags are accepted after a frozen stopword filter. Empty strings
+and \texttt{[]} map to an empty set. The parser never reads the hidden truth.
+The answer-isolation audit covers @@AUDIT_INPUTS@@ public manifests and
+@@AUDIT_OUTPUTS@@ primary E2--E8 raw output files. Every successful output's
+legacy \texttt{answer} field aliases generated \texttt{raw} text rather than a
+reference label.
+
+\section*{S2. Five split diagnostics}
+
+The L5 diagnostic is an exact image-SHA-256 plus released-template semantic
+cache with a training-only task-majority fallback. There is no learned
+embedding, neighbour count, or use of \texttt{source\_id} as a cache key.
+The separate training-only task-majority prior scores @@PRIOR@@ aggregate
+strict accuracy on Set B. This high aggregate calibration value is retained
+because it motivates task-level reporting; it is not compared to tag F1 as if
+the two outcomes measured the same quantity.
+
+\begin{table}[H]
+\centering
+\caption{All pre-specified L5 split results. Each split has 38,400 training and
+12,800 test questions; the 20\% calibration partition is not used for cache or
+score construction.}
+\small
+\begin{tabular}{rrrrr}
+\toprule
+Seed & Question-random & Source-isolated & Difference & Difference (points) \\
+\midrule
+@@RETRIEVAL_ROWS@@
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{S3. Detailed Qwen counterfactual results}
+
+\begin{table}[H]
+\centering
+\caption{Value/tag controls. Effects are paired source-level differences with
+10,000 source-cluster bootstrap replicates.}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Contrast & Baseline F1 & Condition F1 & Difference [95\% CI] \\
+\midrule
+3072 minus 768, 192-token cap & @@E2_192_LOW@@ & @@E2_192_HIGH@@ & @@E2_192@@ @@E2_192_CI@@ \\
+3072 minus 768, 512-token cap & @@E2_LOW@@ & @@E2_HIGH@@ & @@E2@@ @@E2_CI@@ \\
+Correct minus source-shuffled, 3072/192 & @@SHUFFLED_F1@@ & @@CORRECT_F1@@ & @@E3@@ @@E3_CI@@ \\
+Correct minus no image, 3072/192 & @@TEXT_F1@@ & @@CORRECT_F1@@ & @@E8@@ @@E8_CI@@ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Visible-context controls (semantic spatial-count accuracy). E7
+preserves prototype crops, layout, font, dimensions, and second-image count.}
+\small
+\begin{tabular}{lrr}
+\toprule
+Contrast & 768 difference [95\% CI] & 3072 difference [95\% CI] \\
+\midrule
+Visible legend minus raw & @@E5_768@@ @@E5_768_CI@@ & @@E5_3072@@ @@E5_3072_CI@@ \\
+Correct labels minus permuted labels & @@E7_768@@ @@E7_768_CI@@ & @@E7_3072@@ @@E7_3072_CI@@ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figure_s1_controls_and_operating_quantities_v4.pdf}
+\caption{Structural correct-image increments, the full corrected InternVL
+tile-budget boundary, and recorded operating quantities. Latency is end-to-end
+generation time rather than isolated visual-encoder time.}
+\label{fig:s1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figure_s2_tag_reading_stability_v4.pdf}
+\caption{Qwen high-minus-low strict value-tag F1 across two output caps and two
+pre-specified descriptive source partitions. Seed 29 and seed 31 are not
+independent replications.}
+\label{fig:s2}
+\end{figure}
+
+\section*{S4. Actual budgets and output behaviour}
+
+\begin{table}[H]
+\centering
+\caption{Recorded operating quantities. Tensor elements are processor outputs,
+not asserted visual-token counts. Peak memory is observed allocated memory on
+the H200 run.}
+\scriptsize
+\begin{tabular}{p{0.31\linewidth}rrrrrr}
+\toprule
+Condition & Actual input & Cap & Tokens mean & Tokens p95 & Cap rate & Peak GiB \\
+\midrule
+@@OPERATING_ROWS@@
+\bottomrule
+\end{tabular}
+\end{table}
+
+For the Qwen 512-token value control, processor tensor elements are 2,211,840
+at 768 and 35,979,264 at 3072, a 16.27-fold ratio. The 768 condition generates
+substantially longer outputs and reaches the cap more often. This is why the
+observed end-to-end latency is not interpreted as visual encoding cost. Legacy
+192-token Qwen rows record resized image dimensions and output lengths but do
+not expose processor tensor elements or peak allocation; their input tensor
+sizes are not back-filled as if recorded.
+
+\section*{S5. Cross-family ladder and OCR comparator}
+
+InternVL3.5-8B uses the same 100 value records and identical source
+derangement as Qwen E3. Each image condition realises seven tiles (4,214,784
+tensor elements), and the no-image condition passes no pixel tensor. All three
+conditions use a 512-token cap. PaddleOCR uses the complete source drawing,
+the English PP-OCRv3 detector and PP-OCRv4 recognizer, CPU execution, no crop,
+no angle classifier, detector maximum side 3072, and the same frozen legal-tag
+grammar. A reference-free postprocessor optionally joins a recognized prefix
+fragment to the nearest vertically stacked numeric OCR box within frozen
+distance limits; fully formed tags with final numeric segments longer than two
+characters are never extended. Literal and geometry-joined scores are both
+reported. Neither parser is tuned on Set B answers.
+
+\begin{table}[H]
+\centering
+\caption{Extension metrics and recorded runtime summary.}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{P{0.29\linewidth}rrrrrr}
+\toprule
+Condition & P & R & F1 & Exact & \shortstack{Mean\\tokens} & \shortstack{Mean\\latency (s)} \\
+\midrule
+InternVL correct image & @@IV_CORRECT_P@@ & @@IV_CORRECT_R@@ & @@IV_CORRECT_F1@@ & @@IV_CORRECT_EXACT@@ & @@IV_CORRECT_TOKENS@@ & @@IV_CORRECT_LATENCY@@ \\
+InternVL wrong image & @@IV_SHUFFLED_P@@ & @@IV_SHUFFLED_R@@ & @@IV_SHUFFLED_F1@@ & @@IV_SHUFFLED_EXACT@@ & @@IV_SHUFFLED_TOKENS@@ & @@IV_SHUFFLED_LATENCY@@ \\
+InternVL no image & @@IV_TEXT_P@@ & @@IV_TEXT_R@@ & @@IV_TEXT_F1@@ & @@IV_TEXT_EXACT@@ & @@IV_TEXT_TOKENS@@ & @@IV_TEXT_LATENCY@@ \\
+PaddleOCR literal full image & @@OCR_LITERAL_P@@ & @@OCR_LITERAL_R@@ & @@OCR_LITERAL_F1@@ & @@OCR_LITERAL_EXACT@@ & n/a & @@OCR_LATENCY@@ \\
+PaddleOCR geometry join v1 & @@OCR_P@@ & @@OCR_R@@ & @@OCR_F1@@ & @@OCR_EXACT@@ & n/a & @@OCR_LATENCY@@ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+@@EXTENSION_SUPPLEMENT@@
+
+\section*{S6. Complete reference-free fusion rule family}
+
+Fusion uses only the frozen predicted Qwen and geometry-joined OCR tag sets.
+No reference, score, confidence threshold, or fitted parameter enters a fused
+prediction. The four simple rules were fixed as a complete reporting family
+for this descriptive post-hoc analysis; no rule is omitted because of its
+direction.
+
+\begin{table}[H]
+\centering
+\caption{All component and fusion operating points on the same 100 value
+records. Exact is strict set accuracy.}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Mode & Precision & Recall & F1 & Exact \\
+\midrule
+Qwen correct image & @@QWEN_P@@ & @@QWEN_R@@ & @@QWEN_F1@@ & @@QWEN_EXACT@@ \\
+PaddleOCR geometry join & @@OCR_P@@ & @@OCR_R@@ & @@OCR_F1@@ & @@OCR_EXACT@@ \\
+Set union & @@UNION_P@@ & @@UNION_R@@ & @@UNION_F1@@ & @@UNION_EXACT@@ \\
+Set intersection & @@INTERSECTION_P@@ & @@INTERSECTION_R@@ & @@INTERSECTION_F1@@ & @@INTERSECTION_EXACT@@ \\
+OCR if non-empty, otherwise Qwen & @@OCR_FALLBACK_P@@ & @@OCR_FALLBACK_R@@ & @@OCR_FALLBACK_F1@@ & @@OCR_FALLBACK_EXACT@@ \\
+Qwen if non-empty, otherwise OCR & @@QWEN_FALLBACK_P@@ & @@QWEN_FALLBACK_R@@ & @@QWEN_FALLBACK_F1@@ & @@QWEN_FALLBACK_EXACT@@ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Union minus Qwen F1 is @@UNION_QWEN_DIFF@@
+(@@UNION_QWEN_DIFF_CI@@), and union minus OCR is @@UNION_OCR_DIFF@@
+(@@UNION_OCR_DIFF_CI@@). Intersection exchanges recall for precision rather
+than improving F1. OCR-first fallback minus OCR is @@OCR_FALLBACK_OCR_DIFF@@
+(@@OCR_FALLBACK_OCR_DIFF_CI@@). These comparisons are descriptive and require
+prospective validation on another drawing family.
+
+@@FUSION_VALIDATION_SUPPLEMENT@@
+
+\section*{S7. Deterministic evidence-case selection}
+
+{\raggedright
+The positive Figure 1 rule first requires correct-3072 strict tag F1 $=1$ and
+correct-768, shuffled-3072, and no-image strict tag F1 $=0$. It then selects
+the lexicographically smallest SHA-256 of
+\texttt{source\_id || ``||'' || instance\_id}. There are
+@@VALUE_ELIGIBLE@@ eligible records; the selected instance is
+\texttt{@@VALUE_INSTANCE@@}, source \texttt{@@VALUE_SOURCE@@}, rank
+\texttt{@@VALUE_HASH@@}. A separate archived boundary-case rule requires a spatial-count record
+that is strictly correct without an image and strictly wrong with the correct
+3072 image, then applies the same hash rank. There are @@STRUCT_ELIGIBLE@@
+eligible records; the selected instance is \texttt{@@STRUCT_INSTANCE@@}, source
+\texttt{@@STRUCT_SOURCE@@}, rank \texttt{@@STRUCT_HASH@@}. Public records do
+not contain tag coordinates for the selected value instance, so no crop or
+box is shown. Both source drawings are covered by the local PIDQA CC0 record.
+\par}
+
+\section*{S8. Deterministic reproduction and environment}
+
+Run \texttt{python scripts/reproduce\_submission\_v5.py --root .} from the
+repository root. It re-scores included immutable outputs, rebuilds analyses and figures,
+regenerates manuscript sources, compiles both PDFs, and runs package checks. It
+does not rerun model inference or retry the unavailable external-data branch.
+The package records Python dependencies and the isolated OCR environment in
+machine-readable lock files. Raw JSONL retains model identifiers and per-row
+revisions, while release manifests retain SHA-256 values. GPU results were
+generated on NVIDIA H200 devices; model weights are not redistributed.
+
+The archival DOI/URL and author-owned administrative declarations cannot be
+generated by an automated technical workflow and remain explicit submitter
+fields. Their absence is not presented as experimental evidence.
+
+\end{document}

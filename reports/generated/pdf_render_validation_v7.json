@@ -1,0 +1,77 @@
+{
+  "documents": [
+    {
+      "encrypted": false,
+      "exists": true,
+      "log": "output/pdf/v7/manuscript.log",
+      "metadata_title": "Qualifying Image-Grounded Tag Retrieval in Piping and Instrumentation Diagrams with Source-Isolated Counterfactual Evaluation",
+      "name": "manuscript",
+      "overfull_hbox_count": 0,
+      "page_count": 13,
+      "page_size_points": [
+        612.0,
+        792.0
+      ],
+      "pdf": "output/pdf/v7/manuscript.pdf",
+      "rendered_pngs": [
+        "tmp/pdfs/final_validation_v7/manuscript/page-01.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-02.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-03.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-04.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-05.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-06.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-07.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-08.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-09.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-10.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-11.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-12.png",
+        "tmp/pdfs/final_validation_v7/manuscript/page-13.png"
+      ],
+      "sha256": "c12af8ee506c68107b3e76482cb5064bf4a91629c27f8ea28cd566b4ab744abf",
+      "size_bytes": 201232,
+      "undefined_citation_count": 0,
+      "undefined_reference_count": 0,
+      "underfull_hbox_count": 0
+    },
+    {
+      "encrypted": false,
+      "exists": true,
+      "log": "output/pdf/v7/supplementary.log",
+      "metadata_title": "Supplementary material: Qualifying Image-Grounded Tag Retrieval in Piping and Instrumentation Diagrams with Source-Isolated Counterfactual Evaluation",
+      "name": "supplementary",
+      "overfull_hbox_count": 0,
+      "page_count": 10,
+      "page_size_points": [
+        612.0,
+        792.0
+      ],
+      "pdf": "output/pdf/v7/supplementary.pdf",
+      "rendered_pngs": [
+        "tmp/pdfs/final_validation_v7/supplementary/page-01.png",
+        "tmp/pdfs/final_validation_v7/supplementary/page-02.png",
+        "tmp/pdfs/final_validation_v7/supplementary/page-03.png",
+        "tmp/pdfs/final_validation_v7/supplementary/page-04.png",
+        "tmp/pdfs/final_validation_v7/supplementary/page-05.png",
+        "tmp/pdfs/final_validation_v7/supplementary/page-06.png",
+        "tmp/pdfs/final_validation_v7/supplementary/page-07.png",
+        "tmp/pdfs/final_validation_v7/supplementary/page-08.png",
+        "tmp/pdfs/final_validation_v7/supplementary/page-09.png",
+        "tmp/pdfs/final_validation_v7/supplementary/page-10.png"
+      ],
+      "sha256": "029f064b541f8083da4114bb2fd3bbaafe74c6f5b046c409a9af28772f298fee",
+      "size_bytes": 125048,
+      "undefined_citation_count": 0,
+      "undefined_reference_count": 0,
+      "underfull_hbox_count": 0
+    }
+  ],
+  "failures": [],
+  "render_engine": "PyMuPDF",
+  "status": "pass",
+  "validation_version": "pdf-render-v7",
+  "visual_review": {
+    "record": "reports/generated/pdf_visual_inspection_v7.json",
+    "status": "separate inspection record required"
+  }
+}

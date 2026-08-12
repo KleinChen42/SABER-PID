@@ -1,0 +1,144 @@
+{
+  "analysis_hierarchy": {
+    "interpretation": "The two strict subsets are independent of Set B and each other, but all drawings remain inside the synthetic PIDQA family; no external-family claim is permitted.",
+    "primary": "Within each model/dataset/prompt, correct-minus-shuffled and correct-minus-text-only strict value-tag F1 with paired source bootstrap intervals",
+    "secondary": [
+      "task-wise strict accuracy for all four tasks",
+      "source-macro strict accuracy",
+      "p1-minus-p0 sensitivity without best-prompt selection",
+      "model-family and model-scale directional comparison"
+    ]
+  },
+  "answer_isolation": {
+    "allowlisted_field_projection": [
+      "dataset",
+      "e6_source_split_seed",
+      "fields",
+      "image_condition",
+      "image_control",
+      "image_path",
+      "image_source_id",
+      "instance_id",
+      "original_image_path",
+      "question",
+      "question_template_id",
+      "source_id",
+      "source_sheet",
+      "task"
+    ],
+    "forbidden_prediction_input_field_fragments": [
+      "answer",
+      "cypher"
+    ],
+    "scorer_reference_read_by_inference": false,
+    "status": "pass"
+  },
+  "conditions": [
+    "correct",
+    "shuffled",
+    "text_only"
+  ],
+  "datasets": [
+    {
+      "correct_input": "data/processed/rineng_overnight_v7/set_b100_correct_public.jsonl",
+      "correct_sha256": "c3cf9fc24c3a19b6ae8800960ac8baebfdee101679de856d2c7ed00b469bdf8e",
+      "dataset_id": "set_b100",
+      "record_count": 400,
+      "shuffled_input": "data/processed/rineng_overnight_v7/set_b100_shuffled_public.jsonl",
+      "shuffled_sha256": "0b780fc867970e611839fb70771d28fc0927a2324a440f4a3bc0eae3e7069836",
+      "source_count": 100,
+      "task_counts": {
+        "connectivity": 100,
+        "count": 100,
+        "spatial_count": 100,
+        "value": 100
+      }
+    },
+    {
+      "correct_input": "data/processed/rineng_overnight_v7/seed29_strict65_correct_public.jsonl",
+      "correct_sha256": "a3455746ededbb302288a38607a7902f205225ff51e09ac1225a2f3807502a1c",
+      "dataset_id": "seed29_strict65",
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_overnight_v7/seed29_strict65_shuffled_public.jsonl",
+      "shuffled_sha256": "2f5c780e41ec89881bcc954f0bd1344722724c3f4c1324a66dae4f0779e22fe7",
+      "source_count": 65,
+      "task_counts": {
+        "connectivity": 65,
+        "count": 65,
+        "spatial_count": 65,
+        "value": 65
+      }
+    },
+    {
+      "correct_input": "data/processed/rineng_overnight_v7/seed31_strict65_correct_public.jsonl",
+      "correct_sha256": "baef788d107053b6f86da23ba62210fc8548a7d958e7a523424e16eb9f9d63ac",
+      "dataset_id": "seed31_strict65",
+      "record_count": 260,
+      "shuffled_input": "data/processed/rineng_overnight_v7/seed31_strict65_shuffled_public.jsonl",
+      "shuffled_sha256": "fb6b4d3f86f3ba7879724b36ea7389a043adeb0373ae08f88f036b8287ae07f9",
+      "source_count": 65,
+      "task_counts": {
+        "connectivity": 65,
+        "count": 65,
+        "spatial_count": 65,
+        "value": 65
+      }
+    }
+  ],
+  "date": "2026-08-12",
+  "excluded": [
+    "intermediate image-budget sweep",
+    "learned fusion",
+    "answer-aware prompt selection",
+    "new model or dataset download"
+  ],
+  "frozen_inference": {
+    "do_sample": false,
+    "dynamic_preprocess_max_num_internvl": 12,
+    "max_image_side_qwen": 3072,
+    "max_new_tokens": 512,
+    "task_filter": "all four PIDQA tasks"
+  },
+  "membership": {
+    "all_three_pairwise_source_overlap": 0,
+    "seed29_strict_sources": 65,
+    "seed31_strict_sources": 65,
+    "set_b_sources": 100
+  },
+  "models": [
+    {
+      "family": "Qwen3-VL",
+      "model_label": "qwen3vl8b",
+      "model_path": "models/Qwen3-VL-8B-Instruct-modelscope",
+      "recommended_gpu": 2
+    },
+    {
+      "family": "Qwen3-VL",
+      "model_label": "qwen3vl32b",
+      "model_path": "models/Qwen3-VL-32B-Instruct-modelscope",
+      "recommended_gpu": 0
+    },
+    {
+      "family": "InternVL",
+      "model_label": "internvl35_8b",
+      "model_path": "models/InternVL3_5-8B-modelscope",
+      "recommended_gpu": 1
+    }
+  ],
+  "prompts": [
+    {
+      "prompt_id": "p0",
+      "selection": "pre-existing frozen F2 prompt; selected before v7 inference",
+      "sha256": "184085c056465088fdadaa882c6591ec175ec0fc2e100113365c2b2f20780223",
+      "template": "You analyze a piping and instrumentation diagram (P&ID). Answer only from the visible diagram. Return only the final answer, without explanation or Markdown.\n\nQuestion: {question}"
+    },
+    {
+      "prompt_id": "p1",
+      "selection": "pre-existing frozen F2 prompt; selected before v7 inference",
+      "sha256": "355814d103ff7ecf5f77f4617b128575845c23d48d66ae1570076c990a423925",
+      "template": "Read the P&ID image and answer the question using only visible symbols and connections. Give one concise final answer; do not explain your reasoning and do not use Markdown.\n\nQuestion: {question}"
+    }
+  ],
+  "status": "frozen_before_inference",
+  "version": "rineng-overnight-v7"
+}

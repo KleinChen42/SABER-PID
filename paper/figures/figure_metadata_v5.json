@@ -1,0 +1,72 @@
+{
+  "files": [
+    {
+      "bytes": 52457,
+      "path": "paper/figures/figure_1_image_grounded_tag_reading_v5.pdf",
+      "sha256": "19e834cc4b96162e3779a5e68cbfd7a7a2be203b6ea7c54c0ed487c0af6fa034"
+    },
+    {
+      "bytes": 746644,
+      "path": "paper/figures/figure_1_image_grounded_tag_reading_v5.png",
+      "sha256": "14f512111726cc1da0bc3171609f2eb675e62aca3b233d136275e973821545b5"
+    },
+    {
+      "bytes": 27548,
+      "path": "paper/figures/figure_2_tag_reading_robustness_v5.pdf",
+      "sha256": "d9f12eb697d6866a93ca3b4791cfe5ffb04acddf3d3afc5da32689a0d7e055aa"
+    },
+    {
+      "bytes": 323529,
+      "path": "paper/figures/figure_2_tag_reading_robustness_v5.png",
+      "sha256": "e35f0ea0f1a3a0a700d461dcba2a6723d4c6d196db78e65a909971c0e655f797"
+    },
+    {
+      "bytes": 32170,
+      "path": "paper/figures/figure_3_hybrid_tag_operating_envelope_v5.pdf",
+      "sha256": "9fbaee54697f5b5d5f7e7c5b9ec52ee1db4984641dc8b50c359e0f8f58c7e536"
+    },
+    {
+      "bytes": 305989,
+      "path": "paper/figures/figure_3_hybrid_tag_operating_envelope_v5.png",
+      "sha256": "88def926ff0efc08f1b56d8b91776f93d963af1234c24c4232d0b383d90e614b"
+    }
+  ],
+  "generator": "scripts/build_positive_narrative_figures_v5.py",
+  "image_policy": "deterministic composition of frozen evidence and one SHA-selected CC0 PIDQA drawing; no generative image model or answer-guided crop",
+  "source_artifacts": [
+    {
+      "path": "reports/generated/editorial_revision_evidence_v4.json",
+      "sha256": "a99a1abfb54c14a0df85b99922298c268259087f2fc4ace207688cf0159ae58c"
+    },
+    {
+      "path": "reports/generated/qwen8_value_budget_sensitivity_v1.json",
+      "sha256": "69da524c5b236de757b83c0dbad87e69abe85c950a145b3763596863dea06ccb"
+    },
+    {
+      "path": "reports/generated/image_dependence_control_v1.json",
+      "sha256": "a1c2f3414acc5586cee6964e7ad1f4fa7c96eb131876c9c88aed3bef6d0b8f15"
+    },
+    {
+      "path": "reports/generated/source_seed_resolution_sensitivity_v1.json",
+      "sha256": "c9e61e0442ffa43f53d96e6808170e8a690236b9b457a741b32f919655d2913c"
+    },
+    {
+      "path": "reports/generated/text_only_image_grounding_control_v1.json",
+      "sha256": "0b78c6a57c4b8b8b3b234cf0a00c88c25d8f2144c95acd291ef0adbd160a7ed0"
+    },
+    {
+      "path": "reports/generated/positive_narrative_hybrid_analysis_v5.json",
+      "sha256": "879ded9b37e45c3e283428b4268e4ecfcfc7439d7c6b0fa6dfdf43539af43240"
+    },
+    {
+      "path": "reports/generated/positive_narrative_fusion_validation_v5.json",
+      "sha256": "793d471b000d08507cec70399ba4e596c74ea198616a0a42065a1cb201b92cd0"
+    },
+    {
+      "path": "paper/assets/pidqa_sheet_282.jpg",
+      "sha256": "1a3f8c6d66f86cf9ff6c38add510edeb76cf592b3ed620485549640ca7c4f2aa"
+    }
+  ],
+  "status": "pass",
+  "version": "positive-narrative-v5"
+}

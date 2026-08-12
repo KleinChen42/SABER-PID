@@ -1,0 +1,2 @@
+P&ID_number,Type,Symbol_XX,Symbol_YY,Q_id,Question,GT,Cypher
+7,Spatial-Count,1,2,1,How many connected?,1,MATCH (n) RETURN count(n)

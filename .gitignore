@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+dist/
+build/
+*.egg-info/
+.venv/
+
+# Data, model caches, and generated experimental artifacts
+data/raw/
+data/processed/
+data/manifests/
+data/answer_store/
+outputs/
+reports/generated/
+models/
+.hf_cache/
+
+# Version the frozen V7 plan and compact, machine-readable V7 evidence.
+!data/manifests/
+data/manifests/*
+!data/manifests/rineng_overnight_v7_public_plan.json
+!reports/generated/
+reports/generated/*
+!reports/generated/rineng_overnight_v7_preflight.json
+!reports/generated/rineng_overnight_v7_score.json
+!reports/generated/rineng_overnight_v7_score.csv
+!reports/generated/rineng_overnight_v7_validation.json
+!reports/generated/rineng_overnight_v7_counterfactual_table.csv
+!reports/generated/rineng_overnight_v7_task_table.csv
+!reports/generated/rineng_overnight_v7_prompt_sensitivity.csv
+!reports/generated/rineng_overnight_v7_paper_summary.json
+!reports/generated/pdf_render_validation_v7.json
+!reports/generated/pdf_visual_inspection_v7.json
+
+# Recovered remote payloads remain local; their hashes are versioned in the manifest.
+reports/remote_logs/
+reports/remote_markers/
+
+# Local environment
+.env
+.DS_Store

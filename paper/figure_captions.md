@@ -1,0 +1,8 @@
+# Figure captions
+
+1. **Qualification decision.** Aggregate accuracy is retained as a diagnostic boundary. A task-specific claim proceeds through source, counterfactual-evidence, matched-budget, and scope gates. Values are generated from frozen analysis artifacts.
+2. **Paired qualification effects.** Panel A contrasts correctly paired, source-shuffled, and absent image evidence. Panel B compares visual-input budgets under two output caps and two descriptive source partitions. Intervals use 10,000 paired source-cluster bootstrap replicates.
+3. **Frozen cross-model counterfactual replication.** Rows cross three models with three pairwise source-disjoint PIDQA subsets and two pre-existing prompts. Columns show correct-image minus source-shuffled and correct-image minus no-image strict value-tag F1. Whiskers use 10,000 paired source-bootstrap replicates.
+4. **Reference-free operating modes and overlap-audited checks.** Panel A gives Set B precision--recall locations. Panel B shows pooled union-minus-Qwen F1 for Set B, Set-B-excluded 83-source subsets, and mutually disjoint 65-source subsets. The footer reports per-drawing candidate workload.
+5. **Supplementary Figure S1.** Structural correct-image increments, corrected InternVL tile-budget boundary, and recorded operating quantities. This boundary figure prevents the main tag-retrieval result from being generalized to all tasks or model families.
+6. **Supplementary Figure S2.** P1-minus-P0 correct-image value-tag F1 for all model/subset pairs. Eight of nine source-bootstrap intervals include zero; both frozen prompts are retained without best-prompt selection.

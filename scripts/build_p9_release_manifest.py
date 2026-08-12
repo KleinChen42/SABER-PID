@@ -1,0 +1,61 @@
+"""Build the final P9 release manifest from the prior mainline manifest."""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
+import json
+from pathlib import Path
+
+
+def digest(path: Path) -> str:
+    value = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            value.update(block)
+    return value.hexdigest()
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument("--json", required=True)
+    parser.add_argument("--csv", required=True)
+    args = parser.parse_args()
+    root = args.root.resolve()
+    previous = json.loads((root / "reports/generated/final_mainline_manifest.json").read_text(encoding="utf-8"))
+    paths = [row["path"] for row in previous["rows"]] + [
+        "LICENSES.md",
+        "reports/P9_LICENSE_RELEASE_AUDIT.md",
+        "reports/P9_EVIDENCE_MAP.md",
+        "reports/generated/p9_clean_smoke.json",
+        "reports/generated/p9_artifact_audit.json",
+        "reports/generated/p9_artifact_audit.csv",
+        "reports/generated/p9_manuscript_recomputed.json",
+        "scripts/run_p9_clean_smoke_v4.py",
+        "scripts/audit_p9_artifacts.py",
+        "scripts/recompute_p9_manuscript_evidence.py",
+        "scripts/build_p9_release_manifest.py",
+    ]
+    unique = list(dict.fromkeys(paths))
+    rows = []
+    for relative in unique:
+        path = root / relative
+        exists = path.exists() and path.is_file()
+        rows.append({"path": relative, "exists": exists, "size_bytes": path.stat().st_size if exists else 0, "sha256": digest(path) if exists else ""})
+    payload = {"manifest_version": "p9-release-v1", "artifact_count": len(rows), "missing_count": sum(not row["exists"] for row in rows), "rows": rows, "claim_boundary": previous["claim_boundary"]}
+    json_path, csv_path = Path(args.json), Path(args.csv)
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    json_path.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
+    with csv_path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=["path", "exists", "size_bytes", "sha256"])
+        writer.writeheader()
+        writer.writerows(rows)
+    print(json.dumps({"manifest_version": payload["manifest_version"], "artifact_count": payload["artifact_count"], "missing_count": payload["missing_count"]}, indent=2))
+    return 0 if payload["missing_count"] == 0 else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
