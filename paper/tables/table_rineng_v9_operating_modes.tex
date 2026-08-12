@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\centering
+\caption{Transparent PIDQA operating modes on 100 unseen sources. Workload columns are per-drawing median [IQR].}
+\label{tab:operating}
+\scriptsize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Mode & Engineering role & TP & FP & FN & Precision & Recall & F1 & Candidates & False candidates \\
+\midrule
+Qwen & single VLM & 192 & 152 & 156 & 0.5581 & 0.5517 & 0.5549 & 3 [1, 4] & 0 [0, 2] \\
+Joined OCR & low-false-positive OCR & 159 & 29 & 189 & 0.8457 & 0.4569 & 0.5933 & 2 [1, 3] & 0 [0, 0] \\
+Intersection & precision-first shortlist & 106 & 1 & 242 & 0.9907 & 0.3046 & 0.4659 & 1 [0, 2] & 0 [0, 0] \\
+OCR-first & balanced fallback & 175 & 39 & 173 & 0.8178 & 0.5029 & 0.6228 & 2 [1, 3] & 0 [0, 1] \\
+Union & recall-first coverage & 245 & 180 & 103 & 0.5765 & 0.7040 & 0.6339 & 4 [2, 5] & 1 [0, 2] \\
+\bottomrule
+\end{tabular}}
+\end{table}

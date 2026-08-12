@@ -1,0 +1,41 @@
+{
+  "figure_count": 2,
+  "figures": [
+    {
+      "bytes": 40073,
+      "path": "paper/figures/figure_1_saber_pid_overview_v9.pdf",
+      "sha256": "5ec4264709d6b80888ddf8390a1c460c915ca3df1738b11da7d143d562642d5e"
+    },
+    {
+      "bytes": 399599,
+      "path": "paper/figures/figure_1_saber_pid_overview_v9.png",
+      "sha256": "5b084ddcd99c9ad68f1da6cfe8b8c2817629554e75a7bf308a7797457b5a1f49"
+    },
+    {
+      "bytes": 45044,
+      "path": "paper/figures/figure_4_cost_aware_operation_v9.pdf",
+      "sha256": "972e741d7dca685557fd7ad7b0aedc902fa70dc8a32fe7594ac473c8e9e52707"
+    },
+    {
+      "bytes": 529680,
+      "path": "paper/figures/figure_4_cost_aware_operation_v9.png",
+      "sha256": "183c2b72b93da6359ef6262458127a304d2bbedfbb6175876704e4d5af946384"
+    }
+  ],
+  "metadata": "paper/figures/figure_metadata_v9.json",
+  "status": "pass",
+  "table_count": 2,
+  "tables": [
+    {
+      "bytes": 932,
+      "path": "paper/tables/table_rineng_v9_qualification_scorecard.tex",
+      "sha256": "fa59dd1205cda08ff4dafc12d9abfe81164a9eb70d03e0b506a8beb81882d6b0"
+    },
+    {
+      "bytes": 912,
+      "path": "paper/tables/table_rineng_v9_operating_modes.tex",
+      "sha256": "0e146b65fb6f6cd326b0241239b61ffae81f6e2b4d6396b21a2fb8a0891b0d5c"
+    }
+  ],
+  "version": "rineng-v9-editorial-assets"
+}

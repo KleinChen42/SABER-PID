@@ -1,0 +1,83 @@
+{
+  "mode": "inference-free",
+  "pdf_rebuild_skipped": false,
+  "score_rebuild_skipped": true,
+  "source_date_epoch": "1786492800",
+  "status": "pass",
+  "steps": [
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "scripts/build_rineng_v9_editorial_assets.py",
+        "--root",
+        "E:\\CODE\\START_01_PID_Reliability_Benchmark\\START_01_PID_Reliability_Benchmark"
+      ],
+      "name": "v9_editorial_assets",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"figures\": 2, \"report\": \"reports/generated/rineng_v9_editorial_assets.json\", \"status\": \"pass\", \"tables\": 2}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\scoop\\shims\\tectonic.EXE",
+        "--keep-logs",
+        "--outdir",
+        "output/pdf/v9",
+        "paper/manuscript.tex"
+      ],
+      "name": "manuscript_pdf",
+      "returncode": 0,
+      "stderr_tail": "Fontconfig error: Cannot load default config file: No such file: (null)\n",
+      "stdout_tail": "note: Running TeX ...\nnote: Rerunning TeX because \"manuscript.aux\" changed ...\nnote: Running xdvipdfmx ...\nnote: Writing `output/pdf/v9\\manuscript.pdf` (213.5732421875 KiB)\nnote: Writing `output/pdf/v9\\manuscript.log` (14.9521484375 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\scoop\\shims\\tectonic.EXE",
+        "--keep-logs",
+        "--outdir",
+        "output/pdf/v9",
+        "paper/supplementary.tex"
+      ],
+      "name": "supplementary_pdf",
+      "returncode": 0,
+      "stderr_tail": "Fontconfig error: Cannot load default config file: No such file: (null)\n",
+      "stdout_tail": "note: Running TeX ...\nnote: Rerunning TeX because \"supplementary.aux\" changed ...\nnote: Running xdvipdfmx ...\nnote: Writing `output/pdf/v9\\supplementary.pdf` (218.4150390625 KiB)\nnote: Writing `output/pdf/v9\\supplementary.log` (15.0556640625 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "scripts/build_pdf_render_validation_v4.py",
+        "--root",
+        "E:\\CODE\\START_01_PID_Reliability_Benchmark\\START_01_PID_Reliability_Benchmark",
+        "--pdf-dir",
+        "output/pdf/v9",
+        "--render-dir",
+        "tmp/pdfs/final_validation_v9",
+        "--output",
+        "reports/generated/pdf_render_validation_v9.json",
+        "--validation-version",
+        "pdf-render-v9",
+        "--visual-record",
+        "reports/generated/pdf_visual_inspection_v9.json"
+      ],
+      "name": "pdf_render_validation_v9",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"output\": \"E:\\\\CODE\\\\START_01_PID_Reliability_Benchmark\\\\START_01_PID_Reliability_Benchmark\\\\reports\\\\generated\\\\pdf_render_validation_v9.json\", \"status\": \"pass\"}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "scripts/validate_rineng_submission_v9.py",
+        "--root",
+        "E:\\CODE\\START_01_PID_Reliability_Benchmark\\START_01_PID_Reliability_Benchmark"
+      ],
+      "name": "rineng_submission_validation_v9",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"output\": \"reports/generated/rineng_submission_validation_v9.json\", \"status\": \"pass\"}\n"
+    }
+  ],
+  "tests_skipped": true,
+  "version": "rineng-submission-reproduction-v9"
+}

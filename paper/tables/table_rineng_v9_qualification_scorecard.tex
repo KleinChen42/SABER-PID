@@ -1,0 +1,17 @@
+\begin{table}[!htbp]
+\centering
+\caption{Qualification scorecard across drawing, quality, and model families. Effects are correct-image minus source-shuffled strict tag F1. Intervals use 10,000 grouped bootstrap replicates; the mild-quality row reports ranges over the four frozen conditions.}
+\label{tab:scorecard}
+\scriptsize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lllll}
+\toprule
+Setting & Evaluation unit & Correct F1 & Shuffled F1 & Requested-drawing effect [95\% interval] \\
+\midrule
+PIDQA, Qwen primary & 100 sources & 0.5549 & 0.0062 & +0.5487 [0.4729, 0.6239] \\
+PIDQA mild-quality matrix & 230 disjoint sources & 0.5605--0.5879 & 0.0114--0.0125 & +0.5482--+0.5754 \\
+PIDQA, InternVL 54-tile & 230 disjoint sources & 0.4846 & 0.0131 & +0.4715 [0.4064, 0.5332] \\
+Public DEXPI, Qwen & 26 logical cases / 35 images & 0.9057 & 0.0000 & +0.9057 [0.8409, 0.9841] \\
+\bottomrule
+\end{tabular}}
+\end{table}

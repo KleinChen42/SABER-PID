@@ -1,0 +1,14 @@
+{
+  "archive": "release/saber_pid_rineng_v9_public_release.zip",
+  "archive_bytes": 8200491,
+  "archive_sha256": "39f61f3b122e9d60633f6c681fcd7594767609c69e5aa801576954b2dead3493",
+  "bad_hashes": [],
+  "bad_sizes": [],
+  "bad_timestamps": [],
+  "failure_reasons": [],
+  "forbidden_members": [],
+  "local_path_leaks": [],
+  "member_count": 277,
+  "status": "pass",
+  "version": "rineng-public-release-validation-v9"
+}

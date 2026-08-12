@@ -1,0 +1,11 @@
+{
+  "archive": "release/saber_pid_rineng_v9_public_release.zip",
+  "archive_bytes": 8200491,
+  "archive_sha256": "39f61f3b122e9d60633f6c681fcd7594767609c69e5aa801576954b2dead3493",
+  "artifact_count": 275,
+  "directory": "release/saber_pid_rineng_v9_public_release",
+  "member_count": 277,
+  "release_version": "saber-pid-rineng-v9",
+  "status": "pass",
+  "version": "rineng-public-release-v9"
+}

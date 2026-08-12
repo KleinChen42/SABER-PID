@@ -1,0 +1,59 @@
+{
+  "abstract_words": 230,
+  "administrative_placeholders": {
+    "archive_doi_or_url": true,
+    "authors": true,
+    "funding": true
+  },
+  "citations": {
+    "bibliography": 21,
+    "cited": 21,
+    "missing": [],
+    "uncited": []
+  },
+  "derived_status": {
+    "paper/figures/figure_metadata_v9.json": "pass",
+    "reports/generated/rineng_cost_sensitive_operating_modes_v8.json": "pass",
+    "reports/generated/rineng_overnight_v7_score.json": "pass",
+    "reports/generated/rineng_revision_analysis_v6.json": "pass",
+    "reports/generated/rineng_v8_dexpi_external_score.json": "pass",
+    "reports/generated/rineng_v8_extension_score.json": "pass",
+    "reports/generated/rineng_v8_independent_validation.json": "pass",
+    "reports/generated/rineng_v8_paper_summary.json": "pass",
+    "reports/generated/rineng_v9_editorial_assets.json": "pass"
+  },
+  "failure_reasons": [],
+  "highlights": {
+    "count": 5,
+    "lengths": [
+      66,
+      67,
+      67,
+      65,
+      63
+    ]
+  },
+  "inspected_page_count": 29,
+  "keywords": {
+    "count": 6,
+    "values": [
+      "P\\&ID",
+      "engineering document intelligence",
+      "vision--language model",
+      "tag retrieval",
+      "counterfactual evaluation",
+      "cost-sensitive decision"
+    ]
+  },
+  "main_figure_count": 4,
+  "main_table_count": 2,
+  "missing_files": [],
+  "pdf_sha256": {
+    "manuscript": "aadcbe5fb39d196153daf04c80aba49480196a5550ba5daa547bcc9ae787066e",
+    "supplementary": "3cb37399161b8575111007e95b1b19642f0b8a0bf9c6f61aacae7e2b546999fe"
+  },
+  "rendered_page_count": 29,
+  "status": "pass",
+  "title": "SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision--Language Models for P&ID Tag Retrieval",
+  "version": "rineng-submission-validation-v9"
+}

@@ -11,16 +11,18 @@
 \usepackage{amsmath}
 \usepackage{hyperref}
 \graphicspath{{figures/}}
-\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,pdftitle={Supplementary material: Qualifying Image-Grounded Tag Retrieval in Piping and Instrumentation Diagrams with Source-Isolated Counterfactual Evaluation}}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,pdftitle={Supplementary material: SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision-Language Models for P\&ID Tag Retrieval}}
 \setlength{\emergencystretch}{3em}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
-\title{Supplementary material: Qualifying Image-Grounded Tag Retrieval in Piping and Instrumentation Diagrams with Source-Isolated Counterfactual Evaluation}
+\title{Supplementary material: SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision--Language Models for P\&ID Tag Retrieval}
 \author{Author names and affiliations to be supplied at submission}
 \date{}
 
 \begin{document}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
 \maketitle
 
 \section*{S1. Positioning and evidence contract}
@@ -37,6 +39,7 @@ work using only dimensions relevant to that decision.
 Bibliographic details and DOIs appear in the main manuscript.}
 \label{tab:s1_position}
 \scriptsize
+\setlength{\tabcolsep}{3pt}
 \begin{tabularx}{\linewidth}{P{0.18\linewidth}P{0.22\linewidth}P{0.20\linewidth}P{0.17\linewidth}Y}
 \toprule
 Work & Primary input/domain & Primary output & Evaluation emphasis & Relation to this study \\
@@ -45,23 +48,39 @@ Paliwal et al. (2021) & Synthetic P\&ID images & Digitized diagram elements & En
 Kim et al. (2021) & High-density industrial P\&ID images & Symbols and text & Industrial recognition performance & Demonstrates specialized recognition beyond generic VLM prompting \\
 Su et al. (2024) & High-resolution industrial P\&ID images & Symbols, text, and pipelines & Multi-stage visual recognition & Motivates task-specific rather than aggregate evaluation \\
 Gupta et al. (2025) & 500 Dataset-PID sheets & 64,000 graph-derived QA records & P\&ID question answering & Dataset and task taxonomy used here \\
+Alimin et al. (2025, 2026) & P\&ID data and structured graph context & Language-model interaction with P\&IDs & Multimodal and graph-retrieval interaction & Complementary structured-interaction target \\
+Zhu et al. (2026) & P\&ID drawings & Process graphs & Multimodal graph construction & Complementary topology-oriented output \\
 Nourbakhsh et al. (2025) & Document VQA & Grounding-aware evaluation & Whether outputs are attributable to documents & Adjacent grounding motivation \\
-This study & Source-isolated PIDQA drawings & Candidate value-tag sets & Correct, shuffled, and absent images; budget and scope gates & Evaluation and qualification workflow \\
+This study & Source-isolated PIDQA and public DEXPI drawings & Candidate value-tag sets and operating mode & Counterfactual qualification, budget transfer, and cost-sensitive operation & Qualification and operation workflow \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-The evidence phases are:
-\begin{enumerate}
-\item configuration records, used to freeze prompt, parser, legal tag grammar,
-and inference conditions;
-\item primary Set B qualification, using 100 unseen source drawings;
-\item descriptive Set B fusion, where the component predictions motivated a
-complete four-rule operating family;
-\item frozen-rule within-family checks on seed-29/31 partitions, followed by
-explicit source-overlap exclusions.
-\end{enumerate}
-The last phase is stability evidence inside PIDQA, not an external replication.
+Table~S2 records the role of every evidence phase. This prevents a robustness
+or descriptive analysis from being relabelled as independent confirmation and
+also makes clear that no low-scoring cell has been removed from the evidence
+archive.
+
+\begin{table}[H]
+\centering
+\caption{Evidence phases, frozen decisions, and allowed interpretation.}
+\label{tab:s1_phases}
+\scriptsize
+\begin{tabularx}{\linewidth}{P{0.16\linewidth}P{0.22\linewidth}P{0.25\linewidth}Y}
+\toprule
+Phase & Data role & Frozen before scoring & Allowed interpretation \\
+\midrule
+Configuration & Earlier development records & Prompt, parser, legal grammar, visual conditions & Select measurement settings; no confirmatory claim \\
+Primary qualification & Set B, 100 unseen sources & Source selection, Qwen condition, controls, estimators & Qualify bounded Qwen tag retrieval \\
+Cross-scale matrix & Three source-disjoint subsets & Three models, two prompts, three evidence conditions & Test direction and magnitude stability within PIDQA \\
+Quality robustness & Same 230 sources & Qwen 3072/512; four paired quality conditions & Test change in requested-drawing dependence \\
+Closer-budget model transfer & Same 230 sources & InternVL 54-tile/512; three evidence conditions & Test transfer under a closer safe gross input budget \\
+External-family transfer & DEXPI, 26 logical cases & Image/XML rule, Qwen/OCR contracts, cross-case derangement & Test a second public family, not field deployment \\
+Descriptive operation & Set B outputs & Complete deterministic set/fallback family & Describe complementarity and operating points \\
+Frozen-rule sensitivity & Seed-29/31 with audited exclusions & All set/fallback rules & Within-family direction and uncertainty \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 \section*{S2. Frozen prompts, parsing, and answer isolation}
 
@@ -216,6 +235,17 @@ all tasks or model families.}
 \label{fig:s1_controls}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figure_2_qualification_effects_v6.pdf}
+\caption{Complete primary paired qualification effects. Panel A contrasts
+correct, source-shuffled, and absent image evidence. Panel B reports
+visual-input-budget effects at two output caps and on two descriptive source
+partitions. This full control view is retained alongside the compact main-text
+scorecard.}
+\label{fig:s5_qualification_effects}
+\end{figure}
+
 \section*{S6. OCR literal-versus-join ablation}
 
 PaddleOCR processes the complete source drawing with the English PP-OCRv3
@@ -364,6 +394,16 @@ middle ratio is positive in 9,994. These are uncertainty summaries for a
 sample-derived operating rule, not elicited real-world costs. The complete
 321-point loss and probability grid is distributed in
 \texttt{reports/generated/rineng\_cost\_sensitive\_operating\_modes\_v8.csv}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figure_3_operating_modes_v6.pdf}
+\caption{Original complete operating-mode and overlap-audited stability view.
+Panel A locates all Set B modes in precision--recall space. Panel B retains
+union-minus-Qwen estimates after explicit source-overlap exclusions. The
+candidate-workload footer is reproduced from frozen per-source outputs.}
+\label{fig:s7_operating_modes}
+\end{figure}
 
 \section*{S8. Source membership audit and frozen-rule checks}
 
@@ -530,6 +570,17 @@ reports the subsequent closest-safe 54-tile qualification.
 
 \input{tables/table_rineng_overnight_v7_counterfactual.tex}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figure_v7_cross_model_counterfactual_replication.pdf}
+\caption{Complete frozen native-budget cross-model counterfactual matrix.
+Rows cross three models, three pairwise source-disjoint subsets, and two
+pre-existing prompts. Both correct-minus-shuffled and correct-minus-no-image
+strict tag-F1 contrasts are shown; the low native-budget InternVL magnitudes
+are retained without cell selection.}
+\label{fig:s10_native_matrix}
+\end{figure}
+
 Figure~\ref{fig:s_v7_prompt} reports every P1-minus-P0 correct-image contrast.
 Eight of nine intervals include zero. The only exception is Qwen3-VL-32B on
 seed 29, where P1 is lower by 0.0487 with interval [-0.1044, -0.0025]. No
@@ -560,12 +611,13 @@ task, but the tested numeric mapping semantics do not show a detected effect.
 
 Run
 \begin{quote}\ttfamily
-python scripts/reproduce\_submission\_v6.py --root .
+python scripts/reproduce\_rineng\_submission\_v9.py --root .
 \end{quote}
-from the repository root. The script re-scores immutable outputs, rebuilds the
-v6 analysis and figures, runs unit and package checks, compiles manuscript and
-supplement PDFs, and performs page-render validation. It does not rerun model
-inference or retry the unavailable external-data branch.
+from the repository root. The script re-scores immutable V7/V8 outputs,
+rebuilds all deterministic analyses and V9 editorial assets, runs relevant
+unit checks, compiles manuscript and supplement PDFs, renders every page, and
+validates the current submission. It performs no model inference and no
+result-guided source selection.
 
 The recovered V7 matrix is independently reproduced without new inference by
 running
@@ -576,7 +628,7 @@ This command recomputes all 54 cell metrics, 36 paired effects and intervals,
 and nine prompt-sensitivity intervals before rebuilding the V7 tables,
 figures, and SHA-256 artifact manifest.
 
-The principal v6 and V7 machine-readable artifacts are:
+The principal machine-readable artifacts are:
 \begin{itemize}
 \item \texttt{reports/generated/rineng\_revision\_analysis\_v6.json};
 \item \texttt{reports/generated/rineng\_revision\_analysis\_v6.csv};
@@ -587,6 +639,10 @@ The principal v6 and V7 machine-readable artifacts are:
 \item \texttt{reports/generated/rineng\_overnight\_v7\_validation.json};
 \item \texttt{reports/RINENG\_OVERNIGHT\_V7\_ARTIFACT\_MANIFEST.json};
 \item \texttt{paper/figures/figure\_metadata\_v7.json}.
+\item \texttt{reports/generated/rineng\_v8\_paper\_summary.json};
+\item \texttt{reports/generated/rineng\_cost\_sensitive\_operating\_modes\_v8.json};
+\item \texttt{paper/figures/figure\_metadata\_v9.json};
+\item \texttt{reports/generated/rineng\_submission\_validation\_v9.json}.
 \end{itemize}
 The analysis JSON records the seven immutable input paths, byte sizes, and
 SHA-256 hashes. The release archive additionally records dependency versions,
@@ -657,8 +713,7 @@ crossed with correct, source-shuffled, and no-image conditions. Every row has
 status \texttt{ok}, \texttt{test\_answer\_used=false}, and the frozen-plan
 SHA-256 recorded in the machine-readable score report.
 Image rows record 54 non-overlapping 448-pixel tiles, no thumbnail, a 512-token
-cap, and 32,514,048 input tensor elements; no-image rows contain no pixel
-tensor.
+cap, and 32,514,048 input tensor elements; no-image rows contain no pixels.
 
 Pooled correct/source-shuffled/no-image F1 values are 0.4846/0.0131/0. The
 correct-minus-shuffled effect is +0.4715 [0.4064, 0.5332], and the

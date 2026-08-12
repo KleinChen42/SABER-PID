@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-title: "Qualifying Image-Grounded Tag Retrieval in Piping and Instrumentation Diagrams with Source-Isolated Counterfactual Evaluation"
+title: "SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision--Language Models for P&ID Tag Retrieval"
 message: "If you use this evaluation package, please cite the accompanying Results in Engineering manuscript and release manifest."
 type: software
 authors:
   - family-names: "Authors"
     given-names: "Withheld"
-version: "pidqa-rineng-qualification-submission-v6"
-date-released: 2026-08-11
+version: "saber-pid-rineng-submission-v9"
+date-released: 2026-08-12

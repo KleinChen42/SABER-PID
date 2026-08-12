@@ -2,7 +2,7 @@
 
 ## Title
 
-Qualifying Image-Grounded Tag Retrieval in Piping and Instrumentation Diagrams with Source-Isolated Counterfactual Evaluation
+SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision--Language Models for P&ID Tag Retrieval
 
 ## Authors and affiliations
 
@@ -18,7 +18,7 @@ Results in Engineering
 
 ## Keywords
 
-Engineering document intelligence; vision-language models; optical character recognition; tag retrieval; source isolation; counterfactual evaluation
+P&ID; engineering document intelligence; vision-language model; tag retrieval; counterfactual evaluation; cost-sensitive decision
 
 ## Date
 

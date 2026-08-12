@@ -1,0 +1,83 @@
+{
+  "documents": [
+    {
+      "encrypted": false,
+      "exists": true,
+      "log": "output/pdf/v9/manuscript.log",
+      "metadata_title": "SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision-Language Models for P&ID Tag Retrieval",
+      "name": "manuscript",
+      "overfull_hbox_count": 0,
+      "page_count": 13,
+      "page_size_points": [
+        612.0,
+        792.0
+      ],
+      "pdf": "output/pdf/v9/manuscript.pdf",
+      "rendered_pngs": [
+        "tmp/pdfs/final_validation_v9/manuscript/page-01.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-02.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-03.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-04.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-05.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-06.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-07.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-08.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-09.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-10.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-11.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-12.png",
+        "tmp/pdfs/final_validation_v9/manuscript/page-13.png"
+      ],
+      "sha256": "aadcbe5fb39d196153daf04c80aba49480196a5550ba5daa547bcc9ae787066e",
+      "size_bytes": 218699,
+      "undefined_citation_count": 0,
+      "undefined_reference_count": 0,
+      "underfull_hbox_count": 0
+    },
+    {
+      "encrypted": false,
+      "exists": true,
+      "log": "output/pdf/v9/supplementary.log",
+      "metadata_title": "Supplementary material: SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision-Language Models for P&ID Tag Retrieval",
+      "name": "supplementary",
+      "overfull_hbox_count": 0,
+      "page_count": 16,
+      "page_size_points": [
+        612.0,
+        792.0
+      ],
+      "pdf": "output/pdf/v9/supplementary.pdf",
+      "rendered_pngs": [
+        "tmp/pdfs/final_validation_v9/supplementary/page-01.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-02.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-03.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-04.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-05.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-06.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-07.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-08.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-09.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-10.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-11.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-12.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-13.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-14.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-15.png",
+        "tmp/pdfs/final_validation_v9/supplementary/page-16.png"
+      ],
+      "sha256": "3cb37399161b8575111007e95b1b19642f0b8a0bf9c6f61aacae7e2b546999fe",
+      "size_bytes": 223657,
+      "undefined_citation_count": 0,
+      "undefined_reference_count": 0,
+      "underfull_hbox_count": 0
+    }
+  ],
+  "failures": [],
+  "render_engine": "PyMuPDF",
+  "status": "pass",
+  "validation_version": "pdf-render-v9",
+  "visual_review": {
+    "record": "reports/generated/pdf_visual_inspection_v9.json",
+    "status": "separate inspection record required"
+  }
+}

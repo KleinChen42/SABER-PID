@@ -1,9 +1,9 @@
 {
   "figures": [
     {
-      "bytes": 37766,
+      "bytes": 37760,
       "path": "paper/figures/figure_v7_cross_model_counterfactual_replication.pdf",
-      "sha256": "34a836504699749a77c5bb456980630dec646f80370acee50c67325de16ddb2b"
+      "sha256": "971a839c27fa8f4be56c82142d979d243c0bdfb0803abe2a7a0442217a720684"
     },
     {
       "bytes": 397073,
@@ -11,9 +11,9 @@
       "sha256": "83d549681c8fbddbd5326e6934d29cc9acd7825c3ca8db39bbb13f5cda960460"
     },
     {
-      "bytes": 27471,
+      "bytes": 27465,
       "path": "paper/figures/figure_s_v7_prompt_sensitivity.pdf",
-      "sha256": "4e0747fddf0553e630630d836a540a44690b6866780704ae7ae0d5cf6c0ed384"
+      "sha256": "8229ff9b3e83bac5a7d863f4321fb99b2e2c57306763b6bc8da9feb72060ed27"
     },
     {
       "bytes": 240105,
