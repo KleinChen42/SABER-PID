@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\caption{Paired quality robustness at the qualified Qwen 3072-side/512-token setting, pooled over 230 pairwise source-disjoint drawings. Intervals use 10,000 paired source-bootstrap replicates. The final column is the change in the correct-minus-shuffled effect relative to clean.}
+\label{tab:v8quality}
+\scriptsize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Condition & Correct F1 & Shuffled F1 & Correct$-$shuffled [95\% interval] & Change vs clean [95\% interval] \\
+\midrule
+Clean & 0.5693 & 0.0114 & +0.5578 [+0.4917, +0.6227] & -- \\
+JPEG Q70 & 0.5836 & 0.0114 & +0.5722 [+0.5060, +0.6344] & +0.0143 [-0.0034, +0.0345] \\
+Blur $r=1$ & 0.5879 & 0.0125 & +0.5754 [+0.5101, +0.6356] & +0.0176 [-0.0155, +0.0517] \\
+0.75$\times$ restore & 0.5605 & 0.0123 & +0.5482 [+0.4763, +0.6134] & -0.0096 [-0.0655, +0.0520] \\
+\bottomrule
+\end{tabular}}
+\end{table}

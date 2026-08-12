@@ -114,9 +114,13 @@ def main() -> int:
                 "output/pdf/v8/manuscript.pdf",
                 "output/pdf/v8/supplementary.pdf",
                 "reports/generated/rineng_v8_independent_validation.json",
+                "reports/generated/rineng_submission_validation_v8.json",
+                "reports/generated/pdf_render_validation_v8.json",
+                "reports/generated/pdf_visual_inspection_v8.json",
                 "reports/RINENG_V8_ARTIFACT_MANIFEST.json",
                 "scripts/reproduce_rineng_v8_extensions.py",
                 "scripts/validate_rineng_v8_extensions.py",
+                "scripts/validate_rineng_submission_v8.py",
                 "data/answer_store/rineng_v8_dexpi_external_hidden.jsonl",
                 "outputs/rineng_v8/dexpi_external_ocr.jsonl",
             }

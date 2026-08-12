@@ -1,6 +1,6 @@
 # RINENG V8 high-value evidence and submission closeout charter
 
-Status: active execution charter
+Status: **COMPLETE — all safely automatable V8 work passed**
 
 Frozen date: 2026-08-12
 
@@ -125,3 +125,12 @@ figures and tables match their machine-readable sources; the manuscript claim
 does not exceed the evidence; PDFs pass all-page visual inspection; the public
 release archive passes membership, hash, CRC, timestamp, privacy, and raw-cell
 scope checks; and the intended changes are in version control.
+
+## 9. Completion record
+
+The frozen route completed on 2026-08-12. The final machine-readable record is
+`reports/RINENG_V8_CLOSEOUT.md`; the artifact inventory, deterministic public
+release, independent metric recomputation, submission validation, and 32-page
+visual-inspection record are generated from the frozen raw outputs. Remaining
+author names, affiliations, declarations, funding text, and public archive
+DOI/URL are submitter-owned administrative fields, not experimental gaps.

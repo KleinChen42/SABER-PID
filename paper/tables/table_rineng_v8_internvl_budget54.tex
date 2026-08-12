@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\caption{Closest-safe InternVL3.5-8B visual-budget comparison. The 54-tile input has 32.51 million tensor elements versus 35.98 million for the qualified Qwen processor; this does not imply encoder equivalence. Intervals use 10,000 paired source-bootstrap replicates.}
+\label{tab:v8internvl}
+\scriptsize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Subset & Correct F1 & Shuffled F1 & No-image F1 & Correct$-$shuffled [95\% interval] & 54-tile$-$native-12 [95\% interval] \\
+\midrule
+Set B (100) & 0.4584 & 0.0033 & 0.0000 & +0.4551 [+0.3520, +0.5581] & +0.4458 [+0.3440, +0.5500] \\
+Seed 29 disjoint (65) & 0.5087 & 0.0155 & 0.0000 & +0.4932 [+0.4062, +0.5759] & +0.4964 [+0.4188, +0.5756] \\
+Seed 31 disjoint (65) & 0.5110 & 0.0258 & 0.0000 & +0.4851 [+0.3943, +0.5768] & +0.4853 [+0.3924, +0.5773] \\
+Pooled (230) & 0.4846 & 0.0131 & 0.0000 & +0.4715 [+0.4064, +0.5332] & +0.4681 [+0.4043, +0.5290] \\
+\bottomrule
+\end{tabular}}
+\end{table}

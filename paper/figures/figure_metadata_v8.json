@@ -1,0 +1,237 @@
+{
+  "figures": {
+    "figure_5_quality_and_budget_matched_v8": {
+      "files": [
+        "paper/figures/figure_5_quality_and_budget_matched_v8.pdf",
+        "paper/figures/figure_5_quality_and_budget_matched_v8.png"
+      ],
+      "values": {
+        "cross_family": [
+          [
+            "Qwen3-VL-8B\n3072-side processor",
+            0.5578434735555438,
+            [
+              0.4917032462347278,
+              0.6227325411392517
+            ],
+            "#0072B2",
+            "35.98M input tensor elements"
+          ],
+          [
+            "InternVL3.5-8B\n54 × 448 tiles",
+            0.47153621677653235,
+            [
+              0.406378783294557,
+              0.5331776075101816
+            ],
+            "#009E73",
+            "32.51M input tensor elements"
+          ]
+        ],
+        "did_rows": [
+          {
+            "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+            "dataset": "pooled_three_source_disjoint_subsets",
+            "quality": "jpeg_q70",
+            "source_bootstrap_ci95": [
+              -0.0033976452668824653,
+              0.03451601924738912
+            ],
+            "source_count": 230,
+            "value_f1_difference_in_differences": 0.014330279095936427
+          },
+          {
+            "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+            "dataset": "pooled_three_source_disjoint_subsets",
+            "quality": "blur_r1",
+            "source_bootstrap_ci95": [
+              -0.015478813489614884,
+              0.05169060719513785
+            ],
+            "source_count": 230,
+            "value_f1_difference_in_differences": 0.01755507619723473
+          },
+          {
+            "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+            "dataset": "pooled_three_source_disjoint_subsets",
+            "quality": "downsample_s075",
+            "source_bootstrap_ci95": [
+              -0.06549207848696947,
+              0.05200100978035305
+            ],
+            "source_count": 230,
+            "value_f1_difference_in_differences": -0.009612363622588216
+          }
+        ],
+        "direct_rows": [
+          {
+            "contrast": "correct_minus_shuffled",
+            "dataset": "pooled_three_source_disjoint_subsets",
+            "quality": "clean",
+            "source_count": 230,
+            "source_macro_source_bootstrap_ci95": [
+              0.029347826086956522,
+              0.07282608695652174
+            ],
+            "source_macro_strict_accuracy_difference": 0.051086956521739134,
+            "value_f1_difference": 0.5578434735555438,
+            "value_f1_source_bootstrap_ci95": [
+              0.4917032462347278,
+              0.6227325411392517
+            ]
+          },
+          {
+            "contrast": "correct_minus_shuffled",
+            "dataset": "pooled_three_source_disjoint_subsets",
+            "quality": "jpeg_q70",
+            "source_count": 230,
+            "source_macro_source_bootstrap_ci95": [
+              0.03369565217391304,
+              0.0782608695652174
+            ],
+            "source_macro_strict_accuracy_difference": 0.05652173913043478,
+            "value_f1_difference": 0.5721737526514802,
+            "value_f1_source_bootstrap_ci95": [
+              0.505950288151398,
+              0.6344047619047619
+            ]
+          },
+          {
+            "contrast": "correct_minus_shuffled",
+            "dataset": "pooled_three_source_disjoint_subsets",
+            "quality": "blur_r1",
+            "source_count": 230,
+            "source_macro_source_bootstrap_ci95": [
+              0.030434782608695653,
+              0.07173913043478261
+            ],
+            "source_macro_strict_accuracy_difference": 0.051086956521739134,
+            "value_f1_difference": 0.5753985497527785,
+            "value_f1_source_bootstrap_ci95": [
+              0.5100943123582974,
+              0.6356112659004226
+            ]
+          },
+          {
+            "contrast": "correct_minus_shuffled",
+            "dataset": "pooled_three_source_disjoint_subsets",
+            "quality": "downsample_s075",
+            "source_count": 230,
+            "source_macro_source_bootstrap_ci95": [
+              0.0391304347826087,
+              0.08152173913043478
+            ],
+            "source_macro_strict_accuracy_difference": 0.06086956521739131,
+            "value_f1_difference": 0.5482311099329555,
+            "value_f1_source_bootstrap_ci95": [
+              0.4763352426739734,
+              0.6133661609232433
+            ]
+          }
+        ]
+      }
+    },
+    "figure_6_dexpi_external_v8": {
+      "files": [
+        "paper/figures/figure_6_dexpi_external_v8.pdf",
+        "paper/figures/figure_6_dexpi_external_v8.png"
+      ],
+      "values": {
+        "comparisons": {
+          "correct_minus_paddleocr_full_image": {
+            "bootstrap_reps": 10000,
+            "ci95": [
+              0.03166476649385852,
+              0.3881932021466906
+            ],
+            "difference": 0.16323613493424816,
+            "unit": "logical DEXPI test case (source_sheet)"
+          },
+          "correct_minus_shuffled": {
+            "bootstrap_reps": 10000,
+            "ci95": [
+              0.8409090909090909,
+              0.9841269841269841
+            ],
+            "difference": 0.9056603773584906,
+            "unit": "logical DEXPI test case (source_sheet)"
+          },
+          "correct_minus_text_only": {
+            "bootstrap_reps": 10000,
+            "ci95": [
+              0.8431372549019608,
+              0.984375
+            ],
+            "difference": 0.9056603773584906,
+            "unit": "logical DEXPI test case (source_sheet)"
+          },
+          "ocr_minus_text_only": {
+            "bootstrap_reps": 10000,
+            "ci95": [
+              0.5434782608695652,
+              0.8503937007874016
+            ],
+            "difference": 0.7424242424242424,
+            "unit": "logical DEXPI test case (source_sheet)"
+          }
+        },
+        "conditions": {
+          "correct": {
+            "exact_set_accuracy": 0.8615384615384616,
+            "f1": 0.9056603773584906,
+            "fn": 9,
+            "fp": 6,
+            "logical_group_macro_exact_accuracy": 0.9006410256410257,
+            "logical_groups": 26,
+            "precision": 0.9230769230769231,
+            "recall": 0.8888888888888888,
+            "records": 65,
+            "tp": 72
+          },
+          "paddleocr_full_image": {
+            "exact_set_accuracy": 0.6153846153846154,
+            "f1": 0.7424242424242424,
+            "fn": 32,
+            "fp": 2,
+            "logical_group_macro_exact_accuracy": 0.5865384615384616,
+            "logical_groups": 26,
+            "precision": 0.9607843137254902,
+            "recall": 0.6049382716049383,
+            "records": 65,
+            "tp": 49
+          },
+          "shuffled": {
+            "exact_set_accuracy": 0,
+            "f1": 0.0,
+            "fn": 81,
+            "fp": 144,
+            "logical_group_macro_exact_accuracy": 0,
+            "logical_groups": 26,
+            "precision": 0.0,
+            "recall": 0.0,
+            "records": 65,
+            "tp": 0
+          },
+          "text_only": {
+            "exact_set_accuracy": 0,
+            "f1": 0.0,
+            "fn": 81,
+            "fp": 0,
+            "logical_group_macro_exact_accuracy": 0,
+            "logical_groups": 26,
+            "precision": 1.0,
+            "recall": 0.0,
+            "records": 65,
+            "tp": 0
+          }
+        }
+      }
+    }
+  },
+  "sources": {
+    "reports/generated/rineng_v8_dexpi_external_score.json": "60fb3e0781bbe30c3d8adc6349bd156ed7c407195cf77cb4a01f801f2ae5b3f3",
+    "reports/generated/rineng_v8_extension_score.json": "569f68c4ca8bd443a3235b79d89349189ce3a175904ec03e50fc363d75b6b7b9"
+  },
+  "status": "pass",
+  "version": "rineng-v8-figures"
+}

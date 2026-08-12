@@ -1,0 +1,2793 @@
+{
+  "bootstrap": {
+    "interval": "95% percentile",
+    "pairing": "paired within dataset and intervention contrast",
+    "reps": 10000,
+    "unit": "source_id"
+  },
+  "cells": {
+    "internvl_budget54|seed29_strict65|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 4.387088439409406,
+        "median": 4.416373530868441,
+        "p95": 5.325413446873426
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.08846153846153847,
+        "strict_source_macro_accuracy": 0.08846153846153847,
+        "strict_value_tags": {
+          "f1": 0.5087281795511222,
+          "fn": 122,
+          "fp": 75,
+          "precision": 0.576271186440678,
+          "recall": 0.45535714285714285,
+          "tp": 102
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 0.5076923076923077,
+            "record_count": 65,
+            "semantic_accuracy": 0.36923076923076925,
+            "semantic_parse_rate": 0.9384615384615385,
+            "strict_accuracy": 0.13846153846153847,
+            "strict_to_semantic_gain_count": 15
+          },
+          "count": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.03076923076923077,
+            "semantic_parse_rate": 0.9538461538461539,
+            "strict_accuracy": 0.03076923076923077,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 0.9846153846153847,
+            "record_count": 65,
+            "semantic_accuracy": 0.046153846153846156,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.046153846153846156,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8923076923076924,
+            "record_count": 65,
+            "semantic_accuracy": 0.2153846153846154,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.13846153846153847,
+            "strict_to_semantic_gain_count": 5
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/internvl35_8b_budget54/internvl35_8b_budget54_seed29_strict65_p0_correct_letterbox54.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "560bc5fc1f4dde55a34777a944f6ab3ea620b9a2f90163bac648f313c2a9e7f1",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "internvl_budget54|seed29_strict65|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 4.365289038416141,
+        "median": 4.4133704835549,
+        "p95": 5.484837627969682
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.09230769230769231,
+        "strict_source_macro_accuracy": 0.09230769230769231,
+        "strict_value_tags": {
+          "f1": 0.015503875968992248,
+          "fn": 221,
+          "fp": 160,
+          "precision": 0.018404907975460124,
+          "recall": 0.013392857142857142,
+          "tp": 3
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 0.47692307692307695,
+            "record_count": 65,
+            "semantic_accuracy": 0.4307692307692308,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.15384615384615385,
+            "strict_to_semantic_gain_count": 18
+          },
+          "count": {
+            "format_compliance_rate": 0.9538461538461539,
+            "record_count": 65,
+            "semantic_accuracy": 0.09230769230769231,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.09230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.12307692307692308,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.12307692307692308,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.9076923076923077,
+            "record_count": 65,
+            "semantic_accuracy": 0.07692307692307693,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 5
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/internvl35_8b_budget54/internvl35_8b_budget54_seed29_strict65_p0_shuffled_letterbox54.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "8c2c6896203a0c0a409b040e9bda4a3b4f94c4e9c4f63446487cb83f0c2f2eae",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "internvl_budget54|seed29_strict65|text_only": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 1.667382706092814,
+        "median": 0.08567653177306056,
+        "p95": 14.173875847831368
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.1576923076923077,
+        "strict_source_macro_accuracy": 0.1576923076923077,
+        "strict_value_tags": {
+          "f1": 0.0,
+          "fn": 224,
+          "fp": 2918,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 0.16923076923076924,
+            "record_count": 65,
+            "semantic_accuracy": 0.49230769230769234,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.07692307692307693,
+            "strict_to_semantic_gain_count": 27
+          },
+          "count": {
+            "format_compliance_rate": 0.7846153846153846,
+            "record_count": 65,
+            "semantic_accuracy": 0.07692307692307693,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.07692307692307693,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 0.9692307692307692,
+            "record_count": 65,
+            "semantic_accuracy": 0.47692307692307695,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.47692307692307695,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.5692307692307692,
+            "record_count": 65,
+            "semantic_accuracy": 0.0,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 0
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/internvl35_8b_budget54/internvl35_8b_budget54_seed29_strict65_p0_text_only_letterbox54.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "6e814003bda1f43585cccc79c0d5c0e557e808271374d3d906add1c06139fa7d",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "internvl_budget54|seed31_strict65|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 4.3943671811049665,
+        "median": 4.415102767758071,
+        "p95": 5.31824008654803
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.11538461538461539,
+        "strict_source_macro_accuracy": 0.11538461538461539,
+        "strict_value_tags": {
+          "f1": 0.510989010989011,
+          "fn": 111,
+          "fp": 67,
+          "precision": 0.58125,
+          "recall": 0.45588235294117646,
+          "tp": 93
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 0.46153846153846156,
+            "record_count": 65,
+            "semantic_accuracy": 0.4153846153846154,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.18461538461538463,
+            "strict_to_semantic_gain_count": 15
+          },
+          "count": {
+            "format_compliance_rate": 0.9230769230769231,
+            "record_count": 65,
+            "semantic_accuracy": 0.06153846153846154,
+            "semantic_parse_rate": 0.9230769230769231,
+            "strict_accuracy": 0.06153846153846154,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.09230769230769231,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.09230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8923076923076924,
+            "record_count": 65,
+            "semantic_accuracy": 0.24615384615384617,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.12307692307692308,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/internvl35_8b_budget54/internvl35_8b_budget54_seed31_strict65_p0_correct_letterbox54.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "d83054c656d53a717e1011eae1be3e69dc9f3018e7f1d72e47d4670a995eed76",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "internvl_budget54|seed31_strict65|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 4.3860986094921826,
+        "median": 4.415947556030005,
+        "p95": 5.388164524920285
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.09230769230769231,
+        "strict_source_macro_accuracy": 0.09230769230769231,
+        "strict_value_tags": {
+          "f1": 0.025839793281653745,
+          "fn": 199,
+          "fp": 178,
+          "precision": 0.0273224043715847,
+          "recall": 0.024509803921568627,
+          "tp": 5
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 0.47692307692307695,
+            "record_count": 65,
+            "semantic_accuracy": 0.36923076923076925,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.15384615384615385,
+            "strict_to_semantic_gain_count": 14
+          },
+          "count": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.046153846153846156,
+            "semantic_parse_rate": 0.9538461538461539,
+            "strict_accuracy": 0.046153846153846156,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 0.9846153846153847,
+            "record_count": 65,
+            "semantic_accuracy": 0.15384615384615385,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.15384615384615385,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8769230769230769,
+            "record_count": 65,
+            "semantic_accuracy": 0.12307692307692308,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.015384615384615385,
+            "strict_to_semantic_gain_count": 7
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/internvl35_8b_budget54/internvl35_8b_budget54_seed31_strict65_p0_shuffled_letterbox54.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "a64095a91cd8f7b16a410a6499084baf7f844b4aed7d7d5ca3ed51ab4fb59943",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "internvl_budget54|seed31_strict65|text_only": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 1.19701565183126,
+        "median": 0.08160440204665065,
+        "p95": 13.317162234336138
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.12307692307692308,
+        "strict_source_macro_accuracy": 0.12307692307692308,
+        "strict_value_tags": {
+          "f1": 0.0,
+          "fn": 204,
+          "fp": 1981,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 0.046153846153846156,
+            "record_count": 65,
+            "semantic_accuracy": 0.5076923076923077,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 33
+          },
+          "count": {
+            "format_compliance_rate": 0.7076923076923077,
+            "record_count": 65,
+            "semantic_accuracy": 0.06153846153846154,
+            "semantic_parse_rate": 0.8769230769230769,
+            "strict_accuracy": 0.06153846153846154,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 0.9692307692307692,
+            "record_count": 65,
+            "semantic_accuracy": 0.4307692307692308,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.4307692307692308,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.7384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.0,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 0
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/internvl35_8b_budget54/internvl35_8b_budget54_seed31_strict65_p0_text_only_letterbox54.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "ab7fbd2189db058fad5a46bdf42a73487de28497670c318760e57676cf17bb37",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "internvl_budget54|set_b100|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 4.515482637719251,
+        "median": 4.406014123465866,
+        "p95": 5.8513125870376825
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.16,
+        "strict_source_macro_accuracy": 0.16,
+        "strict_value_tags": {
+          "f1": 0.4583901773533424,
+          "fn": 180,
+          "fp": 217,
+          "precision": 0.43636363636363634,
+          "recall": 0.4827586206896552,
+          "tp": 168
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 0.45,
+            "record_count": 100,
+            "semantic_accuracy": 0.54,
+            "semantic_parse_rate": 0.95,
+            "strict_accuracy": 0.25,
+            "strict_to_semantic_gain_count": 29
+          },
+          "count": {
+            "format_compliance_rate": 0.9,
+            "record_count": 100,
+            "semantic_accuracy": 0.08,
+            "semantic_parse_rate": 0.91,
+            "strict_accuracy": 0.08,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 0.99,
+            "record_count": 100,
+            "semantic_accuracy": 0.14,
+            "semantic_parse_rate": 0.99,
+            "strict_accuracy": 0.14,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.92,
+            "record_count": 100,
+            "semantic_accuracy": 0.23,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.17,
+            "strict_to_semantic_gain_count": 6
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/internvl35_8b_budget54/internvl35_8b_budget54_set_b100_p0_correct_letterbox54.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "ed81d7e443f35c7a72514e10da1c8169e88d701f656781009c04afeca3ad3e08",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "internvl_budget54|set_b100|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 4.384396845288575,
+        "median": 4.4216972049325705,
+        "p95": 5.292022095061839
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.1175,
+        "strict_source_macro_accuracy": 0.1175,
+        "strict_value_tags": {
+          "f1": 0.00333889816360601,
+          "fn": 347,
+          "fp": 250,
+          "precision": 0.00398406374501992,
+          "recall": 0.0028735632183908046,
+          "tp": 1
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 0.44,
+            "record_count": 100,
+            "semantic_accuracy": 0.54,
+            "semantic_parse_rate": 0.99,
+            "strict_accuracy": 0.26,
+            "strict_to_semantic_gain_count": 28
+          },
+          "count": {
+            "format_compliance_rate": 0.91,
+            "record_count": 100,
+            "semantic_accuracy": 0.09,
+            "semantic_parse_rate": 0.91,
+            "strict_accuracy": 0.09,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.12,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.12,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.91,
+            "record_count": 100,
+            "semantic_accuracy": 0.04,
+            "semantic_parse_rate": 0.99,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 4
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/internvl35_8b_budget54/internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "93b600279fffcf75e2e4b1f6301002e399f916181cd972006cbd86c3f7936f2d",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "internvl_budget54|set_b100|text_only": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 1.3124983276776039,
+        "median": 0.08199979411438107,
+        "p95": 13.464584208093584
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.145,
+        "strict_source_macro_accuracy": 0.145,
+        "strict_value_tags": {
+          "f1": 0.0,
+          "fn": 348,
+          "fp": 3356,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 0.1,
+            "record_count": 100,
+            "semantic_accuracy": 0.58,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.07,
+            "strict_to_semantic_gain_count": 51
+          },
+          "count": {
+            "format_compliance_rate": 0.7,
+            "record_count": 100,
+            "semantic_accuracy": 0.06,
+            "semantic_parse_rate": 0.91,
+            "strict_accuracy": 0.06,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 0.95,
+            "record_count": 100,
+            "semantic_accuracy": 0.45,
+            "semantic_parse_rate": 0.95,
+            "strict_accuracy": 0.45,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.65,
+            "record_count": 100,
+            "semantic_accuracy": 0.0,
+            "semantic_parse_rate": 0.98,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 0
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/internvl35_8b_budget54/internvl35_8b_budget54_set_b100_p0_text_only_letterbox54.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "a85d63e421c6a147018a792d68a9c174302ef7fe8626f605e3f519ac3b167a33",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed29_strict65|blur_r1|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8324309853048852,
+        "median": 0.6225483641028404,
+        "p95": 1.3879957227036357
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.3,
+        "strict_source_macro_accuracy": 0.3,
+        "strict_value_tags": {
+          "f1": 0.5866050808314087,
+          "fn": 97,
+          "fp": 82,
+          "precision": 0.6076555023923444,
+          "recall": 0.5669642857142857,
+          "tp": 127
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5846153846153846,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5846153846153846,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9538461538461539,
+            "record_count": 65,
+            "semantic_accuracy": 0.09230769230769231,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.09230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.3230769230769231,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.3230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8769230769230769,
+            "record_count": 65,
+            "semantic_accuracy": 0.26153846153846155,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.2,
+            "strict_to_semantic_gain_count": 4
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed29_strict65__blur_r1_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "37cf1755b8d65bf29cc04b44f97ae8f4a35167fe93d026bf29878019ba254266",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed29_strict65|blur_r1|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.7851953223276024,
+        "median": 0.6225618282333016,
+        "p95": 1.3648230517283082
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.25,
+        "strict_source_macro_accuracy": 0.25,
+        "strict_value_tags": {
+          "f1": 0.015306122448979591,
+          "fn": 221,
+          "fp": 165,
+          "precision": 0.017857142857142856,
+          "recall": 0.013392857142857142,
+          "tp": 3
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5384615384615384,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5384615384615384,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9538461538461539,
+            "record_count": 65,
+            "semantic_accuracy": 0.09230769230769231,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.09230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.36923076923076925,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.36923076923076925,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8615384615384616,
+            "record_count": 65,
+            "semantic_accuracy": 0.12307692307692308,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed29_strict65__blur_r1_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "866b4f1ddcb5c9674e31398e8e181c1b28e18dccd555445de2ef41fc520d9d24",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed29_strict65|clean|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8282901370575508,
+        "median": 0.6216560541652143,
+        "p95": 1.3566649239510298
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.2923076923076923,
+        "strict_source_macro_accuracy": 0.2923076923076923,
+        "strict_value_tags": {
+          "f1": 0.6014319809069213,
+          "fn": 98,
+          "fp": 69,
+          "precision": 0.6461538461538462,
+          "recall": 0.5625,
+          "tp": 126
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5692307692307692,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5692307692307692,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9538461538461539,
+            "record_count": 65,
+            "semantic_accuracy": 0.09230769230769231,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.09230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.27692307692307694,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.27692307692307694,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8615384615384616,
+            "record_count": 65,
+            "semantic_accuracy": 0.3076923076923077,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.23076923076923078,
+            "strict_to_semantic_gain_count": 5
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed29_strict65__clean_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "3ad4f4a4f7ddc9a51e7671d7a547efee0eddd50c175123b6cc8bd3d60eb44553",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed29_strict65|clean|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.7842071889828031,
+        "median": 0.6225095433183014,
+        "p95": 1.3189965886995196
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.24615384615384617,
+        "strict_source_macro_accuracy": 0.24615384615384617,
+        "strict_value_tags": {
+          "f1": 0.015267175572519083,
+          "fn": 221,
+          "fp": 166,
+          "precision": 0.01775147928994083,
+          "recall": 0.013392857142857142,
+          "tp": 3
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5384615384615384,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5384615384615384,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9538461538461539,
+            "record_count": 65,
+            "semantic_accuracy": 0.09230769230769231,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.09230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.35384615384615387,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.35384615384615387,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8769230769230769,
+            "record_count": 65,
+            "semantic_accuracy": 0.12307692307692308,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed29_strict65__clean_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "b65413edc795c331d88e2bdd3387df733dba288d9a9db7ae180e751bc49c3da8",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed29_strict65|downsample_s075|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8288816289904599,
+        "median": 0.6216034931130707,
+        "p95": 1.3639547768980265
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.3,
+        "strict_source_macro_accuracy": 0.3,
+        "strict_value_tags": {
+          "f1": 0.6067961165048543,
+          "fn": 99,
+          "fp": 63,
+          "precision": 0.6648936170212766,
+          "recall": 0.5580357142857143,
+          "tp": 125
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5692307692307692,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5692307692307692,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9538461538461539,
+            "record_count": 65,
+            "semantic_accuracy": 0.07692307692307693,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.07692307692307693,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.3230769230769231,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.3230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8615384615384616,
+            "record_count": 65,
+            "semantic_accuracy": 0.2923076923076923,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.23076923076923078,
+            "strict_to_semantic_gain_count": 4
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed29_strict65__downsample_s075_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "01e1fa5a1c89ce75be096aff128d1d3c377137f8b9b940a6846bd27dcdd3a74c",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed29_strict65|downsample_s075|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.828546769802387,
+        "median": 0.6219614557921886,
+        "p95": 1.3560583628714085
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.23846153846153847,
+        "strict_source_macro_accuracy": 0.23846153846153847,
+        "strict_value_tags": {
+          "f1": 0.015267175572519083,
+          "fn": 221,
+          "fp": 166,
+          "precision": 0.01775147928994083,
+          "recall": 0.013392857142857142,
+          "tp": 3
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5384615384615384,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5384615384615384,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9538461538461539,
+            "record_count": 65,
+            "semantic_accuracy": 0.09230769230769231,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.09230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.3230769230769231,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.3230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8615384615384616,
+            "record_count": 65,
+            "semantic_accuracy": 0.12307692307692308,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed29_strict65__downsample_s075_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "c1e6056c1ef0365dabec2764124660d6699f6208079a57d0ea8a176add03bf44",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed29_strict65|jpeg_q70|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8712155034908882,
+        "median": 0.6233595907688141,
+        "p95": 1.3719223467633128
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.3038461538461538,
+        "strict_source_macro_accuracy": 0.3038461538461538,
+        "strict_value_tags": {
+          "f1": 0.6121495327102804,
+          "fn": 93,
+          "fp": 73,
+          "precision": 0.6421568627450981,
+          "recall": 0.5848214285714286,
+          "tp": 131
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5846153846153846,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5846153846153846,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9538461538461539,
+            "record_count": 65,
+            "semantic_accuracy": 0.09230769230769231,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.09230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.3076923076923077,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.3076923076923077,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8615384615384616,
+            "record_count": 65,
+            "semantic_accuracy": 0.3076923076923077,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.23076923076923078,
+            "strict_to_semantic_gain_count": 5
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed29_strict65__jpeg_q70_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "335d44c1cbe632e4268b4f7154a72e83ff290a1040fd9d20abda380f13a409ed",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed29_strict65|jpeg_q70|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.7936125637139552,
+        "median": 0.6224173516966403,
+        "p95": 1.356905434280634
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.23846153846153847,
+        "strict_source_macro_accuracy": 0.23846153846153847,
+        "strict_value_tags": {
+          "f1": 0.014598540145985401,
+          "fn": 221,
+          "fp": 184,
+          "precision": 0.016042780748663103,
+          "recall": 0.013392857142857142,
+          "tp": 3
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5384615384615384,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5384615384615384,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9538461538461539,
+            "record_count": 65,
+            "semantic_accuracy": 0.09230769230769231,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.09230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.3230769230769231,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.3230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8615384615384616,
+            "record_count": 65,
+            "semantic_accuracy": 0.12307692307692308,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed29_strict65__jpeg_q70_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "5ef6317ab456bd8064c44077b03df169c911d9bdc59f66ec1f568611778c7faa",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed31_strict65|blur_r1|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8126755847595633,
+        "median": 0.6212281794287264,
+        "p95": 1.596213142387569
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.23846153846153847,
+        "strict_source_macro_accuracy": 0.23846153846153847,
+        "strict_value_tags": {
+          "f1": 0.6243654822335025,
+          "fn": 81,
+          "fp": 67,
+          "precision": 0.6473684210526316,
+          "recall": 0.6029411764705882,
+          "tp": 123
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5076923076923077,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5076923076923077,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.046153846153846156,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.046153846153846156,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.23076923076923078,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.23076923076923078,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8923076923076924,
+            "record_count": 65,
+            "semantic_accuracy": 0.3076923076923077,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.16923076923076924,
+            "strict_to_semantic_gain_count": 9
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed31_strict65__blur_r1_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "c5cf816393370c80789d4a3419539b252e03aed874941d22395db5c476d931f7",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed31_strict65|blur_r1|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.9018665323857791,
+        "median": 0.619959007948637,
+        "p95": 1.4194748252630234
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.2076923076923077,
+        "strict_source_macro_accuracy": 0.2076923076923077,
+        "strict_value_tags": {
+          "f1": 0.024691358024691357,
+          "fn": 199,
+          "fp": 196,
+          "precision": 0.024875621890547265,
+          "recall": 0.024509803921568627,
+          "tp": 5
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.49230769230769234,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.49230769230769234,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.03076923076923077,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.03076923076923077,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.3076923076923077,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.3076923076923077,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.9230769230769231,
+            "record_count": 65,
+            "semantic_accuracy": 0.12307692307692308,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed31_strict65__blur_r1_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "6bbe846f4a4a88562f35dffba4eae96373867a9c457a43c12b8d90185d8e67a3",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed31_strict65|clean|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.7809757185956606,
+        "median": 0.6209661546163261,
+        "p95": 1.512558363378048
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.25384615384615383,
+        "strict_source_macro_accuracy": 0.25384615384615383,
+        "strict_value_tags": {
+          "f1": 0.5967365967365967,
+          "fn": 76,
+          "fp": 97,
+          "precision": 0.5688888888888889,
+          "recall": 0.6274509803921569,
+          "tp": 128
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5230769230769231,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.06153846153846154,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.06153846153846154,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.2153846153846154,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.2153846153846154,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.9076923076923077,
+            "record_count": 65,
+            "semantic_accuracy": 0.3384615384615385,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.2153846153846154,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed31_strict65__clean_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "7953f73e72104c4cca3bfe09316c7f9191c18143f9dc29ff1300970a5dfce55a",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed31_strict65|clean|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8284448582535753,
+        "median": 0.620980161242187,
+        "p95": 1.292882394976914
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.2,
+        "strict_source_macro_accuracy": 0.2,
+        "strict_value_tags": {
+          "f1": 0.024630541871921183,
+          "fn": 199,
+          "fp": 197,
+          "precision": 0.024752475247524754,
+          "recall": 0.024509803921568627,
+          "tp": 5
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.49230769230769234,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.49230769230769234,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.03076923076923077,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.03076923076923077,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.27692307692307694,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.27692307692307694,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.12307692307692308,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed31_strict65__clean_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "3f59ddcf4126ff7ee27f40db64dc54b7ce5c5b74bcdc092914e719492a4bccae",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed31_strict65|downsample_s075|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8156603520556998,
+        "median": 0.6212922804988921,
+        "p95": 1.5145424865186214
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.25769230769230766,
+        "strict_source_macro_accuracy": 0.25769230769230766,
+        "strict_value_tags": {
+          "f1": 0.583732057416268,
+          "fn": 82,
+          "fp": 92,
+          "precision": 0.5700934579439252,
+          "recall": 0.5980392156862745,
+          "tp": 122
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5230769230769231,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5230769230769231,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.07692307692307693,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.07692307692307693,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.23076923076923078,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.23076923076923078,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.8923076923076924,
+            "record_count": 65,
+            "semantic_accuracy": 0.3230769230769231,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.2,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed31_strict65__downsample_s075_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "35f4d8df7fd3965d8e1e7f0482ea76c074ddd08eff3f7896a05f98378b2e7213",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed31_strict65|downsample_s075|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8054741830171014,
+        "median": 0.620347744319588,
+        "p95": 1.2865254068747163
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.2,
+        "strict_source_macro_accuracy": 0.2,
+        "strict_value_tags": {
+          "f1": 0.0273972602739726,
+          "fn": 199,
+          "fp": 156,
+          "precision": 0.031055900621118012,
+          "recall": 0.024509803921568627,
+          "tp": 5
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.49230769230769234,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.49230769230769234,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.03076923076923077,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.03076923076923077,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.27692307692307694,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.27692307692307694,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.12307692307692308,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed31_strict65__downsample_s075_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "d0f8d1665400c416c0ab5a7ca4d922ca923852db39ac6bc27e6e335b445f3015",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed31_strict65|jpeg_q70|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.782735407524384,
+        "median": 0.6216323901899159,
+        "p95": 1.4893107004463673
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.24615384615384617,
+        "strict_source_macro_accuracy": 0.24615384615384617,
+        "strict_value_tags": {
+          "f1": 0.6336633663366337,
+          "fn": 76,
+          "fp": 72,
+          "precision": 0.64,
+          "recall": 0.6274509803921569,
+          "tp": 128
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.5076923076923077,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.5076923076923077,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.046153846153846156,
+            "semantic_parse_rate": 0.9692307692307692,
+            "strict_accuracy": 0.046153846153846156,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.2,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.2,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.9076923076923077,
+            "record_count": 65,
+            "semantic_accuracy": 0.36923076923076925,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.23076923076923078,
+            "strict_to_semantic_gain_count": 9
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed31_strict65__jpeg_q70_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "5b2ea656b623d51d758b1a15ddf4cba40bd9bfa06a583f1b5e0bab029bc3ca54",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|seed31_strict65|jpeg_q70|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 260,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8361893458435169,
+        "median": 0.6200458370149136,
+        "p95": 1.4263315601274371
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 260,
+        "record_count": 260,
+        "strict_accuracy": 0.2,
+        "strict_source_macro_accuracy": 0.2,
+        "strict_value_tags": {
+          "f1": 0.023980815347721823,
+          "fn": 199,
+          "fp": 208,
+          "precision": 0.023474178403755867,
+          "recall": 0.024509803921568627,
+          "tp": 5
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.49230769230769234,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.49230769230769234,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.03076923076923077,
+            "semantic_parse_rate": 0.9846153846153847,
+            "strict_accuracy": 0.03076923076923077,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 65,
+            "semantic_accuracy": 0.27692307692307694,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.27692307692307694,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.9384615384615385,
+            "record_count": 65,
+            "semantic_accuracy": 0.12307692307692308,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 8
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_seed31_strict65__jpeg_q70_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 260,
+      "sha256": "ec0f652b0c6d4c107c079eb3c4a710f92961018c639169eef9edb936e32d6d5a",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|set_b100|blur_r1|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.9361271504941396,
+        "median": 0.6211341014131904,
+        "p95": 1.5324205979704857
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.31,
+        "strict_source_macro_accuracy": 0.31,
+        "strict_value_tags": {
+          "f1": 0.5686546463245492,
+          "fn": 143,
+          "fp": 168,
+          "precision": 0.5495978552278821,
+          "recall": 0.5890804597701149,
+          "tp": 205
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.57,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.57,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.93,
+            "record_count": 100,
+            "semantic_accuracy": 0.14,
+            "semantic_parse_rate": 0.99,
+            "strict_accuracy": 0.14,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.31,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.31,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.86,
+            "record_count": 100,
+            "semantic_accuracy": 0.27,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.22,
+            "strict_to_semantic_gain_count": 5
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_set_b100__blur_r1_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "4bcf9a029dcd440983781a88de765d27cfb9f5d8bc444d52d1733013096ad18b",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|set_b100|blur_r1|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.839469499567058,
+        "median": 0.6217178087681532,
+        "p95": 1.3371660001575947
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.245,
+        "strict_source_macro_accuracy": 0.245,
+        "strict_value_tags": {
+          "f1": 0.0030864197530864196,
+          "fn": 347,
+          "fp": 299,
+          "precision": 0.0033333333333333335,
+          "recall": 0.0028735632183908046,
+          "tp": 1
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.54,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.54,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.92,
+            "record_count": 100,
+            "semantic_accuracy": 0.1,
+            "semantic_parse_rate": 0.97,
+            "strict_accuracy": 0.1,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.34,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.34,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.9,
+            "record_count": 100,
+            "semantic_accuracy": 0.06,
+            "semantic_parse_rate": 0.99,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 6
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_set_b100__blur_r1_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "98269bbd4ef3bd4b137cd8e10ece52a6df2c1c045623b3a6833b35c83db239dc",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|set_b100|clean|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8713197986083105,
+        "median": 0.6198169742710888,
+        "p95": 1.4438687460497022
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.2925,
+        "strict_source_macro_accuracy": 0.2925,
+        "strict_value_tags": {
+          "f1": 0.5344352617079889,
+          "fn": 154,
+          "fp": 184,
+          "precision": 0.5132275132275133,
+          "recall": 0.5574712643678161,
+          "tp": 194
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.57,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.57,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.93,
+            "record_count": 100,
+            "semantic_accuracy": 0.1,
+            "semantic_parse_rate": 0.99,
+            "strict_accuracy": 0.1,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.29,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.29,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.88,
+            "record_count": 100,
+            "semantic_accuracy": 0.26,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.21,
+            "strict_to_semantic_gain_count": 5
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_set_b100__clean_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "202f22b85fdf529b29fe1c62e9d6f86205f090a049a3b0d7d6e9f30c7732274d",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|set_b100|clean|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8382841349602677,
+        "median": 0.6204699906520545,
+        "p95": 1.437563644722104
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.24,
+        "strict_source_macro_accuracy": 0.24,
+        "strict_value_tags": {
+          "f1": 0.0025673940949935813,
+          "fn": 347,
+          "fp": 430,
+          "precision": 0.002320185614849188,
+          "recall": 0.0028735632183908046,
+          "tp": 1
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.54,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.54,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.92,
+            "record_count": 100,
+            "semantic_accuracy": 0.12,
+            "semantic_parse_rate": 0.97,
+            "strict_accuracy": 0.12,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.3,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.3,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.89,
+            "record_count": 100,
+            "semantic_accuracy": 0.07,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 7
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_set_b100__clean_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "7ed84aeec1553f5533c5c185bc2320dfde0c327d6d4efd7017c8e35e130c01bb",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|set_b100|downsample_s075|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.8564068675669841,
+        "median": 0.6215083338320255,
+        "p95": 1.449455446563661
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.2975,
+        "strict_source_macro_accuracy": 0.2975,
+        "strict_value_tags": {
+          "f1": 0.5202797202797202,
+          "fn": 162,
+          "fp": 181,
+          "precision": 0.5068119891008175,
+          "recall": 0.5344827586206896,
+          "tp": 186
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.58,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.58,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.93,
+            "record_count": 100,
+            "semantic_accuracy": 0.12,
+            "semantic_parse_rate": 0.99,
+            "strict_accuracy": 0.12,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.28,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.28,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.88,
+            "record_count": 100,
+            "semantic_accuracy": 0.25,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.21,
+            "strict_to_semantic_gain_count": 4
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_set_b100__downsample_s075_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "d524a96f5c435a062e6a84d5122b1e94fd3aae628a4cf782d33fd5b0f48f88d4",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|set_b100|downsample_s075|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.9077951829275116,
+        "median": 0.6218229359947145,
+        "p95": 1.3379641631618142
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.235,
+        "strict_source_macro_accuracy": 0.235,
+        "strict_value_tags": {
+          "f1": 0.002828854314002829,
+          "fn": 347,
+          "fp": 358,
+          "precision": 0.002785515320334262,
+          "recall": 0.0028735632183908046,
+          "tp": 1
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.54,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.54,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.92,
+            "record_count": 100,
+            "semantic_accuracy": 0.11,
+            "semantic_parse_rate": 0.97,
+            "strict_accuracy": 0.11,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.29,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.29,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.87,
+            "record_count": 100,
+            "semantic_accuracy": 0.07,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 7
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_set_b100__downsample_s075_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "020611ccd21f8af64cf5bf53bb73b519e3cf72a33a4d033c2e4b7cb2956ed337",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|set_b100|jpeg_q70|correct": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.9352866192092187,
+        "median": 0.6210086848586798,
+        "p95": 1.4482614686712623
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.3,
+        "strict_source_macro_accuracy": 0.3,
+        "strict_value_tags": {
+          "f1": 0.5383542538354253,
+          "fn": 155,
+          "fp": 176,
+          "precision": 0.5230352303523035,
+          "recall": 0.5545977011494253,
+          "tp": 193
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.58,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.58,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.93,
+            "record_count": 100,
+            "semantic_accuracy": 0.11,
+            "semantic_parse_rate": 0.99,
+            "strict_accuracy": 0.11,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.3,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.3,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.86,
+            "record_count": 100,
+            "semantic_accuracy": 0.26,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.21,
+            "strict_to_semantic_gain_count": 5
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_set_b100__jpeg_q70_p0_correct_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "75da6cb8154a69866f48d77e6a0dc94dbcb6d17ea6e110bb83af6025b246d7e1",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    },
+    "quality|qwen3vl8b|set_b100|jpeg_q70|shuffled": {
+      "duplicate_count": 0,
+      "error_count": 0,
+      "expected_row_count": 400,
+      "input_budget_mismatch_count": 0,
+      "latency_seconds": {
+        "mean": 0.9116480555175803,
+        "median": 0.6211928897537291,
+        "p95": 1.4462341545149684
+      },
+      "metrics": {
+        "duplicate_prediction_ids": [],
+        "extra_prediction_ids": [],
+        "invalid_prediction_count": 0,
+        "missing_prediction_count": 0,
+        "prediction_count": 400,
+        "record_count": 400,
+        "strict_accuracy": 0.2425,
+        "strict_source_macro_accuracy": 0.2425,
+        "strict_value_tags": {
+          "f1": 0.002677376171352075,
+          "fn": 347,
+          "fp": 398,
+          "precision": 0.002506265664160401,
+          "recall": 0.0028735632183908046,
+          "tp": 1
+        },
+        "task": {
+          "connectivity": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.54,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.54,
+            "strict_to_semantic_gain_count": 0
+          },
+          "count": {
+            "format_compliance_rate": 0.91,
+            "record_count": 100,
+            "semantic_accuracy": 0.12,
+            "semantic_parse_rate": 0.96,
+            "strict_accuracy": 0.12,
+            "strict_to_semantic_gain_count": 0
+          },
+          "spatial_count": {
+            "format_compliance_rate": 1.0,
+            "record_count": 100,
+            "semantic_accuracy": 0.31,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.31,
+            "strict_to_semantic_gain_count": 0
+          },
+          "value": {
+            "format_compliance_rate": 0.89,
+            "record_count": 100,
+            "semantic_accuracy": 0.06,
+            "semantic_parse_rate": 1.0,
+            "strict_accuracy": 0.0,
+            "strict_to_semantic_gain_count": 6
+          }
+        }
+      },
+      "path": "outputs/rineng_v8/qwen3vl8b_quality/qwen3vl8b_set_b100__jpeg_q70_p0_shuffled_3072.jsonl",
+      "plan_sha256_mismatch_count": 0,
+      "row_count": 400,
+      "sha256": "e66dc9e353ac93da418cf194bc97840c375d696d1327727e129c4357c02fb0c7",
+      "status": "pass",
+      "test_answer_used_true_count": 0
+    }
+  },
+  "failure_reasons": [],
+  "integrity_boundary": "All quality and InternVL experiments remain inside PIDQA. Budget matching uses input tensor elements and does not assert equivalent encoders or effective information throughput.",
+  "internvl_comparisons": [
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "set_b100",
+      "value_f1_difference": 0.4550512791897364,
+      "value_f1_source_bootstrap_ci95": [
+        0.351961950059453,
+        0.5580645161290323
+      ]
+    },
+    {
+      "contrast": "correct_minus_text_only",
+      "dataset": "set_b100",
+      "value_f1_difference": 0.4583901773533424,
+      "value_f1_source_bootstrap_ci95": [
+        0.3548387096774194,
+        0.5635838150289018
+      ]
+    },
+    {
+      "contrast": "budget54_minus_native_tiles12_correct",
+      "dataset": "set_b100",
+      "v7_path": "outputs/rineng_overnight_v7/internvl35_8b/internvl35_8b_set_b100_p0_correct_tiles12.jsonl",
+      "v7_sha256": "2e2c5f1d23dde2c48019392718e8136ff52b19539f20468e4f70bdd7b4abc7fb",
+      "value_f1_difference": 0.4458341235416832,
+      "value_f1_source_bootstrap_ci95": [
+        0.3439807979812497,
+        0.55
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "seed29_strict65",
+      "value_f1_difference": 0.4932243035821299,
+      "value_f1_source_bootstrap_ci95": [
+        0.40618938458825604,
+        0.5758748229368869
+      ]
+    },
+    {
+      "contrast": "correct_minus_text_only",
+      "dataset": "seed29_strict65",
+      "value_f1_difference": 0.5087281795511222,
+      "value_f1_source_bootstrap_ci95": [
+        0.43162393162393164,
+        0.5860215053763441
+      ]
+    },
+    {
+      "contrast": "budget54_minus_native_tiles12_correct",
+      "dataset": "seed29_strict65",
+      "v7_path": "outputs/rineng_overnight_v7/internvl35_8b/internvl35_8b_seed29_strict65_p0_correct_tiles12.jsonl",
+      "v7_sha256": "be370e505496d031a475871aa457ec71f9739c0b5ea70d5a15545f55f167ca05",
+      "value_f1_difference": 0.4963951888008652,
+      "value_f1_source_bootstrap_ci95": [
+        0.4188154211970956,
+        0.5755503046884716
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "seed31_strict65",
+      "value_f1_difference": 0.4851492177073572,
+      "value_f1_source_bootstrap_ci95": [
+        0.3942501287634031,
+        0.5768486947414773
+      ]
+    },
+    {
+      "contrast": "correct_minus_text_only",
+      "dataset": "seed31_strict65",
+      "value_f1_difference": 0.510989010989011,
+      "value_f1_source_bootstrap_ci95": [
+        0.4151898734177215,
+        0.603988603988604
+      ]
+    },
+    {
+      "contrast": "budget54_minus_native_tiles12_correct",
+      "dataset": "seed31_strict65",
+      "v7_path": "outputs/rineng_overnight_v7/internvl35_8b/internvl35_8b_seed31_strict65_p0_correct_tiles12.jsonl",
+      "v7_sha256": "cb17dc4a3c35cf6b8bd5a6524e07862064c0aa10b46ada9d0fc0b16f070299e9",
+      "value_f1_difference": 0.4852930795114949,
+      "value_f1_source_bootstrap_ci95": [
+        0.39236785690359754,
+        0.5773348342337166
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "pooled_three_source_disjoint_subsets",
+      "source_count": 230,
+      "value_f1_difference": 0.47153621677653235,
+      "value_f1_source_bootstrap_ci95": [
+        0.406378783294557,
+        0.5331776075101816
+      ]
+    },
+    {
+      "contrast": "correct_minus_text_only",
+      "dataset": "pooled_three_source_disjoint_subsets",
+      "source_count": 230,
+      "value_f1_difference": 0.48464619492656874,
+      "value_f1_source_bootstrap_ci95": [
+        0.41978287092882993,
+        0.5462620281273131
+      ]
+    },
+    {
+      "contrast": "budget54_minus_native_tiles12_correct",
+      "dataset": "pooled_three_source_disjoint_subsets",
+      "source_count": 230,
+      "v7_dataset_count": 3,
+      "value_f1_difference": 0.4681008607108176,
+      "value_f1_source_bootstrap_ci95": [
+        0.40427001937657864,
+        0.5289996621740654
+      ]
+    }
+  ],
+  "internvl_plan": {
+    "path": "data/manifests/rineng_v8_internvl_budget_matched_plan_r3.json",
+    "sha256": "f8dba8b1b1d28184e90c14ce94a7121e28a40c2d8f1cf42cf656eb9c8fd71d29"
+  },
+  "quality_comparisons": [
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "seed29_strict65",
+      "quality": "blur_r1",
+      "source_macro_source_bootstrap_ci95": [
+        0.011538461538461539,
+        0.08846153846153847
+      ],
+      "source_macro_strict_accuracy_difference": 0.05,
+      "value_f1_difference": 0.5712989583824292,
+      "value_f1_source_bootstrap_ci95": [
+        0.48910675381263613,
+        0.6520153072632837
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "seed29_strict65",
+      "quality": "clean",
+      "source_macro_source_bootstrap_ci95": [
+        0.0038461538461538464,
+        0.08846153846153847
+      ],
+      "source_macro_strict_accuracy_difference": 0.046153846153846156,
+      "value_f1_difference": 0.5861648053344022,
+      "value_f1_source_bootstrap_ci95": [
+        0.4949385524621144,
+        0.6763024276563244
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "seed29_strict65",
+      "quality": "downsample_s075",
+      "source_macro_source_bootstrap_ci95": [
+        0.023076923076923078,
+        0.1
+      ],
+      "source_macro_strict_accuracy_difference": 0.06153846153846154,
+      "value_f1_difference": 0.5915289409323352,
+      "value_f1_source_bootstrap_ci95": [
+        0.511870541892899,
+        0.6693918044933378
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "seed29_strict65",
+      "quality": "jpeg_q70",
+      "source_macro_source_bootstrap_ci95": [
+        0.026923076923076925,
+        0.10384615384615385
+      ],
+      "source_macro_strict_accuracy_difference": 0.06538461538461539,
+      "value_f1_difference": 0.597550992564295,
+      "value_f1_source_bootstrap_ci95": [
+        0.50419462094589,
+        0.6899766899766899
+      ]
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "seed29_strict65",
+      "quality": "blur_r1",
+      "source_bootstrap_ci95": [
+        -0.09140706071085924,
+        0.06776857473373749
+      ],
+      "value_f1_difference_in_differences": -0.014865846951973016
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "seed29_strict65",
+      "quality": "downsample_s075",
+      "source_bootstrap_ci95": [
+        -0.04043087331622741,
+        0.06237075902095768
+      ],
+      "value_f1_difference_in_differences": 0.0053641355979330285
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "seed29_strict65",
+      "quality": "jpeg_q70",
+      "source_bootstrap_ci95": [
+        -0.011920441013318905,
+        0.03218700785287398
+      ],
+      "value_f1_difference_in_differences": 0.011386187229892819
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "seed31_strict65",
+      "quality": "blur_r1",
+      "source_macro_source_bootstrap_ci95": [
+        -0.011538461538461539,
+        0.06923076923076923
+      ],
+      "source_macro_strict_accuracy_difference": 0.03076923076923077,
+      "value_f1_difference": 0.5996741242088112,
+      "value_f1_source_bootstrap_ci95": [
+        0.49773045671056315,
+        0.6909382232508456
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "seed31_strict65",
+      "quality": "clean",
+      "source_macro_source_bootstrap_ci95": [
+        0.015384615384615385,
+        0.09230769230769231
+      ],
+      "source_macro_strict_accuracy_difference": 0.05384615384615385,
+      "value_f1_difference": 0.5721060548646756,
+      "value_f1_source_bootstrap_ci95": [
+        0.4649591380176232,
+        0.6766930999908851
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "seed31_strict65",
+      "quality": "downsample_s075",
+      "source_macro_source_bootstrap_ci95": [
+        0.015384615384615385,
+        0.09615384615384616
+      ],
+      "source_macro_strict_accuracy_difference": 0.057692307692307696,
+      "value_f1_difference": 0.5563347971422954,
+      "value_f1_source_bootstrap_ci95": [
+        0.45162835249042144,
+        0.6642964878258996
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "seed31_strict65",
+      "quality": "jpeg_q70",
+      "source_macro_source_bootstrap_ci95": [
+        0.0038461538461538464,
+        0.08846153846153847
+      ],
+      "source_macro_strict_accuracy_difference": 0.046153846153846156,
+      "value_f1_difference": 0.6096825509889119,
+      "value_f1_source_bootstrap_ci95": [
+        0.5067948256884733,
+        0.7027940932146243
+      ]
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "seed31_strict65",
+      "quality": "blur_r1",
+      "source_bootstrap_ci95": [
+        -0.0400656418532126,
+        0.10189117921028967
+      ],
+      "value_f1_difference_in_differences": 0.027568069344135582
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "seed31_strict65",
+      "quality": "downsample_s075",
+      "source_bootstrap_ci95": [
+        -0.03736552595091053,
+        0.007234112878939047
+      ],
+      "value_f1_difference_in_differences": -0.015771257722380194
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "seed31_strict65",
+      "quality": "jpeg_q70",
+      "source_bootstrap_ci95": [
+        -0.010259696242279626,
+        0.09974365368045157
+      ],
+      "value_f1_difference_in_differences": 0.0375764961242363
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "set_b100",
+      "quality": "blur_r1",
+      "source_macro_source_bootstrap_ci95": [
+        0.035,
+        0.095
+      ],
+      "source_macro_strict_accuracy_difference": 0.065,
+      "value_f1_difference": 0.5655682265714628,
+      "value_f1_source_bootstrap_ci95": [
+        0.45430809399477806,
+        0.6706720686793328
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "set_b100",
+      "quality": "clean",
+      "source_macro_source_bootstrap_ci95": [
+        0.02,
+        0.0875
+      ],
+      "source_macro_strict_accuracy_difference": 0.0525,
+      "value_f1_difference": 0.5318678676129953,
+      "value_f1_source_bootstrap_ci95": [
+        0.4252383347510958,
+        0.6373929853631592
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "set_b100",
+      "quality": "downsample_s075",
+      "source_macro_source_bootstrap_ci95": [
+        0.03,
+        0.095
+      ],
+      "source_macro_strict_accuracy_difference": 0.0625,
+      "value_f1_difference": 0.5174508659657174,
+      "value_f1_source_bootstrap_ci95": [
+        0.3991228070175439,
+        0.6280757874015748
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "set_b100",
+      "quality": "jpeg_q70",
+      "source_macro_source_bootstrap_ci95": [
+        0.0225,
+        0.0925
+      ],
+      "source_macro_strict_accuracy_difference": 0.0575,
+      "value_f1_difference": 0.5356768776640732,
+      "value_f1_source_bootstrap_ci95": [
+        0.4308941422508355,
+        0.6397415185783522
+      ]
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "set_b100",
+      "quality": "blur_r1",
+      "source_bootstrap_ci95": [
+        -0.0032203192421023097,
+        0.07515039866440221
+      ],
+      "value_f1_difference_in_differences": 0.03370035895846746
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "set_b100",
+      "quality": "downsample_s075",
+      "source_bootstrap_ci95": [
+        -0.11979625542791766,
+        0.10311771953482451
+      ],
+      "value_f1_difference_in_differences": -0.014417001647277883
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "set_b100",
+      "quality": "jpeg_q70",
+      "source_bootstrap_ci95": [
+        -0.018590609358862253,
+        0.027754423649965665
+      ],
+      "value_f1_difference_in_differences": 0.0038090100510779212
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "pooled_three_source_disjoint_subsets",
+      "quality": "blur_r1",
+      "source_count": 230,
+      "source_macro_source_bootstrap_ci95": [
+        0.030434782608695653,
+        0.07173913043478261
+      ],
+      "source_macro_strict_accuracy_difference": 0.051086956521739134,
+      "value_f1_difference": 0.5753985497527785,
+      "value_f1_source_bootstrap_ci95": [
+        0.5100943123582974,
+        0.6356112659004226
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "pooled_three_source_disjoint_subsets",
+      "quality": "clean",
+      "source_count": 230,
+      "source_macro_source_bootstrap_ci95": [
+        0.029347826086956522,
+        0.07282608695652174
+      ],
+      "source_macro_strict_accuracy_difference": 0.051086956521739134,
+      "value_f1_difference": 0.5578434735555438,
+      "value_f1_source_bootstrap_ci95": [
+        0.4917032462347278,
+        0.6227325411392517
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "pooled_three_source_disjoint_subsets",
+      "quality": "downsample_s075",
+      "source_count": 230,
+      "source_macro_source_bootstrap_ci95": [
+        0.0391304347826087,
+        0.08152173913043478
+      ],
+      "source_macro_strict_accuracy_difference": 0.06086956521739131,
+      "value_f1_difference": 0.5482311099329555,
+      "value_f1_source_bootstrap_ci95": [
+        0.4763352426739734,
+        0.6133661609232433
+      ]
+    },
+    {
+      "contrast": "correct_minus_shuffled",
+      "dataset": "pooled_three_source_disjoint_subsets",
+      "quality": "jpeg_q70",
+      "source_count": 230,
+      "source_macro_source_bootstrap_ci95": [
+        0.03369565217391304,
+        0.0782608695652174
+      ],
+      "source_macro_strict_accuracy_difference": 0.05652173913043478,
+      "value_f1_difference": 0.5721737526514802,
+      "value_f1_source_bootstrap_ci95": [
+        0.505950288151398,
+        0.6344047619047619
+      ]
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "pooled_three_source_disjoint_subsets",
+      "quality": "blur_r1",
+      "source_bootstrap_ci95": [
+        -0.015478813489614884,
+        0.05169060719513785
+      ],
+      "source_count": 230,
+      "value_f1_difference_in_differences": 0.01755507619723473
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "pooled_three_source_disjoint_subsets",
+      "quality": "downsample_s075",
+      "source_bootstrap_ci95": [
+        -0.06549207848696947,
+        0.05200100978035305
+      ],
+      "source_count": 230,
+      "value_f1_difference_in_differences": -0.009612363622588216
+    },
+    {
+      "contrast": "degraded_minus_clean_change_in_correct_minus_shuffled_value_f1",
+      "dataset": "pooled_three_source_disjoint_subsets",
+      "quality": "jpeg_q70",
+      "source_bootstrap_ci95": [
+        -0.0033976452668824653,
+        0.03451601924738912
+      ],
+      "source_count": 230,
+      "value_f1_difference_in_differences": 0.014330279095936427
+    }
+  ],
+  "quality_plan": {
+    "path": "data/manifests/rineng_v8_quality_robustness_plan.json",
+    "sha256": "2753a4a4b4e1690a1165eb41d9de68bd8ed5086cac09045fb40b0e2fe271a680"
+  },
+  "reference": {
+    "path": "data/processed/pidqa_records.jsonl",
+    "role": "scorer-only; never read by inference runners",
+    "sha256": "2f1c2bb38b6ee16268926d96518b58eeb44fd77c43b36df8aa8684f782139ebb"
+  },
+  "status": "pass",
+  "version": "rineng-v8-extension-score"
+}

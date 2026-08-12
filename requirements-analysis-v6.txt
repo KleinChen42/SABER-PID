@@ -1,0 +1,10 @@
+# Deterministic scorer, v6 analysis, figures, tests, and PDF validation.
+# These pins record the environment used for the final v6 rebuild.
+numpy==2.2.3
+pillow==11.1.0
+matplotlib==3.10.0
+PyMuPDF==1.27.1
+pytest==9.0.3
+
+# PDF compilation also requires the external executable:
+# tectonic==0.17.0

@@ -1,0 +1,205 @@
+{
+  "method": "all rendered pages inspected by the active automated agent",
+  "note": "All 19 manuscript pages and all 13 supplementary pages were inspected at original rendered resolution after the final float-layout rebuild. Text, equations, tables, figures, captions, hyperlinks, headers, footers, and page boundaries are legible with no clipping, overlap, missing content, or unintended blank pages. Remaining whitespace reflects whole-table or whole-figure pagination and is acceptable.",
+  "page_count": 32,
+  "pages": [
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-01.png",
+      "sha256": "975adcc7445d4794056a11667ee49c1de3317494eaefc6c1dbeab620dcd93d4c"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-02.png",
+      "sha256": "8aac1de7472975021c7555397e029669e1d7b31303d34ab77c2e4f18df41cfd1"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-03.png",
+      "sha256": "803919c3418e24e85ca7f3c56f217d8c6d4bfd0e235eafb08641175fe32ae797"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-04.png",
+      "sha256": "11bcd3790080ca0b40ab963fb6213f9b4a01de041c5b499729458e45a2a27f09"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-05.png",
+      "sha256": "14b418bbcc1011b4f6d216b02c5690fa0ad533653988507027b66622de1f578b"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-06.png",
+      "sha256": "b1f2ace221740625e156cf5eff0eda770ff437fb3d9cb73f246bedcb6ecda0a9"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-07.png",
+      "sha256": "96f6216af4da24f57d1ff7b63734de8787025035e16272efbfeff66ecf6fd1e5"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-08.png",
+      "sha256": "d95330361428c6f81cfacd6217e9d41d2ba107fa744dd28f9fe77ed8adf96cb4"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-09.png",
+      "sha256": "7a6ed605d9b43157eec45f042bfcd252776cc93180096b402862b7a2735bd2ef"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-10.png",
+      "sha256": "98d219454d0dddb4e3ca630e5e5853e679a5255050b02f6b3e61d87ff8b4c60b"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-11.png",
+      "sha256": "9e67a8498069df7c7715b4625f26a50055ea62f8f1b7bd9831ec085c584f5dce"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-12.png",
+      "sha256": "f4b8225a7da5a9d8081a16d66c9dd079fe5503f99f56b251712ba83524d63c8a"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-13.png",
+      "sha256": "d6f63e507c3e703a2af84c6429c0a660dfeedb86018d7da2eb1e6e75981c58d8"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-14.png",
+      "sha256": "db09ac7cd065ef921853beef586a996545b8b62c0c83419ec6341b75c4741fef"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-15.png",
+      "sha256": "b46388650b0dc90c8510cfc47f41fe4bdd484a3faec2d77ea7ab3a9a28235e21"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-16.png",
+      "sha256": "74d324f7a3569f6dcb7a3655cb10215cb8abada09866140530c66d94afe1d1d5"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-17.png",
+      "sha256": "c1a486d7e1b942104ad9043b16ab0070088aeff7b70b84eecdac49e5b01fed71"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-18.png",
+      "sha256": "a0615d45cef5c90786abf41bd75c19174b16c368349438378aac6145d683673a"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/manuscript/page-19.png",
+      "sha256": "6b9d1dd88738e1da0fa1be0f8f953687f62d121aaaa2260ae11cb64a68e59e53"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-01.png",
+      "sha256": "7e4c76d3ccfd1ace7f0aeb84df2509b9e703c7797ab8b5fec5d748f21741022d"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-02.png",
+      "sha256": "280234ced893b978e47ef57a91768e3e479c9dd16da90eb42781b8d6c25b6bb2"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-03.png",
+      "sha256": "5a6fc8e70d6d4e9f8ef516592711ba28af723276b3d4298cc39f8a0f51a2ca80"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-04.png",
+      "sha256": "ee2c5bffc5690982061866ef01821acdcf26bf4d456ee35fde462689f0684950"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-05.png",
+      "sha256": "3936303bedc06ea4f2b7f0a1cf66f1b80b97d42318aecb27a569597f4ee6c889"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-06.png",
+      "sha256": "f8395b8e78205ca2f2c2e822e36caa7f264f1450c03323de88ad058eccf92186"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-07.png",
+      "sha256": "4f7374b0bf034c97cef889c81e376b34152dfff50388802709a50b699f8bcd63"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-08.png",
+      "sha256": "b84a46a4125c56cba2dc20a277d297391b257809efb49822a9633f1f6d35cfcf"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-09.png",
+      "sha256": "1c16bf2529d4d090118891f48903447184bf7535a51a870bf58aceedbcc4f9cf"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-10.png",
+      "sha256": "166399ab3f15e8957e70db06c2e0e4ecc8118c31ca7e0269dd732aa805762bd5"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-11.png",
+      "sha256": "5567acf3ec271f5855bda55cb1fe0ef90e24e8314340b560260f85599efdd7a4"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-12.png",
+      "sha256": "90a1db3cc675adcc3d0a6e1e6024d073d4ff1308eaf1eae43be5544f21870ab9"
+    },
+    {
+      "document": "supplementary",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v8/supplementary/page-13.png",
+      "sha256": "ebc23bc382853a4ebdb0b0d8eee155996b3e14b71559f789af30c5bafb2bdd0a"
+    }
+  ],
+  "pdf_sha256": {
+    "manuscript": "cc508ebfc7ae6a48344dec9bb5572201f63047e2dd7baa6f0db3b524a01c2302",
+    "supplementary": "87cf3570291f879451486bc0d263caea7e5dc2b66541dd3c32d1a5180d62578d"
+  },
+  "status": "pass",
+  "validation_version": "pdf-visual-inspection-v8"
+}

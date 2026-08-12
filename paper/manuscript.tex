@@ -25,40 +25,29 @@
 \maketitle
 
 \begin{abstract}
-Engineering use of vision--language model outputs requires a qualification
-decision, not only an aggregate benchmark score. We present SABER-PID, a
-source-isolated counterfactual workflow for determining whether candidate-tag
-retrieval from piping and instrumentation diagrams (P\&IDs) is supported for
-a stated model, visual-input budget, task, and drawing family. On 100 unseen
-PIDQA source drawings, frozen Qwen3-VL-8B at a 3072-side, 192-token operating
-point produced 192 true positives, 152 false positives, and 156 false
-negatives: pooled precision 0.5581, recall 0.5517, and F1 0.5549; source-macro
-F1 was 0.5810. Source-shuffled and no-image controls reduced pooled F1 to
-0.0062 and 0.0000. At a common 512-token output cap, the 3072-minus-768
-visual-input-budget effect was +0.5250 (95\% source-bootstrap interval
-[0.4224, 0.6293]). A frozen 54-cell extension across Qwen3-VL-8B/32B,
-InternVL3.5-8B, three pairwise source-disjoint PIDQA subsets, and two
-pre-existing prompts gave positive lower bounds for all 36 correct-minus-
-control F1 intervals; median correct-image F1 was 0.623, 0.651, and 0.012,
-respectively. Aggregate strict accuracy did not identify this capability:
-a task-prior diagnostic (0.3375) and no-image condition (0.3025) exceeded the
-correct-image aggregate score (0.2875). A frozen full-image OCR comparator
-reached pooled F1 0.5933. Prediction-only operating modes exposed
-complementary errors: union increased
-recall to 0.7040 and pooled/source-macro F1 to 0.6339/0.6602, whereas
-intersection yielded precision 0.9907 with interval [0.9681, 1.0000].
-For normalized loss $L=rFN+FP$, where $r=C_{FN}/C_{FP}$, the exact Set B
-lower envelope selects intersection below $r=0.528$, joined OCR from
-0.528--0.625, OCR-first from 0.625--2.014, and union above 2.014; source
-bootstrapping quantifies decision stability around these sample-specific
-switches.
-Set-B-excluded checks retained positive pooled union-minus-Qwen effects on two
-83-source subsets (+0.0366 and +0.0440); stricter mutually disjoint 65-source
-checks showed +0.0325 and +0.0509, with one interval crossing zero.
-Accordingly, the supported outcome is bounded candidate-tag retrieval within
-PIDQA, with selectable coverage and precision modes; general P\&ID
-understanding, topology reasoning, cross-model invariance, and real-plant
-deployment are not qualified.
+Engineering use of vision--language model outputs requires qualification of a
+specific task, budget, and drawing family rather than reliance on aggregate
+accuracy. We present SABER-PID, a source-isolated, answer-hidden,
+counterfactual workflow for candidate-tag retrieval from piping and
+instrumentation diagrams (P\&IDs). On 100 unseen PIDQA drawings, frozen
+Qwen3-VL-8B at 3072-side produced tag F1 0.5549; source-shuffled and no-image
+controls reduced F1 to 0.0062 and 0. At a common 512-token cap, the
+3072-minus-768 visual-budget effect was +0.5250 (95\% source-bootstrap interval
+[0.4224, 0.6293]). A 54-cell extension across two Qwen scales, InternVL3.5-8B,
+three source-disjoint subsets, and two prompts yielded positive lower bounds
+for all 36 controls. At the closest safe 54-tile budget, InternVL pooled
+correct-image F1 reached 0.4846 and its correct-minus-shuffled effect was
++0.4715 ([0.4064, 0.5332]). At the qualified 3072/512 budget, clean, JPEG, mild blur, and
+downsampled images retained pooled correct-minus-shuffled effects of
+0.548--0.575; all quality-minus-clean intervals included zero. On a second
+public DEXPI family (35 images, 65 questions), Qwen reached precision 0.9231,
+recall 0.8889, and F1 0.9057, versus zero F1 under cross-case shuffling and no
+image. OCR and Qwen were complementary on PIDQA: union reached recall 0.7040
+and F1 0.6339, whereas intersection reached precision 0.9907. The
+cost-sensitive lower envelope selects intersection, joined OCR, OCR-first, or
+union as missed-tag cost increases. SABER-PID therefore supports configurable,
+image-grounded candidate-tag retrieval under the evaluated PIDQA and DEXPI
+conditions; it does not qualify topology reasoning or field deployment.
 \end{abstract}
 
 \noindent\textbf{Keywords:} engineering document intelligence; vision--language
@@ -272,7 +261,7 @@ overlap Set B and each other, we additionally remove Set B sources and then
 construct mutually disjoint subsets. These checks measure within-family
 stability; they are not treated as independent external replication.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Evidence phases, frozen decisions, and allowed interpretation.}
 \label{tab:phases}
@@ -285,7 +274,7 @@ Pilot/configuration & Earlier development records & Prompt, parser, legal tag gr
 Primary qualification & Set B, 100 unseen sources & Source selection, Qwen condition, controls, estimators & Qualify or reject the bounded Qwen tag-retrieval claim \\
 Cross-scale replication & Three pairwise source-disjoint subsets & Three models, two prompts, three evidence conditions, estimators & Test requested-drawing direction and magnitude stability within PIDQA \\
 Paired quality robustness & Same three source-disjoint subsets & Qualified Qwen budget; four mild image conditions; correct/shuffled pairing & Test whether requested-drawing dependence changes under declared quality shifts \\
-Closest-safe cross-family budget & Same three source-disjoint subsets & InternVL 54-tile input; 512-token cap; three evidence conditions & Reduce visual-budget mismatch while retaining an architecture boundary \\
+Closest-safe cross-family budget & Same three source-disjoint subsets & InternVL 54-tile input; 512-token cap; three evidence conditions & Test whether requested-drawing evidence recovers under a closer visual budget \\
 External-family transfer & DEXPI, 35 images in 26 logical cases & Exact image/XML pairing; tag visibility rule; Qwen/OCR contracts; cross-case derangement & Test tag retrieval on a second public P\&ID family, not real-plant deployment \\
 Descriptive fusion & Set B predictions & Component outputs; rule family defined after component inspection & Describe operating modes and complementarity \\
 Frozen-rule transfer & Seed-29/31 predictions, with audited exclusions & All four set/fallback rules; no re-selection & Assess within-family direction and sensitivity, not external replication \\
@@ -361,7 +350,7 @@ is 0.5253 at 3072-side and 0.0003 at 768-side. The qualified scope is therefore
 Qwen candidate-tag retrieval on PIDQA at the stated high-detail budget, not
 aggregate question answering or general P\&ID understanding.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{figure_1_qualification_decision_v6.pdf}
 \caption{Qualification decision. Aggregate accuracy is retained as a
@@ -395,7 +384,7 @@ At a common 512-token cap, the high-minus-low visual-input-budget effect is
 +0.6783 ([0.6163, 0.7384]) and +0.6500 ([0.5684, 0.7295]). All four effects
 are positive, while only Set B carries the primary qualification role.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{figure_2_qualification_effects_v6.pdf}
 \caption{Paired task-specific qualification effects. Panel A contrasts
@@ -424,7 +413,7 @@ Eight of nine P1-minus-P0 intervals include zero; the exception is a small
 negative effect for Qwen3-VL-32B on seed 29. Figure~\ref{fig:v7replication}
 reports every pre-specified contrast rather than selecting a prompt or subset.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{figure_v7_cross_model_counterfactual_replication.pdf}
 \caption{Frozen cross-model counterfactual replication. Rows cross three
@@ -450,7 +439,7 @@ precision 0.9907 with source-bootstrap interval [0.9681, 1.0000], at recall
 0.3046. OCR-first fallback reaches pooled F1 0.6228 and exact-set accuracy
 0.2200. These are transparent retrieval modes, not a learned ensemble.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Set B candidate-tag performance on 100 sources. Micro values pool
 TP/FP/FN; macro F1 weights each source equally.}
@@ -478,7 +467,7 @@ OCR-first fallback. Median false candidates are respectively 0 [0, 2],
 drawings, while union, Qwen, and OCR-first are empty on one each. This
 quantifies the coverage--review-burden trade-off behind Figure~\ref{fig:modes}.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{figure_3_operating_modes_v6.pdf}
 \caption{Reference-free operating modes and overlap-audited stability checks.
@@ -507,7 +496,7 @@ has a maximum minimum-loss bootstrap probability of 0.347, whereas OCR-first
 reaches 0.889 near $r=1.25$. Figure~\ref{fig:costdecision} therefore reports
 both the exact count-based rule and its source-bootstrap decision stability.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\linewidth]{figure_4_cost_sensitive_operating_modes_v8.pdf}
 \caption{Cost-sensitive operating-mode decision. Panel A plots normalized
@@ -516,6 +505,90 @@ Panel B shows each mode's probability of minimum loss over 10,000
 source-cluster resamples. Dashed lines mark the three point-estimate switches;
 predictions are unchanged by this scorer-only analysis.}
 \label{fig:costdecision}
+\end{figure}
+
+\subsection{Mild image-quality shifts preserve requested-drawing evidence at the qualified budget}
+
+The paired robustness matrix holds the qualified Qwen input and output budgets
+at 3072-side/512 tokens and pools three mutually source-disjoint subsets (230
+drawings; 7,360 predictions). Correct-image strict tag F1 is 0.5693 on clean
+images, 0.5836 after JPEG quality 70, 0.5879 after Gaussian blur radius 1, and
+0.5605 after 0.75$\times$ downsample-and-restore. The corresponding shuffled-
+image F1 values are 0.0114, 0.0114, 0.0125, and 0.0123. Correct-minus-shuffled
+effects are therefore +0.5578 ([0.4917, 0.6227]), +0.5722 ([0.5060, 0.6344]),
++0.5754 ([0.5101, 0.6356]), and +0.5482 ([0.4763, 0.6134]), respectively.
+
+The paired change in this counterfactual effect relative to clean is +0.0143
+([-0.0034, 0.0345]) for JPEG, +0.0176 ([-0.0155, 0.0517]) for blur, and
+-0.0096 ([-0.0655, 0.0520]) for downsample-and-restore. Every interval includes
+zero. Thus the declared mild shifts retain a large requested-drawing effect and
+show no detected deterioration relative to clean; this result does not qualify
+more severe scanning, occlusion, or revision-mark conditions.
+
+\input{tables/table_rineng_v8_quality.tex}
+
+\subsection{A closer visual budget recovers strong InternVL requested-drawing dependence}
+
+The closest-safe InternVL matrix contains nine complete cells and 2,760
+predictions. Pooled over the same 230 mutually source-disjoint drawings,
+correct-image strict tag F1 is 0.4846, compared with 0.0131 under source
+shuffling and 0 without an image. The correct-minus-shuffled effect is +0.4715
+([0.4064, 0.5332]); the correct-minus-no-image effect is +0.4846 ([0.4198,
+0.5463]). Every subset-specific correct-minus-control interval has a positive
+lower bound.
+
+Relative to the earlier native-12-tile correct-image cells, the pooled 54-tile
+gain is +0.4681 ([0.4043, 0.5290]); subset gains are +0.4458--+0.4964, all with
+positive lower bounds. The 54-tile tensor contains 9.63\% fewer recorded input
+elements than the qualified Qwen processor, so this is not encoder equivalence.
+It does show that visual-budget adequacy is a first-class qualification
+variable and that requested-drawing dependence transfers to a second model
+family when gross input-budget mismatch is reduced.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figure_5_quality_and_budget_matched_v8.pdf}
+\caption{Qualified-budget robustness and cross-model visual-budget recovery.
+Panel A reports correct-minus-shuffled strict tag F1 under clean and three mild
+quality shifts. Panel B reports the paired change in that effect relative to
+clean. Panel C shows the large requested-drawing effect recovered by the
+54-tile InternVL input at the closest safe recorded tensor-element budget.
+Intervals use 10,000 paired source-
+bootstrap replicates; tensor-element matching does not equalize encoders.}
+\label{fig:v8quality}
+\end{figure}
+
+\subsection{A second public P\&ID family transfers the qualification}
+
+The visibility-qualified DEXPI branch supplies 65 prefix-conditioned tag
+questions from 35 images in 26 logical test cases. On the exact image/XML
+pairs, Qwen produces 72 true positives, six false positives, and nine false
+negatives: precision 0.9231, recall 0.8889, strict tag F1 0.9057, exact-set
+accuracy 0.8615, and logical-case-macro exact accuracy 0.9006. Cross-case
+shuffling produces zero true positives, 144 false positives, and F1 0; the
+no-image condition also has F1 0. Correct-minus-shuffled and correct-minus-no-
+image effects are both +0.9057, with case-bootstrap intervals [0.8409, 0.9841]
+and [0.8431, 0.9844].
+
+The frozen full-image OCR comparator reaches precision 0.9608, recall 0.6049,
+F1 0.7424, and exact-set accuracy 0.6154. Qwen correct-image minus OCR F1 is
++0.1632 ([0.0317, 0.3882]); OCR minus no-image is +0.7424 ([0.5435, 0.8504]).
+The family, visibility rule, image/XML pairing, and derangement were selected
+without model outputs. This is strong transfer evidence to a second public
+drawing family, while its size and training-example style still do not
+establish real-plant deployment performance.
+
+\input{tables/table_rineng_v8_dexpi_external.tex}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figure_6_dexpi_external_v8.pdf}
+\caption{External-family tag retrieval on public DEXPI drawings. Panel A shows
+precision, recall, and F1 for Qwen correct, cross-case shuffled, no-image, and
+full-image OCR conditions. Panel B gives logical-case-bootstrap F1 contrasts.
+All 65 predictions per condition are retained; no result-guided source or tag
+selection is applied.}
+\label{fig:v8dexpi}
 \end{figure}
 
 \subsection{Geometry joining and error complementarity explain the operating envelope}
@@ -556,7 +629,7 @@ in every point estimate, but interval exclusion of zero depends on subset and
 estimator. This supports a cautious within-family stability statement, not an
 independent-replication claim.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Frozen union rule after source-overlap exclusions. Intervals are
 paired 95\% source-bootstrap intervals.}
@@ -583,12 +656,14 @@ retain strong prior pathways. A visible symbol legend changes spatial-count
 accuracy, but correct numeric labels show no detected advantage over a
 layout-matched label permutation (interval [-0.04, 0.04]). The initial
 corrected InternVL3.5-8B check produces correct-image tag F1 0.0126 and zero
-under source-shuffled and no-image conditions. The larger frozen matrix
-confirms a positive requested-drawing direction for InternVL but bounds its
-correct-image F1 at 0.0090--0.0257, far below the Qwen ranges. These results
-prevent the Qwen tag outcome from
-being generalized to a universal visual-input law, topology reasoning, or
-cross-model invariance.
+under source-shuffled and no-image conditions. The larger frozen native-budget
+matrix confirms the direction but bounds correct-image F1 at 0.0090--0.0257.
+In contrast, the closest-safe 54-tile input reaches pooled F1 0.4846 and a
++0.4715 correct-minus-shuffled effect. The +0.4681 paired gain over native 12
+tiles identifies visual budget as the operative boundary rather than model
+identity alone. Because tensor-element matching does not equalize encoders,
+these results still do not support a universal visual-input law, topology
+reasoning, or cross-model performance equivalence.
 
 \section{Discussion}
 
@@ -602,6 +677,18 @@ effect is not explained by a larger text-generation allowance. The aggregate
 score would have obscured this capability because nonvisual pathways dominate
 other task families. Reporting by task is therefore not merely presentational;
 it changes the engineering decision.
+
+Three extensions strengthen that localization without broadening it beyond the
+measured task. At the same qualified 3072/512 budget, three mild image-quality
+changes preserve large correct-minus-shuffled effects and show no detected
+change from clean. Reducing the gross visual-budget mismatch raises pooled
+InternVL correct-image F1 from the native-budget range to 0.4846 and yields a
++0.4715 requested-drawing effect, providing a cross-family replication at a
+declared closest-safe input budget. On a separately licensed public DEXPI family, exact image/
+XML pairing yields F1 0.9057 while cross-case shuffled and no-image controls
+yield zero. The latter is an external-family transfer result rather than a
+second partition of PIDQA, although 35 images in curated training examples do
+not represent the diversity of operating-plant documents.
 
 The OCR--VLM operating envelope turns the qualification into selectable
 workflow modes. Union emphasizes coverage (recall 0.7040) at a median of four
@@ -647,19 +734,27 @@ engineering data.
 
 \section{Limitations}
 
-PIDQA is one public synthetic 500-sheet source family. Source isolation protects
-unseen-sheet evaluation within that family but does not establish performance
-on scanned, revision-marked, proprietary, or project-specific plant drawings.
-The primary operating point concerns one frozen Qwen3-VL-8B prompt and
+The primary operating-mode and robustness analyses use the public synthetic
+500-sheet PIDQA family. Source isolation protects unseen-sheet evaluation
+within that family but does not establish performance on scanned, revision-
+marked, proprietary, or project-specific plant drawings. DEXPI adds a second
+licensed public family, but the evaluated scope is only 35 visibility-qualified
+images from curated training examples and 65 tag questions; it is not a field
+sample. The primary operating point concerns one frozen Qwen3-VL-8B prompt and
 decoding configuration. The extension covers two frozen prompts and a 32B
-Qwen scale, but the small InternVL3.5-8B effect shows that magnitude is not
-model-invariant. The OCR comparator is a frozen full-image pipeline rather
+Qwen scale. The large change from native-12 to 54-tile InternVL shows that
+performance is not visual-budget-invariant; matching recorded tensor elements
+still does not equalize architectures, encoders, or effective information
+throughput. Only one non-Qwen checkpoint was evaluated. The OCR comparator is a frozen full-image pipeline rather
 than an optimized industrial recognizer.
 
 Set B fusion is descriptive. Frozen-rule checks remain within PIDQA, and even
 after Set B exclusion the two 83-source subsets share sources; the stricter
 65-source results have wider intervals. The 100-source controls estimate
 discrete operating points, not a continuous or universal visual-input law.
+The quality matrix covers three declared mild transformations at one severity
+each; it does not support robustness claims for heavy compression, severe
+blur, occlusion, handwriting, or arbitrary scan pipelines.
 Latency co-varies with generated output length and is not interpreted as pure
 image-encoding cost. Candidate workload is computed against benchmark
 references; field verification effort may differ.
@@ -683,15 +778,21 @@ PIDQA drawings, high-detail Qwen inference passes requested-drawing and
 matched-budget gates: pooled F1 is 0.5549 with the correct image, 0.0062 with a
 source-shuffled image, and zero without an image. A 54-cell frozen extension
 retains positive requested-drawing intervals in all 36 contrasts across two
-Qwen scales, InternVL, two prompts, and three source-disjoint subsets, while
-also exposing the much smaller InternVL magnitude. OCR and Qwen recover
+Qwen scales, InternVL, two prompts, and three source-disjoint subsets. A
+separate closest-safe 54-tile pass then raises pooled InternVL correct-image F1
+to 0.4846 and its correct-minus-shuffled effect to +0.4715, demonstrating
+cross-model transfer after visual-budget qualification. OCR and Qwen recover
 complementary tags. Reference-free union reaches recall 0.7040 and pooled F1
-0.6339, while intersection reaches precision 0.9907. Overlap-audited frozen-
-rule checks preserve positive point estimates but also expose estimator- and
-subset-dependent uncertainty. The resulting conclusion is deliberately
-bounded: SABER-PID supports configurable candidate-tag retrieval within the
-evaluated PIDQA/Qwen setting; it does not qualify topology reasoning, general
-P\&ID understanding, or field deployment.
+0.6339, while intersection reaches precision 0.9907; the cost-sensitive rule
+makes their selection explicit. Mild JPEG, blur, and resampling changes retain
+large requested-drawing effects at the qualified budget. On 35 public DEXPI
+images, correct-image Qwen reaches F1 0.9057 while shuffled and no-image
+controls remain at zero. Overlap-audited frozen-rule checks preserve positive
+point estimates but also expose estimator- and subset-dependent uncertainty.
+The resulting conclusion is deliberately bounded: SABER-PID supports
+configurable candidate-tag retrieval under the evaluated PIDQA and DEXPI
+conditions; it does not qualify topology reasoning, general P\&ID
+understanding, or field deployment.
 
 \section*{Data and code availability}
 

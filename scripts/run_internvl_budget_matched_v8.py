@@ -28,6 +28,42 @@ from run_vlm_f2_matrix import PROMPTS, prompt_hash
 CONDITIONS = ("correct", "shuffled", "text_only")
 
 
+def wait_for_mainline_shard_barrier() -> None:
+    """Hold only the original mainline before it duplicates active shards."""
+
+    proc_cmdline = Path(f"/proc/{os.getppid()}/cmdline")
+    if not proc_cmdline.is_file():
+        return
+    parent_command = proc_cmdline.read_bytes().replace(b"\0", b" ").decode(
+        "utf-8", errors="replace"
+    )
+    if "launch_rineng_v8_h200.sh mainline_full" not in parent_command:
+        return
+    control = Path(
+        os.environ.get(
+            "RINENG_INTERNVL_MAINLINE_BARRIER_FILE",
+            "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/control/internvl_mainline_barrier.txt",
+        )
+    )
+    announced = False
+    while control.is_file() and control.read_text(encoding="utf-8").strip() == "WAIT":
+        if not announced:
+            print(
+                json.dumps(
+                    {
+                        "status": "waiting_for_condition_disjoint_shards",
+                        "control": str(control),
+                    },
+                    sort_keys=True,
+                ),
+                flush=True,
+            )
+            announced = True
+        time.sleep(30)
+    if announced:
+        print(json.dumps({"status": "shard_barrier_released"}, sort_keys=True), flush=True)
+
+
 def is_fatal_accelerator_error(exc: BaseException) -> bool:
     text = f"{type(exc).__name__}: {exc}".casefold()
     markers = (
@@ -200,6 +236,7 @@ def main() -> int:
         raise FileNotFoundError(model_path)
     output_dir = resolve(root, args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
+    wait_for_mainline_shard_barrier()
     model, tokenizer = load_model(str(model_path))
     device = next(model.parameters()).device
     generation_config = {"max_new_tokens": max_new_tokens, "do_sample": False}

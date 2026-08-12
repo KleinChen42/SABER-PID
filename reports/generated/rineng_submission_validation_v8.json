@@ -1,0 +1,54 @@
+{
+  "abstract_words": 247,
+  "administrative_placeholders": [
+    "public archive DOI/URL",
+    "author identities and affiliations"
+  ],
+  "citations": {
+    "bibliography": 19,
+    "cited": 19,
+    "missing": [],
+    "uncited": []
+  },
+  "derived_status": {
+    "paper/figures/figure_metadata_v8.json": "pass",
+    "reports/generated/rineng_cost_sensitive_operating_modes_v8.json": "pass",
+    "reports/generated/rineng_v8_dexpi_external_score.json": "pass",
+    "reports/generated/rineng_v8_extension_score.json": "pass",
+    "reports/generated/rineng_v8_independent_validation.json": "pass",
+    "reports/generated/rineng_v8_paper_summary.json": "pass"
+  },
+  "failure_reasons": [],
+  "highlights": {
+    "count": 5,
+    "lengths": [
+      70,
+      71,
+      66,
+      64,
+      69
+    ]
+  },
+  "inspected_page_count": 32,
+  "keywords": {
+    "count": 6,
+    "values": [
+      "engineering document intelligence",
+      "vision--language models",
+      "optical character recognition",
+      "tag retrieval",
+      "source isolation",
+      "counterfactual evaluation"
+    ]
+  },
+  "missing_files": [],
+  "pdf_sha256": {
+    "manuscript": "cc508ebfc7ae6a48344dec9bb5572201f63047e2dd7baa6f0db3b524a01c2302",
+    "supplementary": "87cf3570291f879451486bc0d263caea7e5dc2b66541dd3c32d1a5180d62578d"
+  },
+  "rendered_page_count": 32,
+  "status": "pass",
+  "title": "Qualifying Image-Grounded Tag Retrieval in Piping and Instrumentation Diagrams with Source-Isolated Counterfactual Evaluation",
+  "undefined_references": [],
+  "version": "rineng-submission-validation-v8"
+}

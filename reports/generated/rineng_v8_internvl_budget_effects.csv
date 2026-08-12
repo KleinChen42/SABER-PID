@@ -1,0 +1,13 @@
+contrast,dataset,source_count,v7_dataset_count,v7_path,v7_sha256,value_f1_difference,value_f1_source_bootstrap_ci95
+correct_minus_shuffled,set_b100,,,,,0.4550512791897364,"[0.351961950059453, 0.5580645161290323]"
+correct_minus_text_only,set_b100,,,,,0.4583901773533424,"[0.3548387096774194, 0.5635838150289018]"
+budget54_minus_native_tiles12_correct,set_b100,,,outputs/rineng_overnight_v7/internvl35_8b/internvl35_8b_set_b100_p0_correct_tiles12.jsonl,2e2c5f1d23dde2c48019392718e8136ff52b19539f20468e4f70bdd7b4abc7fb,0.4458341235416832,"[0.3439807979812497, 0.55]"
+correct_minus_shuffled,seed29_strict65,,,,,0.4932243035821299,"[0.40618938458825604, 0.5758748229368869]"
+correct_minus_text_only,seed29_strict65,,,,,0.5087281795511222,"[0.43162393162393164, 0.5860215053763441]"
+budget54_minus_native_tiles12_correct,seed29_strict65,,,outputs/rineng_overnight_v7/internvl35_8b/internvl35_8b_seed29_strict65_p0_correct_tiles12.jsonl,be370e505496d031a475871aa457ec71f9739c0b5ea70d5a15545f55f167ca05,0.4963951888008652,"[0.4188154211970956, 0.5755503046884716]"
+correct_minus_shuffled,seed31_strict65,,,,,0.4851492177073572,"[0.3942501287634031, 0.5768486947414773]"
+correct_minus_text_only,seed31_strict65,,,,,0.510989010989011,"[0.4151898734177215, 0.603988603988604]"
+budget54_minus_native_tiles12_correct,seed31_strict65,,,outputs/rineng_overnight_v7/internvl35_8b/internvl35_8b_seed31_strict65_p0_correct_tiles12.jsonl,cb17dc4a3c35cf6b8bd5a6524e07862064c0aa10b46ada9d0fc0b16f070299e9,0.4852930795114949,"[0.39236785690359754, 0.5773348342337166]"
+correct_minus_shuffled,pooled_three_source_disjoint_subsets,230,,,,0.47153621677653235,"[0.406378783294557, 0.5331776075101816]"
+correct_minus_text_only,pooled_three_source_disjoint_subsets,230,,,,0.48464619492656874,"[0.41978287092882993, 0.5462620281273131]"
+budget54_minus_native_tiles12_correct,pooled_three_source_disjoint_subsets,230,3,,,0.4681008607108176,"[0.40427001937657864, 0.5289996621740654]"

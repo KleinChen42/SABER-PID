@@ -1,0 +1,167 @@
+{
+  "bootstrap": {
+    "interval": "paired 95% percentile",
+    "reps": 10000,
+    "unit": "logical DEXPI test case (source_sheet)"
+  },
+  "comparisons": {
+    "correct_minus_paddleocr_full_image": {
+      "bootstrap_reps": 10000,
+      "ci95": [
+        0.03166476649385852,
+        0.3881932021466906
+      ],
+      "difference": 0.16323613493424816,
+      "unit": "logical DEXPI test case (source_sheet)"
+    },
+    "correct_minus_shuffled": {
+      "bootstrap_reps": 10000,
+      "ci95": [
+        0.8409090909090909,
+        0.9841269841269841
+      ],
+      "difference": 0.9056603773584906,
+      "unit": "logical DEXPI test case (source_sheet)"
+    },
+    "correct_minus_text_only": {
+      "bootstrap_reps": 10000,
+      "ci95": [
+        0.8431372549019608,
+        0.984375
+      ],
+      "difference": 0.9056603773584906,
+      "unit": "logical DEXPI test case (source_sheet)"
+    },
+    "ocr_minus_text_only": {
+      "bootstrap_reps": 10000,
+      "ci95": [
+        0.5434782608695652,
+        0.8503937007874016
+      ],
+      "difference": 0.7424242424242424,
+      "unit": "logical DEXPI test case (source_sheet)"
+    }
+  },
+  "external_source": {
+    "commit": "a23d61e2e089eb2ca464cd552f9ae580a2785963",
+    "license": "CC BY 4.0",
+    "license_path": "LICENSE",
+    "license_sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+    "name": "DEXPI Public Example PIDs",
+    "url": "https://gitlab.com/dexpi/TrainingTestCases"
+  },
+  "integrity": {
+    "answer_isolation": {
+      "hidden_reference": "data/answer_store/rineng_v8_dexpi_external_hidden.jsonl",
+      "hidden_reference_sha256": "167d68a8e5370750eed28c66fd44b71354d92dbfd86bce5d668272b2aa85ef8a",
+      "public_manifests_answer_bearing_field_count": 0,
+      "scorer_reference_read_by_inference": false,
+      "status": "pass"
+    },
+    "cells": {
+      "correct": {
+        "error_count": 0,
+        "path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/outputs/dexpi_external_qwen/qwen3vl8b_dexpi_external_v8_p0_correct_3072.jsonl",
+        "plan_sha256_mismatch_count": 0,
+        "rows": 65,
+        "sha256": "01cd430e307ca1170085ee39ea4916ffbb2fbc0fa309bf7bd7520940e6f86779",
+        "test_answer_used_true_count": 0
+      },
+      "paddleocr_full_image": {
+        "error_count": 0,
+        "path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/outputs/dexpi_external_ocr.jsonl",
+        "plan_sha256_mismatch_count": 0,
+        "rows": 65,
+        "sha256": "f9635f6224ec2594ebb7425f4547bbef41a5f26fd40d1332c0c3335b3f2af88b",
+        "test_answer_used_true_count": 0
+      },
+      "shuffled": {
+        "error_count": 0,
+        "path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/outputs/dexpi_external_qwen/qwen3vl8b_dexpi_external_v8_p0_shuffled_3072.jsonl",
+        "plan_sha256_mismatch_count": 0,
+        "rows": 65,
+        "sha256": "80f8943218ba09b8e3f7d682dc606aec780f990271f06036bfbb72486f726f0f",
+        "test_answer_used_true_count": 0
+      },
+      "text_only": {
+        "error_count": 0,
+        "path": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/outputs/dexpi_external_qwen/qwen3vl8b_dexpi_external_v8_p0_text_only_3072.jsonl",
+        "plan_sha256_mismatch_count": 0,
+        "rows": 65,
+        "sha256": "90f47533de146979be65251b82ae34fb908366aba63072c44b638d4c8c28927a",
+        "test_answer_used_true_count": 0
+      }
+    },
+    "one_to_one_shuffled_mapping": true,
+    "same_logical_test_case_count": 0,
+    "shuffled_fixed_point_count": 0
+  },
+  "metrics": {
+    "correct": {
+      "exact_set_accuracy": 0.8615384615384616,
+      "f1": 0.9056603773584906,
+      "fn": 9,
+      "fp": 6,
+      "logical_group_macro_exact_accuracy": 0.9006410256410257,
+      "logical_groups": 26,
+      "precision": 0.9230769230769231,
+      "recall": 0.8888888888888888,
+      "records": 65,
+      "tp": 72
+    },
+    "paddleocr_full_image": {
+      "exact_set_accuracy": 0.6153846153846154,
+      "f1": 0.7424242424242424,
+      "fn": 32,
+      "fp": 2,
+      "logical_group_macro_exact_accuracy": 0.5865384615384616,
+      "logical_groups": 26,
+      "precision": 0.9607843137254902,
+      "recall": 0.6049382716049383,
+      "records": 65,
+      "tp": 49
+    },
+    "shuffled": {
+      "exact_set_accuracy": 0,
+      "f1": 0.0,
+      "fn": 81,
+      "fp": 144,
+      "logical_group_macro_exact_accuracy": 0,
+      "logical_groups": 26,
+      "precision": 0.0,
+      "recall": 0.0,
+      "records": 65,
+      "tp": 0
+    },
+    "text_only": {
+      "exact_set_accuracy": 0,
+      "f1": 0.0,
+      "fn": 81,
+      "fp": 0,
+      "logical_group_macro_exact_accuracy": 0,
+      "logical_groups": 26,
+      "precision": 1.0,
+      "recall": 0.0,
+      "records": 65,
+      "tp": 0
+    }
+  },
+  "plan": {
+    "path": "data/manifests/rineng_v8_dexpi_external_plan.json",
+    "sha256": "bd1a6d3b5b445931313e6e4c9cd3a6bffc5baa8f73bbe0d5569fdd164501bd78"
+  },
+  "scope_boundary": "DEXPI examples are public engineering exchange test cases, not an independent real-plant population. Vendor variants share logical test cases and must be grouped by source_sheet for uncertainty estimates.",
+  "selection": {
+    "candidate_exact_pair_count": 86,
+    "logical_test_case_count": 26,
+    "maximum_requested_images": 64,
+    "minimum_requested_images": 30,
+    "model_output_used_for_selection": false,
+    "question_count": 65,
+    "rule": "exact same-directory image/XML stem; structured-tag/graphic-text intersection; unique image SHA-256; one per logical test case first, then SHA-ranked vendor variants",
+    "selected_image_count": 35,
+    "visibility_qualified_unique_pair_count": 35
+  },
+  "status": "pass",
+  "version": "rineng-v8-dexpi-external-score"
+}

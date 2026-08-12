@@ -523,8 +523,10 @@ Table~\ref{tab:v7_counterfactual} reports all 36 primary correct-minus-control
 value-tag contrasts. Every 95\% paired source-bootstrap interval has a
 positive lower bound. Qwen3-VL-8B and Qwen3-VL-32B show correct-image F1
 ranges of 0.5253--0.6587 and 0.5697--0.7361; InternVL3.5-8B remains at
-0.0090--0.0257. Thus the requested-drawing direction is repeatable within
-PIDQA, while practically useful magnitude remains model-family dependent.
+0.0090--0.0257 under the native, at-most-12-tile setting. Thus the
+requested-drawing direction is repeatable within PIDQA, while magnitude at
+that stage remains visual-budget and model-family dependent. Section S13
+reports the subsequent closest-safe 54-tile qualification.
 
 \input{tables/table_rineng_overnight_v7_counterfactual.tex}
 
@@ -626,5 +628,57 @@ identifiers and are never treated as visible tag references. The automated
 task-fit decision is therefore to retain PID2Graph as a structural resource
 without reporting a tag-retrieval score. This is a reference-availability
 boundary, not an acquisition failure.
+
+\section*{S13. Qualified-budget robustness, cross-model recovery, and DEXPI external results}
+
+The Qwen robustness extension contains 24 complete cells and 7,360 immutable
+prediction rows: three mutually source-disjoint subsets, four image-quality
+conditions, and correct/source-shuffled pairing. Every row has status
+\texttt{ok}, \texttt{test\_answer\_used=false}, and the frozen-plan SHA-256
+recorded in the machine-readable score report,
+a 3072-pixel maximum side, a 512-token cap, and 35,979,264 recorded processor
+tensor elements. No degraded condition changes source membership, question,
+prompt, answer-hidden contract, or shuffled assignment.
+
+Pooled over 230 sources, clean/JPEG-Q70/blur-radius-1/0.75$\times$-restore
+correct-image F1 values are 0.5693/0.5836/0.5879/0.5605. Corresponding
+source-shuffled values are 0.0114/0.0114/0.0125/0.0123. The four paired
+correct-minus-shuffled effects are +0.5578 ([0.4917, 0.6227]), +0.5722
+([0.5060, 0.6344]), +0.5754 ([0.5101, 0.6356]), and +0.5482 ([0.4763,
+0.6134]). Degraded-minus-clean changes are +0.0143 ([-0.0034, 0.0345]),
++0.0176 ([-0.0155, 0.0517]), and -0.0096 ([-0.0655, 0.0520]). These are
+paired source-bootstrap intervals with 10,000 replicates.
+
+\input{tables/table_rineng_v8_quality_by_subset.tex}
+
+The closest-safe InternVL extension contains nine complete cells and 2,760
+immutable prediction rows: the same three mutually source-disjoint subsets
+crossed with correct, source-shuffled, and no-image conditions. Every row has
+status \texttt{ok}, \texttt{test\_answer\_used=false}, and the frozen-plan
+SHA-256 recorded in the machine-readable score report.
+Image rows record 54 non-overlapping 448-pixel tiles, no thumbnail, a 512-token
+cap, and 32,514,048 input tensor elements; no-image rows contain no pixel
+tensor.
+
+Pooled correct/source-shuffled/no-image F1 values are 0.4846/0.0131/0. The
+correct-minus-shuffled effect is +0.4715 [0.4064, 0.5332], and the
+correct-minus-no-image effect is +0.4846 [0.4198, 0.5463]. The paired 54-tile
+minus native-12 correct-image gain is +0.4681 [0.4043, 0.5290]. All three
+subset-specific correct-minus-control and 54-minus-native intervals have
+positive lower bounds.
+
+\input{tables/table_rineng_v8_internvl_budget54.tex}
+
+The DEXPI Qwen matrix contains 195 immutable rows (65 per correct, cross-case
+shuffled, and no-image condition); the frozen OCR file adds 65 rows. All rows
+pass status, plan-hash, membership, and answer-use checks. Correct-image Qwen
+has TP/FP/FN 72/6/9, precision 0.9231, recall 0.8889, F1 0.9057, exact-set
+accuracy 0.8615, and logical-case-macro exact accuracy 0.9006. Shuffled Qwen
+has TP/FP/FN 0/144/81 and F1 0; no-image Qwen has 0/0/81 and F1 0. PaddleOCR
+has 49/2/32, precision 0.9608, recall 0.6049, and F1 0.7424. Ten-thousand-
+replicate logical-case-bootstrap differences are +0.9057 [0.8409, 0.9841]
+for correct minus shuffled, +0.9057 [0.8431, 0.9844] for correct minus no
+image, +0.1632 [0.0317, 0.3882] for correct minus OCR, and +0.7424 [0.5435,
+0.8504] for OCR minus no image.
 
 \end{document}

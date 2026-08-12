@@ -1,0 +1,86 @@
+{
+  "documents": [
+    {
+      "encrypted": false,
+      "exists": true,
+      "log": "output/pdf/v8/manuscript.log",
+      "metadata_title": "Qualifying Image-Grounded Tag Retrieval in Piping and Instrumentation Diagrams with Source-Isolated Counterfactual Evaluation",
+      "name": "manuscript",
+      "overfull_hbox_count": 0,
+      "page_count": 19,
+      "page_size_points": [
+        612.0,
+        792.0
+      ],
+      "pdf": "output/pdf/v8/manuscript.pdf",
+      "rendered_pngs": [
+        "tmp/pdfs/final_validation_v8/manuscript/page-01.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-02.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-03.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-04.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-05.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-06.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-07.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-08.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-09.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-10.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-11.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-12.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-13.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-14.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-15.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-16.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-17.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-18.png",
+        "tmp/pdfs/final_validation_v8/manuscript/page-19.png"
+      ],
+      "sha256": "cc508ebfc7ae6a48344dec9bb5572201f63047e2dd7baa6f0db3b524a01c2302",
+      "size_bytes": 313129,
+      "undefined_citation_count": 0,
+      "undefined_reference_count": 0,
+      "underfull_hbox_count": 0
+    },
+    {
+      "encrypted": false,
+      "exists": true,
+      "log": "output/pdf/v8/supplementary.log",
+      "metadata_title": "Supplementary material: Qualifying Image-Grounded Tag Retrieval in Piping and Instrumentation Diagrams with Source-Isolated Counterfactual Evaluation",
+      "name": "supplementary",
+      "overfull_hbox_count": 0,
+      "page_count": 13,
+      "page_size_points": [
+        612.0,
+        792.0
+      ],
+      "pdf": "output/pdf/v8/supplementary.pdf",
+      "rendered_pngs": [
+        "tmp/pdfs/final_validation_v8/supplementary/page-01.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-02.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-03.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-04.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-05.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-06.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-07.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-08.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-09.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-10.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-11.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-12.png",
+        "tmp/pdfs/final_validation_v8/supplementary/page-13.png"
+      ],
+      "sha256": "87cf3570291f879451486bc0d263caea7e5dc2b66541dd3c32d1a5180d62578d",
+      "size_bytes": 136923,
+      "undefined_citation_count": 0,
+      "undefined_reference_count": 0,
+      "underfull_hbox_count": 0
+    }
+  ],
+  "failures": [],
+  "render_engine": "PyMuPDF",
+  "status": "pass",
+  "validation_version": "pdf-render-v8",
+  "visual_review": {
+    "record": "reports\\generated\\pdf_visual_inspection_v8.json",
+    "status": "separate inspection record required"
+  }
+}

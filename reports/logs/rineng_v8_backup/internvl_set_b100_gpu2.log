@@ -1,0 +1,806 @@
+INTERNVL_SHARD_START 2026-08-12T09:35:25+00:00 dataset=set_b100 gpu=2
+`torch_dtype` is deprecated! Use `dtype` instead!
+FlashAttention2 is not installed.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 59.29it/s]
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.9778954666107893, "peak_allocated_bytes": 82483197440, "progress": "1/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.883384335786104, "peak_allocated_bytes": 82391567360, "progress": "2/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.431155837140977, "peak_allocated_bytes": 82455702528, "progress": "3/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.298243605531752, "peak_allocated_bytes": 82391567360, "progress": "4/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.233884261921048, "peak_allocated_bytes": 82483197440, "progress": "5/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.9108563801273704, "peak_allocated_bytes": 82354933248, "progress": "6/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.4252390014007688, "peak_allocated_bytes": 82409887744, "progress": "7/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.063561632297933, "peak_allocated_bytes": 82419050496, "progress": "8/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.894260414876044, "peak_allocated_bytes": 82539185664, "progress": "9/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.0397628312930465, "peak_allocated_bytes": 82364091904, "progress": "10/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.39588388055563, "peak_allocated_bytes": 82400728576, "progress": "11/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.017721519805491, "peak_allocated_bytes": 82419050496, "progress": "12/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.121834612451494, "peak_allocated_bytes": 82501531136, "progress": "13/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.42746620811522, "peak_allocated_bytes": 82345777152, "progress": "14/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8861945075914264, "peak_allocated_bytes": 82428211712, "progress": "15/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.004530757665634, "peak_allocated_bytes": 82391567360, "progress": "16/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.131762022152543, "peak_allocated_bytes": 82492511232, "progress": "17/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4223457938060164, "peak_allocated_bytes": 82382408704, "progress": "18/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.422037676908076, "peak_allocated_bytes": 82437375488, "progress": "19/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.32630289811641, "peak_allocated_bytes": 82464866304, "progress": "20/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 6.0405337028205395, "peak_allocated_bytes": 82566225408, "progress": "21/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4239806504920125, "peak_allocated_bytes": 82382408704, "progress": "22/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8881137557327747, "peak_allocated_bytes": 82428211712, "progress": "23/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.5804487485438585, "peak_allocated_bytes": 82400728576, "progress": "24/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.438400671817362, "peak_allocated_bytes": 82548198912, "progress": "25/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4247198617085814, "peak_allocated_bytes": 82345777152, "progress": "26/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.429601081646979, "peak_allocated_bytes": 82455702528, "progress": "27/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.303524348884821, "peak_allocated_bytes": 82464866304, "progress": "28/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.431658140383661, "peak_allocated_bytes": 82455702528, "progress": "29/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.503791311755776, "peak_allocated_bytes": 82364091904, "progress": "30/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.438369681127369, "peak_allocated_bytes": 82474032640, "progress": "31/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.113849545828998, "peak_allocated_bytes": 82400728576, "progress": "32/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.044549958780408, "peak_allocated_bytes": 82455702528, "progress": "33/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8862917916849256, "peak_allocated_bytes": 82354933248, "progress": "34/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.432561818510294, "peak_allocated_bytes": 82474032640, "progress": "35/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.573684146627784, "peak_allocated_bytes": 82400728576, "progress": "36/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.180613165721297, "peak_allocated_bytes": 82474032640, "progress": "37/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.882763030938804, "peak_allocated_bytes": 82391567360, "progress": "38/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.437118962407112, "peak_allocated_bytes": 82474032640, "progress": "39/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.506057245656848, "peak_allocated_bytes": 82400728576, "progress": "40/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8921731021255255, "peak_allocated_bytes": 82539185664, "progress": "41/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.421988086774945, "peak_allocated_bytes": 82345777152, "progress": "42/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.428495830856264, "peak_allocated_bytes": 82474032640, "progress": "43/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.290066195651889, "peak_allocated_bytes": 82391567360, "progress": "44/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.272998532280326, "peak_allocated_bytes": 82455702528, "progress": "45/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8823325438424945, "peak_allocated_bytes": 82391567360, "progress": "46/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.400851747952402, "peak_allocated_bytes": 82419050496, "progress": "47/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.294919045642018, "peak_allocated_bytes": 82354933248, "progress": "48/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.9077225867658854, "peak_allocated_bytes": 82519867392, "progress": "49/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.425115756690502, "peak_allocated_bytes": 82409887744, "progress": "50/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8914961721748114, "peak_allocated_bytes": 82464866304, "progress": "51/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.282441155053675, "peak_allocated_bytes": 82373249024, "progress": "52/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.464303044602275, "peak_allocated_bytes": 82548198912, "progress": "53/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.394811315461993, "peak_allocated_bytes": 82400728576, "progress": "54/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.423384384252131, "peak_allocated_bytes": 82437375488, "progress": "55/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.326090560294688, "peak_allocated_bytes": 82409887744, "progress": "56/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.9401859920471907, "peak_allocated_bytes": 82464866304, "progress": "57/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8838822208344936, "peak_allocated_bytes": 82354933248, "progress": "58/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.500094298273325, "peak_allocated_bytes": 82483197440, "progress": "59/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.512972552329302, "peak_allocated_bytes": 82373249024, "progress": "60/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.9044725885614753, "peak_allocated_bytes": 82519867392, "progress": "61/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.422480823472142, "peak_allocated_bytes": 82382408704, "progress": "62/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.498761836439371, "peak_allocated_bytes": 82483197440, "progress": "63/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.292189079336822, "peak_allocated_bytes": 82354933248, "progress": "64/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.436167555861175, "peak_allocated_bytes": 82492365312, "progress": "65/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.428724919445813, "peak_allocated_bytes": 82345777152, "progress": "66/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.431194869801402, "peak_allocated_bytes": 82474032640, "progress": "67/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 6.607106634415686, "peak_allocated_bytes": 82400728576, "progress": "68/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.455318562686443, "peak_allocated_bytes": 82529037824, "progress": "69/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.883025549352169, "peak_allocated_bytes": 82354933248, "progress": "70/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8922827942296863, "peak_allocated_bytes": 82464866304, "progress": "71/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.540202240459621, "peak_allocated_bytes": 82437375488, "progress": "72/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.428621430881321, "peak_allocated_bytes": 82510700032, "progress": "73/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.883535866625607, "peak_allocated_bytes": 82391567360, "progress": "74/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.428181268274784, "peak_allocated_bytes": 82474032640, "progress": "75/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.595518911257386, "peak_allocated_bytes": 82437375488, "progress": "76/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.461429006420076, "peak_allocated_bytes": 82510700032, "progress": "77/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.42174279037863, "peak_allocated_bytes": 82382408704, "progress": "78/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.892453871667385, "peak_allocated_bytes": 82464866304, "progress": "79/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.058224538341165, "peak_allocated_bytes": 82391567360, "progress": "80/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.919235225766897, "peak_allocated_bytes": 82539185664, "progress": "81/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.4231739388778806, "peak_allocated_bytes": 82409887744, "progress": "82/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.397356403060257, "peak_allocated_bytes": 82419050496, "progress": "83/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.031116403639317, "peak_allocated_bytes": 82391567360, "progress": "84/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.436515803448856, "peak_allocated_bytes": 82566225408, "progress": "85/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8839549273252487, "peak_allocated_bytes": 82318309376, "progress": "86/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4305247170850635, "peak_allocated_bytes": 82474032640, "progress": "87/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.6646065674722195, "peak_allocated_bytes": 82419050496, "progress": "88/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.433650561608374, "peak_allocated_bytes": 82566225408, "progress": "89/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.884294042363763, "peak_allocated_bytes": 82391567360, "progress": "90/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8859965950250626, "peak_allocated_bytes": 82428211712, "progress": "91/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.637811997905374, "peak_allocated_bytes": 82419050496, "progress": "92/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8929703729227185, "peak_allocated_bytes": 82464866304, "progress": "93/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8819317845627666, "peak_allocated_bytes": 82391567360, "progress": "94/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.87629381660372, "peak_allocated_bytes": 82446537728, "progress": "95/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 6.197596110403538, "peak_allocated_bytes": 82400728576, "progress": "96/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.0700538055971265, "peak_allocated_bytes": 82492365312, "progress": "97/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4258185205981135, "peak_allocated_bytes": 82382408704, "progress": "98/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.3939603781327605, "peak_allocated_bytes": 82419050496, "progress": "99/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.291596529074013, "peak_allocated_bytes": 82391567360, "progress": "100/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.997169155627489, "peak_allocated_bytes": 82501531136, "progress": "101/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.421651619486511, "peak_allocated_bytes": 82364091904, "progress": "102/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.421429244801402, "peak_allocated_bytes": 82437375488, "progress": "103/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.7736033126711845, "peak_allocated_bytes": 82409887744, "progress": "104/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.133969124406576, "peak_allocated_bytes": 82474032640, "progress": "105/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.180531834252179, "peak_allocated_bytes": 82364091904, "progress": "106/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8763909116387367, "peak_allocated_bytes": 82446537728, "progress": "107/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.061436957679689, "peak_allocated_bytes": 82382408704, "progress": "108/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8910396778956056, "peak_allocated_bytes": 82501531136, "progress": "109/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.451510205864906, "peak_allocated_bytes": 82364091904, "progress": "110/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8908448154106736, "peak_allocated_bytes": 82464866304, "progress": "111/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.595766123384237, "peak_allocated_bytes": 82437375488, "progress": "112/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.214289914816618, "peak_allocated_bytes": 82529037824, "progress": "113/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.884063806384802, "peak_allocated_bytes": 82391567360, "progress": "114/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.399719154462218, "peak_allocated_bytes": 82419050496, "progress": "115/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.829575541429222, "peak_allocated_bytes": 82382408704, "progress": "116/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.627754147164524, "peak_allocated_bytes": 82492365312, "progress": "117/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.4231100901961327, "peak_allocated_bytes": 82409887744, "progress": "118/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.904259365051985, "peak_allocated_bytes": 82464866304, "progress": "119/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.347887662239373, "peak_allocated_bytes": 82391567360, "progress": "120/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.435307901352644, "peak_allocated_bytes": 82566225408, "progress": "121/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.394468924961984, "peak_allocated_bytes": 82400728576, "progress": "122/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4183295276016, "peak_allocated_bytes": 82419050496, "progress": "123/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.835009932518005, "peak_allocated_bytes": 82364091904, "progress": "124/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.558759933337569, "peak_allocated_bytes": 82501531136, "progress": "125/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.871171023696661, "peak_allocated_bytes": 82373249024, "progress": "126/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.885067278519273, "peak_allocated_bytes": 82428211712, "progress": "127/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.0595376724377275, "peak_allocated_bytes": 82428211712, "progress": "128/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.499881532974541, "peak_allocated_bytes": 82483197440, "progress": "129/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.424007581546903, "peak_allocated_bytes": 82345777152, "progress": "130/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.500761713832617, "peak_allocated_bytes": 82483197440, "progress": "131/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.441036639735103, "peak_allocated_bytes": 82391567360, "progress": "132/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8908181777223945, "peak_allocated_bytes": 82464866304, "progress": "133/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.427979809232056, "peak_allocated_bytes": 82364091904, "progress": "134/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.419157632626593, "peak_allocated_bytes": 82437375488, "progress": "135/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.523372145369649, "peak_allocated_bytes": 82428211712, "progress": "136/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.559884124435484, "peak_allocated_bytes": 82501531136, "progress": "137/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.42273136600852, "peak_allocated_bytes": 82409887744, "progress": "138/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.399262994527817, "peak_allocated_bytes": 82400728576, "progress": "139/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.434742761775851, "peak_allocated_bytes": 82391567360, "progress": "140/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.5002907402813435, "peak_allocated_bytes": 82501531136, "progress": "141/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.427361429668963, "peak_allocated_bytes": 82409887744, "progress": "142/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.884188536554575, "peak_allocated_bytes": 82428211712, "progress": "143/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.711311658844352, "peak_allocated_bytes": 82382408704, "progress": "144/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.125043235719204, "peak_allocated_bytes": 82510700032, "progress": "145/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.422315998002887, "peak_allocated_bytes": 82364091904, "progress": "146/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.885568126104772, "peak_allocated_bytes": 82428211712, "progress": "147/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.206239560618997, "peak_allocated_bytes": 82428211712, "progress": "148/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.847262196242809, "peak_allocated_bytes": 82539185664, "progress": "149/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.883085297420621, "peak_allocated_bytes": 82391567360, "progress": "150/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.874949414283037, "peak_allocated_bytes": 82446537728, "progress": "151/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.523683646693826, "peak_allocated_bytes": 82391567360, "progress": "152/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.428072180598974, "peak_allocated_bytes": 82455702528, "progress": "153/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8806314934045076, "peak_allocated_bytes": 82391567360, "progress": "154/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.397928276099265, "peak_allocated_bytes": 82419050496, "progress": "155/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.0535299852490425, "peak_allocated_bytes": 82382408704, "progress": "156/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.9067026590928435, "peak_allocated_bytes": 82519867392, "progress": "157/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.419916823506355, "peak_allocated_bytes": 82382408704, "progress": "158/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.43331200722605, "peak_allocated_bytes": 82474032640, "progress": "159/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.988724011927843, "peak_allocated_bytes": 82373249024, "progress": "160/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.9200228648260236, "peak_allocated_bytes": 82539185664, "progress": "161/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4260088335722685, "peak_allocated_bytes": 82382408704, "progress": "162/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.432105460204184, "peak_allocated_bytes": 82474032640, "progress": "163/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.806761788204312, "peak_allocated_bytes": 82400728576, "progress": "164/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.530260890722275, "peak_allocated_bytes": 82483197440, "progress": "165/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.422337853349745, "peak_allocated_bytes": 82345777152, "progress": "166/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.423611538484693, "peak_allocated_bytes": 82437375488, "progress": "167/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.005889314226806, "peak_allocated_bytes": 82428211712, "progress": "168/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.431969594210386, "peak_allocated_bytes": 82492365312, "progress": "169/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.070618752390146, "peak_allocated_bytes": 82364091904, "progress": "170/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.425623965449631, "peak_allocated_bytes": 82437375488, "progress": "171/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.725517854094505, "peak_allocated_bytes": 82400728576, "progress": "172/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.466555587016046, "peak_allocated_bytes": 82492365312, "progress": "173/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.438560765236616, "peak_allocated_bytes": 82382408704, "progress": "174/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.9131682254374027, "peak_allocated_bytes": 82464866304, "progress": "175/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.598051608540118, "peak_allocated_bytes": 82382408704, "progress": "176/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.428734611719847, "peak_allocated_bytes": 82510700032, "progress": "177/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4224136201664805, "peak_allocated_bytes": 82382408704, "progress": "178/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.890880761668086, "peak_allocated_bytes": 82464866304, "progress": "179/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.887698926962912, "peak_allocated_bytes": 82409887744, "progress": "180/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8896906999871135, "peak_allocated_bytes": 82501531136, "progress": "181/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.400671214796603, "peak_allocated_bytes": 82400728576, "progress": "182/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.5015074759721756, "peak_allocated_bytes": 82483197440, "progress": "183/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8047279184684157, "peak_allocated_bytes": 82409887744, "progress": "184/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8891623616218567, "peak_allocated_bytes": 82539185664, "progress": "185/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.882253021001816, "peak_allocated_bytes": 82391567360, "progress": "186/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.89018367882818, "peak_allocated_bytes": 82464866304, "progress": "187/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.542412405833602, "peak_allocated_bytes": 82400728576, "progress": "188/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.5016564847901464, "peak_allocated_bytes": 82483197440, "progress": "189/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.421746940352023, "peak_allocated_bytes": 82382408704, "progress": "190/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8928150655701756, "peak_allocated_bytes": 82464866304, "progress": "191/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.121023081243038, "peak_allocated_bytes": 82373249024, "progress": "192/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.433836041949689, "peak_allocated_bytes": 82492365312, "progress": "193/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.4254000522196293, "peak_allocated_bytes": 82409887744, "progress": "194/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.99375257268548, "peak_allocated_bytes": 82428211712, "progress": "195/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.9717071652412415, "peak_allocated_bytes": 82428211712, "progress": "196/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.073497048579156, "peak_allocated_bytes": 82510700032, "progress": "197/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.426158561371267, "peak_allocated_bytes": 82345777152, "progress": "198/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.4279259210452437, "peak_allocated_bytes": 82409887744, "progress": "199/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.179242767393589, "peak_allocated_bytes": 82391567360, "progress": "200/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.426896169781685, "peak_allocated_bytes": 82510700032, "progress": "201/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 6.118734315037727, "peak_allocated_bytes": 82382408704, "progress": "202/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.399887061677873, "peak_allocated_bytes": 82419050496, "progress": "203/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.292022095061839, "peak_allocated_bytes": 82382408704, "progress": "204/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.4996208390221, "peak_allocated_bytes": 82483197440, "progress": "205/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.42461431119591, "peak_allocated_bytes": 82409887744, "progress": "206/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.427397691644728, "peak_allocated_bytes": 82437375488, "progress": "207/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.7168452963232994, "peak_allocated_bytes": 82409887744, "progress": "208/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.890764112584293, "peak_allocated_bytes": 82501531136, "progress": "209/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.886345968581736, "peak_allocated_bytes": 82354933248, "progress": "210/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8927088137716055, "peak_allocated_bytes": 82464866304, "progress": "211/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.618277140893042, "peak_allocated_bytes": 82400728576, "progress": "212/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.7030021706596017, "peak_allocated_bytes": 82483197440, "progress": "213/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 19.51408243738115, "peak_allocated_bytes": 82364091904, "progress": "214/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.433982159011066, "peak_allocated_bytes": 82474032640, "progress": "215/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.2603740049526095, "peak_allocated_bytes": 82391567360, "progress": "216/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.646621817722917, "peak_allocated_bytes": 82539185664, "progress": "217/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.419461102224886, "peak_allocated_bytes": 82382408704, "progress": "218/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.419418627396226, "peak_allocated_bytes": 82437375488, "progress": "219/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.124934604391456, "peak_allocated_bytes": 82373249024, "progress": "220/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.885044866241515, "peak_allocated_bytes": 82483197440, "progress": "221/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.421287535689771, "peak_allocated_bytes": 82382408704, "progress": "222/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.88623830024153, "peak_allocated_bytes": 82428211712, "progress": "223/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.594979904592037, "peak_allocated_bytes": 82382408704, "progress": "224/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4314971985295415, "peak_allocated_bytes": 82548198912, "progress": "225/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.420007563196123, "peak_allocated_bytes": 82309164544, "progress": "226/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8932361509650946, "peak_allocated_bytes": 82464866304, "progress": "227/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.194327059201896, "peak_allocated_bytes": 82409887744, "progress": "228/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.589190918020904, "peak_allocated_bytes": 82501531136, "progress": "229/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.419270908460021, "peak_allocated_bytes": 82382408704, "progress": "230/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8934933999553323, "peak_allocated_bytes": 82464866304, "progress": "231/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.309681322425604, "peak_allocated_bytes": 82428211712, "progress": "232/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.084034610539675, "peak_allocated_bytes": 82464866304, "progress": "233/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.420272166840732, "peak_allocated_bytes": 82309164544, "progress": "234/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4312479570508, "peak_allocated_bytes": 82455702528, "progress": "235/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.05878574680537, "peak_allocated_bytes": 82391567360, "progress": "236/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8765506129711866, "peak_allocated_bytes": 82519867392, "progress": "237/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.427031719125807, "peak_allocated_bytes": 82345777152, "progress": "238/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8910881681367755, "peak_allocated_bytes": 82464866304, "progress": "239/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.082674061879516, "peak_allocated_bytes": 82464866304, "progress": "240/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.430164720863104, "peak_allocated_bytes": 82548198912, "progress": "241/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.426249563694, "peak_allocated_bytes": 82364091904, "progress": "242/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.892089394852519, "peak_allocated_bytes": 82464866304, "progress": "243/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.798931363970041, "peak_allocated_bytes": 82382408704, "progress": "244/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.878278291784227, "peak_allocated_bytes": 82446537728, "progress": "245/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 6.105326598510146, "peak_allocated_bytes": 82382408704, "progress": "246/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8765518432483077, "peak_allocated_bytes": 82446537728, "progress": "247/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.089452738873661, "peak_allocated_bytes": 82391567360, "progress": "248/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4264585096389055, "peak_allocated_bytes": 82455702528, "progress": "249/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.419130722992122, "peak_allocated_bytes": 82345777152, "progress": "250/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.40088708139956, "peak_allocated_bytes": 82400728576, "progress": "251/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.521738317795098, "peak_allocated_bytes": 82474032640, "progress": "252/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.823959172703326, "peak_allocated_bytes": 82539185664, "progress": "253/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.42238053586334, "peak_allocated_bytes": 82382408704, "progress": "254/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.442745461128652, "peak_allocated_bytes": 82455702528, "progress": "255/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.272711416706443, "peak_allocated_bytes": 82400728576, "progress": "256/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.05289600789547, "peak_allocated_bytes": 82483197440, "progress": "257/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8821433978155255, "peak_allocated_bytes": 82391567360, "progress": "258/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.4977530920878053, "peak_allocated_bytes": 82483197440, "progress": "259/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.223558684810996, "peak_allocated_bytes": 82446537728, "progress": "260/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.125436602160335, "peak_allocated_bytes": 82510700032, "progress": "261/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.424431828781962, "peak_allocated_bytes": 82364091904, "progress": "262/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8900399077683687, "peak_allocated_bytes": 82464866304, "progress": "263/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.65772878844291, "peak_allocated_bytes": 82373249024, "progress": "264/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.381539025343955, "peak_allocated_bytes": 82539185664, "progress": "265/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.423831324093044, "peak_allocated_bytes": 82345777152, "progress": "266/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.417789434082806, "peak_allocated_bytes": 82437375488, "progress": "267/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.773967674002051, "peak_allocated_bytes": 82419050496, "progress": "268/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8926995089277625, "peak_allocated_bytes": 82539185664, "progress": "269/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8855904331430793, "peak_allocated_bytes": 82354933248, "progress": "270/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.891410901211202, "peak_allocated_bytes": 82464866304, "progress": "271/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.9189322758466005, "peak_allocated_bytes": 82400728576, "progress": "272/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4273999920114875, "peak_allocated_bytes": 82492365312, "progress": "273/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.419768989086151, "peak_allocated_bytes": 82309164544, "progress": "274/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.429334872402251, "peak_allocated_bytes": 82455702528, "progress": "275/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.5470792585983872, "peak_allocated_bytes": 82409887744, "progress": "276/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.46297388151288, "peak_allocated_bytes": 82474032640, "progress": "277/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.872371752746403, "peak_allocated_bytes": 82373249024, "progress": "278/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.886598735116422, "peak_allocated_bytes": 82428211712, "progress": "279/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.060887354426086, "peak_allocated_bytes": 82428211712, "progress": "280/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.457327730022371, "peak_allocated_bytes": 82548198912, "progress": "281/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.422126201912761, "peak_allocated_bytes": 82382408704, "progress": "282/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.434208194725215, "peak_allocated_bytes": 82474032640, "progress": "283/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.97885983157903, "peak_allocated_bytes": 82419050496, "progress": "284/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.710809586569667, "peak_allocated_bytes": 82539185664, "progress": "285/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.425782088190317, "peak_allocated_bytes": 82364091904, "progress": "286/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.428533684462309, "peak_allocated_bytes": 82455702528, "progress": "287/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.303562720306218, "peak_allocated_bytes": 82464866304, "progress": "288/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.018166179768741, "peak_allocated_bytes": 82464866304, "progress": "289/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8804573928937316, "peak_allocated_bytes": 82391567360, "progress": "290/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.43362838588655, "peak_allocated_bytes": 82474032640, "progress": "291/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.7205480253323913, "peak_allocated_bytes": 82409887744, "progress": "292/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.427636812441051, "peak_allocated_bytes": 82455702528, "progress": "293/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.871794482693076, "peak_allocated_bytes": 82373249024, "progress": "294/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.429754488170147, "peak_allocated_bytes": 82474032640, "progress": "295/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.240057579241693, "peak_allocated_bytes": 82409887744, "progress": "296/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.7053103763610125, "peak_allocated_bytes": 82539185664, "progress": "297/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.424787025898695, "peak_allocated_bytes": 82364091904, "progress": "298/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4226073529571295, "peak_allocated_bytes": 82437375488, "progress": "299/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.0601851576939225, "peak_allocated_bytes": 82428211712, "progress": "300/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.454608790576458, "peak_allocated_bytes": 82529037824, "progress": "301/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.421576794236898, "peak_allocated_bytes": 82345777152, "progress": "302/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.422347197309136, "peak_allocated_bytes": 82437375488, "progress": "303/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.5678490456193686, "peak_allocated_bytes": 82400728576, "progress": "304/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8752642404288054, "peak_allocated_bytes": 82519867392, "progress": "305/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.423030639067292, "peak_allocated_bytes": 82345777152, "progress": "306/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4286035764962435, "peak_allocated_bytes": 82455702528, "progress": "307/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.5854995502159, "peak_allocated_bytes": 82391567360, "progress": "308/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4614861737936735, "peak_allocated_bytes": 82474032640, "progress": "309/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.395610851235688, "peak_allocated_bytes": 82400728576, "progress": "310/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.5056381784379482, "peak_allocated_bytes": 82483197440, "progress": "311/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.0072355940938, "peak_allocated_bytes": 82419050496, "progress": "312/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.419872083701193, "peak_allocated_bytes": 82539185664, "progress": "313/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8821497596800327, "peak_allocated_bytes": 82391567360, "progress": "314/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8926674919202924, "peak_allocated_bytes": 82464866304, "progress": "315/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.549602970480919, "peak_allocated_bytes": 82391567360, "progress": "316/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4265381610020995, "peak_allocated_bytes": 82529037824, "progress": "317/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.885710557922721, "peak_allocated_bytes": 82354933248, "progress": "318/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.500388488173485, "peak_allocated_bytes": 82483197440, "progress": "319/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.320504832081497, "peak_allocated_bytes": 82354933248, "progress": "320/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.5000936686992645, "peak_allocated_bytes": 82483197440, "progress": "321/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.425128954462707, "peak_allocated_bytes": 82345777152, "progress": "322/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.422160681337118, "peak_allocated_bytes": 82437375488, "progress": "323/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.593062747269869, "peak_allocated_bytes": 82382408704, "progress": "324/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.903949904255569, "peak_allocated_bytes": 82519867392, "progress": "325/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8813202045857906, "peak_allocated_bytes": 82391567360, "progress": "326/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.884611390531063, "peak_allocated_bytes": 82428211712, "progress": "327/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.828998818993568, "peak_allocated_bytes": 82364091904, "progress": "328/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.528439930640161, "peak_allocated_bytes": 82483197440, "progress": "329/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.881540550850332, "peak_allocated_bytes": 82391567360, "progress": "330/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.4255268163979053, "peak_allocated_bytes": 82409887744, "progress": "331/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.5741661777719855, "peak_allocated_bytes": 82373249024, "progress": "332/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.707548813894391, "peak_allocated_bytes": 82539185664, "progress": "333/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.887578371912241, "peak_allocated_bytes": 82354933248, "progress": "334/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.427081553265452, "peak_allocated_bytes": 82455702528, "progress": "335/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.272324273362756, "peak_allocated_bytes": 82419050496, "progress": "336/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8757473276928067, "peak_allocated_bytes": 82446537728, "progress": "337/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.420467087998986, "peak_allocated_bytes": 82382408704, "progress": "338/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.43031501583755, "peak_allocated_bytes": 82474032640, "progress": "339/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.717052019201219, "peak_allocated_bytes": 82437375488, "progress": "340/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.427841464057565, "peak_allocated_bytes": 82510700032, "progress": "341/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.417505941353738, "peak_allocated_bytes": 82382408704, "progress": "342/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.42180239316076, "peak_allocated_bytes": 82437375488, "progress": "343/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.802767278626561, "peak_allocated_bytes": 82400728576, "progress": "344/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.446768347173929, "peak_allocated_bytes": 82455702528, "progress": "345/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.418366493657231, "peak_allocated_bytes": 82345777152, "progress": "346/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.4982216395437717, "peak_allocated_bytes": 82483197440, "progress": "347/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.5986396092921495, "peak_allocated_bytes": 82364091904, "progress": "348/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8887183498591185, "peak_allocated_bytes": 82464866304, "progress": "349/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4166613118723035, "peak_allocated_bytes": 82382408704, "progress": "350/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.394356125034392, "peak_allocated_bytes": 82419050496, "progress": "351/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.9764768797904253, "peak_allocated_bytes": 82409887744, "progress": "352/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.456535008735955, "peak_allocated_bytes": 82446537728, "progress": "353/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.881062082014978, "peak_allocated_bytes": 82391567360, "progress": "354/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.431955803185701, "peak_allocated_bytes": 82474032640, "progress": "355/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.060579529963434, "peak_allocated_bytes": 82354933248, "progress": "356/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.455900612287223, "peak_allocated_bytes": 82455702528, "progress": "357/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8819898637011647, "peak_allocated_bytes": 82391567360, "progress": "358/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4280231250450015, "peak_allocated_bytes": 82474032640, "progress": "359/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.762718652375042, "peak_allocated_bytes": 82428211712, "progress": "360/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.888856022618711, "peak_allocated_bytes": 82539185664, "progress": "361/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8836985705420375, "peak_allocated_bytes": 82391567360, "progress": "362/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4310764307156205, "peak_allocated_bytes": 82455702528, "progress": "363/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.364109591580927, "peak_allocated_bytes": 82419050496, "progress": "364/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8771531777456403, "peak_allocated_bytes": 82519867392, "progress": "365/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.42216088809073, "peak_allocated_bytes": 82364091904, "progress": "366/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8883311804383993, "peak_allocated_bytes": 82464866304, "progress": "367/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 7.138633280992508, "peak_allocated_bytes": 82400728576, "progress": "368/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.919961110688746, "peak_allocated_bytes": 82539185664, "progress": "369/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8870450034737587, "peak_allocated_bytes": 82318309376, "progress": "370/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.422956122085452, "peak_allocated_bytes": 82437375488, "progress": "371/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.595023826695979, "peak_allocated_bytes": 82382408704, "progress": "372/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.456116600893438, "peak_allocated_bytes": 82529037824, "progress": "373/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4245239002630115, "peak_allocated_bytes": 82382408704, "progress": "374/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8893534522503614, "peak_allocated_bytes": 82464866304, "progress": "375/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.6922093043103814, "peak_allocated_bytes": 82409887744, "progress": "376/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.434834200888872, "peak_allocated_bytes": 82548198912, "progress": "377/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.880839732475579, "peak_allocated_bytes": 82391567360, "progress": "378/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.5010945247486234, "peak_allocated_bytes": 82483197440, "progress": "379/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.6287591913715005, "peak_allocated_bytes": 82391567360, "progress": "380/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.892712339758873, "peak_allocated_bytes": 82501531136, "progress": "381/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.417910764925182, "peak_allocated_bytes": 82382408704, "progress": "382/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.4985279086977243, "peak_allocated_bytes": 82483197440, "progress": "383/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.8043028004467487, "peak_allocated_bytes": 82409887744, "progress": "384/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.387911534868181, "peak_allocated_bytes": 82501531136, "progress": "385/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.296924162656069, "peak_allocated_bytes": 82364091904, "progress": "386/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.889816756360233, "peak_allocated_bytes": 82464866304, "progress": "387/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.594772092066705, "peak_allocated_bytes": 82382408704, "progress": "388/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.454675140790641, "peak_allocated_bytes": 82446537728, "progress": "389/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.425313773564994, "peak_allocated_bytes": 82382408704, "progress": "390/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.426449215039611, "peak_allocated_bytes": 82455702528, "progress": "391/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.769436915405095, "peak_allocated_bytes": 82437375488, "progress": "392/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.4300624476745725, "peak_allocated_bytes": 82455702528, "progress": "393/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.396519687026739, "peak_allocated_bytes": 82400728576, "progress": "394/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.397150662727654, "peak_allocated_bytes": 82400728576, "progress": "395/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.797407706268132, "peak_allocated_bytes": 82419050496, "progress": "396/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 5.8442135555669665, "peak_allocated_bytes": 82510700032, "progress": "397/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 3.42483535874635, "peak_allocated_bytes": 82409887744, "progress": "398/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.399493765085936, "peak_allocated_bytes": 82419050496, "progress": "399/400", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "internvl35_8b_budget54_set_b100_p0_shuffled_letterbox54", "latency_seconds": 4.713136014528573, "peak_allocated_bytes": 82437375488, "progress": "400/400", "status": "ok"}
+{"status": "pass", "summary": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/outputs/internvl35_8b_budget54/run_summary.json"}
+INTERNVL_SHARD_COMPLETE 2026-08-12T10:10:59+00:00 dataset=set_b100 gpu=2

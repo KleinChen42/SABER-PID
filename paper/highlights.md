@@ -1,7 +1,7 @@
 # Highlights
 
 - Source-isolated controls qualify requested-drawing P&ID tag retrieval.
-- A 54-cell matrix yields 36/36 positive correct-minus-control intervals.
-- Qwen effects replicate across scales, prompts, and three disjoint subsets.
-- OCR--VLM union reaches 0.704 recall and 0.634 F1.
-- Intersection yields 0.991 precision with one median candidate per drawing.
+- Public DEXPI transfer reaches 0.906 F1 versus zero under both controls.
+- Mild quality shifts retain 0.548--0.575 correct-minus-shuffled F1.
+- Cost ratios select intersection, OCR, OCR-first, or union modes.
+- Matched-budget InternVL recovers a 0.472 requested-drawing F1 effect.

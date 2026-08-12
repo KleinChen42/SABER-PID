@@ -1,6 +1,6 @@
 # START Package 01 — Source-Isolated, Graph-Grounded Reliability Evaluation for P&IDs
 
-> **Active submission route (2026-08-12):** the validated V7 replication layer remains the baseline, and the V8 high-value evidence closeout is executing under `22_RINENG_V8_HIGH_VALUE_EVIDENCE_AND_SUBMISSION_CLOSEOUT.md`. V8 adds a cost-sensitive operating rule, paired 3072/512 quality robustness, a closest-safe 54-tile InternVL boundary, and a second public DEXPI family. Maintenance-safe archives and resume instructions are recorded in `reports/RINENG_V8_PUBLIC_BACKUP_STATUS.md` and `reports/RINENG_V8_H200_MAINTENANCE_RESUME.md`.
+> **Completed submission route (2026-08-12):** the V8 high-value evidence closeout under `22_RINENG_V8_HIGH_VALUE_EVIDENCE_AND_SUBMISSION_CLOSEOUT.md` has passed. V8 adds a cost-sensitive operating rule, paired 3072/512 quality robustness, a closest-safe 54-tile InternVL recovery result, and a second public DEXPI family. The final evidence and validation summary is `reports/RINENG_V8_CLOSEOUT.md`; maintenance-safe archives remain recorded in `reports/RINENG_V8_PUBLIC_BACKUP_STATUS.md` and `reports/RINENG_V8_H200_MAINTENANCE_RESUME.md`.
 
 **Frozen planning date:** 2026-08-04  
 **Target journal:** *Results in Engineering*  

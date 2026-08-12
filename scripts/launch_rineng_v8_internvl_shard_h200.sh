@@ -7,6 +7,7 @@ PY_GPU="${RINENG_PY_GPU:-/home/hera/EACL_v92/.venv/bin/python}"
 DATASET="${1:?usage: launch_rineng_v8_internvl_shard_h200.sh DATASET GPU_INDEX WAIT_SCREEN}"
 GPU_INDEX="${2:?usage: launch_rineng_v8_internvl_shard_h200.sh DATASET GPU_INDEX WAIT_SCREEN}"
 WAIT_SCREEN="${3:?usage: launch_rineng_v8_internvl_shard_h200.sh DATASET GPU_INDEX WAIT_SCREEN}"
+CONDITIONS="${4:-correct,shuffled,text_only}"
 
 case "$DATASET" in
   set_b100|seed29_strict65|seed31_strict65) ;;
@@ -43,6 +44,6 @@ echo "INTERNVL_SHARD_START $(date -u --iso-8601=seconds) dataset=$DATASET gpu=$G
   --output-dir "$PUBLIC/outputs/internvl35_8b_budget54" \
   --run-id "rineng-v8-internvl-budget54-$DATASET" \
   --datasets "$DATASET" \
-  --conditions correct,shuffled,text_only \
+  --conditions "$CONDITIONS" \
   --skip-existing
 echo "INTERNVL_SHARD_COMPLETE $(date -u --iso-8601=seconds) dataset=$DATASET gpu=$GPU_INDEX"

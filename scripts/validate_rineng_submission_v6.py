@@ -75,6 +75,39 @@ def latex_ids(text: str, command: str) -> set[str]:
     return result
 
 
+def expand_tex_inputs(root: Path, text: str, *, base: Path | None = None) -> str:
+    """Return TeX plus recursively included local ``\\input`` sources.
+
+    Cross-reference validation must see labels defined in editable table files;
+    scanning only the two top-level documents otherwise reports false undefined
+    references even though LaTeX resolves the inputs correctly.
+    """
+
+    base = base or (root / "paper")
+    chunks = [text]
+    seen: set[Path] = set()
+
+    def visit(source: str, source_base: Path) -> None:
+        for value in re.findall(r"\\input\{([^}]+)\}", source):
+            path = source_base / value
+            if path.suffix == "":
+                path = path.with_suffix(".tex")
+            path = path.resolve()
+            try:
+                path.relative_to(root)
+            except ValueError:
+                continue
+            if path in seen or not path.is_file():
+                continue
+            seen.add(path)
+            included = path.read_text(encoding="utf-8")
+            chunks.append(included)
+            visit(included, path.parent)
+
+    visit(text, base)
+    return "\n".join(chunks)
+
+
 def file_sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
@@ -103,8 +136,10 @@ def main() -> int:
 
     manuscript = (root / "paper/manuscript.tex").read_text(encoding="utf-8")
     supplement = (root / "paper/supplementary.tex").read_text(encoding="utf-8")
-    combined = manuscript + "\n" + supplement
-    normalized_main = re.sub(r"\s+", " ", manuscript)
+    combined = expand_tex_inputs(root, manuscript) + "\n" + expand_tex_inputs(
+        root, supplement
+    )
+    normalized_main = re.sub(r"\s+", " ", manuscript).casefold()
     normalized_supp = re.sub(r"\s+", " ", supplement)
 
     title_match = re.search(r"\\title\{([^}]*)\}", manuscript)
@@ -198,7 +233,7 @@ def main() -> int:
         "public release excludes author-side editorial prompts",
     )
     missing_main_phrases = [
-        phrase for phrase in required_main if phrase not in normalized_main
+        phrase for phrase in required_main if phrase.casefold() not in normalized_main
     ]
     missing_supplement_phrases = [
         phrase for phrase in required_supplement if phrase not in normalized_supp

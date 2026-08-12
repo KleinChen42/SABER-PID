@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\caption{External-family tag retrieval on 65 questions from 35 DEXPI images in 26 logical test cases. Vendor variants are grouped by logical case for uncertainty estimates.}
+\label{tab:v8dexpi}
+\scriptsize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Condition & TP & FP & FN & Precision & Recall & F1 & Exact \\
+\midrule
+Qwen, correct image & 72 & 6 & 9 & 0.9231 & 0.8889 & 0.9057 & 0.8615 \\
+Qwen, cross-case shuffled & 0 & 144 & 81 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+Qwen, no image & 0 & 0 & 81 & 1.0000 & 0.0000 & 0.0000 & 0.0000 \\
+PaddleOCR, full image & 49 & 2 & 32 & 0.9608 & 0.6049 & 0.7424 & 0.6154 \\
+\bottomrule
+\end{tabular}}
+\end{table}

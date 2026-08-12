@@ -142,6 +142,53 @@ def build_quality_table(report: dict[str, Any]) -> tuple[str, list[dict[str, Any
     return tex, rows
 
 
+def build_quality_subset_table(
+    report: dict[str, Any],
+) -> tuple[str, list[dict[str, Any]]]:
+    datasets = (
+        ("set_b100", "Set B (100)"),
+        ("seed29_strict65", "Strict seed 29 (65)"),
+        ("seed31_strict65", "Strict seed 31 (65)"),
+    )
+    rows: list[dict[str, Any]] = []
+    tex_rows = []
+    for dataset, label in datasets:
+        effects = {
+            quality: find_quality(
+                report, quality, "correct_minus_shuffled", dataset=dataset
+            )
+            for quality in QUALITY_ORDER
+        }
+        rows.append({"dataset": dataset, "effects": effects})
+        cells = []
+        for quality in QUALITY_ORDER:
+            effect = effects[quality]
+            point = float(effect["value_f1_difference"])
+            interval = list(effect["value_f1_source_bootstrap_ci95"])
+            cells.append(f"{point:.4f} [{interval[0]:.4f}, {interval[1]:.4f}]")
+        tex_rows.append(f"{label} & " + " & ".join(cells) + " \\\\")
+    tex = "\n".join(
+        [
+            "\\begin{table}[H]",
+            "\\centering",
+            "\\caption{Correct-minus-source-shuffled strict tag F1 by source-disjoint subset and quality condition. Brackets are 95\\% paired source-bootstrap intervals.}",
+            "\\label{tab:v8qualitysubset}",
+            "\\scriptsize",
+            "\\resizebox{\\linewidth}{!}{%",
+            "\\begin{tabular}{lrrrr}",
+            "\\toprule",
+            "Subset & Clean & JPEG Q70 & Blur $r=1$ & 0.75$\\times$ restore \\\\",
+            "\\midrule",
+            *tex_rows,
+            "\\bottomrule",
+            "\\end{tabular}}",
+            "\\end{table}",
+            "",
+        ]
+    )
+    return tex, rows
+
+
 def build_internvl_table(report: dict[str, Any]) -> tuple[str, list[dict[str, Any]]]:
     datasets = ("set_b100", "seed29_strict65", "seed31_strict65")
     rows = []
@@ -281,22 +328,26 @@ def main() -> int:
         raise ValueError("Refusing to build paper tables from a failing score report")
 
     quality_tex, quality_rows = build_quality_table(extension)
+    quality_subset_tex, quality_subset_rows = build_quality_subset_table(extension)
     internvl_tex, internvl_rows = build_internvl_table(extension)
     external_tex, external_rows = build_external_table(external)
     table_dir = root / args.table_dir
     table_dir.mkdir(parents=True, exist_ok=True)
     outputs = {
         "quality": table_dir / "table_rineng_v8_quality.tex",
+        "quality_by_subset": table_dir / "table_rineng_v8_quality_by_subset.tex",
         "internvl": table_dir / "table_rineng_v8_internvl_budget54.tex",
         "external": table_dir / "table_rineng_v8_dexpi_external.tex",
     }
     outputs["quality"].write_text(quality_tex, encoding="utf-8")
+    outputs["quality_by_subset"].write_text(quality_subset_tex, encoding="utf-8")
     outputs["internvl"].write_text(internvl_tex, encoding="utf-8")
     outputs["external"].write_text(external_tex, encoding="utf-8")
     summary = {
         "version": "rineng-v8-paper-summary",
         "status": "pass",
         "quality": quality_rows,
+        "quality_by_subset": quality_subset_rows,
         "internvl_budget54": internvl_rows,
         "dexpi_external": {
             "selection": external["selection"],
@@ -319,6 +370,39 @@ def main() -> int:
         )
     )
     return 0
+
+
+def write_available_tables(
+    *,
+    extension: dict[str, Any] | None,
+    external: dict[str, Any] | None,
+    table_dir: Path,
+) -> dict[str, Path]:
+    """Write independently available tables without weakening final gates.
+
+    This helper supports maintenance-time manuscript preparation when Qwen
+    quality and DEXPI scoring are final but the long InternVL matrix is still
+    running. ``main`` remains strict and refuses any failing complete report.
+    """
+
+    table_dir.mkdir(parents=True, exist_ok=True)
+    outputs: dict[str, Path] = {}
+    if extension is not None:
+        quality_tex, _ = build_quality_table(extension)
+        quality_subset_tex, _ = build_quality_subset_table(extension)
+        outputs["quality"] = table_dir / "table_rineng_v8_quality.tex"
+        outputs["quality_by_subset"] = (
+            table_dir / "table_rineng_v8_quality_by_subset.tex"
+        )
+        outputs["quality"].write_text(quality_tex, encoding="utf-8")
+        outputs["quality_by_subset"].write_text(
+            quality_subset_tex, encoding="utf-8"
+        )
+    if external is not None:
+        external_tex, _ = build_external_table(external)
+        outputs["external"] = table_dir / "table_rineng_v8_dexpi_external.tex"
+        outputs["external"].write_text(external_tex, encoding="utf-8")
+    return outputs
 
 
 if __name__ == "__main__":

@@ -1,0 +1,402 @@
+DEXPI_WATCH_START 2026-08-12T07:51:36+00:00
+DEXPI_WATCH_START 2026-08-12T09:26:34+00:00
+DEXPI_MAINLINE_WAIT_BYPASSED 2026-08-12T09:26:34+00:00 gpu=7
+DEXPI_WAIT_GPU 2026-08-12T09:26:34+00:00 gpu=7 memory_mib=18581 util_pct=0
+DEXPI_QWEN_START 2026-08-12T09:27:04+00:00 gpu=7
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 69.82it/s]
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 1.383075537160039, "progress": "1/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7881144834682345, "progress": "2/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.9195970464497805, "progress": "3/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.8755889544263482, "progress": "4/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.23600279726088047, "progress": "5/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.19309221301227808, "progress": "6/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7990698637440801, "progress": "7/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7843630379065871, "progress": "8/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7826106008142233, "progress": "9/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7379754250869155, "progress": "10/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 1.0108447363600135, "progress": "11/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.8746565664187074, "progress": "12/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.21174204163253307, "progress": "13/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.8081306582316756, "progress": "14/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.8090519551187754, "progress": "15/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.20852559059858322, "progress": "16/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.176323764026165, "progress": "17/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7594835963100195, "progress": "18/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.20718775037676096, "progress": "19/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.10434389766305685, "progress": "20/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.06631536688655615, "progress": "21/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.061844345182180405, "progress": "22/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.15299950540065765, "progress": "23/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.16050705965608358, "progress": "24/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 1.2872514314949512, "progress": "25/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.805439387448132, "progress": "26/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.9199036210775375, "progress": "27/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.20441863033920527, "progress": "28/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.1804408859461546, "progress": "29/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.18513170536607504, "progress": "30/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.1536035342141986, "progress": "31/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.1340174963697791, "progress": "32/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.8071456355974078, "progress": "33/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.8097823057323694, "progress": "34/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7840183023363352, "progress": "35/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7621675049886107, "progress": "36/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.924543684348464, "progress": "37/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7841673223301768, "progress": "38/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.8111446602270007, "progress": "39/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.8083087597042322, "progress": "40/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.10313459951430559, "progress": "41/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.06301119923591614, "progress": "42/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.20328543055802584, "progress": "43/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.807602483779192, "progress": "44/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.9217324778437614, "progress": "45/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.9240635903552175, "progress": "46/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.20559348165988922, "progress": "47/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.21354596968740225, "progress": "48/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7874174518510699, "progress": "49/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7835666676983237, "progress": "50/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.9679900528863072, "progress": "51/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7934494409710169, "progress": "52/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.8108076946809888, "progress": "53/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7844424862414598, "progress": "54/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.1909570535644889, "progress": "55/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7830798653885722, "progress": "56/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.7844859110191464, "progress": "57/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.8056342750787735, "progress": "58/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.9225379005074501, "progress": "59/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 1.0401768051087856, "progress": "60/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 1.387815318070352, "progress": "61/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 12.391731414943933, "progress": "62/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 1.4304011203348637, "progress": "63/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.9264122312888503, "progress": "64/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_correct_3072", "latency_seconds": 0.2002392141148448, "progress": "65/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7830919176340103, "progress": "1/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7176285851746798, "progress": "2/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.0723713580518961, "progress": "3/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.07133327145129442, "progress": "4/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.0692960312590003, "progress": "5/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.06926850881427526, "progress": "6/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.07938503194600344, "progress": "7/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7163914069533348, "progress": "8/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7142636338248849, "progress": "9/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.06299855560064316, "progress": "10/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.1302502965554595, "progress": "11/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.06234119180589914, "progress": "12/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.16158925276249647, "progress": "13/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.8124886704608798, "progress": "14/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7152300197631121, "progress": "15/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7160951215773821, "progress": "16/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7154679885134101, "progress": "17/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.17747151292860508, "progress": "18/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7154764020815492, "progress": "19/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.9424883183091879, "progress": "20/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.9206081852316856, "progress": "21/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.9208277864381671, "progress": "22/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7158573269844055, "progress": "23/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7161091100424528, "progress": "24/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7172114895656705, "progress": "25/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7168121710419655, "progress": "26/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.78426652867347, "progress": "27/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7154954867437482, "progress": "28/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.739712392911315, "progress": "29/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7140792459249496, "progress": "30/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7145249592140317, "progress": "31/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7144234636798501, "progress": "32/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.17730954568833113, "progress": "33/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.062388524413108826, "progress": "34/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7134920470416546, "progress": "35/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7159976288676262, "progress": "36/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.9210405265912414, "progress": "37/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7155776806175709, "progress": "38/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.1776243569329381, "progress": "39/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.17642164323478937, "progress": "40/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 12.298092460259795, "progress": "41/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7149228975176811, "progress": "42/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7164533725008368, "progress": "43/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7159989653155208, "progress": "44/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7153882496058941, "progress": "45/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7148441234603524, "progress": "46/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.062071737833321095, "progress": "47/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7156251780688763, "progress": "48/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.06285721156746149, "progress": "49/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.06238455418497324, "progress": "50/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.061743532307446, "progress": "51/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.06136314105242491, "progress": "52/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.06141904927790165, "progress": "53/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.062001729384064674, "progress": "54/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.06288093514740467, "progress": "55/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.18677302729338408, "progress": "56/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.07271785009652376, "progress": "57/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.9204346444457769, "progress": "58/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.1537550212815404, "progress": "59/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.06176124420017004, "progress": "60/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.061630754731595516, "progress": "61/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7179817138239741, "progress": "62/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7155768210068345, "progress": "63/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.7167469328269362, "progress": "64/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_shuffled_3072", "latency_seconds": 0.9239575732499361, "progress": "65/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.0627894215285778, "progress": "1/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047825598157942295, "progress": "2/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047259263694286346, "progress": "3/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04747940041124821, "progress": "4/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.05027353297919035, "progress": "5/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04830082692205906, "progress": "6/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04740267526358366, "progress": "7/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04719475470483303, "progress": "8/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04729511123150587, "progress": "9/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047702739015221596, "progress": "10/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04726735595613718, "progress": "11/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04718196578323841, "progress": "12/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04768633563071489, "progress": "13/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04754435643553734, "progress": "14/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04712887853384018, "progress": "15/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047182586044073105, "progress": "16/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04728642478585243, "progress": "17/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047192515805363655, "progress": "18/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04716196842491627, "progress": "19/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047493208199739456, "progress": "20/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.05116268526762724, "progress": "21/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04731634724885225, "progress": "22/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04750253073871136, "progress": "23/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047428570687770844, "progress": "24/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047177618369460106, "progress": "25/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04722194746136665, "progress": "26/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04718798212707043, "progress": "27/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04723073169589043, "progress": "28/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04723715130239725, "progress": "29/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04801544826477766, "progress": "30/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04729415103793144, "progress": "31/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04721454158425331, "progress": "32/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047273566015064716, "progress": "33/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.0473922174423933, "progress": "34/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.05135292001068592, "progress": "35/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04748178645968437, "progress": "36/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047094037756323814, "progress": "37/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.046809094958007336, "progress": "38/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.046635350212454796, "progress": "39/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04707654379308224, "progress": "40/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04664834123104811, "progress": "41/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04673357494175434, "progress": "42/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.046814147382974625, "progress": "43/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04675888642668724, "progress": "44/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04831784125417471, "progress": "45/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04681019112467766, "progress": "46/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.046968644484877586, "progress": "47/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04687274433672428, "progress": "48/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04702082648873329, "progress": "49/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04727775510400534, "progress": "50/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04666958376765251, "progress": "51/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04686808679252863, "progress": "52/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.046771859750151634, "progress": "53/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04687314014881849, "progress": "54/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04698055423796177, "progress": "55/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.046804154291749, "progress": "56/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04675700329244137, "progress": "57/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04809721652418375, "progress": "58/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04685341939330101, "progress": "59/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047872812487185, "progress": "60/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04750210512429476, "progress": "61/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04853534605354071, "progress": "62/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.047424184158444405, "progress": "63/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04770173504948616, "progress": "64/65", "status": "ok"}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"cell": "qwen3vl8b_dexpi_external_v8_p0_text_only_3072", "latency_seconds": 0.04947362560778856, "progress": "65/65", "status": "ok"}
+{"status": "pass", "summary": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/outputs/dexpi_external_qwen/run_summary.json"}
+DEXPI_QWEN_COMPLETE 2026-08-12T09:29:36+00:00
+{"rows": 65, "status": "already_complete"}
+{"conditions": 4, "output": "/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/reports/rineng_v8_dexpi_external_score.json", "records": 65, "status": "pass"}
+DEXPI_EXTERNAL_COMPLETE 2026-08-12T09:29:37+00:00

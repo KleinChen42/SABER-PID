@@ -1,0 +1,28 @@
+{
+  "error_count": 0,
+  "errors": [],
+  "independence": {
+    "bootstrap_reps": 10000,
+    "bootstrap_seed_relation": "independent SHA-256-derived seeds",
+    "ci_endpoint_tolerance": 0.03,
+    "imports_v8_scorers": false
+  },
+  "inputs": {
+    "reports/generated/rineng_v8_dexpi_external_score.json": "60fb3e0781bbe30c3d8adc6349bd156ed7c407195cf77cb4a01f801f2ae5b3f3",
+    "reports/generated/rineng_v8_extension_score.json": "569f68c4ca8bd443a3235b79d89349189ce3a175904ec03e50fc363d75b6b7b9"
+  },
+  "numeric_agreement": {
+    "max_independent_ci_endpoint_absolute_difference": 0.0060871541589822,
+    "max_point_absolute_error": 4.336808689942018e-17
+  },
+  "scope": {
+    "dexpi_cells": 4,
+    "dexpi_comparisons": 4,
+    "internvl_cells": 9,
+    "internvl_comparisons": 12,
+    "quality_cells": 24,
+    "quality_comparisons": 28
+  },
+  "status": "pass",
+  "version": "rineng-v8-independent-validation"
+}

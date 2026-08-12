@@ -18,8 +18,8 @@ Results in Engineering
 
 ## Keywords
 
-Engineering document intelligence; vision–language models; optical character recognition; tag retrieval; source isolation; counterfactual evaluation
+Engineering document intelligence; vision-language models; optical character recognition; tag retrieval; source isolation; counterfactual evaluation
 
 ## Date
 
-2026-08-11
+2026-08-12

@@ -216,7 +216,7 @@ def build_quality_figure(report: dict[str, Any], output_dir: Path) -> tuple[list
         color=COLORS["gray"],
     )
     fig.suptitle(
-        "Qualified 3072/512 tag retrieval remains counterfactually testable under mild quality shifts",
+        "Qualified visual budgets sustain tag grounding across quality shifts and model families",
         fontsize=10.2,
         fontweight="bold",
         y=0.995,
