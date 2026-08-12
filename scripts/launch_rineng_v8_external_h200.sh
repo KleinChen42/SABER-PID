@@ -4,6 +4,7 @@ set -euo pipefail
 ROOT="${RINENG_ROOT:-/home/hera/pid_reliability_benchmark}"
 PUBLIC="${RINENG_PUBLIC_V8_ROOT:-/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812}"
 GPU_INDEX="${RINENG_EXTERNAL_GPU_INDEX:-1}"
+WAIT_FOR_MAINLINE="${RINENG_WAIT_FOR_MAINLINE:-1}"
 PY_GPU="${RINENG_PY_GPU:-/home/hera/EACL_v92/.venv/bin/python}"
 PY_OCR="${RINENG_PY_OCR:-$ROOT/.venv_paddleocr_v1/bin/python}"
 
@@ -12,9 +13,13 @@ mkdir -p "$PUBLIC/logs" "$PUBLIC/outputs/dexpi_external_qwen" "$PUBLIC/reports"
 exec > >(tee -a "$PUBLIC/logs/dexpi_external_full.log") 2>&1
 
 echo "DEXPI_WATCH_START $(date -u --iso-8601=seconds)"
-while screen -ls 2>/dev/null | grep -q '[.]rie_v8_mainline'; do
-  sleep 30
-done
+if [[ "$WAIT_FOR_MAINLINE" == "1" ]]; then
+  while screen -ls 2>/dev/null | grep -q '[.]rie_v8_mainline'; do
+    sleep 30
+  done
+else
+  echo "DEXPI_MAINLINE_WAIT_BYPASSED $(date -u --iso-8601=seconds) gpu=$GPU_INDEX"
+fi
 
 # The external branch is deliberately queued behind the long mainline.  It
 # starts only when the selected physical GPU is actually unoccupied; a model

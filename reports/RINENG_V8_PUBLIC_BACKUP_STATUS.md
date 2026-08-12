@@ -30,6 +30,30 @@ It is applied after archive restoration and contains the post-snapshot scorer,
 independent validator, table/release builders, tests, manuscript files, and the
 fresh-process InternVL CUDA-recovery enhancement.
 
+The maintenance-time acceleration delta is frozen separately as
+`/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/recovery_docs/rineng_v8_code_overlay_20260812_r3.tar`
+(15,872 bytes; 4 members; SHA-256
+`039c84e666ace88779d57590aabef8d3e064090ec25c4c5db1d9477a98911df9`).
+Apply it after r2. It adds the condition-disjoint seed31/DEXPI launch path and
+the corresponding recovery-document updates; its remote hash and tar catalogue
+were independently checked.
+
+The latest script delta superseding r3 is
+`/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/recovery_docs/rineng_v8_code_overlay_20260812_r4.tar`
+(9,728 bytes; 3 members; SHA-256
+`55fffb948a24b2f7078dd2354dddc951ebdfe63b6ba8b619bd9d0a0042724f9b`).
+It contains the optional DEXPI mainline-wait bypass plus the DEXPI and
+dataset-disjoint InternVL acceleration launchers. Its remote hash and three-file
+catalogue passed. Apply r4 after r2; r3 is retained only as an earlier recovery
+point.
+
+Version-control recovery is independently available as
+`/kwkj-k8s/hera_pid_reliability_backups/active_v8_20260812/recovery_docs/rineng_v8_preparation_2ed25a4.bundle`
+(12,211,669 bytes; SHA-256
+`95b107d83a8ee703c9a588e4b06a87d7723e449e63855c802006b268cdace6bb`).
+Local `git bundle verify` passed; the bundle records complete history with
+`master` and `HEAD` at commit `2ed25a4cf75b346e26e37b0467ed6fc905e882cb`.
+
 The full backup was created from `/home/hera/pid_reliability_benchmark` on host
 `hd03-gpu2-0002` and completed at `2026-08-12T06:44:03Z`. Approximately 95 GB
 of reproducibly downloadable model weights were excluded. Their identifiers,
