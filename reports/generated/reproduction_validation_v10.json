@@ -1,0 +1,104 @@
+{
+  "mode": "inference-free",
+  "pdf_rebuild_skipped": false,
+  "source_date_epoch": "1786492800",
+  "status": "pass",
+  "steps": [
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "scripts/build_rineng_v10_publication_figures.py",
+        "--root",
+        "E:\\CODE\\START_01_PID_Reliability_Benchmark\\START_01_PID_Reliability_Benchmark"
+      ],
+      "name": "v10_publication_figures",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"figures\": 9, \"report\": \"reports/generated/rineng_v10_publication_figures.json\", \"status\": \"pass\"}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_build_rineng_v10_publication_figures.py",
+        "tests/test_build_rineng_v9_editorial_assets.py",
+        "tests/test_cost_sensitive_operating_modes_v8.py",
+        "tests/test_score_rineng_v8_extensions.py",
+        "tests/test_score_dexpi_external_v8.py",
+        "tests/test_validate_rineng_v8_extensions.py",
+        "tests/test_rineng_revision_analysis_v6.py",
+        "tests/test_ocr_geometry_join.py"
+      ],
+      "name": "v10_relevant_tests",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "..................                                                       [100%]\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\scoop\\shims\\tectonic.EXE",
+        "--keep-logs",
+        "--outdir",
+        "output/pdf/v10",
+        "paper/manuscript.tex"
+      ],
+      "name": "manuscript_pdf",
+      "returncode": 0,
+      "stderr_tail": "Fontconfig error: Cannot load default config file: No such file: (null)\n",
+      "stdout_tail": "note: Running TeX ...\nnote: Rerunning TeX because \"manuscript.aux\" changed ...\nnote: Running xdvipdfmx ...\nnote: Writing `output/pdf/v10\\manuscript.log` (14.939453125 KiB)\nnote: Writing `output/pdf/v10\\manuscript.pdf` (296.5498046875 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\scoop\\shims\\tectonic.EXE",
+        "--keep-logs",
+        "--outdir",
+        "output/pdf/v10",
+        "paper/supplementary.tex"
+      ],
+      "name": "supplementary_pdf",
+      "returncode": 0,
+      "stderr_tail": "Fontconfig error: Cannot load default config file: No such file: (null)\n",
+      "stdout_tail": "note: Running TeX ...\nnote: Rerunning TeX because \"supplementary.aux\" changed ...\nnote: Running xdvipdfmx ...\nnote: Writing `output/pdf/v10\\supplementary.log` (15.015625 KiB)\nnote: Writing `output/pdf/v10\\supplementary.pdf` (303.7861328125 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "scripts/build_pdf_render_validation_v4.py",
+        "--root",
+        "E:\\CODE\\START_01_PID_Reliability_Benchmark\\START_01_PID_Reliability_Benchmark",
+        "--pdf-dir",
+        "output/pdf/v10",
+        "--render-dir",
+        "tmp/pdfs/final_validation_v10",
+        "--output",
+        "reports/generated/pdf_render_validation_v10.json",
+        "--validation-version",
+        "pdf-render-v10",
+        "--visual-record",
+        "reports/generated/pdf_visual_inspection_v10.json"
+      ],
+      "name": "pdf_render_validation_v10",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"output\": \"E:\\\\CODE\\\\START_01_PID_Reliability_Benchmark\\\\START_01_PID_Reliability_Benchmark\\\\reports\\\\generated\\\\pdf_render_validation_v10.json\", \"status\": \"pass\"}\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\KleinChan\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "scripts/validate_rineng_submission_v10.py",
+        "--root",
+        "E:\\CODE\\START_01_PID_Reliability_Benchmark\\START_01_PID_Reliability_Benchmark"
+      ],
+      "name": "rineng_submission_validation_v10",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"output\": \"reports/generated/rineng_submission_validation_v10.json\", \"status\": \"pass\"}\n"
+    }
+  ],
+  "tests_skipped": false,
+  "version": "rineng-submission-reproduction-v10"
+}

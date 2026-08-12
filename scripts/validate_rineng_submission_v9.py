@@ -22,6 +22,11 @@ TITLE = (
     "Vision--Language Models for P&ID Tag Retrieval"
 )
 
+VALIDATION_VERSION = "rineng-submission-validation-v9"
+PDF_DIR = "output/pdf/v9"
+RENDER_REPORT = "reports/generated/pdf_render_validation_v9.json"
+VISUAL_REPORT = "reports/generated/pdf_visual_inspection_v9.json"
+
 REQUIRED_FILES = (
     "CITATION.cff",
     "23_RINENG_ACCEPTANCE_ORIENTED_SELF_REVIEW_AND_AUTOMATIC_REVISION_CHARTER.md",
@@ -219,8 +224,8 @@ def validate(root: Path) -> dict[str, Any]:
         if status != "pass":
             failures.append("derived_report_not_pass")
 
-    render_path = root / "reports/generated/pdf_render_validation_v9.json"
-    visual_path = root / "reports/generated/pdf_visual_inspection_v9.json"
+    render_path = root / RENDER_REPORT
+    visual_path = root / VISUAL_REPORT
     render = read_json(render_path) if render_path.is_file() else {}
     visual = read_json(visual_path) if visual_path.is_file() else {}
     if render.get("status") != "pass" or visual.get("status") != "pass":
@@ -229,7 +234,7 @@ def validate(root: Path) -> dict[str, Any]:
     visual_hashes = visual.get("pdf_sha256", {})
     pdf_hashes: dict[str, str | None] = {}
     for name in ("manuscript", "supplementary"):
-        path = root / f"output/pdf/v9/{name}.pdf"
+        path = root / f"{PDF_DIR}/{name}.pdf"
         observed = sha256(path) if path.is_file() else None
         pdf_hashes[name] = observed
         if (
@@ -274,7 +279,7 @@ def validate(root: Path) -> dict[str, Any]:
         else False,
     }
     return {
-        "version": "rineng-submission-validation-v9",
+        "version": VALIDATION_VERSION,
         "status": "fail" if failures else "pass",
         "failure_reasons": failures,
         "missing_files": missing,

@@ -1,0 +1,62 @@
+{
+  "audit_scope": "all nine active manuscript and supplementary figures",
+  "figure_count": 9,
+  "figures": [
+    {
+      "clipped": [],
+      "collisions": [],
+      "figure": "figure_1_saber_pid_overview_v10",
+      "text_count": 43
+    },
+    {
+      "clipped": [],
+      "collisions": [],
+      "figure": "figure_2_quality_and_budget_v10",
+      "text_count": 40
+    },
+    {
+      "clipped": [],
+      "collisions": [],
+      "figure": "figure_3_dexpi_external_v10",
+      "text_count": 33
+    },
+    {
+      "clipped": [],
+      "collisions": [],
+      "figure": "figure_4_cost_aware_operation_v10",
+      "text_count": 46
+    },
+    {
+      "clipped": [],
+      "collisions": [],
+      "figure": "figure_s1_boundary_controls_v10",
+      "text_count": 39
+    },
+    {
+      "clipped": [],
+      "collisions": [],
+      "figure": "figure_s2_qualification_effects_v10",
+      "text_count": 27
+    },
+    {
+      "clipped": [],
+      "collisions": [],
+      "figure": "figure_s3_operating_modes_v10",
+      "text_count": 36
+    },
+    {
+      "clipped": [],
+      "collisions": [],
+      "figure": "figure_s4_cross_model_replication_v10",
+      "text_count": 38
+    },
+    {
+      "clipped": [],
+      "collisions": [],
+      "figure": "figure_s5_prompt_sensitivity_v10",
+      "text_count": 17
+    }
+  ],
+  "status": "pass",
+  "version": "rineng-figure-layout-audit-v10"
+}

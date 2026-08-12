@@ -227,7 +227,7 @@ peak-allocation telemetry; these values are not back-filled.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{figure_s1_controls_and_operating_quantities_v4.pdf}
+\includegraphics[width=\linewidth]{figure_s1_boundary_controls_v10.pdf}
 \caption{Structural correct-image increments, corrected InternVL tile-budget
 boundary, and recorded operating quantities. This boundary figure is retained
 in the supplement so that the main tag-retrieval claim is not generalized to
@@ -237,7 +237,7 @@ all tasks or model families.}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{figure_2_qualification_effects_v6.pdf}
+\includegraphics[width=\linewidth]{figure_s2_qualification_effects_v10.pdf}
 \caption{Complete primary paired qualification effects. Panel A contrasts
 correct, source-shuffled, and absent image evidence. Panel B reports
 visual-input-budget effects at two output caps and on two descriptive source
@@ -397,11 +397,10 @@ sample-derived operating rule, not elicited real-world costs. The complete
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{figure_3_operating_modes_v6.pdf}
-\caption{Original complete operating-mode and overlap-audited stability view.
+\includegraphics[width=\linewidth]{figure_s3_operating_modes_v10.pdf}
+\caption{Complete operating-mode and overlap-audited stability view.
 Panel A locates all Set B modes in precision--recall space. Panel B retains
-union-minus-Qwen estimates after explicit source-overlap exclusions. The
-candidate-workload footer is reproduced from frozen per-source outputs.}
+union-minus-Qwen estimates after explicit source-overlap exclusions.}
 \label{fig:s7_operating_modes}
 \end{figure}
 
@@ -572,7 +571,7 @@ reports the subsequent closest-safe 54-tile qualification.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{figure_v7_cross_model_counterfactual_replication.pdf}
+\includegraphics[width=\linewidth]{figure_s4_cross_model_replication_v10.pdf}
 \caption{Complete frozen native-budget cross-model counterfactual matrix.
 Rows cross three models, three pairwise source-disjoint subsets, and two
 pre-existing prompts. Both correct-minus-shuffled and correct-minus-no-image
@@ -588,7 +587,7 @@ best-prompt selection is applied.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{figure_s_v7_prompt_sensitivity.pdf}
+\includegraphics[width=\linewidth]{figure_s5_prompt_sensitivity_v10.pdf}
 \caption{Frozen-prompt sensitivity of correct-image strict value-tag F1.
 Whiskers are 95\% intervals from 10,000 paired source-bootstrap replicates.}
 \label{fig:s_v7_prompt}
@@ -611,13 +610,13 @@ task, but the tested numeric mapping semantics do not show a detected effect.
 
 Run
 \begin{quote}\ttfamily
-python scripts/reproduce\_rineng\_submission\_v9.py --root .
+python scripts/reproduce\_rineng\_submission\_v10.py --root .
 \end{quote}
-from the repository root. The script re-scores immutable V7/V8 outputs,
-rebuilds all deterministic analyses and V9 editorial assets, runs relevant
-unit checks, compiles manuscript and supplement PDFs, renders every page, and
-validates the current submission. It performs no model inference and no
-result-guided source selection.
+from the repository root. The script rebuilds all nine active figures from
+validated machine-readable V7/V8 reports, runs relevant unit checks, compiles
+the manuscript and supplement PDFs, renders every page, and validates the
+current submission. It performs no model inference and no result-guided source
+selection.
 
 The recovered V7 matrix is independently reproduced without new inference by
 running
@@ -641,8 +640,9 @@ The principal machine-readable artifacts are:
 \item \texttt{paper/figures/figure\_metadata\_v7.json}.
 \item \texttt{reports/generated/rineng\_v8\_paper\_summary.json};
 \item \texttt{reports/generated/rineng\_cost\_sensitive\_operating\_modes\_v8.json};
-\item \texttt{paper/figures/figure\_metadata\_v9.json};
-\item \texttt{reports/generated/rineng\_submission\_validation\_v9.json}.
+\item \texttt{paper/figures/figure\_metadata\_v10.json};
+\item \texttt{reports/generated/rineng\_figure\_layout\_audit\_v10.json};
+\item \texttt{reports/generated/rineng\_submission\_validation\_v10.json}.
 \end{itemize}
 The analysis JSON records the seven immutable input paths, byte sizes, and
 SHA-256 hashes. The release archive additionally records dependency versions,

@@ -1,0 +1,9 @@
+{
+  "asset_count": 18,
+  "figure_count": 9,
+  "layout_audit": "reports/generated/rineng_figure_layout_audit_v10.json",
+  "metadata": "paper/figures/figure_metadata_v10.json",
+  "source_date_epoch": "1786492800",
+  "status": "pass",
+  "version": "rineng-v10-publication-figure-build"
+}
