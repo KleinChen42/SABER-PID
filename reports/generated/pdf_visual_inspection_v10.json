@@ -11,25 +11,25 @@
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-01.png",
-      "sha256": "eb2accf044763cee06832887dfd38ab3053e9f6bbf125e1cdb9e53b1a8caecbe"
+      "sha256": "dcd43bb8c74cf435e1931251957622892a6cfb1ec0bf8dcde514be0390ddd7fb"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-02.png",
-      "sha256": "ba38bbd939701b9d2f636a93054ca6b6384408d5b3575cbe966728dea60c137d"
+      "sha256": "74c3fc7f4ffe3ebf4c84954e1dc9698a223384a643344a1991e49262fd50ca69"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-03.png",
-      "sha256": "f00f7e6dee937310c1b08a95f2109a9f8d7e18f7eb3a8d5338241335c033eb76"
+      "sha256": "90fb05048c86458077412a9179cd9c80b53fa9fff9c5fe8982a22d3f9d76004f"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-04.png",
-      "sha256": "37b6c1bc01bd88a2c6696e273c4d30b2c8257c1085f7a8329d96ac0880067df7"
+      "sha256": "8134446ede6afca969b6e949cb8632b51d7e105ca498e0b82f66fff9ec81dfda"
     },
     {
       "document": "manuscript",
@@ -41,7 +41,7 @@
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-06.png",
-      "sha256": "fa164064dcc9e87319ee7a703969dec614c725c2f82d56b7b2ab50ba54de89e5"
+      "sha256": "0cb7321e065c8f7d9e57098741467ad9ed380e809917c98989f2fc84d11c7972"
     },
     {
       "document": "manuscript",
@@ -71,43 +71,43 @@
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-11.png",
-      "sha256": "492eee2c478a3239fa09cfce345ca2fcab023580036b0269c06fd6ebc1e69a4e"
+      "sha256": "899b58a81d82714bf6f44d34a345476c3b0a0e4ae0e77747856242ed00bf9a23"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-12.png",
-      "sha256": "0029c9d58eaadbf57c153ca7f5fe8a281351be0e3f3c8e6aed19003a5c1ff4fc"
+      "sha256": "f46a45d2813d1a707e5719f6edd789e5abfc7339af87abcd2a7868c28373e69e"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-13.png",
-      "sha256": "275f2af9f56983543b1a08d1746df1fdf44d3c4335e99c8ff210b8279ef67ccf"
+      "sha256": "7ad3c532f8395245cf5645c07fbaa4b4da6831243f0b34105b8bd903b3f1ed22"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-01.png",
-      "sha256": "ecc1e012fc40ae539077b16f4ae66e9287395f0acd45792e3aaacb8af8683fa9"
+      "sha256": "676a5ca7e32481ea8ff6e3f230abcfd8ad40814f4fdc2666d54b766503249f5d"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-02.png",
-      "sha256": "cf0d487a4824cdb4196762f06561379b8d423da888419843cda171dde50344c8"
+      "sha256": "55f721b99609c458aed7ebc54620b2f4ee613ae33162b8eb03495cf608346d1d"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-03.png",
-      "sha256": "c1a4e9e4444e63ead11515ec07994e7016752e64002f856867a150f398744286"
+      "sha256": "0c28fc23affb454e2442759f52421633ecc5a810c791a626447d025ff8461731"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-04.png",
-      "sha256": "71292d3d9231c8f432a981503083e16a0cb0587657b62652b551428a196073b0"
+      "sha256": "e6d8f64dc1a44cc59717c8d4bebb3c04ddeec7491d1ebc79867b9b9a0f696d5a"
     },
     {
       "document": "supplementary",
@@ -119,37 +119,37 @@
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-06.png",
-      "sha256": "de98bfebada632e6c1c0c9666b8647c79bca523b87c0ae56e92de871bf0ec924"
+      "sha256": "647ad213014fc213cdaa9baedded5cf952767d389eb496979cca948f4d36e197"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-07.png",
-      "sha256": "52b778bd5c5b8e2bc735a4d128e25a2348ee29c9f2dff3b6cf53158db60a63a7"
+      "sha256": "b49caa29b5a2ffdb908092bc31c6072d977f1ed7b9901949266738fca0b688ee"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-08.png",
-      "sha256": "ca1f35fc4b2ebf1709978f437a229c9f9db03b85ea8ada991d2193f9f6ec92b3"
+      "sha256": "5ebb9f572da371fd147f6a95e7dd09ca5ee4947d1a232b66e9a063a83113c67f"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-09.png",
-      "sha256": "df6ab129535b52b5e238ee5248c29a9512537741dab62b0b28862675938721dd"
+      "sha256": "1a8a557f0d92b2960e040ae77407b1541013de6a586829a7ee87cf9ef15db120"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-10.png",
-      "sha256": "616546e2e0b2d690595735199f8e122c9c278c7cd71cb0e498ba1da45bd14468"
+      "sha256": "4742f2352ec60298d096df8ba5f2a4232edcb23e82e21279af8d774792dfee36"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-11.png",
-      "sha256": "e3483e5e8660c8aa0099bf972b9eb1f73feaed295d6f1108fdd6fde09d654093"
+      "sha256": "9b51b7cccd733401f19ca5fad91765e7e5020537699b5e6b18175fc2c502bf71"
     },
     {
       "document": "supplementary",
@@ -167,24 +167,24 @@
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-14.png",
-      "sha256": "7e62f4b280d80a6f505dbde14b58f958b8ba7643ec1aa7a7e62259e9468334e6"
+      "sha256": "5d04606f38aa6e5203a23f6c8adae2ecb5c17ebe49ce7089651662299a02052e"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-15.png",
-      "sha256": "ecce9b2e0e0dd744d266311847636e09d483e189f50a407173f1c55167791585"
+      "sha256": "10863405c55eac71a5b526423c6c94f1ec2b932aecd56fec317dcfde26f90e66"
     },
     {
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-16.png",
-      "sha256": "f6efc830175ad427449ec3e2006017c650d17dd5ae62ceeb13bb79a0f9ad442f"
+      "sha256": "f2d6c3f56cf2d47035fc823225217daff552cc82c683d6c72a3a1f673583c87d"
     }
   ],
   "pdf_sha256": {
-    "manuscript": "c2b95fbc2690bf38ef3039b38e2f955c8488a8636a913558aed89d6f0df594e2",
-    "supplementary": "d095bdabaa2888645acac094f9f10e20619c47b53a956afdbce2b919ca735a3a"
+    "manuscript": "1ddd9251f118db11a6e1f012f1a62f8c7efb4d806adb0e6c89d3e614373263d5",
+    "supplementary": "11bcf8dfdc4b41424e1a29be5aef00a612fd98d11c3f7b9331bee45ab4b1831d"
   },
   "status": "pass",
   "validation_version": "pdf-visual-inspection-v10"

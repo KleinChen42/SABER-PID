@@ -38,5 +38,8 @@ authors:
   - family-names: "Zhang"
     given-names: "Haiyou"
     email: "haiyou.zhang@kiwiar.com"
-version: "saber-pid-rineng-submission-v9"
-date-released: 2026-08-12
+version: "saber-pid-rineng-submission-v10"
+date-released: 2026-08-13
+license: MIT
+repository-code: "https://github.com/KleinChen42/SABER-PID"
+url: "https://github.com/KleinChen42/SABER-PID"

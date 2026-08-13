@@ -11,7 +11,7 @@
 \usepackage{enumitem}
 \usepackage{amsmath}
 \usepackage{hyperref}
-\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,pdftitle={SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision-Language Models for P\&ID Tag Retrieval}}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,pdftitle={SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision-Language Models for P\&ID Tag Retrieval},pdfauthor={Zhuo Chen, Shuhao Liu, Zhi Ling, Yu Yan, Qiuxue Wu, Ziyi Kuang, Zihan Zhao, Caixin Tan, Haiyou Zhang},pdfkeywords={P\&ID; engineering document intelligence; vision-language model; tag retrieval; counterfactual evaluation; cost-sensitive decision}}
 \graphicspath{{figures/}}
 \setlength{\emergencystretch}{3em}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
@@ -19,19 +19,22 @@
 
 \title{SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision--Language Models for P\&ID Tag Retrieval}
 \author{%
-Zhuo Chen\textsuperscript{1,2,*}, Shuhao Liu\textsuperscript{1},
-Zhi Ling\textsuperscript{3}, Yu Yan\textsuperscript{3},
-Qiuxue Wu\textsuperscript{1}, Ziyi Kuang\textsuperscript{3},\\
-Zihan Zhao\textsuperscript{4}, Caixin Tan\textsuperscript{5},
-Haiyou Zhang\textsuperscript{3}\\[0.45em]
-\small \textsuperscript{1}Harbin University of Science and Technology,\\
+Zhuo Chen\textsuperscript{b,*}, Shuhao Liu\textsuperscript{a},
+Zhi Ling\textsuperscript{c}, Yu Yan\textsuperscript{c},
+Qiuxue Wu\textsuperscript{a}, Ziyi Kuang\textsuperscript{c},\\
+Zihan Zhao\textsuperscript{d}, Caixin Tan\textsuperscript{e},
+Haiyou Zhang\textsuperscript{c}\\[0.45em]
+\small \textsuperscript{a}Harbin University of Science and Technology,\\
 \small No. 52 Xuefu Road, Nangang District, Harbin 150080,
 Heilongjiang, China\\
-\small \textsuperscript{2}Chalmers University of Technology,
+\small \textsuperscript{b}Chalmers University of Technology,
 SE-412 96 Gothenburg, Sweden\\
-\small \textsuperscript{3}Kiwiar Co., Ltd., Singapore\\
-\small \textsuperscript{4}Nanjing Agricultural University, Nanjing, China\\
-\small \textsuperscript{5}Hunan University, Changsha, China\\[0.35em]
+\small \textsuperscript{c}Kiwiar Co., Ltd., 2 Jalan Mat Jambol,
+\#05-30, Singapore 119554, Singapore\\
+\small \textsuperscript{d}Nanjing Agricultural University, No. 1 Weigang,
+Xuanwu District, Nanjing 210095, Jiangsu, China\\
+\small \textsuperscript{e}Hunan University, Lushan South Road, Yuelu District,
+Changsha 410082, Hunan, China\\[0.35em]
 \small \textsuperscript{*}Corresponding author:
 \href{mailto:zhuoc@chalmers.se}{zhuoc@chalmers.se};
 ORCID: \href{https://orcid.org/0009-0007-7510-8648}{0009-0007-7510-8648}%
@@ -54,7 +57,7 @@ At a common output cap, increasing the visual-input budget produced a +0.5250
 F1 effect (95\% source-bootstrap interval [0.4224, 0.6293]). Across 230
 source-disjoint drawings, clean, JPEG, mild-blur, and downsample-and-restore
 conditions retained correct-minus-shuffled effects of 0.548--0.575. A
-closest-safe 54-tile InternVL3.5-8B configuration independently retained a
+closest-safe 54-tile InternVL3.5-8B configuration retained a second-model-family
 +0.4715 requested-drawing effect ([0.4064, 0.5332]). On 35 images from 26
 public DEXPI test cases, Qwen reached F1 0.9057, while both cross-case shuffled
 and no-image controls scored zero. OCR and VLM errors were complementary:
@@ -114,7 +117,7 @@ Figure~\ref{fig:overview} gives its five-stage path. The contributions are:
 \begin{enumerate}[leftmargin=1.5em,itemsep=2pt]
 \item a source-level qualification contract that intervenes on requested,
 source-shuffled, and absent images while keeping references outside inference;
-\item matched-budget, mild-quality, cross-model, and second-family transfer
+\item matched-output-cap, mild-quality, cross-model, and second-family transfer
 tests with source- or logical-case-cluster uncertainty;
 \item a deterministic family of OCR--VLM set and fallback modes with candidate
 workload, precision--recall, and bootstrap stability reporting; and
@@ -133,7 +136,7 @@ deployment.
 \centering
 \includegraphics[width=\linewidth]{figure_1_saber_pid_overview_v10.pdf}
 \caption{SABER-PID qualification-to-operation workflow. The upper backbone
-follows drawing-level isolation, visual-evidence intervention, budget-matched
+follows drawing-level isolation, visual-evidence intervention, budget-declared
 inference, transfer measurement, and deterministic OCR--VLM operation. The
 lower rails summarize retained transfer evidence and map the cost ratio
 $r=C_{FN}/C_{FP}$ to the minimum-loss operating mode. All values are
@@ -213,8 +216,8 @@ answer-bearing field.
 
 The primary instrument is Qwen3-VL-8B-Instruct with a pre-specified prompt and
 greedy decoding \cite{bai2025}. It receives a maximum image side of 768 or
-3072 and an independently labelled output cap of 192 or 512 tokens. The
-matched-budget contrast fixes the output cap at 512. Source-shuffled images
+3072 and a separately declared output cap of 192 or 512 tokens. The
+matched-output-cap contrast fixes the output cap at 512. Source-shuffled images
 use a deterministic Sattolo derangement across the 100 drawings, with no fixed
 point. The no-image condition preserves model, prompt, question, decoder, and
 output cap while removing image content.
@@ -328,7 +331,7 @@ internal mechanism. Aggregate QA accuracy is likewise retained as a boundary:
 correct-image accuracy (0.2875) does not exceed no-image accuracy (0.3025), so
 the qualified claim is candidate-tag retrieval rather than general P\&ID QA.
 
-\subsection{Quality robustness and matched-budget model transfer}
+\subsection{Quality robustness and closest-safe gross-budget model transfer}
 
 Across 230 pairwise source-disjoint drawings, correct-image strict tag F1 is
 0.5693 on clean images, 0.5836 after JPEG quality 70, 0.5879 after Gaussian
@@ -550,14 +553,17 @@ engineering documents.
 
 \section*{Data and code availability}
 
-The submission package contains an independently reproducible archive with
+The public repository contains a locally deterministic reproducibility archive with
 answer-isolated public manifests, scorer-only references, immutable raw
 generation JSONL, deterministic analysis and figure scripts, tests,
 environment records, and SHA-256 manifests. PIDQA/Dataset-PID source data are
 covered by the vendored CC0 record; complete image collections are acquired by
-reference, and model weights are not redistributed. Before submission, the
-authors will deposit the release archive and replace
-\texttt{[SUBMITTER: ARCHIVE DOI/URL]} with its persistent URL or DOI.
+reference, and model weights are not redistributed. Original project code is
+released under the MIT License. Source, manifests, validation scripts, and the
+versioned release are available at
+\url{https://github.com/KleinChen42/SABER-PID}. An archival DOI can be added
+to the journal metadata and accepted manuscript after it is minted from the
+public release.
 
 \section*{Declaration of competing interest}
 The authors declare that they have no known competing financial interests or
@@ -565,7 +571,7 @@ personal relationships that could have appeared to influence the work reported
 in this paper.
 
 \section*{Funding}
-This research received no specific grant from funding agencies in the public,
+This research did not receive any specific grant from funding agencies in the public,
 commercial, or not-for-profit sectors.
 
 \section*{CRediT authorship contribution statement}
@@ -583,14 +589,15 @@ Investigation, Formal analysis, Validation, Writing -- review \& editing.
 \& editing. \textbf{Haiyou Zhang:} Resources, Supervision, Project
 administration, Writing -- review \& editing.
 
-\section*{Use of generative AI and AI-assisted technologies}
-During the preparation of this work, the authors used AI-assisted tools to
-support analysis-code development, deterministic validation, figure rendering,
-and language editing, including grammar and spelling checks. All numerical
-results were derived from machine-readable artifacts, and the figures were
-rendered by deterministic plotting code rather than a generative image model.
-The authors reviewed and edited all outputs and take full responsibility for
-the content of the publication.
+\section*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
+During the preparation of this work, the authors used OpenAI Codex and ChatGPT
+Pro to assist with analysis-code development, deterministic validation, figure
+rendering, manuscript organization, and language editing, including grammar and
+spelling checks. All numerical results were derived from machine-readable
+artifacts, and the figures were rendered by deterministic plotting code rather
+than a generative image model. After using these tools, the authors reviewed and
+edited the content as needed and take full responsibility for the content of
+the publication.
 
 \begin{thebibliography}{99}
 \raggedright

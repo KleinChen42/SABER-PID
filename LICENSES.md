@@ -13,8 +13,8 @@ license text and model-card terms must be rechecked at submission/release time.
 | PaddleOCR comparator | `reports/generated/paddleocr_environment_v1.txt`, `outputs/editorial_revision/paddleocr_value_baseline_v1/` | PaddleOCR 2.8.1 and PaddlePaddle 2.6.2 were frozen for the full-image comparator; downloaded inference weights are not stored here | Release package versions, pipeline settings and frozen OCR outputs; do not vendor downloaded weights |
 | DEXPI Public Example PIDs | `licenses/DEXPI_TRAINING_TEST_CASES_LICENSE.txt`, `data/manifests/rineng_v8_dexpi_external_plan.json`, `reports/generated/rineng_v8_dexpi_external_audit.json` | Official repository commit `a23d61e2e089eb2ca464cd552f9ae580a2785963`; CC BY 4.0 license SHA-256 `7e7170e3...1c8a2661` | Release frozen acquisition/selection provenance, derived manifests, scorer-only references, outputs, and attribution; keep the upstream collection acquisition-by-reference unless the final archive explicitly includes the selected licensed assets |
 | PID2Graph/OPEN100 | `reports/generated/pid2graph_open100_complete_materialized_v8.json`, `reports/generated/rineng_v8_pid2graph_open100_audit.json` | Official Zenodo record declares CC BY-SA 4.0, 9,303,633,645 bytes, and MD5 `90f782220de97e7e249d2595c49ddc1c`; 24 members for 12 complete plans were sparsely materialized and SHA-256 inventoried | Do not redistribute the upstream archive in the core package; release the transport catalogue and automated task-fit audit. Do not report a tag score because the GraphML has no explicit visible-text/tag reference field |
-| Project source code | `pyproject.toml`, `src/`, `scripts/` | No root `LICENSE` file detected in this package | Add a project code license decision before public release; until then release only through the authorized repository |
-| Python runtime dependencies | `pyproject.toml` | Declared dependency list is empty; runtime tools are environment-provided | Record exact environment/package versions in the final release manifest; do not claim a fully self-contained install |
+| Project source code | `LICENSE`, `pyproject.toml`, `src/`, `scripts/` | Original SABER-PID project code is released under the MIT License | Preserve the root MIT license in source and release archives; third-party data, assets, and model outputs remain governed by their own terms |
+| Python runtime dependencies | `pyproject.toml`, `requirements-analysis-v6.txt` | Python >=3.10; V10 analysis dependencies and the test extra are pinned to the recorded Python 3.10.12 environment | Install the declared project dependencies; PDF compilation additionally requires the external Tectonic executable |
 | Generated tables/figures/manifests | `reports/generated/` | Derived from the source-isolated PIDQA run and model outputs | Release with provenance, hashes and the applicable dataset/model restrictions |
 
 ## Automated findings
@@ -29,3 +29,6 @@ license text and model-card terms must be rechecked at submission/release time.
 - The safest release bundle is source code, deterministic scripts, manifests,
   split IDs, hashes, tables and figures; large/raw/model artifacts remain
   acquisition-by-reference unless their terms are rechecked.
+- The root MIT License covers original SABER-PID software only. It does not
+  relicense PIDQA, DEXPI, model weights, OCR/model outputs, or other third-party
+  material; their recorded upstream terms continue to apply.

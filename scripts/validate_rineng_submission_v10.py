@@ -56,6 +56,8 @@ def configure() -> None:
         "paper/title_page.md",
         "paper/data_availability.md",
         "paper/declarations.md",
+        "paper/Declaration_of_Interests.docx",
+        "LICENSE",
         "paper/figure_manifest.md",
         "paper/figure_captions.md",
         "paper/figures/figure_metadata_v10.json",
@@ -109,6 +111,8 @@ def validate_administrative_metadata(root: Path, report: dict[str, object]) -> N
     manuscript = (root / "paper/manuscript.tex").read_text(encoding="utf-8")
     title_page = (root / "paper/title_page.md").read_text(encoding="utf-8")
     declarations = (root / "paper/declarations.md").read_text(encoding="utf-8")
+    supplementary = (root / "paper/supplementary.tex").read_text(encoding="utf-8")
+    data_availability = (root / "paper/data_availability.md").read_text(encoding="utf-8")
     cff = (root / "CITATION.cff").read_text(encoding="utf-8")
     combined = "\n".join((manuscript, title_page, declarations, cff))
 
@@ -125,10 +129,44 @@ def validate_administrative_metadata(root: Path, report: dict[str, object]) -> N
     if "no known competing financial interests" not in declarations:
         failures.append("competing_interest_declaration_missing")
     if "received no specific grant" not in declarations:
-        failures.append("funding_declaration_missing")
+        if "did not receive any specific grant" not in declarations:
+            failures.append("funding_declaration_missing")
+    if "Zhuo Chen\\textsuperscript{b,*}" not in manuscript:
+        failures.append("zhuo_affiliation_mapping_incorrect")
+    if "Zhuo Chen\\textsuperscript{b,*}" not in supplementary:
+        failures.append("supplementary_author_metadata_missing")
+    for address in (
+        "2 Jalan Mat Jambol",
+        "No. 1 Weigang",
+        "Lushan South Road",
+    ):
+        if address not in manuscript or address not in supplementary:
+            failures.append("full_postal_address_missing")
+            break
+    if "https://github.com/KleinChen42/SABER-PID" not in (
+        manuscript + data_availability + cff
+    ):
+        failures.append("public_repository_url_missing")
+    if not (root / "LICENSE").is_file() or "MIT License" not in (
+        root / "LICENSE"
+    ).read_text(encoding="utf-8"):
+        failures.append("project_code_license_missing")
+    normalized_manuscript = re.sub(r"\s+", " ", manuscript)
+    if "OpenAI Codex" not in normalized_manuscript or "ChatGPT Pro" not in normalized_manuscript:
+        failures.append("ai_tool_identification_missing")
+    placeholder_files = (
+        root / "paper/manuscript.tex",
+        root / "paper/supplementary.tex",
+        root / "paper/title_page.md",
+        root / "paper/data_availability.md",
+        root / "paper/declarations.md",
+        root / "paper/cover_letter.md",
+    )
+    if any("[SUBMITTER:" in path.read_text(encoding="utf-8") for path in placeholder_files):
+        failures.append("administrative_placeholder_remaining")
     credit_section = re.search(
         r"\\section\*\{CRediT authorship contribution statement\}(.*?)"
-        r"\\section\*\{Use of generative AI",
+        r"\\section\*\{Declaration of generative AI",
         manuscript,
         flags=re.S,
     )

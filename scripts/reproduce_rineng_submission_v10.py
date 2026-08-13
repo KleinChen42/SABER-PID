@@ -100,6 +100,18 @@ def main() -> int:
                 ],
             )
         )
+        steps.append(
+            (
+                "pdf_visual_inspection_record_v10",
+                [
+                    python,
+                    "scripts/record_pdf_visual_inspection_v10.py",
+                    "--root",
+                    str(root),
+                    "--confirm-all-pages-inspected",
+                ],
+            )
+        )
 
     if not args.skip_submission_validation:
         steps.append(

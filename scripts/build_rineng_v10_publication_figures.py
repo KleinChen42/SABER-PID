@@ -254,7 +254,7 @@ def build_overview(
     # compact architecture figures common in ACL/ICLR/CVPR papers: a strong
     # left-to-right backbone, restrained section bands, small functional
     # modules, and secondary evidence carried on a subordinate rail.
-    fig = plt.figure(figsize=(WIDTH, 3.18))
+    fig = plt.figure(figsize=(WIDTH, 3.62))
     ax = fig.add_axes([0.018, 0.018, 0.968, 0.958])
     ax.set_axis_off()
     ax.set_xlim(0, 1)
@@ -277,7 +277,7 @@ def build_overview(
             label,
             ha="center",
             va="center",
-            fontsize=6.6,
+            fontsize=7.0,
             fontweight="bold",
             color=color,
             zorder=2,
@@ -379,8 +379,8 @@ def build_overview(
         fontweight="bold",
         color=COLORS["blue"],
     )
-    ax.text(0.076, 0.637, "unseen drawing", ha="center", va="center", fontsize=6.7)
-    ax.text(0.076, 0.607, "answers withheld", ha="center", va="center", fontsize=6.3, color=COLORS["gray"])
+    ax.text(0.076, 0.637, "unseen drawing", ha="center", va="center", fontsize=7.0)
+    ax.text(0.076, 0.607, "answers withheld", ha="center", va="center", fontsize=7.0, color=COLORS["gray"])
 
     # 2 | requested, source-shuffled, and absent-image interventions.
     intervention_rows = [
@@ -399,9 +399,9 @@ def build_overview(
                 linewidth=0.65,
             )
         )
-        ax.text(0.260, y, label, ha="center", va="center", fontsize=6.5, color=COLORS["black"])
+        ax.text(0.260, y, label, ha="center", va="center", fontsize=7.0, color=COLORS["black"])
 
-    # 3 | frozen inference at an explicitly matched visual/output budget.
+    # 3 | frozen inference at explicitly declared visual and output budgets.
     ax.add_patch(
         FancyBboxPatch(
             (0.408, 0.684),
@@ -414,25 +414,25 @@ def build_overview(
         )
     )
     ax.text(0.4475, 0.718, "VLM", ha="center", va="center", fontsize=8.0, fontweight="bold", color=COLORS["blue"])
-    ax.text(0.4475, 0.658, "frozen prompt", ha="center", va="center", fontsize=6.6)
+    ax.text(0.4475, 0.658, "frozen prompt", ha="center", va="center", fontsize=7.0)
     ax.text(
         0.4475,
         0.610,
-        "matched visual + output\nbudgets",
+        "declared visual + output\nbudgets",
         ha="center",
         va="center",
         multialignment="center",
         linespacing=0.95,
-        fontsize=5.9,
+        fontsize=7.0,
         color=COLORS["gray"],
     )
 
     # 4 | task-resolved scoring with source/logical-case uncertainty.
     ax.text(0.6155, 0.742, r"task / tag  $F_1$", ha="center", va="center", fontsize=7.2, fontweight="bold")
     ax.plot([0.568, 0.663], [0.710, 0.710], color=COLORS["light_gray"], linewidth=0.75)
-    ax.text(0.6155, 0.680, "TP / FP / FN", ha="center", va="center", fontsize=6.6)
-    ax.text(0.6155, 0.642, "source- or case-cluster", ha="center", va="center", fontsize=6.0, color=COLORS["gray"])
-    ax.text(0.6155, 0.611, "paired bootstrap", ha="center", va="center", fontsize=6.0, color=COLORS["gray"])
+    ax.text(0.6155, 0.680, "TP / FP / FN", ha="center", va="center", fontsize=7.0)
+    ax.text(0.6155, 0.642, "source / case clusters", ha="center", va="center", fontsize=7.0, color=COLORS["gray"])
+    ax.text(0.6155, 0.607, "paired bootstrap", ha="center", va="center", fontsize=7.0, color=COLORS["gray"])
 
     # 5 | deterministic OCR--VLM rule bank and explicit minimum-loss selector.
     for y, fill, color, label in (
@@ -449,7 +449,7 @@ def build_overview(
                 linewidth=0.7,
             )
         )
-        ax.text(0.7605, y, label, ha="center", va="center", fontsize=6.5, fontweight="bold")
+        ax.text(0.7605, y, label, ha="center", va="center", fontsize=7.0, fontweight="bold")
     flow_arrow(0.792, 0.814, color=COLORS["green"])
     ax.add_patch(
         Rectangle(
@@ -462,7 +462,7 @@ def build_overview(
         )
     )
     ax.text(0.850, 0.725, r"$\cup\quad\cap$", ha="center", va="center", fontsize=8.5, color=COLORS["green"])
-    ax.text(0.850, 0.677, "fallback", ha="center", va="center", fontsize=5.9, color=COLORS["gray"])
+    ax.text(0.850, 0.677, "fallback", ha="center", va="center", fontsize=7.0, color=COLORS["gray"])
     flow_arrow(0.889, 0.911, color=COLORS["green"])
     ax.add_patch(
         Rectangle(
@@ -475,8 +475,8 @@ def build_overview(
         )
     )
     ax.text(0.942, 0.722, r"$\min_m L_m$", ha="center", va="center", fontsize=7.1, fontweight="bold", color=COLORS["green"])
-    ax.text(0.942, 0.676, "mode", ha="center", va="center", fontsize=6.1)
-    ax.text(0.852, 0.611, r"$L_m=C_{FN}FN_m+C_{FP}FP_m$", ha="center", va="center", fontsize=6.3, color=COLORS["gray"])
+    ax.text(0.942, 0.676, "mode", ha="center", va="center", fontsize=7.0)
+    ax.text(0.852, 0.611, r"$L_m=C_{FN}FN_m+C_{FP}FP_m$", ha="center", va="center", fontsize=7.0, color=COLORS["gray"])
 
     # A subordinate rail carries the transfer evidence without interrupting the
     # method backbone.  This replaces the former four-card dashboard.
@@ -497,7 +497,7 @@ def build_overview(
         "QUALIFIED TRANSFER EVIDENCE",
         ha="left",
         va="center",
-        fontsize=6.6,
+        fontsize=7.0,
         fontweight="bold",
         color=COLORS["blue"],
     )
@@ -514,7 +514,7 @@ def build_overview(
         (
             "InternVL",
             rf"$\Delta F_1=+{internvl['correct_minus_shuffled']['value_f1_difference']:.3f}$",
-            "budget-matched",
+            "closest-safe gross budget",
             "54 x 448 tiles",
             COLORS["green"],
         ),
@@ -529,11 +529,11 @@ def build_overview(
     evidence_x = [0.075, 0.250, 0.425, 0.600]
     ax.plot([evidence_x[0], evidence_x[-1]], [0.302, 0.302], color=COLORS["light_gray"], linewidth=1.0, zorder=0)
     for x, (heading, value, measure, scope, color) in zip(evidence_x, evidence):
-        ax.text(x, 0.427, heading, ha="center", va="center", fontsize=6.8, fontweight="bold")
+        ax.text(x, 0.427, heading, ha="center", va="center", fontsize=7.0, fontweight="bold")
         ax.text(x, 0.366, value, ha="center", va="center", fontsize=7.2, fontweight="bold", color=COLORS["black"])
         ax.scatter([x], [0.302], s=30, facecolor="white", edgecolor=color, linewidth=1.4, zorder=2)
-        ax.text(x, 0.238, measure, ha="center", va="center", fontsize=5.9, color=COLORS["gray"])
-        ax.text(x, 0.183, scope, ha="center", va="center", fontsize=5.9, color=COLORS["gray"])
+        ax.text(x, 0.238, measure, ha="center", va="center", fontsize=7.0, color=COLORS["gray"])
+        ax.text(x, 0.183, scope, ha="center", va="center", fontsize=7.0, color=COLORS["gray"])
 
     # The operating rule is rendered as a compact lookup table rather than a
     # row of oversized cards.  Fixed counts enter the selector; only r changes.
@@ -543,7 +543,7 @@ def build_overview(
         r"SELECTED MODE BY $r=C_{FN}/C_{FP}$",
         ha="left",
         va="center",
-        fontsize=6.6,
+        fontsize=7.0,
         fontweight="bold",
         color=COLORS["green"],
     )
@@ -563,9 +563,9 @@ def build_overview(
             ratio = rf"${lower:.3f} \leq r < {float(upper):.3f}$"
         ax.add_patch(Rectangle((0.716, y - 0.030), 0.272, 0.060, facecolor=fill, edgecolor="none"))
         ax.add_patch(Rectangle((0.716, y - 0.030), 0.006, 0.060, facecolor=color, edgecolor="none"))
-        ax.text(0.736, y, ratio, ha="left", va="center", fontsize=6.0, color=COLORS["gray"])
-        ax.text(0.866, y, row["recommended_mode"], ha="left", va="center", fontsize=6.4, fontweight="bold")
-    ax.text(0.988, 0.106, "Fixed TP / FP / FN; only the loss ratio changes.", ha="right", va="center", fontsize=5.8, color=COLORS["gray"])
+        ax.text(0.736, y, ratio, ha="left", va="center", fontsize=7.0, color=COLORS["gray"])
+        ax.text(0.866, y, row["recommended_mode"], ha="left", va="center", fontsize=7.0, fontweight="bold")
+    ax.text(0.988, 0.106, "Fixed TP / FP / FN; only the loss ratio changes.", ha="right", va="center", fontsize=7.0, color=COLORS["gray"])
     return save_figure(fig, root, "figure_1_saber_pid_overview_v10", audits)
 
 

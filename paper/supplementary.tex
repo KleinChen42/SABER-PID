@@ -11,13 +11,31 @@
 \usepackage{amsmath}
 \usepackage{hyperref}
 \graphicspath{{figures/}}
-\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,pdftitle={Supplementary material: SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision-Language Models for P\&ID Tag Retrieval}}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,pdftitle={Supplementary material: SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision-Language Models for P\&ID Tag Retrieval},pdfauthor={Zhuo Chen, Shuhao Liu, Zhi Ling, Yu Yan, Qiuxue Wu, Ziyi Kuang, Zihan Zhao, Caixin Tan, Haiyou Zhang},pdfkeywords={P\&ID; engineering document intelligence; vision-language model; tag retrieval; supplementary material}}
 \setlength{\emergencystretch}{3em}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 \title{Supplementary material: SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision--Language Models for P\&ID Tag Retrieval}
-\author{Author names and affiliations to be supplied at submission}
+\author{%
+Zhuo Chen\textsuperscript{b,*}, Shuhao Liu\textsuperscript{a},
+Zhi Ling\textsuperscript{c}, Yu Yan\textsuperscript{c},
+Qiuxue Wu\textsuperscript{a}, Ziyi Kuang\textsuperscript{c},\\
+Zihan Zhao\textsuperscript{d}, Caixin Tan\textsuperscript{e},
+Haiyou Zhang\textsuperscript{c}\\[0.4em]
+\footnotesize \textsuperscript{a}Harbin University of Science and Technology, No. 52 Xuefu Road,\\
+Nangang District, Harbin 150080, Heilongjiang, China\\
+\footnotesize \textsuperscript{b}Chalmers University of Technology,
+SE-412 96 Gothenburg, Sweden\\
+\footnotesize \textsuperscript{c}Kiwiar Co., Ltd., 2 Jalan Mat Jambol,
+\#05-30, Singapore 119554, Singapore\\
+\footnotesize \textsuperscript{d}Nanjing Agricultural University, No. 1 Weigang, Xuanwu District,\\
+Nanjing 210095, Jiangsu, China\\
+\footnotesize \textsuperscript{e}Hunan University, Lushan South Road, Yuelu District,
+Changsha 410082, Hunan, China\\[0.25em]
+\footnotesize \textsuperscript{*}Corresponding author:
+\href{mailto:zhuoc@chalmers.se}{zhuoc@chalmers.se}%
+}
 \date{}
 
 \begin{document}
@@ -30,7 +48,7 @@
 The manuscript evaluates a bounded engineering decision: whether a specified
 model and visual-input budget support candidate-tag retrieval on unseen source
 drawings. It does not propose a new recognition architecture or claim complete
-P\&ID digitization. Table~S1 distinguishes the contribution from adjacent
+P\&ID digitization. Table~\ref{tab:s1_position} distinguishes the contribution from adjacent
 work using only dimensions relevant to that decision.
 
 \begin{table}[H]
@@ -56,7 +74,7 @@ This study & Source-isolated PIDQA and public DEXPI drawings & Candidate value-t
 \end{tabularx}
 \end{table}
 
-Table~S2 records the role of every evidence phase. This prevents a robustness
+Table~\ref{tab:s1_phases} records the role of every evidence phase. This prevents a robustness
 or descriptive analysis from being relabelled as independent confirmation and
 also makes clear that no low-scoring cell has been removed from the evidence
 archive.
@@ -152,6 +170,7 @@ released-template semantic signature and a training-only task-majority
 fallback. It uses no learned embedding, nearest-neighbour search, or
 \texttt{source\_id} cache key. Each split has 38,400 training and 12,800 test
 questions; the 20\% calibration partition is unused.
+Table~\ref{tab:s4_split} reports all five pre-specified split diagnostics.
 
 \begin{table}[H]
 \centering
@@ -180,6 +199,9 @@ reported to show why aggregate benchmark accuracy does not qualify image-
 grounded retrieval.
 
 \section*{S5. Qwen counterfactual and budget controls}
+
+Tables~\ref{tab:s5_controls} and \ref{tab:s5_budget} report the paired value-tag
+effects and recorded operating quantities, respectively.
 
 \begin{table}[H]
 \centering
@@ -225,6 +247,9 @@ more often. End-to-end latency is therefore not interpreted as isolated
 visual-encoder cost. Legacy 192-token Qwen rows lack processor-element and
 peak-allocation telemetry; these values are not back-filled.
 
+Figures~\ref{fig:s1_controls} and \ref{fig:s5_qualification_effects} retain the
+complete structural boundary, budget telemetry, and primary paired effects.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{figure_s1_boundary_controls_v10.pdf}
@@ -255,6 +280,7 @@ alphabetic prefix to the nearest vertically stacked numeric fragment within
 frozen distance limits. Fully formed tags with final numeric segments longer
 than two characters are never extended. Coordinates and grammar are used;
 references are not.
+Table~\ref{tab:s6_ocr} isolates the contribution of the frozen geometry join.
 
 \begin{table}[H]
 \centering
@@ -283,6 +309,9 @@ grammar.
 All rules use the fixed Qwen and geometry-joined OCR predicted sets only. No
 reference, fitted confidence threshold, or rule re-selection enters a fused
 prediction.
+
+Tables~\ref{tab:s7_all}, \ref{tab:s7_workload}, and \ref{tab:s7_diffs} report
+the complete mode family, per-drawing workload, and selected paired contrasts.
 
 \begin{table}[H]
 \centering
@@ -356,6 +385,9 @@ With $C_{FP}=1$ and $r=C_{FN}/C_{FP}$, loss is $L=rFN+FP$. The following
 point-estimate intervals are the exact lower envelope of the Set B count
 vectors. Adjacent methods tie at each finite boundary.
 
+Tables~\ref{tab:s7_cost_rule} and \ref{tab:s7_cost_switches} give the exact
+point rule and descriptive bootstrap uncertainty of its adjacent switches.
+
 \begin{table}[H]
 \centering
 \caption{Exact Set B cost-sensitive decision rule.}
@@ -395,6 +427,9 @@ sample-derived operating rule, not elicited real-world costs. The complete
 321-point loss and probability grid is distributed in
 \texttt{reports/generated/rineng\_cost\_sensitive\_operating\_modes\_v8.csv}.
 
+Figure~\ref{fig:s7_operating_modes} visualizes the complete operating family
+and the overlap-audited stability analysis.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{figure_s3_operating_modes_v10.pdf}
@@ -411,6 +446,9 @@ share 20 sources; two sources occur in all three sets. Set B exclusion leaves
 83 sources in each check, with 18 sources still common to the two checks. A
 second exclusion creates two 65-source subsets that share no source with Set B
 or with one another.
+
+Tables~\ref{tab:s8_micro} and \ref{tab:s8_macro} report pooled and source-macro
+sensitivity after the two overlap exclusions.
 
 \begin{table}[H]
 \centering
@@ -461,6 +499,9 @@ OCR, 86 by Qwen only, 53 by OCR only, and 103 by neither. Among false
 candidates in the union, one is produced by both instruments, 151 by Qwen
 only, and 28 by OCR only. At drawing level, Qwen contributes at least one
 unique true tag on 43 sources, OCR on 17, both on seven, and neither on 33.
+
+Table~\ref{tab:s9_patterns} summarizes mutually exclusive drawing-level outcome
+patterns before the deterministic boundary cases in Table~\ref{tab:s9_cases}.
 
 \begin{table}[H]
 \centering
@@ -526,6 +567,9 @@ Qwen grounding control. Correct and source-shuffled image conditions each
 realise seven tiles (4,214,784 tensor elements); no-image passes no pixel
 tensor. All use a 512-token cap.
 
+Table~\ref{tab:s10_boundary} reports this native-budget model-family boundary
+alongside the frozen OCR comparator.
+
 \begin{table}[H]
 \centering
 \caption{Corrected cross-model boundary and frozen OCR comparator.}
@@ -566,6 +610,8 @@ ranges of 0.5253--0.6587 and 0.5697--0.7361; InternVL3.5-8B remains at
 requested-drawing direction is repeatable within PIDQA, while magnitude at
 that stage remains visual-budget and model-family dependent. Section S13
 reports the subsequent closest-safe 54-tile qualification.
+
+Figure~\ref{fig:s10_native_matrix} retains every frozen native-budget contrast.
 
 \input{tables/table_rineng_overnight_v7_counterfactual.tex}
 
@@ -618,8 +664,8 @@ the manuscript and supplement PDFs, renders every page, and validates the
 current submission. It performs no model inference and no result-guided source
 selection.
 
-The recovered V7 matrix is independently reproduced without new inference by
-running
+The recovered V7 matrix is deterministically recomputed from frozen outputs,
+without new inference, by running
 \begin{quote}\ttfamily
 python scripts/reproduce\_rineng\_overnight\_v7.py --root .
 \end{quote}
@@ -651,12 +697,14 @@ top-level SHA-256 inventory. GPU inference used NVIDIA H200 devices; model
 weights are not redistributed.
 
 The public release excludes author-side editorial prompts, model-review text,
-private working notes, and submitter identity fields because none is required
-to reproduce a result. Scorer-only references are included with explicit
-separation from model-facing manifests. The public DOI/URL and final
-repository-license choice remain submitter-owned administrative fields; author
-identities, affiliations, CRediT roles, funding, and competing-interest
-statements are supplied in the manuscript package.
+and private working notes because none is required to reproduce a result.
+Scorer-only references are included with explicit separation from model-facing
+manifests. Original SABER-PID code is released under the MIT License, while
+third-party material retains its stated terms. Source, manifests, validation
+scripts, and the versioned release are available at
+\url{https://github.com/KleinChen42/SABER-PID}; author identities,
+affiliations, CRediT roles, funding, and competing-interest statements are
+supplied in the manuscript package.
 
 \section*{S12. External-data provenance and task-fit boundary}
 
@@ -706,6 +754,8 @@ correct-minus-shuffled effects are +0.5578 ([0.4917, 0.6227]), +0.5722
 +0.0176 ([-0.0155, 0.0517]), and -0.0096 ([-0.0655, 0.0520]). These are
 paired source-bootstrap intervals with 10,000 replicates.
 
+Table~\ref{tab:v8qualitysubset} gives the corresponding subset-level results.
+
 \input{tables/table_rineng_v8_quality_by_subset.tex}
 
 The closest-safe InternVL extension contains nine complete cells and 2,760
@@ -722,6 +772,8 @@ correct-minus-no-image effect is +0.4846 [0.4198, 0.5463]. The paired 54-tile
 minus native-12 correct-image gain is +0.4681 [0.4043, 0.5290]. All three
 subset-specific correct-minus-control and 54-minus-native intervals have
 positive lower bounds.
+
+Table~\ref{tab:v8internvl} gives every subset-specific 54-tile result.
 
 \input{tables/table_rineng_v8_internvl_budget54.tex}
 

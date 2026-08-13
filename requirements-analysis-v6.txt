@@ -1,5 +1,5 @@
-# Deterministic scorer, v6 analysis, figures, tests, and PDF validation.
-# These pins record the environment used for the final v6 rebuild.
+# Deterministic scorer, analysis, figures, tests, and PDF validation.
+# These pins match the public V10 reproduction environment (Python 3.10.12).
 numpy==2.2.3
 pillow==11.1.0
 matplotlib==3.10.0
