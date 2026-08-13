@@ -12,7 +12,7 @@ Three extensions strengthen the evidence without changing the task after results
 
 The contribution is an engineering qualification and decision workflow, not a new model architecture. It differs from recent P&ID graph-construction and graph-retrieval systems by asking whether raw-image tag output follows the requested drawing before it enters a higher-level engineering pipeline. All claims are regenerated from immutable outputs, 10,000-replicate clustered intervals, deterministic validation code, and a SHA-256-inventoried public release. The manuscript explicitly limits its claim to candidate-tag retrieval under the evaluated PIDQA and DEXPI conditions. This combination of reproducible engineering evidence, external-family transfer, robustness at a declared operating point, and cost-sensitive operating choices is closely aligned with *Results in Engineering*.
 
-The authors declare no competing interests and no specific funding for this work. The manuscript is original, has not been published previously, and is not under consideration by another journal. Zhuo Chen is the corresponding author. The versioned source and reproducibility release is available at https://github.com/KleinChen42/SABER-PID. An archival DOI can be added to the journal metadata and accepted manuscript after it is minted from the public release.
+The authors declare no competing interests and no specific funding for this work. The manuscript is original, has not been published previously, and is not under consideration by another journal. Zhuo Chen is the corresponding author. The versioned source and reproducibility release is available at https://github.com/KleinChen42/SABER-PID.
 
 Sincerely,
 

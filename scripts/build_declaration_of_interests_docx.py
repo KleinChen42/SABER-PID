@@ -1,9 +1,12 @@
-"""Build the submission-ready Declaration of Interests Word document."""
+"""Fetch and validate Elsevier's no-competing-interest Word declaration."""
 
 from __future__ import annotations
 
 import argparse
 from pathlib import Path
+import shutil
+import urllib.request
+import zipfile
 
 from docx import Document
 from docx.enum.section import WD_SECTION
@@ -21,6 +24,27 @@ AUTHORS = (
     "Zhuo Chen; Shuhao Liu; Zhi Ling; Yu Yan; Qiuxue Wu; Ziyi Kuang; "
     "Zihan Zhao; Caixin Tan; Haiyou Zhang"
 )
+ELSEVIER_NO_DECLARATION_URL = (
+    "https://declarations.elsevier.com/api/pub/declaration-questionnaire/"
+    "v1/declaration/nodec/download?type=DOCX"
+)
+
+
+def validate_official_template(path: Path) -> None:
+    with zipfile.ZipFile(path) as archive:
+        if archive.testzip() is not None:
+            raise RuntimeError("Elsevier declaration DOCX failed CRC validation")
+        archive.read("word/document.xml")
+    document = Document(path)
+    text = "".join(paragraph.text for paragraph in document.paragraphs)
+    if (
+        "Declaration of interests" not in text
+        or "\u2612 The authors declare that they have no known competing financial interests" not in text
+        or "\u2610 The authors declare the following financial interests" not in text
+    ):
+        raise RuntimeError("Unexpected Elsevier no-declaration template content")
+    if "signature" in text.lower():
+        raise RuntimeError("Elsevier no-declaration template unexpectedly requests a signature")
 
 
 def set_font(run, *, size: float, bold: bool = False, color: str = "000000") -> None:
@@ -88,7 +112,7 @@ def set_exact_paragraph_spacing(target, *, before: int, after: int, line: int) -
     spacing.set(qn("w:lineRule"), "auto")
 
 
-def build(output: Path) -> None:
+def build_fallback(output: Path) -> None:
     document = Document()
     section = document.sections[0]
     section.start_type = WD_SECTION.NEW_PAGE
@@ -153,13 +177,16 @@ def build(output: Path) -> None:
     heading = document.add_paragraph()
     heading.paragraph_format.space_before = Pt(18)
     heading.paragraph_format.space_after = Pt(8)
-    set_font(heading.add_run("Declaration"), size=16, bold=True, color="2E74B5")
+    set_font(heading.add_run("Please select the applicable statement"), size=16, bold=True, color="2E74B5")
     set_exact_paragraph_spacing(heading, before=320, after=160, line=264)
 
-    statement = document.add_paragraph()
-    statement.paragraph_format.space_after = Pt(10)
+    selected = document.add_paragraph()
+    selected.paragraph_format.left_indent = Inches(0.12)
+    selected.paragraph_format.first_line_indent = Inches(-0.12)
+    selected.paragraph_format.space_after = Pt(12)
+    set_font(selected.add_run("[X] "), size=12, bold=True, color="1F4D78")
     set_font(
-        statement.add_run(
+        selected.add_run(
             "The authors declare that they have no known competing financial "
             "interests or personal relationships that could have appeared to "
             "influence the work reported in this paper."
@@ -167,14 +194,17 @@ def build(output: Path) -> None:
         size=11,
     )
 
-    note = document.add_paragraph()
-    note.paragraph_format.space_after = Pt(6)
+    unselected = document.add_paragraph()
+    unselected.paragraph_format.left_indent = Inches(0.12)
+    unselected.paragraph_format.first_line_indent = Inches(-0.12)
+    unselected.paragraph_format.space_after = Pt(6)
+    set_font(unselected.add_run("[ ] "), size=12, bold=True, color="666666")
     set_font(
-        note.add_run(
-            "This declaration is submitted by Zhuo Chen, corresponding author, "
-            "on behalf of all listed authors."
+        unselected.add_run(
+            "The authors have financial or personal relationships that may be "
+            "considered potential competing interests and provide details below."
         ),
-        size=10.5,
+        size=11,
         color="555555",
     )
 
@@ -187,11 +217,39 @@ def build(output: Path) -> None:
     document.save(output)
 
 
+def build(output: Path, *, official_source: Path | None = None) -> None:
+    output.parent.mkdir(parents=True, exist_ok=True)
+    source = official_source
+    if source is None:
+        try:
+            request = urllib.request.Request(
+                ELSEVIER_NO_DECLARATION_URL,
+                headers={"User-Agent": "SABER-PID-submission/1.0"},
+            )
+            with urllib.request.urlopen(request, timeout=30) as response:
+                if response.status != 200:
+                    raise RuntimeError(f"Elsevier template HTTP status {response.status}")
+                output.write_bytes(response.read())
+            validate_official_template(output)
+            return
+        except Exception as error:
+            raise RuntimeError(
+                "Could not retrieve Elsevier's official no-declaration DOCX; "
+                "use --official-source with a previously downloaded copy"
+            ) from error
+    validate_official_template(source)
+    shutil.copyfile(source, output)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default="paper/Declaration_of_Interests.docx")
+    parser.add_argument("--official-source")
     args = parser.parse_args()
-    build(Path(args.output))
+    build(
+        Path(args.output),
+        official_source=Path(args.official_source) if args.official_source else None,
+    )
     print(args.output)
     return 0
 

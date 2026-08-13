@@ -1,10 +1,10 @@
 {
   "archive": "release/saber_pid_rineng_v10_public_release.zip",
-  "archive_bytes": 8702422,
-  "archive_sha256": "62a6fd2940ea918fef2be68422d1e6aebc9007fa997d23b69e8132843200b44f",
-  "artifact_count": 287,
+  "archive_bytes": 8831937,
+  "archive_sha256": "799e83a1b40bdec3a9a22123ae1b5a3570ef429de276e70fb669adb923461b9b",
+  "artifact_count": 292,
   "directory": "release/saber_pid_rineng_v10_public_release",
-  "member_count": 289,
+  "member_count": 294,
   "release_version": "saber-pid-rineng-v10",
   "status": "pass",
   "version": "rineng-public-release-v10"

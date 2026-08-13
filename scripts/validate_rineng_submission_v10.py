@@ -57,6 +57,10 @@ def configure() -> None:
         "paper/data_availability.md",
         "paper/declarations.md",
         "paper/Declaration_of_Interests.docx",
+        "paper/Highlights.docx",
+        "paper/Title_Page.docx",
+        "paper/CRediT_Authorship_Statement.docx",
+        "paper/Author_Information.docx",
         "LICENSE",
         "paper/figure_manifest.md",
         "paper/figure_captions.md",
@@ -131,10 +135,12 @@ def validate_administrative_metadata(root: Path, report: dict[str, object]) -> N
     if "received no specific grant" not in declarations:
         if "did not receive any specific grant" not in declarations:
             failures.append("funding_declaration_missing")
-    if "Zhuo Chen\\textsuperscript{b,*}" not in manuscript:
+    if "Zhuo Chen\\textsuperscript{a,*}" not in manuscript:
         failures.append("zhuo_affiliation_mapping_incorrect")
-    if "Zhuo Chen\\textsuperscript{b,*}" not in supplementary:
+    if "Zhuo Chen\\textsuperscript{a,*}" not in supplementary:
         failures.append("supplementary_author_metadata_missing")
+    if "Shuhao Liu\\textsuperscript{b}" not in manuscript or "Qiuxue Wu\\textsuperscript{b}" not in manuscript:
+        failures.append("harbin_affiliation_mapping_incorrect")
     for address in (
         "2 Jalan Mat Jambol",
         "No. 1 Weigang",
@@ -147,6 +153,8 @@ def validate_administrative_metadata(root: Path, report: dict[str, object]) -> N
         manuscript + data_availability + cff
     ):
         failures.append("public_repository_url_missing")
+    if re.search(r"(?i)zenodo|archival\s+DOI|archive\s+DOI|after\s+it\s+is\s+minted", manuscript + data_availability):
+        failures.append("doi_or_zenodo_declaration_remaining")
     if not (root / "LICENSE").is_file() or "MIT License" not in (
         root / "LICENSE"
     ).read_text(encoding="utf-8"):
@@ -174,6 +182,16 @@ def validate_administrative_metadata(root: Path, report: dict[str, object]) -> N
         name not in credit_section.group(1) for name in EXPECTED_AUTHORS
     ):
         failures.append("credit_statement_incomplete")
+    for required_docx in (
+        "paper/Declaration_of_Interests.docx",
+        "paper/Highlights.docx",
+        "paper/Title_Page.docx",
+        "paper/CRediT_Authorship_Statement.docx",
+        "paper/Author_Information.docx",
+    ):
+        if not (root / required_docx).is_file() or (root / required_docx).stat().st_size == 0:
+            failures.append("editable_submission_component_missing")
+            break
 
     report["failure_reasons"] = list(dict.fromkeys(failures))
     report["status"] = "pass" if not report["failure_reasons"] else "fail"
@@ -187,7 +205,7 @@ def validate_administrative_metadata(root: Path, report: dict[str, object]) -> N
         "missing": missing_affiliations,
     }
     report["administrative_placeholders"] = {
-        "archive_doi_or_url": "[SUBMITTER: ARCHIVE DOI/URL]" in manuscript,
+        "github_only_data_link": "https://github.com/KleinChen42/SABER-PID" in (manuscript + data_availability),
         "authors": False,
         "funding": False,
     }

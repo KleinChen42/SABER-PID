@@ -88,6 +88,6 @@ PIDQA and DEXPI material retains the vendored upstream CC0 and CC BY 4.0 terms;
 model weights are not redistributed. See [LICENSES.md](LICENSES.md) for the
 release matrix.
 
-Citation metadata is provided in [CITATION.cff](CITATION.cff). An archival DOI
-can be added after a versioned GitHub release is connected to an archive
-service.
+Citation metadata is provided in [CITATION.cff](CITATION.cff). The public data,
+code, release archives, and version history are available directly from this
+GitHub repository.

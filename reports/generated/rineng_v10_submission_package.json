@@ -1,9 +1,13 @@
 {
   "active_dependency_count": 17,
   "archive": "release/saber_pid_rineng_v10_submission_source.zip",
-  "archive_bytes": 1157277,
-  "archive_sha256": "f8cfbb520dc1caff139c2de710ba32d8ab2864c1ecf3149e9c47c72739e953db",
-  "member_count": 30,
+  "archive_bytes": 1280282,
+  "archive_sha256": "1e9b670e6fb0371503dfd5b0ec4447b69e7636235687a6c41806cf634b42d4c9",
+  "member_count": 35,
   "status": "pass",
+  "upload_archive": "release/saber_pid_rineng_v10_required_submission_files.zip",
+  "upload_archive_bytes": 2070130,
+  "upload_archive_sha256": "24754dae3fa3f8497f73e5ed03012931d8e22ac4e2c960bc62a9f5f9efaf0525",
+  "upload_member_count": 9,
   "version": "rineng-v10-submission-package"
 }

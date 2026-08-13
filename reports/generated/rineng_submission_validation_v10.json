@@ -1,9 +1,9 @@
 {
   "abstract_words": 230,
   "administrative_placeholders": {
-    "archive_doi_or_url": false,
     "authors": false,
-    "funding": false
+    "funding": false,
+    "github_only_data_link": true
   },
   "affiliations": {
     "count": 5,
@@ -59,8 +59,8 @@
   "main_table_count": 2,
   "missing_files": [],
   "pdf_sha256": {
-    "manuscript": "1ddd9251f118db11a6e1f012f1a62f8c7efb4d806adb0e6c89d3e614373263d5",
-    "supplementary": "11bcf8dfdc4b41424e1a29be5aef00a612fd98d11c3f7b9331bee45ab4b1831d"
+    "manuscript": "62904659c533acdca8e3d4e93600d2cfdab71ddd33a81d0ca8c8b6636a4ce1a0",
+    "supplementary": "a156900d615de8009b7755dbe5879533023c92cf644234dd89364cc14c462032"
   },
   "rendered_page_count": 29,
   "status": "pass",
