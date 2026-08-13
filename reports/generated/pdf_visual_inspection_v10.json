@@ -1,9 +1,9 @@
 {
   "method": "all rendered pages inspected by the active automated agent",
   "note": "Every manuscript and supplementary page was inspected after the final fixed-timestamp rebuild. Text, equations, tables, V10 figures, captions, hyperlinks, page numbers, and page boundaries are legible with no clipping, overlap, missing content, or unintended blank pages.",
-  "page_count": 28,
+  "page_count": 29,
   "page_counts": {
-    "manuscript": 12,
+    "manuscript": 13,
     "supplementary": 16
   },
   "pages": [
@@ -11,73 +11,79 @@
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-01.png",
-      "sha256": "e4f7782756362929bad5dd965e73bd0766083b0094114e6e01bd541cf496e5ec"
+      "sha256": "eb2accf044763cee06832887dfd38ab3053e9f6bbf125e1cdb9e53b1a8caecbe"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-02.png",
-      "sha256": "ca11902d79dcdd87b110319dc866267134526ca126501e6515e560a0ff876c03"
+      "sha256": "ba38bbd939701b9d2f636a93054ca6b6384408d5b3575cbe966728dea60c137d"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-03.png",
-      "sha256": "084ec1a93722cd8fc618bee02c45fd928a78390074acbbb138f4ab1f735d8763"
+      "sha256": "f00f7e6dee937310c1b08a95f2109a9f8d7e18f7eb3a8d5338241335c033eb76"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-04.png",
-      "sha256": "2479b2ab509ed20c8b0c493e3689357eb7db704fdb38d3a2817d61f3a328992b"
+      "sha256": "37b6c1bc01bd88a2c6696e273c4d30b2c8257c1085f7a8329d96ac0880067df7"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-05.png",
-      "sha256": "60968ab7a548510430942858d3d0cf17f73453a01a6862f07c98be1e59c6d373"
+      "sha256": "2bf0275bcbe6205b3db51a0b6e5a90583bebb5fb870c6ea9deff0cb715a3fc78"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-06.png",
-      "sha256": "71276a2ca567725f4cb66e22cfdc5aa4986dc0aa4236da6b6b1a68cbdd39cdcb"
+      "sha256": "fa164064dcc9e87319ee7a703969dec614c725c2f82d56b7b2ab50ba54de89e5"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-07.png",
-      "sha256": "a3197dcbb7c91072e9e71096d025fa8d74f3b44d3be0fabcc673318d9258b4b9"
+      "sha256": "0b4a05f261708ac5f2b949debe033fbef5adfc608afb8cb1a41d2485ea6e472a"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-08.png",
-      "sha256": "defdefa730147660569e007231ceda0a9fe4da0331fbadd570e00aec9f2c0fcc"
+      "sha256": "44b0d56ec0382e2c6decc23a4080f64b7e323c2cf5bab2cfbc1e394fb831a4b9"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-09.png",
-      "sha256": "6a8ec2c7015ba74aaa831ecf74508a7a9da5643c4b6855efefa3c025f8f01488"
+      "sha256": "49be8f3e9320351f8cc0ad16319d948cfcf49802f60e57bdede6d3658a741b54"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-10.png",
-      "sha256": "c31c3959470b238b98e5bbc1f0eb49161e53d883208bfaaa6886303f144539fc"
+      "sha256": "4ebcb21756c13250a467980725a79e22945dacb8d4d51172e7b3543e996819f5"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-11.png",
-      "sha256": "5f72ac1d1c986e0a3c1062e21817ec65a9d186c7853496e6245789cc9c9a3a5f"
+      "sha256": "492eee2c478a3239fa09cfce345ca2fcab023580036b0269c06fd6ebc1e69a4e"
     },
     {
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-12.png",
-      "sha256": "1f7395e57e2118db6808bdb97a7d5721cdb3f371738bc1cd2e48340d4e019eb9"
+      "sha256": "0029c9d58eaadbf57c153ca7f5fe8a281351be0e3f3c8e6aed19003a5c1ff4fc"
+    },
+    {
+      "document": "manuscript",
+      "inspected": true,
+      "path": "tmp/pdfs/final_validation_v10/manuscript/page-13.png",
+      "sha256": "275f2af9f56983543b1a08d1746df1fdf44d3c4335e99c8ff210b8279ef67ccf"
     },
     {
       "document": "supplementary",
@@ -161,7 +167,7 @@
       "document": "supplementary",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/supplementary/page-14.png",
-      "sha256": "ffac8b95196ed8e5a4cdb77321a4b33a98f8fd933263881a8351f5e96c403d98"
+      "sha256": "7e62f4b280d80a6f505dbde14b58f958b8ba7643ec1aa7a7e62259e9468334e6"
     },
     {
       "document": "supplementary",
@@ -177,8 +183,8 @@
     }
   ],
   "pdf_sha256": {
-    "manuscript": "7ba5ad9e46f02c7bb14187971077753786d7f2a886d3e5b319ee4fb15d64d204",
-    "supplementary": "fed5e45c0ea5ab06264871f6e89be7ff7f568446c1098ddde7bfbf9b63aadda7"
+    "manuscript": "c2b95fbc2690bf38ef3039b38e2f955c8488a8636a913558aed89d6f0df594e2",
+    "supplementary": "d095bdabaa2888645acac094f9f10e20619c47b53a956afdbce2b919ca735a3a"
   },
   "status": "pass",
   "validation_version": "pdf-visual-inspection-v10"

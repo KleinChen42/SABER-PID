@@ -6,7 +6,21 @@ SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision--Lan
 
 ## Authors and affiliations
 
-[SUBMITTER: author names, affiliations, corresponding author, email, ORCID]
+1. **Zhuo Chen** (a,b), first and corresponding author; email: zhuoc@chalmers.se; ORCID: 0009-0007-7510-8648
+2. **Shuhao Liu** (a); email: 2420610137@stu.hrbust.edu.cn; ORCID: 0009-0000-2996-9868
+3. **Zhi Ling** (c); email: zhi.ling@kiwiar.com; ORCID: 0009-0003-2787-156X
+4. **Yu Yan** (c); email: yu.yan@kiwiar.com; ORCID: 0009-0006-4410-4444
+5. **Qiuxue Wu** (a); email: 2420610140@stu.hrbust.edu.cn; ORCID: 0009-0001-7290-045X
+6. **Ziyi Kuang** (c); email: ziyi.kuang@kiwiar.com; ORCID: 0009-0003-6335-6602
+7. **Zihan Zhao** (d); email: zhaozihan0117@stu.njau.edu.cn; ORCID: 0009-0007-7751-7787
+8. **Caixin Tan** (e); email: tancaixin2004@hnu.edu.cn; ORCID: 0009-0000-8597-3511
+9. **Haiyou Zhang** (c); email: haiyou.zhang@kiwiar.com
+
+- **a** Harbin University of Science and Technology, No. 52 Xuefu Road, Nangang District, Harbin 150080, Heilongjiang, China
+- **b** Chalmers University of Technology, SE-412 96 Gothenburg, Sweden
+- **c** Kiwiar Co., Ltd., Singapore
+- **d** Nanjing Agricultural University, Nanjing, China
+- **e** Hunan University, Changsha, China
 
 ## Article type
 

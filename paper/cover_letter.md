@@ -12,8 +12,8 @@ Three extensions strengthen the evidence without changing the task after results
 
 The contribution is an engineering qualification and decision workflow, not a new model architecture. It differs from recent P&ID graph-construction and graph-retrieval systems by asking whether raw-image tag output follows the requested drawing before it enters a higher-level engineering pipeline. All claims are regenerated from immutable outputs, 10,000-replicate clustered intervals, deterministic validation code, and a SHA-256-inventoried public-release candidate. The manuscript explicitly limits its claim to candidate-tag retrieval under the evaluated PIDQA and DEXPI conditions. This combination of reproducible engineering evidence, external-family transfer, robustness at a declared operating point, and cost-sensitive operating choices is closely aligned with *Results in Engineering*.
 
-The submitting authors will complete the author, funding, competing-interest, originality, and public DOI/URL fields in the journal system.
+The authors declare no competing interests and no specific funding for this work. Zhuo Chen is the corresponding author. The authors will complete the originality confirmation and public DOI/URL fields in the journal system.
 
 Sincerely,
 
-The authors
+Zhuo Chen, corresponding author, on behalf of all authors (zhuoc@chalmers.se)

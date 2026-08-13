@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 import validate_rineng_submission_v9 as base
@@ -83,6 +84,77 @@ def configure() -> None:
     )
 
 
+EXPECTED_AUTHORS = (
+    "Zhuo Chen",
+    "Shuhao Liu",
+    "Zhi Ling",
+    "Yu Yan",
+    "Qiuxue Wu",
+    "Ziyi Kuang",
+    "Zihan Zhao",
+    "Caixin Tan",
+    "Haiyou Zhang",
+)
+EXPECTED_AFFILIATIONS = (
+    "Harbin University of Science and Technology",
+    "Chalmers University of Technology",
+    "Kiwiar Co., Ltd.",
+    "Nanjing Agricultural University",
+    "Hunan University",
+)
+
+
+def validate_administrative_metadata(root: Path, report: dict[str, object]) -> None:
+    failures = list(report.get("failure_reasons", []))
+    manuscript = (root / "paper/manuscript.tex").read_text(encoding="utf-8")
+    title_page = (root / "paper/title_page.md").read_text(encoding="utf-8")
+    declarations = (root / "paper/declarations.md").read_text(encoding="utf-8")
+    cff = (root / "CITATION.cff").read_text(encoding="utf-8")
+    combined = "\n".join((manuscript, title_page, declarations, cff))
+
+    missing_authors = [name for name in EXPECTED_AUTHORS if name not in combined]
+    missing_affiliations = [
+        name for name in EXPECTED_AFFILIATIONS if name not in combined
+    ]
+    if missing_authors:
+        failures.append("author_metadata_missing")
+    if missing_affiliations:
+        failures.append("affiliation_metadata_missing")
+    if "zhuoc@chalmers.se" not in combined or "Corresponding author" not in combined:
+        failures.append("corresponding_author_metadata_missing")
+    if "no known competing financial interests" not in declarations:
+        failures.append("competing_interest_declaration_missing")
+    if "received no specific grant" not in declarations:
+        failures.append("funding_declaration_missing")
+    credit_section = re.search(
+        r"\\section\*\{CRediT authorship contribution statement\}(.*?)"
+        r"\\section\*\{Use of generative AI",
+        manuscript,
+        flags=re.S,
+    )
+    if credit_section is None or any(
+        name not in credit_section.group(1) for name in EXPECTED_AUTHORS
+    ):
+        failures.append("credit_statement_incomplete")
+
+    report["failure_reasons"] = list(dict.fromkeys(failures))
+    report["status"] = "pass" if not report["failure_reasons"] else "fail"
+    report["authors"] = {
+        "count": len(EXPECTED_AUTHORS),
+        "missing": missing_authors,
+        "corresponding_author": "Zhuo Chen",
+    }
+    report["affiliations"] = {
+        "count": len(EXPECTED_AFFILIATIONS),
+        "missing": missing_affiliations,
+    }
+    report["administrative_placeholders"] = {
+        "archive_doi_or_url": "[SUBMITTER: ARCHIVE DOI/URL]" in manuscript,
+        "authors": False,
+        "funding": False,
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", default=".")
@@ -93,6 +165,7 @@ def main() -> int:
     configure()
     root = Path(args.root).resolve()
     report = base.validate(root)
+    validate_administrative_metadata(root, report)
     output = root / args.output
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")

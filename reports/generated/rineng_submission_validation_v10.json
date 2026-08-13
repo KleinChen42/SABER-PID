@@ -2,8 +2,17 @@
   "abstract_words": 230,
   "administrative_placeholders": {
     "archive_doi_or_url": true,
-    "authors": true,
-    "funding": true
+    "authors": false,
+    "funding": false
+  },
+  "affiliations": {
+    "count": 5,
+    "missing": []
+  },
+  "authors": {
+    "corresponding_author": "Zhuo Chen",
+    "count": 9,
+    "missing": []
   },
   "citations": {
     "bibliography": 21,
@@ -34,7 +43,7 @@
       63
     ]
   },
-  "inspected_page_count": 28,
+  "inspected_page_count": 29,
   "keywords": {
     "count": 6,
     "values": [
@@ -50,10 +59,10 @@
   "main_table_count": 2,
   "missing_files": [],
   "pdf_sha256": {
-    "manuscript": "7ba5ad9e46f02c7bb14187971077753786d7f2a886d3e5b319ee4fb15d64d204",
-    "supplementary": "fed5e45c0ea5ab06264871f6e89be7ff7f568446c1098ddde7bfbf9b63aadda7"
+    "manuscript": "c2b95fbc2690bf38ef3039b38e2f955c8488a8636a913558aed89d6f0df594e2",
+    "supplementary": "d095bdabaa2888645acac094f9f10e20619c47b53a956afdbce2b919ca735a3a"
   },
-  "rendered_page_count": 28,
+  "rendered_page_count": 29,
   "status": "pass",
   "title": "SABER-PID: Source-Isolated Qualification and Cost-Aware Operation of Vision--Language Models for P&ID Tag Retrieval",
   "version": "rineng-submission-validation-v10"
