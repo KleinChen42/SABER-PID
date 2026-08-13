@@ -10,7 +10,7 @@ Review method: two-pass direct visual inspection at original PNG resolution, ren
 - Typeface: one sans-serif family throughout; 8 pt normal text and 8.5 pt panel headings at final size.
 - Vector-first delivery: PDF is the manuscript asset; 600 dpi PNG is retained for review and fallback.
 - Color encoding: Okabe--Ito-derived color-blind-safe palette, reinforced by marker shape or line role.
-- Layout: lowercase panel labels, concise panel headings, no redundant figure-level title inside the artwork, light reference grids, restrained borders, and consistent line weights.
+- Layout: concise panel headings where needed, no redundant figure-level title inside the artwork, light reference grids, restrained borders, consistent line weights, and a unified left-to-right method-diagram grammar for the lead pipeline.
 - Validation: every active figure must have zero unintended text-box collisions and zero figure-boundary clipping before it is accepted.
 
 The style contract follows Elsevier's artwork and sizing guidance and is cross-checked against Nature's research-figure guidance for final-size typography, compact panels, vector export, and accessible visual encoding.
@@ -19,7 +19,7 @@ The style contract follows Elsevier's artwork and sizing guidance and is cross-c
 
 | Figure | V9 / legacy issue found | V10 action | Final status |
 |---|---|---|---|
-| Figure 1 | Card-heavy slide aesthetic, oversized text blocks, weak visual hierarchy, and an initially distorted step-node shape | Rebuilt as a compact three-panel qualification-to-operation diagram; replaced coordinate-space circles with display-space circular markers; separated pipeline, evidence, and cost rule | PASS |
+| Figure 1 | Card-heavy slide aesthetic, oversized text blocks, fragmented method flow, and an initially distorted step-node shape | Rebuilt as one continuous ACL/ICLR/CVPR-style method diagram: restrained qualification/operation bands, a five-stage arrow backbone, compact functional modules, a subordinate evidence rail, and a small cost-to-mode lookup | PASS |
 | Figure 2 | Panel-C tensor-budget text collided with the left axis region; several labels were too close to plot boundaries | Rebuilt as aligned interval panels with concise two-line labels, explicit ticks, and increased left margin | PASS |
 | Figure 3 | Redundant artwork title and a crowded metric-group display | Rebuilt as a dot-and-line operating-point panel plus a logical-case contrast panel; retained all conditions and intervals | PASS |
 | Figure 4 | Oversized title, crowded point labels, and overlapping legend/title regions | Rebuilt as a precision--recall panel, exact lower-loss envelope, and decision-stability panel; moved the Qwen label away from the lower boundary and separated titles from legends | PASS |

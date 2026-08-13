@@ -2,6 +2,7 @@
   "design": {
     "figure_titles_inside_artwork": false,
     "font_family": "Arial/Helvetica/DejaVu Sans fallback",
+    "lead_pipeline_grammar": "unified ACL/ICLR/CVPR-style method diagram",
     "normal_text_points": 8.0,
     "palette": "Okabe-Ito-derived color-blind-safe",
     "panel_title_points": 8.5,
@@ -10,14 +11,14 @@
   },
   "figures": [
     {
-      "bytes": 63575,
+      "bytes": 69301,
       "path": "paper/figures/figure_1_saber_pid_overview_v10.pdf",
-      "sha256": "ae4e2915126f4bbe5642345fcd289f05e50e1315cdbd33ced97ac88c65e48f26"
+      "sha256": "63b532e6f5db5667df76d8eac8c5bf1d447e6754ed49d28ed39ee475de9fedf5"
     },
     {
-      "bytes": 366290,
+      "bytes": 383652,
       "path": "paper/figures/figure_1_saber_pid_overview_v10.png",
-      "sha256": "0889ff6eda0c279c134b524575b0edbf4f0db040a115136e0208e85205da66c2"
+      "sha256": "081778f529d96051fe186bcb0562af17178c0a82759fc159e70a8d9264eb521b"
     },
     {
       "bytes": 49853,

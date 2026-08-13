@@ -49,7 +49,7 @@
       "name": "manuscript_pdf",
       "returncode": 0,
       "stderr_tail": "Fontconfig error: Cannot load default config file: No such file: (null)\n",
-      "stdout_tail": "note: Running TeX ...\nnote: Rerunning TeX because \"manuscript.aux\" changed ...\nnote: Running xdvipdfmx ...\nnote: Writing `output/pdf/v10\\manuscript.log` (14.939453125 KiB)\nnote: Writing `output/pdf/v10\\manuscript.pdf` (296.5498046875 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n"
+      "stdout_tail": "note: Running TeX ...\nnote: Rerunning TeX because \"manuscript.aux\" changed ...\nnote: Running xdvipdfmx ...\nnote: Writing `output/pdf/v10\\manuscript.log` (14.939453125 KiB)\nnote: Writing `output/pdf/v10\\manuscript.pdf` (302.6650390625 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n"
     },
     {
       "command": [

@@ -22,7 +22,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
-from matplotlib.patches import FancyArrowPatch, Rectangle  # noqa: E402
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Rectangle  # noqa: E402
 from matplotlib.text import Text  # noqa: E402
 
 from build_paper_figures_v4 import find_comparison, reverse  # noqa: E402
@@ -249,114 +249,313 @@ def build_overview(
     )
     dexpi = {row["condition"]: row for row in summary["dexpi_external"]["conditions"]}
 
-    fig = plt.figure(figsize=(WIDTH, 3.65))
-    grid = fig.add_gridspec(
-        3,
-        1,
-        height_ratios=[0.92, 1.08, 0.72],
-        left=0.04,
-        right=0.985,
-        top=0.97,
-        bottom=0.07,
-        hspace=0.46,
-    )
-
-    ax = fig.add_subplot(grid[0])
+    # Figure 1 is deliberately composed as one continuous method diagram rather
+    # than three presentation-style panels.  The visual grammar follows the
+    # compact architecture figures common in ACL/ICLR/CVPR papers: a strong
+    # left-to-right backbone, restrained section bands, small functional
+    # modules, and secondary evidence carried on a subordinate rail.
+    fig = plt.figure(figsize=(WIDTH, 3.18))
+    ax = fig.add_axes([0.018, 0.018, 0.968, 0.958])
     ax.set_axis_off()
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
-    ax.text(0.0, 1.08, "a  Source-isolated qualification pipeline", fontweight="bold", va="top")
-    steps = [
-        ("Isolate", "unseen drawings"),
-        ("Intervene", "correct / shuffled / none"),
-        ("Match", "visual + output budgets"),
-        ("Transfer", "quality / model / family"),
-        ("Operate", "mode selected by cost"),
-    ]
-    positions = np.linspace(0.075, 0.925, len(steps))
-    for index in range(len(steps) - 1):
+
+    def section_band(x0: float, width: float, label: str, color: str, fill: str) -> None:
+        ax.add_patch(
+            Rectangle(
+                (x0, 0.952),
+                width,
+                0.034,
+                facecolor=fill,
+                edgecolor="none",
+                zorder=0,
+            )
+        )
+        ax.text(
+            x0 + width / 2,
+            0.969,
+            label,
+            ha="center",
+            va="center",
+            fontsize=6.6,
+            fontweight="bold",
+            color=color,
+            zorder=2,
+        )
+
+    def stage_box(x0: float, width: float, number: int, label: str, color: str) -> None:
+        ax.text(
+            x0,
+            0.888,
+            f"{number}  {label}",
+            ha="left",
+            va="center",
+            fontsize=7.4,
+            fontweight="bold",
+            color=COLORS["black"],
+        )
+        ax.add_patch(
+            FancyBboxPatch(
+                (x0, 0.585),
+                width,
+                0.252,
+                boxstyle="round,pad=0.004,rounding_size=0.008",
+                facecolor="white",
+                edgecolor=COLORS["mid_gray"],
+                linewidth=0.75,
+                zorder=0,
+            )
+        )
+        ax.plot(
+            [x0 + 0.012, x0 + width - 0.012],
+            [0.824, 0.824],
+            color=color,
+            linewidth=2.0,
+            solid_capstyle="round",
+            zorder=2,
+        )
+
+    def flow_arrow(x0: float, x1: float, *, color: str = COLORS["mid_gray"]) -> None:
         ax.add_patch(
             FancyArrowPatch(
-                (positions[index] + 0.035, 0.50),
-                (positions[index + 1] - 0.035, 0.50),
+                (x0, 0.708),
+                (x1, 0.708),
                 arrowstyle="-|>",
                 mutation_scale=8,
                 linewidth=0.9,
-                color=COLORS["mid_gray"],
-                zorder=1,
+                color=color,
+                shrinkA=0,
+                shrinkB=0,
+                zorder=3,
             )
         )
-    for index, (x, (heading, detail)) in enumerate(zip(positions, steps), start=1):
-        active = index == len(steps)
-        color = COLORS["green"] if active else COLORS["blue"]
-        fill = COLORS["pale_green"] if active else COLORS["pale_blue"]
-        # A marker is sized in display points, so the step badges stay circular
-        # even though this intentionally wide flow-diagram axis is not square.
-        ax.scatter([x], [0.50], s=225, facecolor=fill, edgecolor=color, linewidth=1.0, zorder=2)
-        ax.text(x, 0.50, str(index), ha="center", va="center", fontweight="bold", color=color, zorder=3)
-        ax.text(x, 0.79, heading, ha="center", va="center", fontweight="bold")
-        ax.text(x, 0.19, detail, ha="center", va="center", fontsize=7.2, color=COLORS["gray"])
 
-    ax = fig.add_subplot(grid[1])
-    ax.set_axis_off()
-    ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
-    ax.text(0.0, 1.08, "b  Evidence retained across controlled transfers", fontweight="bold", va="top")
+    # High-level visual hierarchy: qualification and operation remain distinct,
+    # while the arrows preserve a single end-to-end engineering story.
+    section_band(0.012, 0.674, "QUALIFICATION CONTRACT", COLORS["blue"], COLORS["pale_blue"])
+    section_band(0.716, 0.272, "ENGINEERING OPERATION", COLORS["green"], COLORS["pale_green"])
+
+    stages = [
+        (0.012, 0.128, 1, "Isolate", COLORS["blue"]),
+        (0.170, 0.180, 2, "Intervene", COLORS["blue"]),
+        (0.380, 0.135, 3, "Match + infer", COLORS["blue"]),
+        (0.545, 0.141, 4, "Transfer + measure", COLORS["orange"]),
+        (0.716, 0.272, 5, "Operate", COLORS["green"]),
+    ]
+    for x0, width, number, label, color in stages:
+        stage_box(x0, width, number, label, color)
+    for left, right in ((0.140, 0.170), (0.350, 0.380), (0.515, 0.545)):
+        flow_arrow(left + 0.004, right - 0.004)
+    flow_arrow(0.690, 0.712, color=COLORS["green"])
+
+    # 1 | drawing-level isolation and reference firewall.
+    ax.add_patch(
+        Rectangle(
+            (0.048, 0.674),
+            0.054,
+            0.077,
+            facecolor="white",
+            edgecolor=COLORS["mid_gray"],
+            linewidth=0.65,
+        )
+    )
+    ax.add_patch(
+        Rectangle(
+            (0.043, 0.681),
+            0.054,
+            0.077,
+            facecolor=COLORS["pale_blue"],
+            edgecolor=COLORS["blue"],
+            linewidth=0.75,
+        )
+    )
+    ax.text(
+        0.070,
+        0.719,
+        r"$D_i$",
+        ha="center",
+        va="center",
+        fontsize=8.0,
+        fontweight="bold",
+        color=COLORS["blue"],
+    )
+    ax.text(0.076, 0.637, "unseen drawing", ha="center", va="center", fontsize=6.7)
+    ax.text(0.076, 0.607, "answers withheld", ha="center", va="center", fontsize=6.3, color=COLORS["gray"])
+
+    # 2 | requested, source-shuffled, and absent-image interventions.
+    intervention_rows = [
+        (0.744, COLORS["pale_blue"], COLORS["blue"], r"requested  $D_i$"),
+        (0.682, COLORS["pale_orange"], COLORS["orange"], r"shuffled  $D_j$"),
+        (0.620, "#F4F4F4", COLORS["gray"], r"no image  $\varnothing$"),
+    ]
+    for y, fill, color, label in intervention_rows:
+        ax.add_patch(
+            Rectangle(
+                (0.184, y - 0.022),
+                0.152,
+                0.044,
+                facecolor=fill,
+                edgecolor=color,
+                linewidth=0.65,
+            )
+        )
+        ax.text(0.260, y, label, ha="center", va="center", fontsize=6.5, color=COLORS["black"])
+
+    # 3 | frozen inference at an explicitly matched visual/output budget.
+    ax.add_patch(
+        FancyBboxPatch(
+            (0.408, 0.684),
+            0.079,
+            0.068,
+            boxstyle="round,pad=0.004,rounding_size=0.008",
+            facecolor=COLORS["pale_blue"],
+            edgecolor=COLORS["blue"],
+            linewidth=0.8,
+        )
+    )
+    ax.text(0.4475, 0.718, "VLM", ha="center", va="center", fontsize=8.0, fontweight="bold", color=COLORS["blue"])
+    ax.text(0.4475, 0.646, "frozen prompt", ha="center", va="center", fontsize=6.6)
+    ax.text(0.4475, 0.611, "matched visual + output budget", ha="center", va="center", fontsize=5.9, color=COLORS["gray"])
+
+    # 4 | task-resolved scoring with source/logical-case uncertainty.
+    ax.text(0.6155, 0.742, r"task / tag  $F_1$", ha="center", va="center", fontsize=7.2, fontweight="bold")
+    ax.plot([0.568, 0.663], [0.710, 0.710], color=COLORS["light_gray"], linewidth=0.75)
+    ax.text(0.6155, 0.680, "TP / FP / FN", ha="center", va="center", fontsize=6.6)
+    ax.text(0.6155, 0.642, "source- or case-cluster", ha="center", va="center", fontsize=6.0, color=COLORS["gray"])
+    ax.text(0.6155, 0.611, "paired bootstrap", ha="center", va="center", fontsize=6.0, color=COLORS["gray"])
+
+    # 5 | deterministic OCR--VLM rule bank and explicit minimum-loss selector.
+    for y, fill, color, label in (
+        (0.738, COLORS["pale_blue"], COLORS["blue"], "VLM"),
+        (0.665, COLORS["pale_green"], COLORS["green"], "OCR"),
+    ):
+        ax.add_patch(
+            Rectangle(
+                (0.733, y - 0.024),
+                0.055,
+                0.048,
+                facecolor=fill,
+                edgecolor=color,
+                linewidth=0.7,
+            )
+        )
+        ax.text(0.7605, y, label, ha="center", va="center", fontsize=6.5, fontweight="bold")
+    flow_arrow(0.792, 0.814, color=COLORS["green"])
+    ax.add_patch(
+        Rectangle(
+            (0.815, 0.654),
+            0.070,
+            0.108,
+            facecolor="white",
+            edgecolor=COLORS["green"],
+            linewidth=0.75,
+        )
+    )
+    ax.text(0.850, 0.725, r"$\cup\quad\cap$", ha="center", va="center", fontsize=8.5, color=COLORS["green"])
+    ax.text(0.850, 0.677, "fallback", ha="center", va="center", fontsize=5.9, color=COLORS["gray"])
+    flow_arrow(0.889, 0.911, color=COLORS["green"])
+    ax.add_patch(
+        Rectangle(
+            (0.912, 0.654),
+            0.060,
+            0.108,
+            facecolor=COLORS["pale_green"],
+            edgecolor=COLORS["green"],
+            linewidth=0.8,
+        )
+    )
+    ax.text(0.942, 0.722, r"$\min_m L_m$", ha="center", va="center", fontsize=7.1, fontweight="bold", color=COLORS["green"])
+    ax.text(0.942, 0.676, "mode", ha="center", va="center", fontsize=6.1)
+    ax.text(0.852, 0.611, r"$L_m=C_{FN}FN_m+C_{FP}FP_m$", ha="center", va="center", fontsize=6.3, color=COLORS["gray"])
+
+    # A subordinate rail carries the transfer evidence without interrupting the
+    # method backbone.  This replaces the former four-card dashboard.
+    ax.add_patch(
+        FancyArrowPatch(
+            (0.6155, 0.582),
+            (0.6155, 0.514),
+            arrowstyle="-|>",
+            mutation_scale=7,
+            linestyle=(0, (2, 2)),
+            linewidth=0.75,
+            color=COLORS["orange"],
+        )
+    )
+    ax.text(
+        0.012,
+        0.496,
+        "QUALIFIED TRANSFER EVIDENCE",
+        ha="left",
+        va="center",
+        fontsize=6.6,
+        fontweight="bold",
+        color=COLORS["blue"],
+    )
+    ax.plot([0.012, 0.686], [0.476, 0.476], color=COLORS["light_gray"], linewidth=0.7)
     evidence = [
-        ("PIDQA primary", "+0.549", "correct - shuffled", "100 sources", COLORS["blue"]),
+        ("PIDQA primary", r"$\Delta F_1=+0.549$", "correct - shuffled", "100 sources", COLORS["blue"]),
         (
-            "Mild quality shifts",
-            f"{min(quality_effects):.3f}-{max(quality_effects):.3f}",
+            "Mild quality",
+            rf"$\Delta F_1={min(quality_effects):.3f}$--${max(quality_effects):.3f}$",
             "requested-drawing effect",
             "230 sources",
             COLORS["orange"],
         ),
         (
-            "InternVL budget match",
-            f"+{internvl['correct_minus_shuffled']['value_f1_difference']:.3f}",
-            "correct - shuffled",
+            "InternVL",
+            rf"$\Delta F_1=+{internvl['correct_minus_shuffled']['value_f1_difference']:.3f}$",
+            "budget-matched",
             "54 x 448 tiles",
             COLORS["green"],
         ),
         (
             "Public DEXPI",
-            f"+{dexpi['correct']['f1'] - dexpi['shuffled']['f1']:.3f}",
+            rf"$\Delta F_1=+{dexpi['correct']['f1'] - dexpi['shuffled']['f1']:.3f}$",
             "correct - shuffled",
             "35 images / 26 cases",
             COLORS["magenta"],
         ),
     ]
-    for index, (heading, value, measure, scope, color) in enumerate(evidence):
-        x0 = index * 0.25
-        if index:
-            ax.plot([x0, x0], [0.08, 0.91], color=COLORS["light_gray"], linewidth=0.8)
-        ax.plot([x0 + 0.025, x0 + 0.075], [0.82, 0.82], color=color, linewidth=2.2, solid_capstyle="round")
-        ax.text(x0 + 0.025, 0.66, heading, fontweight="bold", va="center")
-        ax.text(x0 + 0.025, 0.43, value, fontsize=10.0, fontweight="bold", color=COLORS["black"], va="center")
-        ax.text(x0 + 0.025, 0.25, measure, fontsize=7.2, color=COLORS["gray"], va="center")
-        ax.text(x0 + 0.025, 0.09, scope, fontsize=7.2, color=COLORS["gray"], va="bottom")
+    evidence_x = [0.075, 0.250, 0.425, 0.600]
+    ax.plot([evidence_x[0], evidence_x[-1]], [0.302, 0.302], color=COLORS["light_gray"], linewidth=1.0, zorder=0)
+    for x, (heading, value, measure, scope, color) in zip(evidence_x, evidence):
+        ax.text(x, 0.427, heading, ha="center", va="center", fontsize=6.8, fontweight="bold")
+        ax.text(x, 0.366, value, ha="center", va="center", fontsize=7.2, fontweight="bold", color=COLORS["black"])
+        ax.scatter([x], [0.302], s=30, facecolor="white", edgecolor=color, linewidth=1.4, zorder=2)
+        ax.text(x, 0.238, measure, ha="center", va="center", fontsize=5.9, color=COLORS["gray"])
+        ax.text(x, 0.183, scope, ha="center", va="center", fontsize=5.9, color=COLORS["gray"])
 
-    ax = fig.add_subplot(grid[2])
-    ax.set_axis_off()
-    ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
-    ax.text(0.0, 1.10, r"c  Cost-aware operating rule ($r=C_{FN}/C_{FP}$)", fontweight="bold", va="top")
+    # The operating rule is rendered as a compact lookup table rather than a
+    # row of oversized cards.  Fixed counts enter the selector; only r changes.
+    ax.text(
+        0.716,
+        0.496,
+        r"SELECTED MODE BY $r=C_{FN}/C_{FP}$",
+        ha="left",
+        va="center",
+        fontsize=6.6,
+        fontweight="bold",
+        color=COLORS["green"],
+    )
+    ax.plot([0.716, 0.988], [0.476, 0.476], color=COLORS["light_gray"], linewidth=0.7)
     intervals = cost["exact_decision_intervals"]
     fills = [COLORS["pale_magenta"], COLORS["pale_green"], COLORS["pale_blue"], COLORS["pale_orange"]]
-    for index, (row, fill) in enumerate(zip(intervals, fills)):
-        x0 = 0.012 + index * 0.244
-        ax.add_patch(Rectangle((x0, 0.22), 0.232, 0.48, facecolor=fill, edgecolor=COLORS["mid_gray"], linewidth=0.7))
-        ax.text(x0 + 0.116, 0.53, row["recommended_mode"], ha="center", va="center", fontweight="bold")
+    row_colors = [COLORS["magenta"], COLORS["green"], COLORS["blue"], COLORS["orange"]]
+    row_centers = [0.416, 0.338, 0.260, 0.182]
+    for row, fill, color, y in zip(intervals, fills, row_colors, row_centers):
         lower = float(row["lower_ratio_inclusive"])
         upper = row["upper_ratio_exclusive"]
         if lower == 0:
-            label = f"r < {float(upper):.3f}"
+            ratio = rf"$r < {float(upper):.3f}$"
         elif upper == "infinity":
-            label = f"r >= {lower:.3f}"
+            ratio = rf"$r \geq {lower:.3f}$"
         else:
-            label = f"{lower:.3f} <= r < {float(upper):.3f}"
-        ax.text(x0 + 0.116, 0.34, label, ha="center", va="center", fontsize=7.2, color=COLORS["gray"])
-    ax.text(0.99, 0.02, "Fixed TP / FP / FN; only the loss ratio changes.", ha="right", va="bottom", fontsize=7.0, color=COLORS["gray"])
+            ratio = rf"${lower:.3f} \leq r < {float(upper):.3f}$"
+        ax.add_patch(Rectangle((0.716, y - 0.030), 0.272, 0.060, facecolor=fill, edgecolor="none"))
+        ax.add_patch(Rectangle((0.716, y - 0.030), 0.006, 0.060, facecolor=color, edgecolor="none"))
+        ax.text(0.736, y, ratio, ha="left", va="center", fontsize=6.0, color=COLORS["gray"])
+        ax.text(0.866, y, row["recommended_mode"], ha="left", va="center", fontsize=6.4, fontweight="bold")
+    ax.text(0.988, 0.106, "Fixed TP / FP / FN; only the loss ratio changes.", ha="right", va="center", fontsize=5.8, color=COLORS["gray"])
     return save_figure(fig, root, "figure_1_saber_pid_overview_v10", audits)
 
 
@@ -966,6 +1165,7 @@ def main() -> int:
             "panel_title_points": 8.5,
             "palette": "Okabe-Ito-derived color-blind-safe",
             "figure_titles_inside_artwork": False,
+            "lead_pipeline_grammar": "unified ACL/ICLR/CVPR-style method diagram",
             "text_collision_audit": "pass",
         },
         "sources": {name: sha256(root / name) for name in source_names},
