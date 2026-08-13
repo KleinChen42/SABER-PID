@@ -17,7 +17,7 @@
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-02.png",
-      "sha256": "5cd2b8ff6b43e2534b12beff7ae12077aca859e84bc65951c9efb046b30bcec1"
+      "sha256": "ca11902d79dcdd87b110319dc866267134526ca126501e6515e560a0ff876c03"
     },
     {
       "document": "manuscript",
@@ -71,7 +71,7 @@
       "document": "manuscript",
       "inspected": true,
       "path": "tmp/pdfs/final_validation_v10/manuscript/page-11.png",
-      "sha256": "cc76b9ff7d74ef637128f37282a19ac3382eb6ccdeec9a3b54db777e24c8ff79"
+      "sha256": "5f72ac1d1c986e0a3c1062e21817ec65a9d186c7853496e6245789cc9c9a3a5f"
     },
     {
       "document": "manuscript",
@@ -177,7 +177,7 @@
     }
   ],
   "pdf_sha256": {
-    "manuscript": "703c2569d2d6b9d9904a0b5928de56b0e22bff3409f61bea04ae8b9e84c8e79c",
+    "manuscript": "7ba5ad9e46f02c7bb14187971077753786d7f2a886d3e5b319ee4fb15d64d204",
     "supplementary": "fed5e45c0ea5ab06264871f6e89be7ff7f568446c1098ddde7bfbf9b63aadda7"
   },
   "status": "pass",

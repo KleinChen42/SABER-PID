@@ -11,14 +11,14 @@
   },
   "figures": [
     {
-      "bytes": 69301,
+      "bytes": 69319,
       "path": "paper/figures/figure_1_saber_pid_overview_v10.pdf",
-      "sha256": "63b532e6f5db5667df76d8eac8c5bf1d447e6754ed49d28ed39ee475de9fedf5"
+      "sha256": "52bef69e8041a85082335de1c0cbdc66809f1eeadfa6de117395000a1c3e1919"
     },
     {
-      "bytes": 383652,
+      "bytes": 386988,
       "path": "paper/figures/figure_1_saber_pid_overview_v10.png",
-      "sha256": "081778f529d96051fe186bcb0562af17178c0a82759fc159e70a8d9264eb521b"
+      "sha256": "a42a260464c1afbd5154cf6b73a0302d073c8f2f559dfcd2c102015d8563a816"
     },
     {
       "bytes": 49853,

@@ -414,8 +414,18 @@ def build_overview(
         )
     )
     ax.text(0.4475, 0.718, "VLM", ha="center", va="center", fontsize=8.0, fontweight="bold", color=COLORS["blue"])
-    ax.text(0.4475, 0.646, "frozen prompt", ha="center", va="center", fontsize=6.6)
-    ax.text(0.4475, 0.611, "matched visual + output budget", ha="center", va="center", fontsize=5.9, color=COLORS["gray"])
+    ax.text(0.4475, 0.658, "frozen prompt", ha="center", va="center", fontsize=6.6)
+    ax.text(
+        0.4475,
+        0.610,
+        "matched visual + output\nbudgets",
+        ha="center",
+        va="center",
+        multialignment="center",
+        linespacing=0.95,
+        fontsize=5.9,
+        color=COLORS["gray"],
+    )
 
     # 4 | task-resolved scoring with source/logical-case uncertainty.
     ax.text(0.6155, 0.742, r"task / tag  $F_1$", ha="center", va="center", fontsize=7.2, fontweight="bold")
